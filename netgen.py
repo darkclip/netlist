@@ -1,0 +1,145 @@
+#!/usr/bin/env python3
+
+from __future__ import annotations
+
+import typing
+import sys
+import os
+from pathlib import Path
+from ipaddress import IPv4Network, IPv6Network, AddressValueError
+
+try:
+    from aggregate_prefixes import aggregate_prefixes
+except ImportError:
+    aggregate_prefixes = None
+
+
+def prepare_networks(
+    nets_or_files: typing.List[str], only4: bool = False, only6: bool = False
+) -> typing.List[IPv4Network | IPv6Network]:
+    networks = []
+    for net in nets_or_files:
+        if not only6:
+            try:
+                networks.append(IPv4Network(net))
+            except AddressValueError:
+                pass
+        if not only4:
+            try:
+                networks.append(IPv6Network(net))
+            except AddressValueError:
+                pass
+    for file in nets_or_files:
+        file_path = Path(file).resolve()
+        if not file_path.exists() or not file_path.is_file():
+            continue
+        with file_path.open(encoding='utf-8') as fp:
+            for line in fp:
+                if not only6:
+                    try:
+                        networks.append(IPv4Network(line.strip()))
+                    except AddressValueError:
+                        pass
+                if not only4:
+                    try:
+                        networks.append(IPv6Network(line.strip()))
+                    except AddressValueError:
+                        pass
+    return networks
+
+
+def find_updated_networks(
+    networks: typing.List[IPv4Network | IPv6Network], subnet: IPv4Network | IPv6Network
+) -> typing.List[IPv4Network | IPv6Network]:
+    copied_networks = networks.copy()
+    for index, network in enumerate(networks):
+        try:
+            if subnet.subnet_of(network):
+                copied_networks.pop(index)
+                copied_networks.extend(list(network.address_exclude(subnet)))
+        except TypeError:
+            pass
+    return copied_networks
+
+
+def main(args):
+    includes = getattr(args, 'include', [])
+    excludes = getattr(args, 'exclude', [])
+    only4 = getattr(args, 'ipv4', False)
+    only6 = getattr(args, 'ipv6', False)
+    output = getattr(args, 'output', None)
+
+    in_networks = prepare_networks(includes)
+    if len(in_networks) == 0:
+        print('No legal include ip networks.')
+        sys.exit(1)
+    ex_networks = prepare_networks(excludes)
+    out_networks = in_networks.copy()
+    for exclude in ex_networks:
+        out_networks = find_updated_networks(out_networks, exclude)
+    if aggregate_prefixes is not None:
+        out4 = []
+        out6 = []
+        for net in out_networks:
+            if not only6 and isinstance(net, IPv4Network):
+                out4.append(net)
+            if not only4 and isinstance(net, IPv6Network):
+                out6.append(net)
+        out4 = aggregate_prefixes(out4)
+        out6 = aggregate_prefixes(out6)
+        out_networks = []
+        out_networks.extend(out4)
+        out_networks.extend(out6)
+
+    output_lines = [
+        f"{getattr(args,'prefix','')}{str(network)}{getattr(args,'suffix','')}"
+        for network in out_networks
+    ]
+
+    if output is None:
+        for line in output_lines:
+            print(line, end='')
+    else:
+        print(f'Included Networks: {len(in_networks)}')
+        output: Path
+        output_file = output.resolve()
+        if not output_file.parent.exists():
+            os.makedirs(output_file.parent)
+        with output_file.open('w', encoding='utf-8') as wfp:
+            wfp.writelines(output_lines)
+        print(f'Generated Networks: {len(output_lines)}')
+
+
+if __name__ == '__main__':
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter
+    )
+    parser.add_argument(
+        'include',
+        nargs='+',
+        type=str,
+        default=[],
+        help='include networks (subnets or files separated by space)',
+    )
+    parser.add_argument(
+        '-e',
+        '--exclude',
+        nargs='+',
+        type=str,
+        default=[],
+        help='exclude networks (subnets or files separated by space)',
+    )
+    parser.add_argument('-4', '--ipv4', action='store_true', help='process ipv4 only')
+    parser.add_argument('-6', '--ipv6', action='store_true', help='process ipv6 only')
+    parser.add_argument('-o', '--output', type=Path, help='output file to write')
+    parser.add_argument(
+        '-p', '--prefix', type=str, default='', help='write line prefix'
+    )
+    parser.add_argument(
+        '-s', '--suffix', type=str, default='\n', help='write line suffix'
+    )
+    parser.set_defaults(func=main)
+    args = parser.parse_args()
+    args.func(args)

@@ -1,0 +1,50 @@
+name: build net
+
+on:
+  push:
+    branches: ['*']
+  schedule:
+    - cron: '0 16 * * *'
+
+jobs:
+  build-net:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Check out ip-lists branch of gaoyifan/china-operator-ip
+        uses: actions/checkout@v3
+        with:
+          repository: gaoyifan/china-operator-ip
+          ref: ip-lists
+          path: ip-lists
+      - name: Checkout net branch
+        uses: actions/checkout@v3
+        with:
+          ref: net
+          path: net
+      - name: Rebuild net branch
+        if: github.event_name == 'schedule'
+        run: |
+          rm net/*
+          ./exp_net.sh
+      - name: Push to net branch
+        if: github.event_name == 'schedule'
+        continue-on-error: true
+        run: |
+          cd net
+          tree -H . -P "*.txt" -T "IP List - $(date +%Y-%m-%d)" > index.html
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add .
+          git commit -m "update $(date +%Y-%m-%d)"
+          git push -q
