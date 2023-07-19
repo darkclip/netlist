@@ -5,18 +5,19 @@ from __future__ import annotations
 import typing
 import sys
 import os
+import json
 from pathlib import Path
 from ipaddress import IPv4Network, IPv6Network, AddressValueError
 import ray_pb2
 
 
 def load_networks(
-    dat_files: typing.List[str], countries: typing.List[str], inverse: bool = False
+    dat_files: typing.List[Path], countries: typing.List[str], inverse: bool = False
 ) -> typing.List[IPv4Network | IPv6Network]:
     networks = []
     country_codes = [code.lower() for code in countries]
     for file in dat_files:
-        file_path = Path(file).resolve()
+        file_path = file.resolve()
         if not file_path.exists() or not file_path.is_file():
             continue
         data = ray_pb2.GeoIPList()
@@ -42,15 +43,22 @@ def load_networks(
 
 
 def load_domains(
-    dat_files: typing.List[str],
+    dat_files: typing.List[Path],
     countries: typing.List[str],
     inverse: bool = False,
-    domain_type: int | None = None,
+    formatter: Path | None = None,
+    domain_types: typing.List[int] | None = None,
 ) -> typing.List[str]:
     domains = []
     country_codes = [code.lower() for code in countries]
+    format_dict = None
+    if formatter:
+        format_file_path = formatter.resolve()
+        if format_file_path.is_file():
+            with format_file_path.open(encoding='utf-8') as fp:
+                format_dict = json.load(fp)
     for file in dat_files:
-        file_path = Path(file).resolve()
+        file_path = file.resolve()
         if not file_path.exists() or not file_path.is_file():
             continue
         data = ray_pb2.GeoSiteList()
@@ -65,32 +73,36 @@ def load_domains(
                     continue
             for domain in entry.domain:
                 value = None
-                if domain_type is None:
+                prefix = ''
+                suffix = ''
+                if format_dict:
+                    prefix = format_dict.get('prefix').get(str(domain.type))
+                    suffix = format_dict.get('suffix').get(str(domain.type))
+                if domain_types is None or domain.type in domain_types:
                     value = domain.value
-                elif domain.type == domain_type:
-                    value = domain.value
-                if value:
-                    domains.append(domain.value)
+                if value is not None:
+                    domains.append(f'{prefix}{domain.value}{suffix}')
     return domains
 
 
 def main(args):
-    input_files = getattr(args, 'input', None)
+    input_files = getattr(args, 'input', [])
     output = getattr(args, 'output', None)
 
     data_list = []
     if getattr(args, 'data_type', None) == 'geoip':
         data_list = load_networks(
             input_files,
-            getattr(args, 'countries', None),
-            getattr(args, 'inverse', None),
+            getattr(args, 'country', []),
+            getattr(args, 'inverse', False),
         )
     if getattr(args, 'data_type', None) == 'geosite':
         data_list = load_domains(
             input_files,
-            getattr(args, 'countries', None),
+            getattr(args, 'country', []),
             getattr(args, 'inverse', None),
-            getattr(args, 'domain_type', None),
+            getattr(args, 'formatter', None),
+            getattr(args, 'domain_types', None),
         )
     if len(data_list) == 0:
         print('No legal data.')
@@ -121,17 +133,16 @@ if __name__ == '__main__':
     parser.add_argument(
         'input',
         nargs='+',
-        type=str,
+        type=Path,
         default=[],
         help='input ray data files (separated by space)',
     )
     parser.add_argument(
         '-c',
-        '--countries',
-        nargs='+',
+        '--country',
         type=str,
-        default=[],
-        help='country codes (separated by space)',
+        action='append',
+        help='country codes (use multiple times)',
     )
     parser.add_argument(
         '-i',
@@ -162,9 +173,15 @@ if __name__ == '__main__':
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     parser_geosite.add_argument(
-        '--domain-type',
+        '--formatter',
+        type=Path,
+        help='format file for domain types',
+    )
+    parser_geosite.add_argument(
+        '--domain-types',
+        nargs='+',
         type=int,
-        help='geosite domain type',
+        help='select domain types (separated by space)',
     )
 
     args = parser.parse_args()

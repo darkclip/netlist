@@ -15,16 +15,16 @@ except ImportError:
 
 
 def prepare_networks(
-    nets_or_files: typing.List[str], only4: bool = False, only6: bool = False
+    nets_or_files: typing.List[str], family: typing.List[int] | None = None
 ) -> typing.List[IPv4Network | IPv6Network]:
     networks = []
     for net in nets_or_files:
-        if not only6:
+        if not family or 4 in family:
             try:
                 networks.append(IPv4Network(net))
             except AddressValueError:
                 pass
-        if not only4:
+        if not family or 6 in family:
             try:
                 networks.append(IPv6Network(net))
             except AddressValueError:
@@ -35,12 +35,12 @@ def prepare_networks(
             continue
         with file_path.open(encoding='utf-8') as fp:
             for line in fp:
-                if not only6:
+                if not family or 4 in family:
                     try:
                         networks.append(IPv4Network(line.strip()))
                     except AddressValueError:
                         pass
-                if not only4:
+                if not family or 6 in family:
                     try:
                         networks.append(IPv6Network(line.strip()))
                     except AddressValueError:
@@ -65,15 +65,14 @@ def find_updated_networks(
 def main(args):
     includes = getattr(args, 'include', [])
     excludes = getattr(args, 'exclude', [])
-    only4 = getattr(args, 'ipv4', False)
-    only6 = getattr(args, 'ipv6', False)
+    family = getattr(args, 'family', None)
     output = getattr(args, 'output', None)
 
-    in_networks = prepare_networks(includes)
+    in_networks = prepare_networks(includes, family)
     if len(in_networks) == 0:
         print('No legal include ip networks.')
         sys.exit(1)
-    ex_networks = prepare_networks(excludes)
+    ex_networks = prepare_networks(excludes, family)
     out_networks = in_networks.copy()
     for exclude in ex_networks:
         out_networks = find_updated_networks(out_networks, exclude)
@@ -81,9 +80,9 @@ def main(args):
         out4 = []
         out6 = []
         for net in out_networks:
-            if not only6 and isinstance(net, IPv4Network):
+            if (not family or 4 in family) and isinstance(net, IPv4Network):
                 out4.append(net)
-            if not only4 and isinstance(net, IPv6Network):
+            if (not family or 6 in family) and isinstance(net, IPv6Network):
                 out6.append(net)
         out4 = aggregate_prefixes(out4)
         out6 = aggregate_prefixes(out6)
@@ -131,8 +130,20 @@ if __name__ == '__main__':
         default=[],
         help='exclude networks (subnets or files separated by space)',
     )
-    parser.add_argument('-4', '--ipv4', action='store_true', help='process ipv4 only')
-    parser.add_argument('-6', '--ipv6', action='store_true', help='process ipv6 only')
+    parser.add_argument(
+        '-4',
+        dest='family',
+        action='append_const',
+        const=4,
+        help='process ipv4 only',
+    )
+    parser.add_argument(
+        '-6',
+        dest='family',
+        action='append_const',
+        const=6,
+        help='process ipv6 only',
+    )
     parser.add_argument('-o', '--output', type=Path, help='output file to write')
     parser.add_argument(
         '-p', '--prefix', type=str, default='', help='write line prefix'
