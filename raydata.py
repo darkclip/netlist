@@ -85,9 +85,51 @@ def load_domains(
     return domains
 
 
+def show_data(
+    data_type: str,
+    dat_files: typing.List[Path],
+    countries: typing.List[str],
+    inverse: bool = False,
+) -> None:
+    country_codes = [code.lower() for code in countries]
+    for file in dat_files:
+        file_path = file.resolve()
+        if not file_path.exists() or not file_path.is_file():
+            continue
+        data = None
+        if data_type == 'geoip':
+            data = ray_pb2.GeoIPList()
+            list_name = 'cidr'
+        if data_type == 'geosite':
+            data = ray_pb2.GeoSiteList()
+            list_name = 'domain'
+        if not data:
+            return
+        with open(file_path, 'rb') as fp:
+            data.ParseFromString(fp.read())
+        for entry in data.entry:
+            if len(country_codes) > 0:
+                if inverse:
+                    if entry.country_code.lower() in country_codes:
+                        continue
+                else:
+                    if entry.country_code.lower() not in country_codes:
+                        continue
+            print(f"{entry.country_code}: {len(getattr(entry, list_name, None))}")
+
+
 def main(args):
     input_files = getattr(args, 'input', [])
     output = getattr(args, 'output', None)
+
+    if getattr(args, 'show', False):
+        show_data(
+            getattr(args, 'data_type', None),
+            input_files,
+            getattr(args, 'country', []),
+            getattr(args, 'inverse', False),
+        )
+        sys.exit(0)
 
     data_list = []
     if getattr(args, 'data_type', None) == 'geoip':
@@ -142,6 +184,7 @@ if __name__ == '__main__':
         '--country',
         type=str,
         action='append',
+        default=[],
         help='country codes (use multiple times)',
     )
     parser.add_argument(
@@ -149,6 +192,9 @@ if __name__ == '__main__':
         '--inverse',
         action='store_true',
         help='inverse match country code',
+    )
+    parser.add_argument(
+        '--show', action='store_true', help='show brief info about input'
     )
     parser.add_argument('-o', '--output', type=Path, help='output file to write')
     parser.add_argument(
