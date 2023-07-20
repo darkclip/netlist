@@ -30,25 +30,25 @@ jobs:
           repository: gaoyifan/china-operator-ip
           ref: ip-lists
           path: ip-lists
-      - name: Checkout sha branch
+      - name: Checkout sub branch
         uses: actions/checkout@v3
         with:
           ref: sha
           path: sha
-      - name: Clean sha branch
+      - name: Clean sub branch
         continue-on-error: true
         run: rm sha/*
-      - name: Rebuild sha branch
+      - name: Rebuild sub branch
         run: |
           ./netgen.py ip-lists/china.txt -o sha/china.sh -p 'ip route add ' -s $' dev eth0 via 10.11.0.1 || true\n'
           ./netgen.py ip-lists/china6.txt -o sha/china6.sh -p 'ip route add ' -s $' dev eth0 via fe80::6a77:24ff:fed6:809d || true\n'
-      - name: Push to sha branch
-        continue-on-error: true
-        run: |
           cd sha
           chmod +x *.sh
           tar -cf sha.tar *.sh
           rm *.sh
+      - name: Push to sub branch
+        continue-on-error: true
+        run: |
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git add .

@@ -30,24 +30,24 @@ jobs:
           repository: loyalsoldier/v2ray-rules-dat
           ref: release
           path: dat-release
-      - name: Checkout mosdns branch
+      - name: Checkout sub branch
         uses: actions/checkout@v3
         with:
           ref: mosdns
           path: mosdns
-      - name: Clean mosdns branch
+      - name: Clean sub branch
         continue-on-error: true
         run: rm mosdns/*
-      - name: Rebuild mosdns branch
+      - name: Rebuild sub branch
         run: |
           ./raydata.py dat-release/geoip.dat -c cn -o mosdns/chinaip.txt geoip
           ./raydata.py dat-release/geosite.dat -c cn -o mosdns/chinasite.txt geosite --formatter format_mosdns.json
-      - name: Push to mosdns branch
-        continue-on-error: true
-        run: |
           cd mosdns
           tar -cf mosdns.tar *.txt
           rm *.txt
+      - name: Push to sub branch
+        continue-on-error: true
+        run: |
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git add .

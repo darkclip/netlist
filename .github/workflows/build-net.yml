@@ -30,17 +30,17 @@ jobs:
           repository: gaoyifan/china-operator-ip
           ref: ip-lists
           path: ip-lists
-      - name: Checkout net branch
+      - name: Checkout sub branch
         uses: actions/checkout@v3
         with:
           ref: net
           path: net
-      - name: Clean net branch
+      - name: Clean sub branch
         continue-on-error: true
         run: rm net/*
-      - name: Rebuild net branch
+      - name: Rebuild sub branch
         run: ./exp_net.sh
-      - name: Push to net branch
+      - name: Push to sub branch
         continue-on-error: true
         run: |
           cd net
