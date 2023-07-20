@@ -1,4 +1,4 @@
-name: build mosdns
+name: build sha
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
     - cron: '10 16 * * *'
 
 jobs:
-  build-mosdns:
+  build-sha:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -30,23 +30,23 @@ jobs:
           repository: loyalsoldier/v2ray-rules-dat
           ref: release
           path: dat-release
-      - name: Checkout mosdns branch
+      - name: Checkout sha branch
         uses: actions/checkout@v3
         with:
-          ref: mosdns
-          path: mosdns
-      - name: Clean mosdns branch
+          ref: sha
+          path: sha
+      - name: Clean sha branch
         continue-on-error: true
-        run: rm mosdns/*
-      - name: Rebuild mosdns branch
+        run: rm sha/*
+      - name: Rebuild sha branch
         run: |
-          ./raydata.py dat-release/geoip.dat -c cn -o mosdns/chinaip.txt geoip
-          ./raydata.py dat-release/geosite.dat -c cn -o mosdns/chinasite.txt geosite --formatter format_mosdns.json
-      - name: Push to mosdns branch
+          ./netgen.py ip-lists/china.txt -o net/china.txt -p 'ip route add ' -s $' dev eth0 via 10.11.0.1\n'
+          ./netgen.py ip-lists/china6.txt -o net/china6.txt -p 'ip route add ' -s $' dev eth0 via fe80::6a77:24ff:fed6:809d\n'
+      - name: Push to sha branch
         continue-on-error: true
         run: |
-          cd mosdns
-          tar -cf mosdns.tar *.txt
+          cd sha
+          tar -cf sha.tar *.txt
           rm *.txt
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
