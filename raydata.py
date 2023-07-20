@@ -11,103 +11,47 @@ from ipaddress import IPv4Network, IPv6Network, AddressValueError
 import ray_pb2
 
 
-def load_networks(
-    dat_files: typing.List[Path], countries: typing.List[str], inverse: bool = False
-) -> typing.List[IPv4Network | IPv6Network]:
-    networks = []
-    country_codes = [code.lower() for code in countries]
-    for file in dat_files:
-        file_path = file.resolve()
-        if not file_path.exists() or not file_path.is_file():
-            continue
-        data = ray_pb2.GeoIPList()
-        with open(file_path, 'rb') as fp:
-            data.ParseFromString(fp.read())
-        for entry in data.entry:
-            if inverse:
-                if entry.country_code.lower() in country_codes:
-                    continue
-            else:
-                if entry.country_code.lower() not in country_codes:
-                    continue
-            for cidr in entry.cidr:
-                try:
-                    networks.append(IPv4Network((cidr.ip, cidr.prefix)))
-                except AddressValueError:
-                    pass
-                try:
-                    networks.append(IPv6Network((cidr.ip, cidr.prefix)))
-                except AddressValueError:
-                    pass
-    return networks
-
-
-def load_domains(
-    dat_files: typing.List[Path],
-    countries: typing.List[str],
-    inverse: bool = False,
-    formatter: Path | None = None,
-    domain_types: typing.List[int] | None = None,
-) -> typing.List[str]:
-    domains = []
-    country_codes = [code.lower() for code in countries]
-    format_dict = None
-    if formatter:
+def load_formatter(formatter: Path | None) -> dict | None:
+    try:
         format_file_path = formatter.resolve()
-        if format_file_path.is_file():
-            with format_file_path.open(encoding='utf-8') as fp:
-                format_dict = json.load(fp)
-    for file in dat_files:
-        file_path = file.resolve()
-        if not file_path.exists() or not file_path.is_file():
-            continue
-        data = ray_pb2.GeoSiteList()
-        with open(file_path, 'rb') as fp:
-            data.ParseFromString(fp.read())
-        for entry in data.entry:
-            if inverse:
-                if entry.country_code.lower() in country_codes:
-                    continue
-            else:
-                if entry.country_code.lower() not in country_codes:
-                    continue
-            for domain in entry.domain:
-                value = None
-                prefix = ''
-                suffix = ''
-                if format_dict:
-                    prefix = format_dict.get('prefix').get(str(domain.type))
-                    suffix = format_dict.get('suffix').get(str(domain.type))
-                if domain_types is None or domain.type in domain_types:
-                    value = domain.value
-                if value is not None:
-                    domains.append(f'{prefix}{domain.value}{suffix}')
-    return domains
+        with format_file_path.open(encoding='utf-8') as fp:
+            return json.load(fp)
+    except (AttributeError, OSError, json.JSONDecodeError, TypeError):
+        pass
+    return None
 
 
-def show_data(
-    data_type: str,
+def init_protobuf(data_type: str = None) -> tuple:
+    if data_type == 'geoip':
+        return (ray_pb2.GeoIPList(), 'cidr')
+    if data_type == 'geosite':
+        return (ray_pb2.GeoSiteList(), 'domain')
+    return (None, None)
+
+
+def load_resource(
     dat_files: typing.List[Path],
     countries: typing.List[str],
     inverse: bool = False,
-) -> None:
+    data_type: str = None,
+    *,
+    only_show: bool = False,
+    domain_types: typing.List[int] | None = None,
+    formatter: Path | None = None,
+) -> list:
+    resources = []
     country_codes = [code.lower() for code in countries]
+    format_dict = load_formatter(formatter)
     for file in dat_files:
         file_path = file.resolve()
         if not file_path.exists() or not file_path.is_file():
             continue
-        data = None
-        if data_type == 'geoip':
-            data = ray_pb2.GeoIPList()
-            list_name = 'cidr'
-        if data_type == 'geosite':
-            data = ray_pb2.GeoSiteList()
-            list_name = 'domain'
-        if not data:
-            return
+        data_collection, list_name = init_protobuf(data_type)
+        if not data_collection:
+            return resources
         with open(file_path, 'rb') as fp:
-            data.ParseFromString(fp.read())
-        for entry in data.entry:
+            data_collection.ParseFromString(fp.read())
+        for entry in data_collection.entry:
             if len(country_codes) > 0:
                 if inverse:
                     if entry.country_code.lower() in country_codes:
@@ -115,7 +59,32 @@ def show_data(
                 else:
                     if entry.country_code.lower() not in country_codes:
                         continue
-            print(f"{entry.country_code}: {len(getattr(entry, list_name, None))}")
+            if only_show:
+                print(
+                    f"{entry.country_code}: {sum(map(lambda record: not domain_types or record.type in domain_types, getattr(entry, list_name, None)))}"
+                )
+                continue
+            for record in getattr(entry, list_name, None):
+                if list_name == 'cidr':
+                    try:
+                        resources.append(IPv4Network((record.ip, record.prefix)))
+                    except AddressValueError:
+                        pass
+                    try:
+                        resources.append(IPv6Network((record.ip, record.prefix)))
+                    except AddressValueError:
+                        pass
+                if list_name == 'domain':
+                    if domain_types and record.type not in domain_types:
+                        continue
+                    prefix = ''
+                    suffix = ''
+                    if format_dict:
+                        prefix = format_dict.get('prefix').get(str(record.type))
+                        suffix = format_dict.get('suffix').get(str(record.type))
+                    if record.value:
+                        resources.append(f'{prefix}{record.value}{suffix}')
+    return resources
 
 
 def main(args):
@@ -123,29 +92,24 @@ def main(args):
     output = getattr(args, 'output', None)
 
     if getattr(args, 'show', False):
-        show_data(
-            getattr(args, 'data_type', None),
+        load_resource(
             input_files,
             getattr(args, 'country', []),
             getattr(args, 'inverse', False),
+            getattr(args, 'data_type', None),
+            domain_types=getattr(args, 'domain_types', None),
+            only_show=True,
         )
         sys.exit(0)
 
-    data_list = []
-    if getattr(args, 'data_type', None) == 'geoip':
-        data_list = load_networks(
-            input_files,
-            getattr(args, 'country', []),
-            getattr(args, 'inverse', False),
-        )
-    if getattr(args, 'data_type', None) == 'geosite':
-        data_list = load_domains(
-            input_files,
-            getattr(args, 'country', []),
-            getattr(args, 'inverse', None),
-            getattr(args, 'formatter', None),
-            getattr(args, 'domain_types', None),
-        )
+    data_list = load_resource(
+        input_files,
+        getattr(args, 'country', []),
+        getattr(args, 'inverse', False),
+        getattr(args, 'data_type', None),
+        formatter=getattr(args, 'formatter', None),
+        domain_types=getattr(args, 'domain_types', None),
+    )
     if len(data_list) == 0:
         print('No legal data.')
         sys.exit(1)
@@ -219,15 +183,15 @@ if __name__ == '__main__':
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     parser_geosite.add_argument(
-        '--formatter',
-        type=Path,
-        help='format file for domain types',
-    )
-    parser_geosite.add_argument(
         '--domain-types',
         nargs='+',
         type=int,
         help='select domain types (separated by space)',
+    )
+    parser_geosite.add_argument(
+        '--formatter',
+        type=Path,
+        help='json formatter file base on domain types',
     )
 
     args = parser.parse_args()

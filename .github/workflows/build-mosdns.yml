@@ -1,13 +1,13 @@
-name: build mosdns
+name: build-mosdns
 
 on:
   push:
     branches:
       - 'master'
     paths:
-      - '.github/workflows/**'
+      - '.github/workflows/build-mosdns.yml'
   schedule:
-    - cron: '10 16 * * *'
+    - cron: '0 16 * * *'
 
 jobs:
   build-mosdns:
@@ -24,28 +24,28 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: Check out release branch of loyalsoldier/v2ray-rules-dat
+      - name: Check out reference branch
         uses: actions/checkout@v3
         with:
           repository: loyalsoldier/v2ray-rules-dat
           ref: release
-          path: dat-release
-      - name: Checkout sub branch
+          path: ref
+      - name: Checkout target branch
         uses: actions/checkout@v3
         with:
           ref: mosdns
-          path: mosdns
-      - name: Clean sub branch
+          path: target
+      - name: Clean target branch
         continue-on-error: true
-        run: rm mosdns/*
-      - name: Rebuild sub branch
+        run: rm target/*
+      - name: Rebuild target branch
         run: |
-          ./raydata.py dat-release/geoip.dat -c cn -o mosdns/chinaip.txt geoip
-          ./raydata.py dat-release/geosite.dat -c cn -o mosdns/chinasite.txt geosite --formatter format_mosdns.json
-          cd mosdns
+          ./raydata.py ref/geoip.dat -c cn -o target/chinaip.txt geoip
+          ./raydata.py ref/geosite.dat -c cn -o target/chinasite.txt geosite --formatter format_mosdns.json
+          cd target
           tar -cf mosdns.tar *.txt
           rm *.txt
-      - name: Push to sub branch
+      - name: Push to target branch
         continue-on-error: true
         run: |
           git config --global user.name "${GITHUB_ACTOR}"

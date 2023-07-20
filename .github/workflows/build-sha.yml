@@ -1,13 +1,13 @@
-name: build sha
+name: build-sha
 
 on:
   push:
     branches:
       - 'master'
     paths:
-      - '.github/workflows/**'
+      - '.github/workflows/build-sha.yml'
   schedule:
-    - cron: '20 16 * * *'
+    - cron: '0 16 * * *'
 
 jobs:
   build-sha:
@@ -24,29 +24,31 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: Check out ip-lists branch of gaoyifan/china-operator-ip
+      - name: Check out reference branch
         uses: actions/checkout@v3
         with:
           repository: gaoyifan/china-operator-ip
           ref: ip-lists
-          path: ip-lists
-      - name: Checkout sub branch
+          path: ref
+      - name: Checkout target branch
         uses: actions/checkout@v3
         with:
           ref: sha
-          path: sha
-      - name: Clean sub branch
+          path: target
+      - name: Clean target branch
         continue-on-error: true
-        run: rm sha/*
-      - name: Rebuild sub branch
+        run: rm target/*
+      - name: Rebuild target branch
         run: |
-          ./netgen.py ip-lists/china.txt -o sha/china.sh -p 'ip route add ' -s $' dev eth0 via 10.11.0.1 || true\n'
-          ./netgen.py ip-lists/china6.txt -o sha/china6.sh -p 'ip route add ' -s $' dev eth0 via fe80::6a77:24ff:fed6:809d || true\n'
-          cd sha
+          ./netgen.py ref/china.txt -o target/china.sh -p 'ip route add ' -s $' dev eth0 via 10.11.0.1 || true\n'
+          ./netgen.py ref/china6.txt -o target/china6.sh -p 'ip route add ' -s $' dev eth0 via fe80::6a77:24ff:fed6:809d || true\n'
+          ./netgen.py ref/china.txt -o target/rm-china.sh -p 'ip route del ' -s $' dev eth0 via 10.11.0.1 || true\n'
+          ./netgen.py ref/china6.txt -o target/rm-china6.sh -p 'ip route del ' -s $' dev eth0 via fe80::6a77:24ff:fed6:809d || true\n'
+          cd target
           chmod +x *.sh
           tar -cf sha.tar *.sh
           rm *.sh
-      - name: Push to sub branch
+      - name: Push to target branch
         continue-on-error: true
         run: |
           git config --global user.name "${GITHUB_ACTOR}"
