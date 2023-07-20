@@ -36,14 +36,11 @@ jobs:
           ref: net
           path: net
       - name: Clean net branch
-        if: github.event_name == 'schedule'
         continue-on-error: true
         run: rm net/*
       - name: Rebuild net branch
-        if: github.event_name == 'schedule'
         run: ./exp_net.sh
       - name: Push to net branch
-        if: github.event_name == 'schedule'
         continue-on-error: true
         run: |
           cd net

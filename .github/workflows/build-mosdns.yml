@@ -36,14 +36,11 @@ jobs:
           ref: mosdns
           path: mosdns
       - name: Clean mosdns branch
-        if: github.event_name == 'schedule'
         continue-on-error: true
         run: rm mosdns/*
       - name: Rebuild mosdns branch
-        if: github.event_name == 'schedule'
         run: ./exp_mosdns.sh
       - name: Push to mosdns branch
-        if: github.event_name == 'schedule'
         continue-on-error: true
         run: |
           cd mosdns
