@@ -2,7 +2,10 @@ name: build mosdns
 
 on:
   push:
-    branches: ['*']
+    branches:
+      - 'master'
+    paths:
+      - '.github/workflows/**'
   schedule:
     - cron: '0 16 * * *'
 
