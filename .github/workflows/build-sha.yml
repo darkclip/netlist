@@ -40,12 +40,13 @@ jobs:
         run: rm sha/*
       - name: Rebuild sha branch
         run: |
-          ./netgen.py ip-lists/china.txt -o sha/china.txt -p 'ip route add ' -s $' dev eth0 via 10.11.0.1\n'
-          ./netgen.py ip-lists/china6.txt -o sha/china6.txt -p 'ip route add ' -s $' dev eth0 via fe80::6a77:24ff:fed6:809d\n'
+          ./netgen.py ip-lists/china.txt -o sha/china.sh -p 'ip route add ' -s $' dev eth0 via 10.11.0.1\n'
+          ./netgen.py ip-lists/china6.txt -o sha/china6.sh -p 'ip route add ' -s $' dev eth0 via fe80::6a77:24ff:fed6:809d\n'
       - name: Push to sha branch
         continue-on-error: true
         run: |
           cd sha
+          chmod +x *.sh
           tar -cf sha.tar *.txt
           rm *.txt
           git config --global user.name "${GITHUB_ACTOR}"
