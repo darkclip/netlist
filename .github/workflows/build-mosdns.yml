@@ -44,6 +44,8 @@ jobs:
         continue-on-error: true
         run: |
           cd mosdns
+          tar -cf mosdns.tar *.txt
+          rm *.txt
           tree -H . -P "*.txt" -T "MosDNS List - $(date +%Y-%m-%d)" > index.html
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
