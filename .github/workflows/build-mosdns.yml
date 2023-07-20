@@ -1,4 +1,4 @@
-name: build net
+name: build mosdns
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     - cron: '0 16 * * *'
 
 jobs:
-  build-net:
+  build-mosdns:
     runs-on: ubuntu-latest
     permissions:
       contents: write
