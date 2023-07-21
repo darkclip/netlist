@@ -104,8 +104,14 @@ def main(args):
         output_file = output.resolve()
         if not output_file.parent.exists():
             os.makedirs(output_file.parent)
-        with output_file.open('w', encoding='utf-8') as wfp:
-            wfp.writelines(output_lines)
+        if output_file.is_dir():
+            print('Can not write to directory.')
+        if output_file.exists():
+            with output_file.open('a', encoding='utf-8') as wfp:
+                wfp.writelines(output_lines)
+        else:
+            with output_file.open('w', encoding='utf-8') as wfp:
+                wfp.writelines(output_lines)
         print(f'Generated Networks: {len(output_lines)}')
 
 
