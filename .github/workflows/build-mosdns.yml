@@ -40,11 +40,17 @@ jobs:
         run: rm target/*
       - name: Rebuild target branch
         run: |
-          ./raydata.py ref/geoip.dat -c cn -o target/chinaip.txt geoip
-          ./raydata.py ref/geosite.dat -c cn -o target/chinasite.txt geosite --formatter format_mosdns.json
+          cp mosdns/config.yml target/config.yml
+          ./raydata.py ref/geoip.dat -c cn -o target/rule/chinaip.txt geoip
+          ./raydata.py ref/geosite.dat -c cn -o target/rule/chinasite.txt geosite --formatter mosdns/format.json
+          ./raydata.py ref/geosite.dat -c category-ads-all -o target/rule/blocklist.txt geosite --formatter mosdns/format.json
+          touch target/rule/hosts.txt
+          touch target/rule/whitelist.txt
+          touch target/rule/greylist.txt
+          mkdir target/tmp
           cd target
-          tar -cf mosdns.tar *.txt
-          rm *.txt
+          tar -cf mosdns.tar tmp rule *.yml
+          rm tmp rule *.yml -r
       - name: Push to target branch
         continue-on-error: true
         run: |

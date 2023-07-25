@@ -1,0 +1,150 @@
+log:
+  level: debug
+
+api:
+  http: :8080
+
+include: []
+
+plugins:
+  - tag: hosts
+    type: hosts
+    args:
+      files:
+        - './rule/hosts.txt'
+
+  - tag: lazy_cache
+    type: cache
+    args:
+      size: 102400
+      lazy_cache_ttl: 259200
+      dump_file: './tmp/cache.dump'
+      dump_interval: 600
+
+  - tag: whitelist
+    type: domain_set
+    args:
+      files:
+        - './rule/whitelist.txt'
+
+  - tag: blocklist
+    type: domain_set
+    args:
+      files:
+        - './rule/blocklist.txt'
+
+  - tag: greylist
+    type: domain_set
+    args:
+      files:
+        - './rule/greylist.txt'
+
+  - tag: chinasite
+    type: domain_set
+    args:
+      files:
+        - './rule/chinasite.txt'
+
+  - tag: chinaip
+    type: ip_set
+    args:
+      files:
+        - './rule/chinaip.txt'
+
+  - tag: forward_remote
+    type: forward
+    args:
+      concurrent: 1
+      upstreams:
+        - addr: 'https://1.1.1.1/dns-query'
+          dial_addr: '1.1.1.1'
+          bootstrap: '223.5.5.5:53'
+          enable_pipeline: true
+          max_conns: 2
+          insecure_skip_verify: false
+          idle_timeout: 10
+          #enable_http3: true
+
+  - tag: remote_sequence
+    type: sequence
+    args:
+      - exec: ecs 8.209.36.0/23 240b:4000::/32
+      - exec: $forward_remote
+
+  - tag: local_sequence
+    type: sequence
+    args:
+      - exec: forward 223.5.5.5:53
+
+  - tag: has_resp_sequence
+    type: sequence
+    args:
+      - matches: has_resp
+        exec: accept
+
+  - tag: has_china_resp_sequence
+    type: sequence
+    args:
+      - matches: '!resp_ip $chinaip'
+        exec: drop_resp
+      - matches: has_resp
+        exec: accept
+
+  - tag: query_is_whitelist_domain
+    type: sequence
+    args:
+      - matches: qname $whitelist
+        exec: $local_sequence
+
+  - tag: reject_blocklist
+    type: sequence
+    args:
+      - matches: qname $blocklist
+        exec: reject 3
+
+  - tag: query_is_greylist_domain
+    type: sequence
+    args:
+      - matches: qname $greylist
+        exec: $remote_sequence
+
+  - tag: query_is_china_domain
+    type: sequence
+    args:
+      - matches: qname $chinasite
+        exec: $local_sequence
+
+  - tag: main_sequence
+    type: sequence
+    args:
+      - exec: $hosts
+      - exec: jump has_resp_sequence
+      - matches:
+          - '!qname $blocklist'
+        exec: $lazy_cache
+      - exec: jump has_resp_sequence
+      - exec: $query_is_whitelist_domain
+      - exec: jump has_resp_sequence
+      - exec: $reject_blocklist
+      - exec: $query_is_greylist_domain
+      - exec: jump has_resp_sequence
+      - exec: $query_is_china_domain
+      - exec: jump has_china_resp_sequence
+      - exec: $remote_sequence
+      - exec: jump has_resp_sequence
+      - exec: $local_sequence
+
+  - tag: udp_server
+    type: udp_server
+    args:
+      entry: main_sequence
+      listen: :53
+
+  - tag: http_server
+    type: http_server
+    args:
+      entries:
+        - path: /dns-query
+          exec: main_sequence
+      listen: :80
+      idle_timeout: 10
