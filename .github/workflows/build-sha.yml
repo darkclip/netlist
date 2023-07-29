@@ -42,6 +42,7 @@ jobs:
         run: |
           echo 'iptables -t nat -A POSTROUTING -o wgcf -j MASQUERADE || true' >> target/wgcf-up.sh
           echo 'ip6tables -t nat -A POSTROUTING -o wgcf -j MASQUERADE || true' >> target/wgcf-up.sh
+          echo 'ip6tables -t nat -A POSTROUTING -o eth0 -j MASQUERADE || true' >> target/wgcf-up.sh
           echo 'iptables -t nat -A POSTROUTING -o eth0 -s 192.168.10.1/32 -j MASQUERADE || true' >> target/wgcf-up.sh
           echo 'ip route add 188.114.96.0/22 dev eth0 via 10.11.0.1 || true' >> target/wgcf-up.sh
           echo 'ip route add 2606:4700:d0::/47 dev eth0 via fe80::6a77:24ff:fed6:809d || true' >> target/wgcf-up.sh
@@ -54,6 +55,7 @@ jobs:
           ./netgen.py ref/china6.txt -o target/wgcf-up.sh -p 'ip route add ' -s $' dev eth0 via fe80::6a77:24ff:fed6:809d || true\n'
           echo 'iptables -t nat -D POSTROUTING -o wgcf -j MASQUERADE || true' >> target/wgcf-down.sh
           echo 'ip6tables -t nat -D POSTROUTING -o wgcf -j MASQUERADE || true' >> target/wgcf-down.sh
+          echo 'ip6tables -t nat -D POSTROUTING -o eth0 -j MASQUERADE || true' >> target/wgcf-down.sh
           echo 'iptables -t nat -D POSTROUTING -o eth0 -s 192.168.10.1/32 -j MASQUERADE || true' >> target/wgcf-down.sh
           echo 'ip route del 188.114.96.0/22 dev eth0 via 10.11.0.1 || true' >> target/wgcf-down.sh
           echo 'ip route del 2606:4700:d0::/47 dev eth0 via fe80::6a77:24ff:fed6:809d || true' >> target/wgcf-down.sh
