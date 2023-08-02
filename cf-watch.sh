@@ -8,7 +8,7 @@ get_rnd(){
 get_ping_loss(){
     loss_percent=$(ping -c 5 -q $1 | awk '/packet loss/{print $((NF-4))}');
     loss=${loss_percent%?};
-    echo ${loss%.*}
+    echo ${loss%.*};
     return $?;
 };
 
