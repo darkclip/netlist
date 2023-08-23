@@ -46,7 +46,6 @@ jobs:
           ./raydata.py ref/geosite.dat -c ALIBABA -o target/rule/chinasite.txt geosite --formatter mosdns/format.json
           ./raydata.py ref/geosite.dat -c ALIBABACLOUD -o target/rule/chinasite.txt geosite --formatter mosdns/format.json
           ./raydata.py ref/geosite.dat -c ALIYUN -o target/rule/chinasite.txt geosite --formatter mosdns/format.json
-          ./raydata.py ref/geosite.dat -c CATEGORY-ADS-ALL -o target/rule/blocklist.txt geosite --formatter mosdns/format.json
           mkdir target/tmp
           cd target
           tar -cf mosdns.tar tmp rule *.yml
