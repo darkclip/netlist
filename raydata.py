@@ -30,12 +30,12 @@ def init_protobuf(data_type: str = None) -> tuple:
 
 
 def load_resource(
+    *,
     dat_files: typing.List[Path],
     countries: typing.List[str],
     inverse: bool = False,
-    data_type: str = None,
-    *,
-    only_show: bool = False,
+    data_type: str | None = None,
+    brief_search: str | None = None,
     domain_types: typing.List[int] | None = None,
     formatter: Path | None = None,
 ) -> list:
@@ -59,7 +59,14 @@ def load_resource(
                 else:
                     if entry.country_code.lower() not in country_codes:
                         continue
-            if only_show:
+            if brief_search is not None:
+                if brief_search:
+                    if inverse:
+                        if brief_search.lower() in entry.country_code.lower():
+                            continue
+                    else:
+                        if brief_search.lower() not in entry.country_code.lower():
+                            continue
                 print(
                     f"{entry.country_code}: {sum(map(lambda record: not domain_types or record.type in domain_types, getattr(entry, list_name, None)))}"
                 )
@@ -91,22 +98,22 @@ def main(args):
     input_files = getattr(args, 'input', [])
     output = getattr(args, 'output', None)
 
-    if getattr(args, 'show', False):
+    if (search := getattr(args, 'brief', None)) is not None:
         load_resource(
-            input_files,
-            getattr(args, 'country', []),
-            getattr(args, 'inverse', False),
-            getattr(args, 'data_type', None),
+            dat_files=input_files,
+            countries=getattr(args, 'country', []),
+            inverse=getattr(args, 'inverse', False),
+            data_type=getattr(args, 'data_type', None),
             domain_types=getattr(args, 'domain_types', None),
-            only_show=True,
+            brief_search=search,
         )
         sys.exit(0)
 
     data_list = load_resource(
-        input_files,
-        getattr(args, 'country', []),
-        getattr(args, 'inverse', False),
-        getattr(args, 'data_type', None),
+        dat_files=input_files,
+        countries=getattr(args, 'country', []),
+        inverse=getattr(args, 'inverse', False),
+        data_type=getattr(args, 'data_type', None),
         formatter=getattr(args, 'formatter', None),
         domain_types=getattr(args, 'domain_types', None),
     )
@@ -164,7 +171,12 @@ if __name__ == '__main__':
         help='inverse match country code',
     )
     parser.add_argument(
-        '--show', action='store_true', help='show brief info about input'
+        '-b',
+        '--brief',
+        type=str,
+        const='',
+        nargs='?',
+        help='show brief info about specified keyword',
     )
     parser.add_argument('-o', '--output', type=Path, help='output file to write')
     parser.add_argument(

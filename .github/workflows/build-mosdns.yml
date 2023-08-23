@@ -41,12 +41,13 @@ jobs:
       - name: Rebuild target branch
         run: |
           cp mosdns/config.yml target/config.yml
-          ./raydata.py ref/geoip.dat -c cn -o target/rule/chinaip.txt geoip
-          ./raydata.py ref/geosite.dat -c cn -o target/rule/chinasite.txt geosite --formatter mosdns/format.json
-          ./raydata.py ref/geosite.dat -c category-ads-all -o target/rule/blocklist.txt geosite --formatter mosdns/format.json
-          touch target/rule/hosts.txt
-          touch target/rule/whitelist.txt
-          touch target/rule/greylist.txt
+          ./raydata.py ref/geoip.dat -c CN -o target/rule/chinaip.txt geoip
+          ./raydata.py ref/geosite.dat -c CN -o target/rule/chinasite.txt geosite --formatter mosdns/format.json
+          ./raydata.py ref/geosite.dat -c BING -o target/rule/chinasite.txt geosite --formatter mosdns/format.json
+          ./raydata.py ref/geosite.dat -c ALIBABA -o target/rule/chinasite.txt geosite --formatter mosdns/format.json
+          ./raydata.py ref/geosite.dat -c ALIBABACLOUD -o target/rule/chinasite.txt geosite --formatter mosdns/format.json
+          ./raydata.py ref/geosite.dat -c ALIYUN -o target/rule/chinasite.txt geosite --formatter mosdns/format.json
+          ./raydata.py ref/geosite.dat -c CATEGORY-ADS-ALL -o target/rule/blocklist.txt geosite --formatter mosdns/format.json
           mkdir target/tmp
           cd target
           tar -cf mosdns.tar tmp rule *.yml
