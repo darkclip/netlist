@@ -6,7 +6,7 @@ get_rnd(){
 };
 
 get_ping_loss(){
-    loss_percent=$(ping -c 5 -q $1 | awk '/packet loss/{for(i=6;i<=NF;i++)if($i ~ /packet/)print $((i-1))}');
+    loss_percent=$(ping -c 10 -qn $1 | awk '/packet loss/{for(i=6;i<=NF;i++)if($i ~ /packet/)print $((i-1))}');
     loss=${loss_percent%?};
     echo ${loss%.*};
     return $?;
@@ -29,7 +29,7 @@ cf_v6(){
 
 watch="1.1.1.1";
 loss=$(get_ping_loss $watch);
-while [ $loss -gt 50 ]; do
+while [ $loss -gt 30 ]; do
     cfip=$(cf_v4);
     echo "changing $dev endpoint to $cfip";
     wg set $dev peer "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=" endpoint "$cfip:4500";
