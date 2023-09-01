@@ -1,5 +1,10 @@
 dev=$1;
 
+pids=$(pgrep -afl $0)
+if [ "$(echo $pids|awk '{print $1}')" != "$$" ]; then
+    exit;
+fi
+
 get_rnd(){
     echo $(od -An -N2 -i /dev/random);
     return $?;
