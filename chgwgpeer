@@ -1,0 +1,18 @@
+
+global $config, $argv, $command_split;
+
+if (is_array($command_split)) {
+    $args = array_slice($command_split, 2);
+} else {
+    $args = array_slice($argv, 3);
+}
+
+if (!isset($args[0]) || !isset($args[1]) || !isset($args[2])) {
+    exit(-1);
+}
+
+echo $args[0] . " -> " . $args[1] . ":" . $args[2] . "\n";
+
+$config['installedpackages']['wireguard']['peers']['item'][$args[0]]['endpoint'] = $args[1];
+$config['installedpackages']['wireguard']['peers']['item'][$args[0]]['port'] = $args[2];
+write_config();
