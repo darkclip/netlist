@@ -1,6 +1,6 @@
 dev=$1;
 
-pids=$(pgrep -afl $0)
+pids=$(pgrep -afl $0);
 if [ "$(echo $pids|awk '{print $1}')" != "$$" ]; then
     exit;
 fi
