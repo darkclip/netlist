@@ -15,4 +15,4 @@ echo $args[0] . " -> " . $args[1] . ":" . $args[2] . "\n";
 
 $config['installedpackages']['wireguard']['peers']['item'][$args[0]]['endpoint'] = $args[1];
 $config['installedpackages']['wireguard']['peers']['item'][$args[0]]['port'] = $args[2];
-write_config();
+write_config("wireguard: endpoint changed");
