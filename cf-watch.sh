@@ -1,7 +1,8 @@
 dev=$1;
+conf=$2;
 
 pids=$(pgrep -afl $0);
-if [ "$(echo $pids|awk '{print $1}')" != "$$" ]; then
+if [ $(echo $pids|grep -o $0|wc -l) -gt 1 ]; then
     exit;
 fi
 
@@ -34,11 +35,11 @@ cf_v6(){
 
 watch="1.1.1.1";
 loss=$(get_ping_loss $watch);
-while [ $loss -gt 30 ]; do
+while [ $loss -gt 35 ]; do
     cfip=$(cf_v4);
     echo "changing $dev endpoint to $cfip";
     wg set $dev peer "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=" endpoint "$cfip:4500";
-    pfSsh.php playback chgwgpeer 0 $cfip 4500 || true;
+    pfSsh.php playback chgwgpeer $conf $cfip 4500 || true;
     sleep 5;
     loss=$(get_ping_loss $watch);
 done;
