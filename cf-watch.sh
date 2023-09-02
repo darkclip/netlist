@@ -35,12 +35,12 @@ cf_v6(){
 
 watch="1.1.1.1";
 loss=$(get_ping_loss $watch);
-while [ $loss -gt 35 ]; do
+while [ $loss -gt 40 ]; do
     cfip=$(cf_v4);
     echo "changing $dev endpoint to $cfip";
     wg set $dev peer "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=" endpoint "$cfip:4500";
-    endpoint=$(wg show $dev endpoints | awk '{print $2}');
-    pfSsh.php playback chgwgpeer $conf $(echo $endpoint|awk -F: '{print $1}') $(echo $endpoint|awk -F: '{print $2}') || true;
     sleep 5;
     loss=$(get_ping_loss $watch);
 done;
+endpoint=$(wg show $dev endpoints | awk '{print $2}');
+pfSsh.php playback chgwgpeer $conf $(echo $endpoint|awk -F: '{print $1}') $(echo $endpoint|awk -F: '{print $2}') || true;
