@@ -4,7 +4,7 @@ conf=$2;
 pids=$(pgrep -afl $0);
 if [ $(echo $pids|grep -o $0|wc -l) -gt 1 ]; then
     exit;
-fi
+fi;
 
 get_rnd(){
     echo $(od -An -N2 -i /dev/random);
@@ -43,4 +43,6 @@ while [ $loss -gt 40 ]; do
     loss=$(get_ping_loss $watch);
 done;
 endpoint=$(wg show $dev endpoints | awk '{print $2}');
-pfSsh.php playback chgwgpeer $conf $(echo $endpoint|awk -F: '{print $1}') $(echo $endpoint|awk -F: '{print $2}') || true;
+if [ $(pfSsh.php playback chgwgpeer $conf) != $endpoint ]; then
+    pfSsh.php playback chgwgpeer $conf $(echo $endpoint|awk -F: '{print $1}') $(echo $endpoint|awk -F: '{print $2}') || true;
+fi;

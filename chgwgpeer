@@ -8,7 +8,10 @@ if (is_array($command_split)) {
 }
 
 if (!isset($args[0]) || !isset($args[1]) || !isset($args[2])) {
-    exit(-1);
+    if (isset($args[0])){
+        echo $config['installedpackages']['wireguard']['peers']['item'][$args[0]]['endpoint'] . ":" . $config['installedpackages']['wireguard']['peers']['item'][$args[0]]['port'];
+    }
+    exit(0);
 }
 
 echo $args[0] . " -> " . $args[1] . ":" . $args[2] . "\n";
