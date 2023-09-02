@@ -38,7 +38,7 @@ loss=$(get_ping_loss $watch);
 while [ $loss -gt 35 ]; do
     cfip=$(cf_v4);
     echo "changing $dev endpoint to $cfip";
-    wg set $dev peer "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=" endpoint "$cfip:4500";
+    wg set $dev peer "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=" endpoint "$cfip:4500" && \
     pfSsh.php playback chgwgpeer $conf $cfip 4500 || true;
     sleep 5;
     loss=$(get_ping_loss $watch);
