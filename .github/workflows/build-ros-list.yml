@@ -61,13 +61,13 @@ jobs:
 
           echo $'/ip firewall address-list/n' > target/chinae2v4.txt
           echo $'/ipv6 firewall address-list/n' > target/chinae2v6.txt
-          ./netgen.py ref1/china4.txt -e ref1/chinanet.txt ref1/unicom.txt -o target/chinae2v4.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE2\n'
-          ./netgen.py ref1/china6.txt -e ref1/chinanet6.txt ref1/unicom6.txt -o target/chinae2v6.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE2\n'
+          ./netgen.py ref1/china4.txt -e ref1/telecom4.txt ref1/unicom4.txt -o target/chinae2v4.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE2\n'
+          ./netgen.py ref1/china6.txt -e ref1/telecom6.txt ref1/unicom6.txt -o target/chinae2v6.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE2\n'
 
           echo $'/ip firewall address-list/n' > target/chinae3v4.txt
           echo $'/ipv6 firewall address-list/n' > target/chinae3v6.txt
-          ./netgen.py ref1/china4.txt -e ref1/chinanet.txt ref1/unicom.txt ref1/cmcc.txt -o target/chinae3v4.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE3\n'
-          ./netgen.py ref1/china6.txt -e ref1/chinanet6.txt ref1/unicom6.txt ref1/cmcc6.txt -o target/chinae3v6.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE3\n'
+          ./netgen.py ref1/china4.txt -e ref1/telecom4.txt ref1/unicom4.txt ref1/mobile4.txt -o target/chinae3v4.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE3\n'
+          ./netgen.py ref1/china6.txt -e ref1/telecom6.txt ref1/unicom6.txt ref1/mobile6.txt -o target/chinae3v6.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE3\n'
 
           echo $'/ip firewall address-list/n' > target/foreign4.txt
           echo $'/ipv6 firewall address-list/n' > target/foreign6.txt
