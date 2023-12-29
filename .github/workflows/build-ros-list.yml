@@ -48,7 +48,7 @@ jobs:
         run: |
           echo $'/ip firewall address-list/n' > target/china4.txt
           echo $'/ipv6 firewall address-list/n' > target/china6.txt
-          ./netgen.py ref2/china_ip_list.txt.txt -o target/china4.txt -p 'add address=' -s $'comment="" disabled=no list=China'
+          ./netgen.py ref2/china_ip_list.txt -o target/china4.txt -p 'add address=' -s $'comment="" disabled=no list=China'
           ./netgen.py ref1/china6.txt -o target/china6.txt -p 'add address=' -s $'comment="" disabled=no list=China'
 
           echo $'/ip firewall address-list/n' > target/telecom4.txt
@@ -68,17 +68,17 @@ jobs:
 
           echo $'/ip firewall address-list/n' > target/chinae2v4.txt
           echo $'/ipv6 firewall address-list/n' > target/chinae2v6.txt
-          ./netgen.py ref2/china_ip_list.txt.txt -e ref1/chinanet.txt ref1/unicom.txt -o target/chinae2v4.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE2'
+          ./netgen.py ref2/china_ip_list.txt -e ref1/chinanet.txt ref1/unicom.txt -o target/chinae2v4.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE2'
           ./netgen.py ref1/china6.txt -e ref1/chinanet6.txt ref1/unicom6.txt -o target/chinae2v6.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE2'
 
           echo $'/ip firewall address-list/n' > target/chinae3v4.txt
           echo $'/ipv6 firewall address-list/n' > target/chinae3v6.txt
-          ./netgen.py ref2/china_ip_list.txt.txt -e ref1/chinanet.txt ref1/unicom.txt ref1/cmcc.txt -o target/chinae3v4.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE3'
+          ./netgen.py ref2/china_ip_list.txt -e ref1/chinanet.txt ref1/unicom.txt ref1/cmcc.txt -o target/chinae3v4.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE3'
           ./netgen.py ref1/china6.txt -e ref1/chinanet6.txt ref1/unicom6.txt ref1/cmcc6.txt -o target/chinae3v6.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE3'
 
           echo $'/ip firewall address-list/n' > target/foreign4.txt
           echo $'/ipv6 firewall address-list/n' > target/foreign6.txt
-          ./netgen.py 0.0.0.0/0 -e private4.txt ref2/china_ip_list.txt.txt -o target/foreign4.txt -p 'add address=' -s $'comment="" disabled=no list=Foreign'
+          ./netgen.py 0.0.0.0/0 -e private4.txt ref2/china_ip_list.txt -o target/foreign4.txt -p 'add address=' -s $'comment="" disabled=no list=Foreign'
           ./netgen.py ::/0 -e private6.txt ref1/china6.txt -o target/foreign6.txt -p 'add address=' -s $'comment="" disabled=no list=Foreign'
 
           echo $'/ip firewall address-list/n' > target/private4.txt

@@ -46,7 +46,7 @@ jobs:
         run: rm target/*
       - name: Rebuild target branch
         run: |
-          ./netgen.py ref2/china_ip_list.txt.txt -o target/china4.txt
+          ./netgen.py ref2/china_ip_list.txt -o target/china4.txt
           ./netgen.py ref1/china6.txt -o target/china6.txt
 
           ./netgen.py ref1/chinanet.txt -o target/telecom4.txt
@@ -58,13 +58,13 @@ jobs:
           ./netgen.py ref1/cmcc.txt -o target/cmcc4.txt
           ./netgen.py ref1/cmcc6.txt -o target/cmcc6.txt
 
-          ./netgen.py ref2/china_ip_list.txt.txt -e ref1/chinanet.txt ref1/unicom.txt -o target/chinae2v4.txt
+          ./netgen.py ref2/china_ip_list.txt -e ref1/chinanet.txt ref1/unicom.txt -o target/chinae2v4.txt
           ./netgen.py ref1/china6.txt -e ref1/chinanet6.txt ref1/unicom6.txt -o target/chinae2v6.txt
 
-          ./netgen.py ref2/china_ip_list.txt.txt -e ref1/chinanet.txt ref1/unicom.txt ref1/cmcc.txt -o target/chinae3v4.txt
+          ./netgen.py ref2/china_ip_list.txt -e ref1/chinanet.txt ref1/unicom.txt ref1/cmcc.txt -o target/chinae3v4.txt
           ./netgen.py ref1/china6.txt -e ref1/chinanet6.txt ref1/unicom6.txt ref1/cmcc6.txt -o target/chinae3v6.txt
 
-          ./netgen.py 0.0.0.0/0 -e private4.txt ref2/china_ip_list.txt.txt -o target/foreign4.txt
+          ./netgen.py 0.0.0.0/0 -e private4.txt ref2/china_ip_list.txt -o target/foreign4.txt
           ./netgen.py ::/0 -e private6.txt ref1/china6.txt -o target/foreign6.txt
 
           ./netgen.py private4.txt -o target/private4.txt

@@ -57,7 +57,7 @@ jobs:
           echo 'ip route add 128.0.0.0/1 dev wgcf || true' >> target/wgcf-up.sh
           echo 'ip route add ::/1 dev wgcf || true' >> target/wgcf-up.sh
           echo 'ip route add 8000::/1 dev wgcf || true' >> target/wgcf-up.sh
-          ./netgen.py ref2/china_ip_list.txt.txt -o target/wgcf-up.sh -p 'ip route add ' -s $' dev eth0 via 10.11.0.1 || true\n'
+          ./netgen.py ref2/china_ip_list.txt -o target/wgcf-up.sh -p 'ip route add ' -s $' dev eth0 via 10.11.0.1 || true\n'
           ./netgen.py ref1/china6.txt -o target/wgcf-up.sh -p 'ip route add ' -s $' dev eth0 via fe80::6a77:24ff:fed6:809d || true\n'
           ./netgen.py private4.txt -o target/wgcf-up.sh -p 'ip route add ' -s $' dev eth0 via 10.11.0.1 || true\n'
           ./netgen.py private6.txt -o target/wgcf-up.sh -p 'ip route add ' -s $' dev eth0 via fe80::6a77:24ff:fed6:809d || true\n'
@@ -72,7 +72,7 @@ jobs:
           echo 'ip route del 128.0.0.0/1 dev wgcf || true' >> target/wgcf-down.sh
           echo 'ip route del ::/1 dev wgcf || true' >> target/wgcf-down.sh
           echo 'ip route del 8000::/1 dev wgcf || true' >> target/wgcf-down.sh
-          ./netgen.py ref2/china_ip_list.txt.txt -o target/wgcf-down.sh -p 'ip route del ' -s $' dev eth0 via 10.11.0.1 || true\n'
+          ./netgen.py ref2/china_ip_list.txt -o target/wgcf-down.sh -p 'ip route del ' -s $' dev eth0 via 10.11.0.1 || true\n'
           ./netgen.py ref1/china6.txt -o target/wgcf-down.sh -p 'ip route del ' -s $' dev eth0 via fe80::6a77:24ff:fed6:809d || true\n'
           ./netgen.py private4.txt -o target/wgcf-up.sh -p 'ip route del ' -s $' dev eth0 via 10.11.0.1 || true\n'
           ./netgen.py private6.txt -o target/wgcf-up.sh -p 'ip route del ' -s $' dev eth0 via fe80::6a77:24ff:fed6:809d || true\n'
