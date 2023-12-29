@@ -1,0 +1,2 @@
+/ipv6 firewall address-list/n
+add address=::1/128comment="" disabled=no list=Privateadd address=fc00::/7comment="" disabled=no list=Privateadd address=fe80::/10comment="" disabled=no list=Privateadd address=ff00::/8comment="" disabled=no list=Private
