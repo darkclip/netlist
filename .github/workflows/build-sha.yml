@@ -24,12 +24,18 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: Checkout reference branch
+      - name: Checkout reference branch 1
         uses: actions/checkout@v3
         with:
           repository: gaoyifan/china-operator-ip
           ref: ip-lists
-          path: ref
+          path: ref1
+      - name: Checkout reference branch 2
+        uses: actions/checkout@v3
+        with:
+          repository: 17mon/china_ip_list
+          ref: master
+          path: ref2
       - name: Checkout target branch
         uses: actions/checkout@v3
         with:
@@ -51,8 +57,10 @@ jobs:
           echo 'ip route add 128.0.0.0/1 dev wgcf || true' >> target/wgcf-up.sh
           echo 'ip route add ::/1 dev wgcf || true' >> target/wgcf-up.sh
           echo 'ip route add 8000::/1 dev wgcf || true' >> target/wgcf-up.sh
-          ./netgen.py ref/china.txt -o target/wgcf-up.sh -p 'ip route add ' -s $' dev eth0 via 10.11.0.1 || true\n'
-          ./netgen.py ref/china6.txt -o target/wgcf-up.sh -p 'ip route add ' -s $' dev eth0 via fe80::6a77:24ff:fed6:809d || true\n'
+          ./netgen.py ref2/china_ip_list.txt.txt -o target/wgcf-up.sh -p 'ip route add ' -s $' dev eth0 via 10.11.0.1 || true\n'
+          ./netgen.py ref1/china6.txt -o target/wgcf-up.sh -p 'ip route add ' -s $' dev eth0 via fe80::6a77:24ff:fed6:809d || true\n'
+          ./netgen.py private4.txt -o target/wgcf-up.sh -p 'ip route add ' -s $' dev eth0 via 10.11.0.1 || true\n'
+          ./netgen.py private6.txt -o target/wgcf-up.sh -p 'ip route add ' -s $' dev eth0 via fe80::6a77:24ff:fed6:809d || true\n'
           echo 'iptables -t nat -D POSTROUTING -o wgcf -j MASQUERADE || true' >> target/wgcf-down.sh
           echo 'ip6tables -t nat -D POSTROUTING -o wgcf -j MASQUERADE || true' >> target/wgcf-down.sh
           echo 'iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE || true' >> target/wgcf-down.sh
@@ -64,8 +72,10 @@ jobs:
           echo 'ip route del 128.0.0.0/1 dev wgcf || true' >> target/wgcf-down.sh
           echo 'ip route del ::/1 dev wgcf || true' >> target/wgcf-down.sh
           echo 'ip route del 8000::/1 dev wgcf || true' >> target/wgcf-down.sh
-          ./netgen.py ref/china.txt -o target/wgcf-down.sh -p 'ip route del ' -s $' dev eth0 via 10.11.0.1 || true\n'
-          ./netgen.py ref/china6.txt -o target/wgcf-down.sh -p 'ip route del ' -s $' dev eth0 via fe80::6a77:24ff:fed6:809d || true\n'
+          ./netgen.py ref2/china_ip_list.txt.txt -o target/wgcf-down.sh -p 'ip route del ' -s $' dev eth0 via 10.11.0.1 || true\n'
+          ./netgen.py ref1/china6.txt -o target/wgcf-down.sh -p 'ip route del ' -s $' dev eth0 via fe80::6a77:24ff:fed6:809d || true\n'
+          ./netgen.py private4.txt -o target/wgcf-up.sh -p 'ip route del ' -s $' dev eth0 via 10.11.0.1 || true\n'
+          ./netgen.py private6.txt -o target/wgcf-up.sh -p 'ip route del ' -s $' dev eth0 via fe80::6a77:24ff:fed6:809d || true\n'
           cp cf-watch.sh target/
           cd target
           chmod +x *.sh

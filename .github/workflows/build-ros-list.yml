@@ -1,0 +1,99 @@
+name: build-ros-list
+
+on:
+  push:
+    branches:
+      - 'master'
+    paths:
+      - '.github/workflows/build-ros-list.yml'
+  schedule:
+    - cron: '0 16 * * *'
+
+jobs:
+  build-ros-list:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Checkout reference branch 1
+        uses: actions/checkout@v3
+        with:
+          repository: gaoyifan/china-operator-ip
+          ref: ip-lists
+          path: ref1
+      - name: Checkout reference branch 2
+        uses: actions/checkout@v3
+        with:
+          repository: 17mon/china_ip_list
+          ref: master
+          path: ref2
+      - name: Checkout target branch
+        uses: actions/checkout@v3
+        with:
+          ref: ros-list
+          path: target
+      - name: Clean target branch
+        continue-on-error: true
+        run: rm target/*
+      - name: Rebuild target branch
+        run: |
+          echo $'/ip firewall address-list/n' > target/china4.txt
+          echo $'/ipv6 firewall address-list/n' > target/china6.txt
+          ./netgen.py ref2/china_ip_list.txt.txt -o target/china4.txt -p 'add address=' -s $'comment="" disabled=no list=China'
+          ./netgen.py ref1/china6.txt -o target/china6.txt -p 'add address=' -s $'comment="" disabled=no list=China'
+
+          echo $'/ip firewall address-list/n' > target/telecom4.txt
+          echo $'/ipv6 firewall address-list/n' > target/telecom6.txt
+          ./netgen.py ref1/chinanet.txt -o target/telecom4.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaTelecom'
+          ./netgen.py ref1/chinanet6.txt -o target/telecom6.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaTelecom'
+
+          echo $'/ip firewall address-list/n' > target/unicom4.txt
+          echo $'/ipv6 firewall address-list/n' > target/unicom6.txt
+          ./netgen.py ref1/unicom.txt -o target/unicom4.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaUnicom'
+          ./netgen.py ref1/unicom6.txt -o target/unicom6.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaUnicom'
+
+          echo $'/ip firewall address-list/n' > target/cmcc4.txt
+          echo $'/ipv6 firewall address-list/n' > target/cmcc6.txt
+          ./netgen.py ref1/cmcc.txt -o target/cmcc4.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaMobile'
+          ./netgen.py ref1/cmcc6.txt -o target/cmcc6.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaMobile'
+
+          echo $'/ip firewall address-list/n' > target/chinae2v4.txt
+          echo $'/ipv6 firewall address-list/n' > target/chinae2v6.txt
+          ./netgen.py ref2/china_ip_list.txt.txt -e ref1/chinanet.txt ref1/unicom.txt -o target/chinae2v4.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE2'
+          ./netgen.py ref1/china6.txt -e ref1/chinanet6.txt ref1/unicom6.txt -o target/chinae2v6.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE2'
+
+          echo $'/ip firewall address-list/n' > target/chinae3v4.txt
+          echo $'/ipv6 firewall address-list/n' > target/chinae3v6.txt
+          ./netgen.py ref2/china_ip_list.txt.txt -e ref1/chinanet.txt ref1/unicom.txt ref1/cmcc.txt -o target/chinae3v4.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE3'
+          ./netgen.py ref1/china6.txt -e ref1/chinanet6.txt ref1/unicom6.txt ref1/cmcc6.txt -o target/chinae3v6.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE3'
+
+          echo $'/ip firewall address-list/n' > target/foreign4.txt
+          echo $'/ipv6 firewall address-list/n' > target/foreign6.txt
+          ./netgen.py 0.0.0.0/0 -e private4.txt ref2/china_ip_list.txt.txt -o target/foreign4.txt -p 'add address=' -s $'comment="" disabled=no list=Foreign'
+          ./netgen.py ::/0 -e private6.txt ref1/china6.txt -o target/foreign6.txt -p 'add address=' -s $'comment="" disabled=no list=Foreign'
+
+          echo $'/ip firewall address-list/n' > target/private4.txt
+          echo $'/ipv6 firewall address-list/n' > target/private6.txt
+          ./netgen.py private4.txt -o target/private4.txt -p 'add address=' -s $'comment="" disabled=no list=Private'
+          ./netgen.py private6.txt -o target/private6.txt -p 'add address=' -s $'comment="" disabled=no list=Private'
+
+          cd target
+          tree -H . -P "*.txt" -T "ROS List - $(date +%Y-%m-%d)" > index.html
+      - name: Push to target branch
+        continue-on-error: true
+        run: |
+          cd target
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add .
+          git commit -m "update $(date +%Y-%m-%d)"
+          git push -q
