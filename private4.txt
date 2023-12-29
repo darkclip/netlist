@@ -1,4 +1,4 @@
-/ip firewall address-list/nremove [find list=List_Private]/n
+/ip firewall address-list\nremove [find list=List_Private]\n
 add address=10.0.0.0/8 list=List_Private
 add address=127.0.0.0/8 list=List_Private
 add address=169.254.0.0/16 list=List_Private

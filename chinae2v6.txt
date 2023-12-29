@@ -1,4 +1,4 @@
-/ipv6 firewall address-list/nremove [find list=List_ChinaE2]/n
+/ipv6 firewall address-list\nremove [find list=List_ChinaE2]\n
 add address=2001:250::/30 list=List_ChinaE2
 add address=2001:254::/31 list=List_ChinaE2
 add address=2001:256::/32 list=List_ChinaE2

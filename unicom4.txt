@@ -1,4 +1,4 @@
-/ip firewall address-list/nremove [find list=List_Unicom]/n
+/ip firewall address-list\nremove [find list=List_Unicom]\n
 add address=1.1.8.0/24 list=List_Unicom
 add address=1.24.0.0/13 list=List_Unicom
 add address=1.56.0.0/13 list=List_Unicom

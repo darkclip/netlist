@@ -1,4 +1,4 @@
-/ipv6 firewall address-list/nremove [find list=List_Mobile]/n
+/ipv6 firewall address-list\nremove [find list=List_Mobile]\n
 add address=2401:1320::/32 list=List_Mobile
 add address=2402:4440:a010::/46 list=List_Mobile
 add address=2402:9a80::/32 list=List_Mobile
