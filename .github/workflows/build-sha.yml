@@ -67,8 +67,8 @@ jobs:
           echo 'ip route del 8000::/1 dev wgcf || true' >> target/wgcf-down.sh
           ./netgen.py ref1/china4.txt -o target/wgcf-down.sh -p 'ip route del ' -s ' dev eth0 via 10.11.0.1 || true'
           ./netgen.py ref1/china6.txt -o target/wgcf-down.sh -p 'ip route del ' -s ' dev eth0 via fe80::6a77:24ff:fed6:809d || true'
-          ./netgen.py private4.txt -o target/wgcf-up.sh -p 'ip route del ' -s ' dev eth0 via 10.11.0.1 || true'
-          ./netgen.py private6.txt -o target/wgcf-up.sh -p 'ip route del ' -s ' dev eth0 via fe80::6a77:24ff:fed6:809d || true'
+          ./netgen.py private4.txt -o target/wgcf-down.sh -p 'ip route del ' -s ' dev eth0 via 10.11.0.1 || true'
+          ./netgen.py private6.txt -o target/wgcf-down.sh -p 'ip route del ' -s ' dev eth0 via fe80::6a77:24ff:fed6:809d || true'
           cp cf-watch.sh target/
           cd target
           chmod +x *.sh
