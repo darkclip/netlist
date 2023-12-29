@@ -33,8 +33,8 @@ jobs:
       - name: Checkout reference branch 2
         uses: actions/checkout@v3
         with:
-          repository: 17mon/china_ip_list
-          ref: master
+          repository: loyalsoldier/v2ray-rules-dat
+          ref: release
           path: ref2
       - name: Checkout target branch
         uses: actions/checkout@v3
@@ -46,8 +46,9 @@ jobs:
         run: rm target/*
       - name: Rebuild target branch
         run: |
-          ./netgen.py ref2/china_ip_list.txt -o target/china4.txt
-          ./netgen.py ref1/china6.txt -o target/china6.txt
+          ./raydata.py ref2/geoip.dat -c CN -o target/chinaip.txt geoip
+          ./netgen.py target/chinaip.txt -4 -o target/china4.txt
+          ./netgen.py target/chinaip.txt -6 -o target/china6.txt
 
           ./netgen.py ref1/chinanet.txt -o target/telecom4.txt
           ./netgen.py ref1/chinanet6.txt -o target/telecom6.txt
@@ -55,17 +56,17 @@ jobs:
           ./netgen.py ref1/unicom.txt -o target/unicom4.txt
           ./netgen.py ref1/unicom6.txt -o target/unicom6.txt
 
-          ./netgen.py ref1/cmcc.txt -o target/cmcc4.txt
-          ./netgen.py ref1/cmcc6.txt -o target/cmcc6.txt
+          ./netgen.py ref1/cmcc.txt -o target/mobile4.txt
+          ./netgen.py ref1/cmcc6.txt -o target/mobile6.txt
 
-          ./netgen.py ref2/china_ip_list.txt -e ref1/chinanet.txt ref1/unicom.txt -o target/chinae2v4.txt
-          ./netgen.py ref1/china6.txt -e ref1/chinanet6.txt ref1/unicom6.txt -o target/chinae2v6.txt
+          ./netgen.py target/china4.txt -e ref1/chinanet.txt ref1/unicom.txt -o target/chinae2v4.txt
+          ./netgen.py target/china6.txt -e ref1/chinanet6.txt ref1/unicom6.txt -o target/chinae2v6.txt
 
-          ./netgen.py ref2/china_ip_list.txt -e ref1/chinanet.txt ref1/unicom.txt ref1/cmcc.txt -o target/chinae3v4.txt
-          ./netgen.py ref1/china6.txt -e ref1/chinanet6.txt ref1/unicom6.txt ref1/cmcc6.txt -o target/chinae3v6.txt
+          ./netgen.py target/china4.txt -e ref1/chinanet.txt ref1/unicom.txt ref1/cmcc.txt -o target/chinae3v4.txt
+          ./netgen.py target/china6.txt -e ref1/chinanet6.txt ref1/unicom6.txt ref1/cmcc6.txt -o target/chinae3v6.txt
 
-          ./netgen.py 0.0.0.0/0 -e private4.txt ref2/china_ip_list.txt -o target/foreign4.txt
-          ./netgen.py ::/0 -e private6.txt ref1/china6.txt -o target/foreign6.txt
+          ./netgen.py 0.0.0.0/0 -e private4.txt target/china4.txt -o target/foreign4.txt
+          ./netgen.py ::/0 -e private6.txt target/china6.txt -o target/foreign6.txt
 
           ./netgen.py private4.txt -o target/private4.txt
           ./netgen.py private6.txt -o target/private6.txt
