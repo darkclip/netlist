@@ -91,7 +91,7 @@ def main(args):
         out_networks.extend(out6)
 
     output_lines = [
-        f"{getattr(args,'prefix','')}{str(network)}{getattr(args,'suffix','')}"
+        f"{getattr(args,'prefix','')}{str(network)}{getattr(args,'suffix','')}\n"
         for network in out_networks
     ]
 
@@ -155,7 +155,7 @@ if __name__ == '__main__':
         '-p', '--prefix', type=str, default='', help='write line prefix'
     )
     parser.add_argument(
-        '-s', '--suffix', type=str, default='\n', help='write line suffix'
+        '-s', '--suffix', type=str, default='', help='write line suffix'
     )
     parser.set_defaults(func=main)
     args = parser.parse_args()

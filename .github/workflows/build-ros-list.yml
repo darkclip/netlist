@@ -39,45 +39,45 @@ jobs:
         run: rm target/*
       - name: Rebuild target branch
         run: |
-          echo $'/ip firewall address-list/n' > target/china4.txt
-          echo $'/ipv6 firewall address-list/n' > target/china6.txt
-          ./netgen.py ref1/china4.txt -o target/china4.txt -p 'add address=' -s $'comment="" disabled=no list=China\n'
-          ./netgen.py ref1/china6.txt -o target/china6.txt -p 'add address=' -s $'comment="" disabled=no list=China\n'
+          echo $'/ip firewall address-list/nremove [find list=List_China]/n' > target/china4.txt
+          echo $'/ipv6 firewall address-list/nremove [find list=List_China]/n' > target/china6.txt
+          ./netgen.py ref1/china4.txt -o target/china4.txt -p 'add address=' -s ' list=List_China'
+          ./netgen.py ref1/china6.txt -o target/china6.txt -p 'add address=' -s ' list=List_China'
 
-          echo $'/ip firewall address-list/n' > target/telecom4.txt
-          echo $'/ipv6 firewall address-list/n' > target/telecom6.txt
-          ./netgen.py ref1/telecom4.txt -o target/telecom4.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaTelecom\n'
-          ./netgen.py ref1/telecom6.txt -o target/telecom6.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaTelecom\n'
+          echo $'/ip firewall address-list/nremove [find list=List_Telecom]/n' > target/telecom4.txt
+          echo $'/ipv6 firewall address-list/nremove [find list=List_Telecom]/n' > target/telecom6.txt
+          ./netgen.py ref1/telecom4.txt -o target/telecom4.txt -p 'add address=' -s ' list=List_Telecom'
+          ./netgen.py ref1/telecom6.txt -o target/telecom6.txt -p 'add address=' -s ' list=List_Telecom'
 
-          echo $'/ip firewall address-list/n' > target/unicom4.txt
-          echo $'/ipv6 firewall address-list/n' > target/unicom6.txt
-          ./netgen.py ref1/unicom4.txt -o target/unicom4.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaUnicom\n'
-          ./netgen.py ref1/unicom6.txt -o target/unicom6.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaUnicom\n'
+          echo $'/ip firewall address-list/nremove [find list=List_Unicom]/n' > target/unicom4.txt
+          echo $'/ipv6 firewall address-list/nremove [find list=List_Unicom]/n' > target/unicom6.txt
+          ./netgen.py ref1/unicom4.txt -o target/unicom4.txt -p 'add address=' -s ' list=List_Unicom'
+          ./netgen.py ref1/unicom6.txt -o target/unicom6.txt -p 'add address=' -s ' list=List_Unicom'
 
-          echo $'/ip firewall address-list/n' > target/mobile4.txt
-          echo $'/ipv6 firewall address-list/n' > target/mobile6.txt
-          ./netgen.py ref1/mobile4.txt -o target/mobile4.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaMobile\n'
-          ./netgen.py ref1/mobile6.txt -o target/mobile6.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaMobile\n'
+          echo $'/ip firewall address-list/nremove [find list=List_Mobile]/n' > target/mobile4.txt
+          echo $'/ipv6 firewall address-list/nremove [find list=List_Mobile]/n' > target/mobile6.txt
+          ./netgen.py ref1/mobile4.txt -o target/mobile4.txt -p 'add address=' -s ' list=List_Mobile'
+          ./netgen.py ref1/mobile6.txt -o target/mobile6.txt -p 'add address=' -s ' list=List_Mobile'
 
-          echo $'/ip firewall address-list/n' > target/chinae2v4.txt
-          echo $'/ipv6 firewall address-list/n' > target/chinae2v6.txt
-          ./netgen.py ref1/china4.txt -e ref1/telecom4.txt ref1/unicom4.txt -o target/chinae2v4.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE2\n'
-          ./netgen.py ref1/china6.txt -e ref1/telecom6.txt ref1/unicom6.txt -o target/chinae2v6.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE2\n'
+          echo $'/ip firewall address-list/nremove [find list=List_ChinaE2]/n' > target/chinae2v4.txt
+          echo $'/ipv6 firewall address-list/nremove [find list=List_ChinaE2]/n' > target/chinae2v6.txt
+          ./netgen.py ref1/china4.txt -e ref1/telecom4.txt ref1/unicom4.txt -o target/chinae2v4.txt -p 'add address=' -s ' list=List_ChinaE2'
+          ./netgen.py ref1/china6.txt -e ref1/telecom6.txt ref1/unicom6.txt -o target/chinae2v6.txt -p 'add address=' -s ' list=List_ChinaE2'
 
-          echo $'/ip firewall address-list/n' > target/chinae3v4.txt
-          echo $'/ipv6 firewall address-list/n' > target/chinae3v6.txt
-          ./netgen.py ref1/china4.txt -e ref1/telecom4.txt ref1/unicom4.txt ref1/mobile4.txt -o target/chinae3v4.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE3\n'
-          ./netgen.py ref1/china6.txt -e ref1/telecom6.txt ref1/unicom6.txt ref1/mobile6.txt -o target/chinae3v6.txt -p 'add address=' -s $'comment="" disabled=no list=ChinaE3\n'
+          echo $'/ip firewall address-list/nremove [find list=List_ChinaE3]/n' > target/chinae3v4.txt
+          echo $'/ipv6 firewall address-list/nremove [find list=List_ChinaE3]/n' > target/chinae3v6.txt
+          ./netgen.py ref1/china4.txt -e ref1/telecom4.txt ref1/unicom4.txt ref1/mobile4.txt -o target/chinae3v4.txt -p 'add address=' -s ' list=List_ChinaE3'
+          ./netgen.py ref1/china6.txt -e ref1/telecom6.txt ref1/unicom6.txt ref1/mobile6.txt -o target/chinae3v6.txt -p 'add address=' -s ' list=List_ChinaE3'
 
-          echo $'/ip firewall address-list/n' > target/foreign4.txt
-          echo $'/ipv6 firewall address-list/n' > target/foreign6.txt
-          ./netgen.py 0.0.0.0/0 -e private4.txt ref1/china4.txt -o target/foreign4.txt -p 'add address=' -s $'comment="" disabled=no list=Foreign\n'
-          ./netgen.py ::/0 -e private6.txt ref1/china6.txt -o target/foreign6.txt -p 'add address=' -s $'comment="" disabled=no list=Foreign\n'
+          echo $'/ip firewall address-list/nremove [find list=List_Foreign]/n' > target/foreign4.txt
+          echo $'/ipv6 firewall address-list/nremove [find list=List_Foreign]/n' > target/foreign6.txt
+          ./netgen.py 0.0.0.0/0 -e private4.txt ref1/china4.txt -o target/foreign4.txt -p 'add address=' -s ' list=List_Foreign'
+          ./netgen.py ::/0 -e private6.txt ref1/china6.txt -o target/foreign6.txt -p 'add address=' -s ' list=List_Foreign'
 
-          echo $'/ip firewall address-list/n' > target/private4.txt
-          echo $'/ipv6 firewall address-list/n' > target/private6.txt
-          ./netgen.py private4.txt -o target/private4.txt -p 'add address=' -s $'comment="" disabled=no list=Private\n'
-          ./netgen.py private6.txt -o target/private6.txt -p 'add address=' -s $'comment="" disabled=no list=Private\n'
+          echo $'/ip firewall address-list/nremove [find list=List_Private]/n' > target/private4.txt
+          echo $'/ipv6 firewall address-list/nremove [find list=List_Private]/n' > target/private6.txt
+          ./netgen.py private4.txt -o target/private4.txt -p 'add address=' -s ' list=List_Private'
+          ./netgen.py private6.txt -o target/private6.txt -p 'add address=' -s ' list=List_Private'
 
           cd target
           tree -H . -P "*.txt" -T "ROS List - $(date +%Y-%m-%d)" > index.html
