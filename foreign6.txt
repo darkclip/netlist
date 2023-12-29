@@ -1,4 +1,6 @@
-/ipv6 firewall address-list\nremove [find list=List_Foreign]\n
+/ipv6 firewall address-list
+remove [find list=List_Foreign]
+
 add address=::/128 list=List_Foreign
 add address=::2/127 list=List_Foreign
 add address=::4/126 list=List_Foreign

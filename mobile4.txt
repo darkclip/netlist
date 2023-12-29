@@ -1,4 +1,6 @@
-/ip firewall address-list\nremove [find list=List_Mobile]\n
+/ip firewall address-list
+remove [find list=List_Mobile]
+
 add address=36.128.0.0/10 list=List_Mobile
 add address=36.192.0.0/11 list=List_Mobile
 add address=39.128.0.0/10 list=List_Mobile

@@ -1,4 +1,6 @@
-/ip firewall address-list\nremove [find list=List_Telecom]\n
+/ip firewall address-list
+remove [find list=List_Telecom]
+
 add address=1.48.0.0/15 list=List_Telecom
 add address=1.50.0.0/16 list=List_Telecom
 add address=1.68.0.0/14 list=List_Telecom

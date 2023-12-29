@@ -1,4 +1,6 @@
-/ip firewall address-list\nremove [find list=List_China]\n
+/ip firewall address-list
+remove [find list=List_China]
+
 add address=1.0.1.0/24 list=List_China
 add address=1.0.2.0/23 list=List_China
 add address=1.0.8.0/21 list=List_China
