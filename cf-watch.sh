@@ -3,7 +3,7 @@
 
 family=$1;
 interface=$2;
-conf_num=$3;
+config=$3;
 
 debug=false;
 
@@ -187,12 +187,14 @@ main(){
     if [ ! $interface ]; then
         exit 0;
     fi;
-    if [ ! $conf_num ]; then
+    if [ ! $config ]; then
         exit 0;
     fi;
     endpoint=$(wg show $interface endpoints | awk '{print $2}');
-    if [ $(pfSsh.php playback chgwgpeer $conf_num) != $endpoint ]; then
-        pfSsh.php playback chgwgpeer $conf_num $(echo $endpoint|awk -F: '{print $1}') $(echo $endpoint|awk -F: '{print $2}') || true;
+    if [ $(uname -i) == 'pfSense' ]; then
+        if [ $(pfSsh.php playback chgwgpeer $config) != $endpoint ]; then
+            pfSsh.php playback chgwgpeer $config $(echo $endpoint|awk -F: '{print $1}') $(echo $endpoint|awk -F: '{print $2}') || true;
+        fi;
     fi;
 };
 
