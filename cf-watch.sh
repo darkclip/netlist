@@ -195,6 +195,8 @@ main(){
         if [ $(pfSsh.php playback chgwgpeer $config) != $endpoint ]; then
             pfSsh.php playback chgwgpeer $config $(echo $endpoint|awk -F: '{print $1}') $(echo $endpoint|awk -F: '{print $2}') || true;
         fi;
+    else
+        sed -i -r 's/Endpoint =.*/Endpoint = '$endpoint'/' $config
     fi;
 };
 
