@@ -217,7 +217,7 @@ main(){
 
 pids=$(pgrep -afl $0);
 if [ $(echo $pids|grep -o $0|wc -l) -gt 1 ]; then
-    echo "An other process is already running."
+    echo "Another process is already running."
     exit;
 fi;
 
