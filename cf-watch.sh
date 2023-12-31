@@ -1,12 +1,6 @@
 #!/bin/sh
 
 
-family=$1;
-interface=$2;
-config=$3;
-
-debug=false;
-
 archAffix(){
     os='';
     arch='';
@@ -18,7 +12,7 @@ archAffix(){
                 x86_64 | amd64) arch='amd64' ;;
                 armv8 | arm64 | aarch64) arch='arm64' ;;
                 s390x) arch='s390x' ;;
-                *) echo 'Unsupported CPU!' && exit 1 ;;
+                *) echo 'unsupported CPU' && exit 1 ;;
             esac;
             ;;
         Darwin)
@@ -26,11 +20,11 @@ archAffix(){
             case $(uname -m) in
                 x86_64 | amd64) arch='amd64' ;;
                 armv8 | arm64 | aarch64) arch='arm64' ;;
-                *) echo 'Unsupported CPU!' && exit 1 ;;
+                *) echo 'unsupported CPU' && exit 1 ;;
             esac;
             ;;
         *)
-            echo 'Unsupported OS!' && exit 1;
+            echo 'unsupported OS' && exit 1;
             ;;
     esac;
     echo $os-$arch;
@@ -45,9 +39,9 @@ get_rnd_hex(){
 };
 
 get_ping_loss(){
-    if [ $debug == 'true' ]; then
+    if [ $DRY_RUN == 'true' ]; then
         echo 100;
-        exit 0;
+        exit;
     fi;
     loss_percent=$(ping -c 10 -qn $1 | awk '/packet loss/{for(i=6;i<=NF;i++)if($i ~ /packet/)print $((i-1))}');
     loss=${loss_percent%?};
@@ -63,12 +57,12 @@ cf_v4(){
     '162.159.193.' \
     '162.159.195.' \
     '162.159.204.';
-    index=$((0 - ($(get_rnd_dec) % 8)));
-    echo $(eval "echo \$$(($#$index))")$((($(get_rnd_dec) % 253) + 1));
+    index=$((($(get_rnd_dec) % 8) + 1));
+    echo $(eval "echo \$$index")$((($(get_rnd_dec) % 253) + 1));
 };
 
 cf_v6(){
-    echo [2606:4700:d$(($(get_rnd_dec) % 2))::$(get_rnd_hex):$(get_rnd_hex):$(get_rnd_hex):$(get_rnd_hex)];
+    echo "[2606:4700:d$(($(get_rnd_dec) % 2))::$(get_rnd_hex):$(get_rnd_hex):$(get_rnd_hex):$(get_rnd_hex)]";
 };
 
 
@@ -118,7 +112,7 @@ speedtest(){
         rm -f $result_file;
         echo $ips;
     else
-        if [ $debug != 'true' ]; then
+        if [ $DRY_RUN != 'true' ]; then
             rm -f $exe_file;
         fi;
         exit 1;
@@ -128,18 +122,15 @@ speedtest(){
 get_ip_cadidates(){
     limit=100
     ip_file='ip.txt'
-    for index in $(generate_ips $limit $family); do
+    for index in $(generate_ips $limit $1); do
         echo "$index" >> $ip_file;
     done;
-    if [ $3 == 'true' ]; then
-        ip_list=$(speedtest $(archAffix) $1);
+    if [ $4 == 'true' ]; then
+        ip_list=$(speedtest $(archAffix) $3);
     else
-        ip_list=$(head -$1 $ip_file | awk '{print $1":"'$2'}');
+        ip_list=$(head -$3 $ip_file | awk '{print $1":"'$2'}');
     fi;
     result=$?;
-    if [ $result -ne 0 ]; then
-        ip_list=$(head -$1 $ip_file | awk '{print $1":"'$2'}');
-    fi;
     rm -f $ip_file;
     echo $ip_list;
     if [ $result -ne 0 ]; then
@@ -148,62 +139,127 @@ get_ip_cadidates(){
 };
 
 main(){
-    num_cadidates=10
-    default_port=4500
-    dl_retry_times=3
-    watch='1.1.1.1';
-    threshold=40
-    wait_in_between=5
-    loss=$(get_ping_loss $watch);
+    num_cadidates=10;
+    dl_retry_times=3;
+    wait_in_between=5;
     retry=0;
-    while [ $loss -ge $threshold ]; do
+    arch=$(archAffix);
+    if [ $? -ne 0 ]; then
+        retry=$dl_retry_times;
+    fi
+    echo "Running on $arch"
+    loss=$(get_ping_loss $WATCH_ADD);
+    while [ $loss -ge $LOSS_THR ]; do
         if [ $retry -lt $dl_retry_times ]; then
-            cadidates=$(get_ip_cadidates $num_cadidates $default_port true);
+            echo "Try to run speed test"
+            cadidates=$(get_ip_cadidates $FAMILY $DEFAULT_PORT $num_cadidates true);
         else
-            cadidates=$(get_ip_cadidates $num_cadidates $default_port false);
+            echo "Use random ip on port $DEFAULT_PORT"
+            cadidates=$(get_ip_cadidates $FAMILY $DEFAULT_PORT $num_cadidates false);
         fi;
-        if [ $? -eq 1 ]; then
+        if [ $? -ne 0 ]; then
             retry=$(($retry + 1));
+            continue;
         fi
         for cfip in $cadidates; do
-            loss=$(get_ping_loss $watch);
-            if [ $loss -lt $threshold ]; then
+            loss=$(get_ping_loss $WATCH_ADD);
+            if [ $loss -lt $LOSS_THR ]; then
                 break;
             fi;
-            echo "changing $interface endpoint to $cfip";
-            if [ $debug == 'true' ]; then
+            echo "changing $INTERFACE endpoint to $cfip";
+            if [ $DRY_RUN == 'true' ]; then
                 continue;
             fi;
-            if [ ! $interface ]; then
+            if [ ! $INTERFACE ]; then
                 continue;
             fi;
-            wg set $interface peer 'bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=' endpoint $cfip;
+            wg set $INTERFACE peer 'bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=' endpoint $cfip;
             sleep $wait_in_between;
         done
     done;
-    if [ $debug = 'true' ]; then
+    if [ $DRY_RUN = 'true' ]; then
         exit 0;
     fi;
-    if [ ! $interface ]; then
+    if [ ! $INTERFACE ]; then
         exit 0;
     fi;
-    if [ ! $config ]; then
+    if [ ! $CONFIG ]; then
         exit 0;
     fi;
-    endpoint=$(wg show $interface endpoints | awk '{print $2}');
+    endpoint=$(wg show $INTERFACE endpoints | awk '{print $2}');
     if [ $(uname -i) == 'pfSense' ]; then
-        if [ $(pfSsh.php playback chgwgpeer $config) != $endpoint ]; then
-            pfSsh.php playback chgwgpeer $config $(echo $endpoint|awk -F: '{print $1}') $(echo $endpoint|awk -F: '{print $2}') || true;
+        if [ $(pfSsh.php playback chgwgpeer $CONFIG) != $endpoint ]; then
+            pfSsh.php playback chgwgpeer $CONFIG $(echo $endpoint|awk -F: '{print $1}') $(echo $endpoint|awk -F: '{print $2}') || true;
         fi;
     else
-        sed -i -r 's/Endpoint =.*/Endpoint = '$endpoint'/' $config
+        sed -i -r 's/Endpoint =.*/Endpoint = '$endpoint'/' $CONFIG
     fi;
 };
 
 
 pids=$(pgrep -afl $0);
 if [ $(echo $pids|grep -o $0|wc -l) -gt 1 ]; then
+    echo "An other process is already running."
     exit;
 fi;
+
+
+usage(){
+    echo "Usage: $0 [-4] [-6] [-i <INTERFACE>] [-c <CONFIG>] [-a <ADDRESS>] [-l <LOSS>] [-p <PORT>] [-d]";
+    echo "Options:"
+    echo "    -4            IPv4"
+    echo "    -6            IPv6"
+    echo "    -i INTERFACE  Interface"
+    echo "    -c CONFIG     Config"
+    echo "    -a ADDRESS    Watch address"
+    echo "    -l LOSS       Loss threshold"
+    echo "    -p PORT       Default port"
+    echo "    -d            Dry run"
+}
+
+FAMILY=4;
+INTERFACE='';
+CONFIG='';
+WATCH_ADD='1.1.1.1';
+LOSS_THR=40;
+DEFAULT_PORT=4500;
+DRY_RUN=false;
+while getopts ":h46i:c:a:l:p:d" opt; do
+    case $opt in
+        h)
+            usage;
+            exit;;
+        4)
+            FAMILY=4;
+            ;;
+        6)
+            FAMILY=6;
+            ;;
+        i)
+            INTERFACE=$OPTARG;
+            ;;
+        c)
+            CONFIG=$OPTARG;
+            ;;
+        a)
+            WATCH_ADD=$OPTARG;
+            ;;
+        l)
+            LOSS_THR=$OPTARG;
+            ;;
+        p)
+            DEFAULT_PORT=$OPTARG;
+            ;;
+        d)
+            DRY_RUN=true;
+            ;;
+        :)
+            echo "Option -$OPTARG requires an argument.";
+            exit 1;;
+        ?)
+            echo "Invalid Option: -$OPTARG";
+            exit 1;;
+    esac
+done
 
 main
