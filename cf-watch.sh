@@ -39,19 +39,19 @@ archAffix(){
 };
 
 get_rnd_dec(){
-    echo $(od -An -N2 -i /dev/random);
+    echo $(od -An -N2 -i /dev/urandom);
 };
 
 get_rnd_hex(){
-    echo $(od -An -N2 -x /dev/random);
+    echo $(od -An -N2 -x /dev/urandom);
 };
 
 get_ping_loss(){
-    if [ $TEST_RUN == 'true' ]; then
+    if [ $TEST_RUN = 'true' ]; then
         echo 100;
         exit;
     fi;
-    if [ $DRY_RUN == 'true' ]; then
+    if [ $DRY_RUN = 'true' ]; then
         echo 100;
         exit;
     fi;
@@ -96,11 +96,11 @@ generate_ips(){
         ip=$($prog);
         unique=true;
         for index in $@; do
-            if [ "$index" == "$ip" ]; then
+            if [ "$index" = "$ip" ]; then
                 unique=false;
             fi;
         done;
-        if [ $unique == 'true' ]; then
+        if [ $unique = 'true' ]; then
             set -- $@ $ip;
             num=$(($num + 1));
         fi;
@@ -137,7 +137,7 @@ get_ip_cadidates(){
     for index in $(generate_ips $limit $1); do
         echo "$index" >> "$ip_file";
     done;
-    if [ $4 == 'true' ]; then
+    if [ $4 = 'true' ]; then
         ip_list=$(speedtest $(archAffix) "$ip_file" $3);
     else
         ip_list=$(head -$3 "$ip_file" | awk '{print $1":"'$2'}');
@@ -179,10 +179,10 @@ main(){
                 break;
             fi;
             echo "set $INTERFACE endpoint to $cfip";
-            if [ $TEST_RUN == 'true' ]; then
+            if [ $TEST_RUN = 'true' ]; then
                 continue;
             fi;
-            if [ $DRY_RUN == 'true' ]; then
+            if [ $DRY_RUN = 'true' ]; then
                 continue;
             fi;
             if [ ! $INTERFACE ]; then
@@ -191,7 +191,7 @@ main(){
             wg set $INTERFACE peer 'bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=' endpoint $cfip;
             sleep $wait_in_between;
         done
-        if [ $TEST_RUN == 'true' ]; then
+        if [ $TEST_RUN = 'true' ]; then
             exit;
         fi;
     done;
@@ -205,7 +205,7 @@ main(){
         exit;
     fi;
     endpoint=$(wg show $INTERFACE endpoints | awk '{print $2}');
-    if [ "$(uname -i)" == 'pfSense' ]; then
+    if [ "$(uname -i)" = 'pfSense' ]; then
         if [ $(pfSsh.php playback chgwgpeer $CONFIG) != $endpoint ]; then
             pfSsh.php playback chgwgpeer $CONFIG $(echo $endpoint|awk -F: '{print $1}') $(echo $endpoint|awk -F: '{print $2}') || true;
         fi;
