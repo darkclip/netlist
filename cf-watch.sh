@@ -30,6 +30,7 @@ archAffix(){
                 armv8 | arm64 | aarch64) arch='arm64' ;;
                 *) echo 'unsupported CPU' && exit 1 ;;
             esac;
+            ;;
         *)
             echo 'unsupported OS' && exit 1;
             ;;
