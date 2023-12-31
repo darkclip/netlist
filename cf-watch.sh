@@ -39,6 +39,10 @@ get_rnd_hex(){
 };
 
 get_ping_loss(){
+    if [ $TEST_RUN == 'true' ]; then
+        echo 100;
+        exit;
+    fi;
     if [ $DRY_RUN == 'true' ]; then
         echo 100;
         exit;
@@ -166,7 +170,10 @@ main(){
             if [ $loss -lt $LOSS_THR ]; then
                 break;
             fi;
-            echo "changing $INTERFACE endpoint to $cfip";
+            echo "set $INTERFACE endpoint to $cfip";
+            if [ $TEST_RUN == 'true' ]; then
+                continue;
+            fi;
             if [ $DRY_RUN == 'true' ]; then
                 continue;
             fi;
@@ -176,15 +183,18 @@ main(){
             wg set $INTERFACE peer 'bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=' endpoint $cfip;
             sleep $wait_in_between;
         done
+        if [ $TEST_RUN == 'true' ]; then
+            exit;
+        fi;
     done;
     if [ $DRY_RUN = 'true' ]; then
-        exit 0;
+        exit;
     fi;
     if [ ! $INTERFACE ]; then
-        exit 0;
+        exit;
     fi;
     if [ ! $CONFIG ]; then
-        exit 0;
+        exit;
     fi;
     endpoint=$(wg show $INTERFACE endpoints | awk '{print $2}');
     if [ "$(uname -i)" == 'pfSense' ]; then
@@ -205,7 +215,7 @@ fi;
 
 
 usage(){
-    echo "Usage: $0 [-4] [-6] [-i <INTERFACE>] [-c <CONFIG>] [-a <ADDRESS>] [-l <LOSS>] [-p <PORT>] [-d]";
+    echo "Usage: $0 [-4] [-6] [-i <INTERFACE>] [-c <CONFIG>] [-a <ADDRESS>] [-l <LOSS>] [-p <PORT>] [-t] [-d]";
     echo "Options:"
     echo "    -4            IPv4"
     echo "    -6            IPv6"
@@ -214,6 +224,7 @@ usage(){
     echo "    -a ADDRESS    Watch address"
     echo "    -l LOSS       Loss threshold"
     echo "    -p PORT       Default port"
+    echo "    -t            Speed test only"
     echo "    -d            Dry run"
 }
 
@@ -223,8 +234,9 @@ CONFIG='';
 WATCH_ADD='1.1.1.1';
 LOSS_THR=40;
 DEFAULT_PORT=4500;
+TEST_RUN=false;
 DRY_RUN=false;
-while getopts ":h46i:c:a:l:p:d" opt; do
+while getopts ":h46i:c:a:l:p:td" opt; do
     case $opt in
         h)
             usage;
@@ -249,6 +261,9 @@ while getopts ":h46i:c:a:l:p:d" opt; do
             ;;
         p)
             DEFAULT_PORT=$OPTARG;
+            ;;
+        t)
+            TEST_RUN=true;
             ;;
         d)
             DRY_RUN=true;
