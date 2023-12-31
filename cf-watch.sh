@@ -11,7 +11,6 @@ archAffix(){
                 i386 | i686) arch='386' ;;
                 x86_64 | amd64) arch='amd64' ;;
                 armv8 | arm64 | aarch64) arch='arm64' ;;
-                s390x) arch='s390x' ;;
                 *) echo 'unsupported CPU' && exit 1 ;;
             esac;
             ;;
@@ -23,6 +22,14 @@ archAffix(){
                 *) echo 'unsupported CPU' && exit 1 ;;
             esac;
             ;;
+        FreeBSD)
+            os='freebsd';
+            case "$(uname -m)" in
+                i386 | i686) arch='386' ;;
+                x86_64 | amd64) arch='amd64' ;;
+                armv8 | arm64 | aarch64) arch='arm64' ;;
+                *) echo 'unsupported CPU' && exit 1 ;;
+            esac;
         *)
             echo 'unsupported OS' && exit 1;
             ;;
@@ -107,7 +114,7 @@ speedtest(){
     exe_file='/var/tmp/warp';
     result_file='/var/tmp/result.csv'
     if [ ! -f "$exe_file" ]; then
-        curl -Sfo "$exe_file" "https://gitlab.com/Misaka-blog/warp-script/-/raw/main/files/warp-yxip/warp-$1"
+        curl -Sfo "$exe_file" "https://git.tink.ltd:8443/netlist.git/tree/warp/warp-$1"
     fi;
     ulimit -n 102400;
     chmod +x "$exe_file" && "$exe_file" -file "$2" -output "$result_file" >/dev/null 2>&1;
