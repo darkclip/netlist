@@ -55,7 +55,7 @@ get_ping_loss(){
         echo 100;
         exit;
     fi;
-    loss_percent=$(ping -c 10 -qn $1 | awk '/packet loss/{for(i=6;i<=NF;i++)if($i ~ /packet/)print $((i-1))}');
+    loss_percent=$(ping -c 12 -qni 0.25 $1 | awk '/packet loss/{for(i=6;i<=NF;i++)if($i ~ /packet/)print $((i-1))}');
     loss=${loss_percent%?};
     echo ${loss%.*};
 };
@@ -240,7 +240,7 @@ FAMILY=4;
 INTERFACE='';
 CONFIG='';
 WATCH_ADD='1.1.1.1';
-LOSS_THR=40;
+LOSS_THR=30;
 DEFAULT_PORT=4500;
 TEST_RUN=false;
 DRY_RUN=false;
