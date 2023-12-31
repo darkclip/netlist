@@ -4,10 +4,10 @@
 archAffix(){
     os='';
     arch='';
-    case $(uname) in
+    case "$(uname)" in
         Linux)
             os='linux';
-            case $(uname -m) in
+            case "$(uname -m)" in
                 i386 | i686) arch='386' ;;
                 x86_64 | amd64) arch='amd64' ;;
                 armv8 | arm64 | aarch64) arch='arm64' ;;
@@ -17,7 +17,7 @@ archAffix(){
             ;;
         Darwin)
             os='darwin';
-            case $(uname -m) in
+            case "$(uname -m)" in
                 x86_64 | amd64) arch='amd64' ;;
                 armv8 | arm64 | aarch64) arch='arm64' ;;
                 *) echo 'unsupported CPU' && exit 1 ;;
@@ -82,13 +82,13 @@ generate_ips(){
     num=0;
     while true; do
         ip=$($prog);
-        unique='true';
+        unique=true;
         for index in $@; do
             if [ "$index" == "$ip" ]; then
-                unique='false';
+                unique=false;
             fi;
         done;
-        if [ "$unique" == 'true' ]; then
+        if [ $unique == 'true' ]; then
             set -- $@ $ip;
             num=$(($num + 1));
         fi;
@@ -100,16 +100,16 @@ generate_ips(){
 };
 
 speedtest(){
-    exe_file='warp';
-    if [ ! -f $exe_file ]; then
-        curl -Sfo $exe_file "https://gitlab.com/Misaka-blog/warp-script/-/raw/main/files/warp-yxip/warp-$1"
+    exe_file='/var/tmp/warp';
+    result_file='/var/tmp/result.csv'
+    if [ ! -f "$exe_file" ]; then
+        curl -Sfo "$exe_file" "https://gitlab.com/Misaka-blog/warp-script/-/raw/main/files/warp-yxip/warp-$1"
     fi;
     ulimit -n 102400;
-    chmod +x $exe_file && ./$exe_file >/dev/null 2>&1;
-    result_file='result.csv'
-    if [ -f $result_file ]; then
-        ips=$(cat $result_file | awk -F, 'NR != 1 && NR <= '$(($2 + 1))'{print $1}');
-        rm -f $result_file;
+    chmod +x "$exe_file" && "$exe_file" -file "$2" -output "$result_file" >/dev/null 2>&1;
+    if [ -f "$result_file" ]; then
+        ips=$(cat "$result_file" | awk -F, 'NR != 1 && NR <= '$(($3 + 1))'{print $1}');
+        rm -f "$result_file";
         echo $ips;
     else
         if [ $DRY_RUN != 'true' ]; then
@@ -121,17 +121,17 @@ speedtest(){
 
 get_ip_cadidates(){
     limit=100
-    ip_file='ip.txt'
+    ip_file='/var/tmp/ip.txt'
     for index in $(generate_ips $limit $1); do
-        echo "$index" >> $ip_file;
+        echo "$index" >> "$ip_file";
     done;
     if [ $4 == 'true' ]; then
-        ip_list=$(speedtest $(archAffix) $3);
+        ip_list=$(speedtest $(archAffix) "$ip_file" $3);
     else
-        ip_list=$(head -$3 $ip_file | awk '{print $1":"'$2'}');
+        ip_list=$(head -$3 "$ip_file" | awk '{print $1":"'$2'}');
     fi;
     result=$?;
-    rm -f $ip_file;
+    rm -f "$ip_file";
     echo $ip_list;
     if [ $result -ne 0 ]; then
         exit 1;
@@ -187,7 +187,7 @@ main(){
         exit 0;
     fi;
     endpoint=$(wg show $INTERFACE endpoints | awk '{print $2}');
-    if [ $(uname -i) == 'pfSense' ]; then
+    if [ "$(uname -i)" == 'pfSense' ]; then
         if [ $(pfSsh.php playback chgwgpeer $CONFIG) != $endpoint ]; then
             pfSsh.php playback chgwgpeer $CONFIG $(echo $endpoint|awk -F: '{print $1}') $(echo $endpoint|awk -F: '{print $2}') || true;
         fi;
