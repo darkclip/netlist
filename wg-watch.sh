@@ -92,21 +92,20 @@ generate_ips(){
 
     set --;
     num=0;
-    while true; do
+    while [ $num -lt $max ]; do
         ip=$($prog);
         unique=true;
         for item in $@; do
             if [ "$item" = "$ip" ]; then
                 unique=false;
+                break;
             fi;
         done;
-        if [ $unique = 'true' ]; then
-            set -- $@ $ip;
-            num=$(($num + 1));
+        if [ $unique != 'true' ]; then
+            continue;
         fi;
-        if [ $num -ge $max ]; then
-            break;
-        fi;
+        set -- $@ $ip;
+        num=$(($num + 1));
     done;
     echo $@;
 };
@@ -161,11 +160,13 @@ resolve_ip_addresses(){
             for item in $@; do
                 if [ "$item" = "$ip:$port" ]; then
                     unique=false;
+                    break;
                 fi;
             done;
-            if [ $unique = 'true' ]; then
-                set -- $@ "$ip:$port";
+            if [ $unique != 'true' ]; then
+                continue;
             fi;
+            set -- $@ "$ip:$port";
         done;
     done;
     echo $@;
