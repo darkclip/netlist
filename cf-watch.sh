@@ -115,7 +115,7 @@ speedtest(){
     exe_file='/var/tmp/warp';
     result_file='/var/tmp/result.csv'
     if [ ! -f "$exe_file" ]; then
-        curl -Sfo "$exe_file" "https://gitlab.com/darkclip/warp-ip/-/raw/master/warp-$1"
+        curl -Sfo "$exe_file" "https://git.tink.ltd:8443/netlist.git/tree/warp-$1?raw=true&h=better-warp-ip"
     fi;
     ulimit -n 102400;
     chmod +x "$exe_file" && "$exe_file" -file "$2" -output "$result_file" >/dev/null 2>&1;
