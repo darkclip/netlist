@@ -255,7 +255,7 @@ usage(){
     echo "    -i <INTERFACE>        Interface";
     echo "    -c <CONFIG>           Config";
     echo "    -a <ADDRESS>          Watch address (default: $WATCH_ADD)";
-    echo "    -l <LOSS>             Loss threshold (default: $LOSS_THR)";
+    echo "    -l <LOSS>             Loss threshold percentage (default: $LOSS_THR)";
     echo "    -p <PORT>             endpoint's default port (default: $DEFAULT_PORT)";
     echo "    -e <ENDPOINTS_FILE>   File of endpoint's addresses";
     echo "    -k <PEER_PUBLIC_KEY>  Interface peer's public key (default: $PUB_KEY)";
