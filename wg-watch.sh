@@ -206,8 +206,8 @@ main(){
     fi;
     endpoint=$(wg show $INTERFACE endpoints | awk '{print $2}');
     if [ "$(uname -i)" = 'pfSense' ]; then
-        if [ $(pfSsh.php playback chgwgpeer $CONFIG) != $endpoint ]; then
-            pfSsh.php playback chgwgpeer $CONFIG $(echo $endpoint|awk -F: '{print $1}') $(echo $endpoint|awk -F: '{print $2}') || true;
+        if [ $(pfSsh.php playback wgpeer $CONFIG) != $endpoint ]; then
+            pfSsh.php playback wgpeer $CONFIG $(echo $endpoint|awk -F: '{print $1}') $(echo $endpoint|awk -F: '{print $2}') || true;
         fi;
     else
         sed -i -r 's/Endpoint =.*/Endpoint = '$endpoint'/' $CONFIG

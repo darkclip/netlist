@@ -80,7 +80,7 @@ jobs:
           ./netgen.py ref1/china6.txt -o target/wgcf-down.sh -p 'ip route del ' -s ' dev eth0 via fe80::6a77:24ff:fed6:809d || true'
           ./netgen.py private4.txt -o target/wgcf-down.sh -p 'ip route del ' -s ' dev eth0 via 10.11.0.1 || true'
           ./netgen.py private6.txt -o target/wgcf-down.sh -p 'ip route del ' -s ' dev eth0 via fe80::6a77:24ff:fed6:809d || true'
-          cp cf-watch.sh target/
+          cp wg-watch.sh target/
           cd target
           chmod +x *.sh
           tar -cf sha.tar *.sh
