@@ -32,8 +32,7 @@ archAffix(){
             esac;
             ;;
         *)
-            echo 'unsupported OS' && exit 1;
-            ;;
+            echo 'unsupported OS' && exit 1 ;;
     esac;
     echo $os-$arch;
 };
