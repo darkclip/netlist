@@ -95,8 +95,8 @@ generate_ips(){
     while true; do
         ip=$($prog);
         unique=true;
-        for index in $@; do
-            if [ "$index" = "$ip" ]; then
+        for item in $@; do
+            if [ "$item" = "$ip" ]; then
                 unique=false;
             fi;
         done;
@@ -134,20 +134,41 @@ speedtest(){
 get_ip_cadidates(){
     limit=100
     ip_file='/var/tmp/ip.txt'
-    for index in $(generate_ips $limit $1); do
-        echo "$index" >> "$ip_file";
+    for item in $(generate_ips $limit $1); do
+        echo "$item" >> "$ip_file";
     done;
     if [ $4 = 'true' ]; then
-        ip_list=$(speedtest $(archAffix) "$ip_file" $3);
+        result_list=$(speedtest $(archAffix) "$ip_file" $3);
     else
-        ip_list=$(head -$3 "$ip_file" | awk '{print $1":"'$2'}');
+        result_list=$(head -$3 "$ip_file" | awk '{print $1":"'$2'}');
     fi;
-    result=$?;
+    ret_code=$?;
     rm -f "$ip_file";
-    echo $ip_list;
-    if [ $result -ne 0 ]; then
+    echo $result_list;
+    if [ $ret_code -ne 0 ]; then
         exit 1;
     fi;
+};
+
+resolve_ip_addresses(){
+    addresses=$(cat "$1");
+    port=$2;
+    set --;
+    for addr in $addresses; do
+        ips=$(getent ahosts $addr | awk '{print $1}');
+        for ip in $ips; do
+            unique=true;
+            for item in $@; do
+                if [ "$item" = "$ip:$port" ]; then
+                    unique=false;
+                fi;
+            done;
+            if [ $unique = 'true' ]; then
+                set -- $@ "$ip:$port";
+            fi;
+        done;
+    done;
+    echo $@;
 };
 
 main(){
@@ -162,23 +183,27 @@ main(){
     echo "Running on $arch"
     loss=$(get_ping_loss $WATCH_ADD);
     while [ $loss -ge $LOSS_THR ]; do
-        if [ $retry -lt $dl_retry_times ]; then
-            echo "Try to run speed test"
-            cadidates=$(get_ip_cadidates $FAMILY $DEFAULT_PORT $num_cadidates true);
+        if [ ! "$ENDPOINTS" ]; then
+            if [ $retry -lt $dl_retry_times ]; then
+                echo "Try to run speed test"
+                cadidates=$(get_ip_cadidates $FAMILY $DEFAULT_PORT $num_cadidates true);
+            else
+                echo "Use random ip on port $DEFAULT_PORT"
+                cadidates=$(get_ip_cadidates $FAMILY $DEFAULT_PORT $num_cadidates false);
+            fi;
+            if [ $? -ne 0 ]; then
+                retry=$(($retry + 1));
+                continue;
+            fi
         else
-            echo "Use random ip on port $DEFAULT_PORT"
-            cadidates=$(get_ip_cadidates $FAMILY $DEFAULT_PORT $num_cadidates false);
+            cadidates=$(resolve_ip_addresses "$ENDPOINTS" $DEFAULT_PORT);
         fi;
-        if [ $? -ne 0 ]; then
-            retry=$(($retry + 1));
-            continue;
-        fi
-        for cfip in $cadidates; do
+        for ip_port in $cadidates; do
             loss=$(get_ping_loss $WATCH_ADD);
             if [ $loss -lt $LOSS_THR ]; then
                 break;
             fi;
-            echo "set $INTERFACE endpoint to $cfip";
+            echo "set $INTERFACE endpoint to $ip_port";
             if [ $TEST_RUN = 'true' ]; then
                 continue;
             fi;
@@ -188,7 +213,7 @@ main(){
             if [ ! $INTERFACE ]; then
                 continue;
             fi;
-            wg set $INTERFACE peer 'bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=' endpoint $cfip;
+            wg set $INTERFACE peer 'bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=' endpoint $ip_port;
             sleep $wait_in_between;
         done
         if [ $TEST_RUN = 'true' ]; then
@@ -223,17 +248,19 @@ fi;
 
 
 usage(){
-    echo "Usage: $0 [-4] [-6] [-i <INTERFACE>] [-c <CONFIG>] [-a <ADDRESS>] [-l <LOSS>] [-p <PORT>] [-t] [-d]";
+    echo "Usage: $0 [OPTIONS]";
     echo "Options:"
-    echo "    -4            IPv4"
-    echo "    -6            IPv6"
-    echo "    -i INTERFACE  Interface"
-    echo "    -c CONFIG     Config"
-    echo "    -a ADDRESS    Watch address"
-    echo "    -l LOSS       Loss threshold"
-    echo "    -p PORT       Default port"
-    echo "    -t            Speed test only"
-    echo "    -d            Dry run"
+    echo "    -4                   IPv4 (default)"
+    echo "    -6                   IPv6"
+    echo "    -i <INTERFACE>       Interface"
+    echo "    -c <CONFIG>          Config"
+    echo "    -a <ADDRESS>         Watch address (default: $WATCH_ADD)"
+    echo "    -l <LOSS>            Loss threshold (default: $LOSS_THR)"
+    echo "    -p <PORT>            endpoint's default port (default: $DEFAULT_PORT)"
+    echo "    -e <ENDPOINTS_FILE>  File of endpoint's addresses"
+    echo "    -t                   Speed test only"
+    echo "    -d                   Dry run"
+    echo "Note: If -e is not set, generate endpoints for warp, else resolve addresses and use default port."
 }
 
 FAMILY=4;
@@ -242,9 +269,10 @@ CONFIG='';
 WATCH_ADD='1.1.1.1';
 LOSS_THR=30;
 DEFAULT_PORT=4500;
+ENDPOINTS='';
 TEST_RUN=false;
 DRY_RUN=false;
-while getopts ":h46i:c:a:l:p:td" opt; do
+while getopts ":h46i:c:a:l:p:e:td" opt; do
     case $opt in
         h)
             usage;
@@ -270,6 +298,9 @@ while getopts ":h46i:c:a:l:p:td" opt; do
         p)
             DEFAULT_PORT=$OPTARG;
             ;;
+        e)
+            ENDPOINTS=$OPTARG;
+            ;;
         t)
             TEST_RUN=true;
             ;;
@@ -286,3 +317,4 @@ while getopts ":h46i:c:a:l:p:td" opt; do
 done
 
 main
+
