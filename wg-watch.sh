@@ -213,7 +213,7 @@ main(){
             if [ ! $INTERFACE ]; then
                 continue;
             fi;
-            wg set $INTERFACE peer 'bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=' endpoint $ip_port;
+            wg set $INTERFACE peer $PUB_KEY endpoint $ip_port;
             sleep $wait_in_between;
         done
         if [ $TEST_RUN = 'true' ]; then
@@ -250,16 +250,17 @@ fi;
 usage(){
     echo "Usage: $0 [OPTIONS]";
     echo "Options:"
-    echo "    -4                   IPv4 (default)"
-    echo "    -6                   IPv6"
-    echo "    -i <INTERFACE>       Interface"
-    echo "    -c <CONFIG>          Config"
-    echo "    -a <ADDRESS>         Watch address (default: $WATCH_ADD)"
-    echo "    -l <LOSS>            Loss threshold (default: $LOSS_THR)"
-    echo "    -p <PORT>            endpoint's default port (default: $DEFAULT_PORT)"
-    echo "    -e <ENDPOINTS_FILE>  File of endpoint's addresses"
-    echo "    -t                   Speed test only"
-    echo "    -d                   Dry run"
+    echo "    -4                    IPv4 (default)"
+    echo "    -6                    IPv6"
+    echo "    -i <INTERFACE>        Interface"
+    echo "    -c <CONFIG>           Config"
+    echo "    -a <ADDRESS>          Watch address (default: $WATCH_ADD)"
+    echo "    -l <LOSS>             Loss threshold (default: $LOSS_THR)"
+    echo "    -p <PORT>             endpoint's default port (default: $DEFAULT_PORT)"
+    echo "    -e <ENDPOINTS_FILE>   File of endpoint's addresses"
+    echo "    -k <PEER_PUBLIC_KEY>  Interface peer's public key (default: $PUB_KEY)"
+    echo "    -t                    Speed test only"
+    echo "    -d                    Dry run"
     echo "Note: If -e is not set, generate endpoints for warp, else resolve addresses and use default port."
 }
 
@@ -270,9 +271,10 @@ WATCH_ADD='1.1.1.1';
 LOSS_THR=30;
 DEFAULT_PORT=4500;
 ENDPOINTS='';
+PUB_KEY='bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=';
 TEST_RUN=false;
 DRY_RUN=false;
-while getopts ":h46i:c:a:l:p:e:td" opt; do
+while getopts ":h46i:c:a:l:p:e:k:td" opt; do
     case $opt in
         h)
             usage;
@@ -300,6 +302,9 @@ while getopts ":h46i:c:a:l:p:e:td" opt; do
             ;;
         e)
             ENDPOINTS=$OPTARG;
+            ;;
+        k)
+            PUB_KEY=$OPTARG;
             ;;
         t)
             TEST_RUN=true;
