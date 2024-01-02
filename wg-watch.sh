@@ -274,11 +274,8 @@ ENDPOINTS='';
 PUB_KEY='bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=';
 TEST_RUN=false;
 DRY_RUN=false;
-while getopts ":h46i:c:a:l:p:e:k:td" opt; do
-    case $opt in
-        h)
-            usage;
-            exit;;
+while getopts ":46i:c:a:l:p:e:k:td" OPT; do
+    case $OPT in
         4)
             FAMILY=4;
             ;;
@@ -317,6 +314,7 @@ while getopts ":h46i:c:a:l:p:e:k:td" opt; do
             exit 1;;
         ?)
             echo "Invalid Option: -$OPTARG";
+            usage;
             exit 1;;
     esac;
 done;
