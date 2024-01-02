@@ -89,7 +89,7 @@ jobs:
           cp wg-watch.sh target/
           cd target
           chmod +x *.sh
-          tar -cf sha.tar *.sh
+          tar -cf warp.tar *.sh
           rm *.sh
       - name: Push to target branch
         continue-on-error: true
