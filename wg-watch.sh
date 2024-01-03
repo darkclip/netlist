@@ -104,7 +104,7 @@ generate_ips(){
             continue;
         fi;
         set -- $@ $ip;
-        num=$(($num + 1));
+        num=$((num + 1));
     done;
     echo $@;
 };
@@ -132,7 +132,7 @@ speedtest(){
 get_ip_cadidates(){
     limit=100;
     ip_file='/var/tmp/ip.txt'
-    echo "" > "$ip_file";
+    rm -f "$ip_file";
     for item in $(generate_ips $limit $1); do
         echo "$item" >> "$ip_file";
     done;
@@ -242,8 +242,12 @@ main(){
 
 
 already_running(){
-    cmds=$(echo "$1"|awk '{OFS="_";$1="";print $0}');
+    self=$(echo $0 $@|awk '{OFS="_";$1="__"$1;print $0}')
+    cmds=$(pgrep -afl $0|awk '{OFS="_";$1="";$2="";print $0}');
     set --;
+    num_occur=0;
+    num_unique=0;
+    pos=0;
     for proc in $cmds; do
         unique=1;
         for item in $@; do
@@ -252,14 +256,20 @@ already_running(){
                 break;
             fi;
         done;
+        if [ $self = $proc ]; then
+            num_occur=$((num_occur + 1));
+        fi;
         if [ $unique -eq 0 ]; then
             continue;
         fi;
         set -- $@ $proc;
+        num_unique=$((num_unique + 1));
+        if [ $self = $proc ]; then
+            pos=$num_unique;
+        fi;
     done
     num_raw=$(echo "$cmds"|wc -l);
-    num_unique=$(echo $@|sed 's/ /\n/g'|wc -l);
-    if [ $(((num_raw + 2) / 3)) -eq $num_unique ]; then
+    if [ $num_occur -le 5 ]; then
         echo 0;
         exit;
     fi;
@@ -338,8 +348,8 @@ while getopts ":46i:c:a:l:p:e:k:td" OPT; do
     esac;
 done;
 
-ps=$(pgrep -afl $0);
-if [ $(already_running "$ps") -eq 1 ]; then
+
+if [ $(already_running "$@") -eq 1 ]; then
     echo "Another process is already running.";
     exit;
 fi;
