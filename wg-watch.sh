@@ -132,6 +132,7 @@ speedtest(){
 get_ip_cadidates(){
     limit=100;
     ip_file='/var/tmp/ip.txt'
+    echo "" > "$ip_file";
     for item in $(generate_ips $limit $1); do
         echo "$item" >> "$ip_file";
     done;
@@ -240,14 +241,12 @@ main(){
 };
 
 
-
 already_running(){
-    self=$1;
-    processes=$(pgrep -afl $self|awk '{$1="";print $0}');
+    cmds=$(echo "$1"|awk '{OFS="_";$1="";print $0}');
     set --;
-    for proc in "$processes"; do
+    for proc in $cmds; do
         unique=1;
-        for item in "$@"; do
+        for item in $@; do
             if [ "$item" = "$proc" ]; then
                 unique=0;
                 break;
@@ -256,9 +255,9 @@ already_running(){
         if [ $unique -eq 0 ]; then
             continue;
         fi;
-        set -- $@ "$proc";
+        set -- $@ $proc;
     done
-    if [ $(echo "$processes"|wc -l) -eq $(echo "$@"|wc -l) ]; then
+   if [ $(echo "$cmds"|wc -l) -eq $(echo "$@"|wc -l) ]; then
         echo 0;
     else
         echo 1;
@@ -337,7 +336,8 @@ while getopts ":46i:c:a:l:p:e:k:td" OPT; do
     esac;
 done;
 
-if [ $(already_running $0) -eq 1 ]; then
+ps=$(pgrep -afl $0);
+if [ $(already_running "$ps") -eq 1 ]; then
     echo "Another process is already running.";
     exit;
 fi;
