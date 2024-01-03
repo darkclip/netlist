@@ -268,8 +268,8 @@ already_running(){
             pos=$num_unique;
         fi;
     done;
-    if [ $num_occur -le 5 ]; then
-        if [ $num_unique -eq $pos ]; then
+    if [ $num_unique -eq $pos ]; then
+        if [ $num_occur -le 5 ]; then
             echo 0;
             exit;
         fi;
