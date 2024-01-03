@@ -4,10 +4,10 @@
 archAffix(){
     os='';
     arch='';
-    case "$(uname)" in
+    case $(uname) in
         Linux)
             os='linux';
-            case "$(uname -m)" in
+            case $(uname -m) in
                 i386 | i686) arch='386' ;;
                 x86_64 | amd64) arch='amd64' ;;
                 armv8 | arm64 | aarch64) arch='arm64' ;;
@@ -16,7 +16,7 @@ archAffix(){
             ;;
         Darwin)
             os='darwin';
-            case "$(uname -m)" in
+            case $(uname -m) in
                 x86_64 | amd64) arch='amd64' ;;
                 armv8 | arm64 | aarch64) arch='arm64' ;;
                 *) echo 'unsupported CPU' && exit 1 ;;
@@ -24,7 +24,7 @@ archAffix(){
             ;;
         FreeBSD)
             os='freebsd';
-            case "$(uname -m)" in
+            case $(uname -m) in
                 i386 | i686) arch='386' ;;
                 x86_64 | amd64) arch='amd64' ;;
                 armv8 | arm64 | aarch64) arch='arm64' ;;
@@ -95,7 +95,7 @@ generate_ips(){
         ip=$($prog);
         unique=1;
         for item in $@; do
-            if [ "$item" = "$ip" ]; then
+            if [ $item = $ip ]; then
                 unique=0;
                 break;
             fi;
@@ -158,7 +158,7 @@ resolve_ip_addresses(){
         for ip in $ips; do
             unique=1;
             for item in $@; do
-                if [ "$item" = "$ip:$port" ]; then
+                if [ $item = $ip:$port ]; then
                     unique=0;
                     break;
                 fi;
@@ -166,7 +166,7 @@ resolve_ip_addresses(){
             if [ $unique -eq 0 ]; then
                 continue;
             fi;
-            set -- $@ "$ip:$port";
+            set -- $@ $ip:$port;
         done;
     done;
     echo $@;
@@ -231,7 +231,7 @@ main(){
         exit;
     fi;
     endpoint=$(wg show $INTERFACE endpoints | awk '{print $2}');
-    if [ "$(uname -i)" = 'pfSense' ]; then
+    if [ $(uname -i) = 'pfSense' ]; then
         if [ $(pfSsh.php playback wgpeer $CONFIG) != $endpoint ]; then
             pfSsh.php playback wgpeer $CONFIG $(echo $endpoint|awk -F: '{print $1}') $(echo $endpoint|awk -F: '{print $2}') || true;
         fi;
@@ -247,7 +247,7 @@ already_running(){
     for proc in $cmds; do
         unique=1;
         for item in $@; do
-            if [ "$item" = "$proc" ]; then
+            if [ $item = $proc ]; then
                 unique=0;
                 break;
             fi;
