@@ -243,7 +243,7 @@ main(){
 
 already_running(){
     self=$1;
-    processes=$(pgrep -afl $self);
+    processes=$(pgrep -afl $self|awk '{$1="";print $0}');
     set --;
     for proc in "$processes"; do
         unique=1;
