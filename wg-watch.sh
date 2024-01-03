@@ -46,11 +46,11 @@ get_rnd_hex(){
 };
 
 get_ping_loss(){
-    if [ $TEST_RUN = 'true' ]; then
+    if [ $TEST_RUN -eq 1 ]; then
         echo 100;
         exit;
     fi;
-    if [ $DRY_RUN = 'true' ]; then
+    if [ $DRY_RUN -eq 1 ]; then
         echo 100;
         exit;
     fi;
@@ -93,14 +93,14 @@ generate_ips(){
     num=0;
     while [ $num -lt $max ]; do
         ip=$($prog);
-        unique=true;
+        unique=1;
         for item in $@; do
             if [ "$item" = "$ip" ]; then
-                unique=false;
+                unique=0;
                 break;
             fi;
         done;
-        if [ $unique != 'true' ]; then
+        if [ $unique -eq 0 ]; then
             continue;
         fi;
         set -- $@ $ip;
@@ -122,7 +122,7 @@ speedtest(){
         rm -f "$result_file";
         echo $ips;
     else
-        if [ $DRY_RUN != 'true' ]; then
+        if [ $DRY_RUN -eq 0 ]; then
             rm -f $exe_file;
         fi;
         exit 1;
@@ -135,7 +135,7 @@ get_ip_cadidates(){
     for item in $(generate_ips $limit $1); do
         echo "$item" >> "$ip_file";
     done;
-    if [ $4 = 'true' ]; then
+    if [ $4 -eq 1 ]; then
         result_list=$(speedtest $(archAffix) "$ip_file" $3);
     else
         result_list=$(head -$3 "$ip_file" | awk '{print $1":"'$2'}');
@@ -155,14 +155,14 @@ resolve_ip_addresses(){
     for addr in $addresses; do
         ips=$(getent ahosts $addr | awk '{print $1}');
         for ip in $ips; do
-            unique=true;
+            unique=1;
             for item in $@; do
                 if [ "$item" = "$ip:$port" ]; then
-                    unique=false;
+                    unique=0;
                     break;
                 fi;
             done;
-            if [ $unique != 'true' ]; then
+            if [ $unique -eq 0 ]; then
                 continue;
             fi;
             set -- $@ "$ip:$port";
@@ -186,10 +186,10 @@ main(){
         if [ ! "$ENDPOINTS" ]; then
             if [ $retry -lt $dl_retry_times ]; then
                 echo "Try to run speed test"
-                cadidates=$(get_ip_cadidates $FAMILY $DEFAULT_PORT $num_cadidates true);
+                cadidates=$(get_ip_cadidates $FAMILY $DEFAULT_PORT $num_cadidates 1);
             else
                 echo "Use random ip on port $DEFAULT_PORT"
-                cadidates=$(get_ip_cadidates $FAMILY $DEFAULT_PORT $num_cadidates false);
+                cadidates=$(get_ip_cadidates $FAMILY $DEFAULT_PORT $num_cadidates 0);
             fi;
             if [ $? -ne 0 ]; then
                 retry=$(($retry + 1));
@@ -204,10 +204,10 @@ main(){
                 break;
             fi;
             echo "set $INTERFACE endpoint to $ip_port";
-            if [ $TEST_RUN = 'true' ]; then
+            if [ $TEST_RUN -eq 1 ]; then
                 continue;
             fi;
-            if [ $DRY_RUN = 'true' ]; then
+            if [ $DRY_RUN -eq 1 ]; then
                 continue;
             fi;
             if [ ! $INTERFACE ]; then
@@ -216,11 +216,11 @@ main(){
             wg set $INTERFACE peer $PUB_KEY endpoint $ip_port;
             sleep $wait_in_between;
         done
-        if [ $TEST_RUN = 'true' ]; then
+        if [ $TEST_RUN -eq 1 ]; then
             exit;
         fi;
     done;
-    if [ $DRY_RUN = 'true' ]; then
+    if [ $DRY_RUN -eq 1 ]; then
         exit;
     fi;
     if [ ! $INTERFACE ]; then
@@ -240,12 +240,30 @@ main(){
 };
 
 
-pids=$(pgrep -afl $0);
-if [ $(echo $pids|grep -o $0|wc -l) -gt 1 ]; then
-    echo "Another process is already running.";
-    exit;
-fi;
 
+already_running(){
+    self=$1;
+    processes=$(pgrep -afl $self);
+    set --;
+    for proc in "$processes"; do
+        unique=1;
+        for item in "$@"; do
+            if [ "$item" = "$proc" ]; then
+                unique=0;
+                break;
+            fi;
+        done;
+        if [ $unique -eq 0 ]; then
+            continue;
+        fi;
+        set -- $@ "$proc";
+    done
+    if [ $(echo "$processes"|wc -l) -eq $(echo "$@"|wc -l) ]; then
+        echo 0;
+    else
+        echo 1;
+    fi
+};
 
 usage(){
     echo "Usage: $0 [OPTIONS]";
@@ -272,8 +290,8 @@ LOSS_THR=30;
 DEFAULT_PORT=4500;
 ENDPOINTS='';
 PUB_KEY='bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=';
-TEST_RUN=false;
-DRY_RUN=false;
+TEST_RUN=0;
+DRY_RUN=0;
 while getopts ":46i:c:a:l:p:e:k:td" OPT; do
     case $OPT in
         4)
@@ -304,10 +322,10 @@ while getopts ":46i:c:a:l:p:e:k:td" OPT; do
             PUB_KEY=$OPTARG;
             ;;
         t)
-            TEST_RUN=true;
+            TEST_RUN=1;
             ;;
         d)
-            DRY_RUN=true;
+            DRY_RUN=1;
             ;;
         :)
             echo "Option -$OPTARG requires an argument.";
@@ -319,5 +337,9 @@ while getopts ":46i:c:a:l:p:e:k:td" OPT; do
     esac;
 done;
 
+if [ $(already_running $0) -eq 1 ]; then
+    echo "Another process is already running.";
+    exit;
+fi;
 main;
 
