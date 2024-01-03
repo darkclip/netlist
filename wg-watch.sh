@@ -267,11 +267,12 @@ already_running(){
         if [ $self = $proc ]; then
             pos=$num_unique;
         fi;
-    done
-    num_raw=$(echo "$cmds"|wc -l);
+    done;
     if [ $num_occur -le 5 ]; then
-        echo 0;
-        exit;
+        if [ $num_unique -eq $pos ]; then
+            echo 0;
+            exit;
+        fi;
     fi;
     echo 1;
 };
