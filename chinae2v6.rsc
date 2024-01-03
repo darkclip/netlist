@@ -2530,7 +2530,6 @@ add address=2406:5880::/32 list=List_ChinaE2
 add address=2406:5940::/32 list=List_ChinaE2
 add address=2406:5980::/32 list=List_ChinaE2
 add address=2406:5a40::/32 list=List_ChinaE2
-add address=2406:5ac0::/32 list=List_ChinaE2
 add address=2406:5b40::/32 list=List_ChinaE2
 add address=2406:5d80::/32 list=List_ChinaE2
 add address=2406:5e80::/32 list=List_ChinaE2
