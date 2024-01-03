@@ -259,11 +259,7 @@ already_running(){
     done
     num_raw=$(echo "$cmds"|wc -l);
     num_unique=$(echo $@|sed 's/ /\n/g'|wc -l);
-    if [ $num_raw -eq $num_unique ]; then
-        echo 0;
-        exit;
-    fi;
-    if [ $num_raw -eq $((num_unique+2)) ]; then
+    if [ $(((num_raw + 2) / 3)) -eq $num_unique ]; then
         echo 0;
         exit;
     fi;
