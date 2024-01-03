@@ -257,11 +257,13 @@ already_running(){
         fi;
         set -- $@ $proc;
     done
-   if [ $(echo "$cmds"|wc -l) -eq $(echo "$@"|wc -l) ]; then
+    num_raw=$(echo "$cmds"|wc -l);
+    num_unique=$(echo "$@"|wc -l);
+    if [ $num_raw -eq $num_unique ]; then
         echo 0;
-    else
-        echo 1;
-    fi
+        exit;
+    fi;
+    echo 1;
 };
 
 usage(){
