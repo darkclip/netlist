@@ -94,6 +94,7 @@ add address=2406:cf00::/48 list=List_Telecom
 add address=2406:cf00:1000::/43 list=List_Telecom
 add address=2407:3740::/48 list=List_Telecom
 add address=2407:6c40:1810::/48 list=List_Telecom
+add address=2407:9f00::/32 list=List_Telecom
 add address=2407:b380:8000::/48 list=List_Telecom
 add address=2407:c080:1800::/37 list=List_Telecom
 add address=2409:27fa:f000::/48 list=List_Telecom
