@@ -492,8 +492,7 @@ add address=2408:8958::/30 list=List_Unicom
 add address=2408:8962::/31 list=List_Unicom
 add address=2408:8964::/31 list=List_Unicom
 add address=2408:8966::/32 list=List_Unicom
-add address=2408:896c::/32 list=List_Unicom
-add address=2408:896e::/31 list=List_Unicom
+add address=2408:896c::/30 list=List_Unicom
 add address=2408:8978::/30 list=List_Unicom
 add address=2408:897e::/32 list=List_Unicom
 add address=2408:8a00:c000::/36 list=List_Unicom
