@@ -238,7 +238,9 @@ main(){
             fi;
             ;;
         *)
-            sed -i -r 's/Endpoint =.*/Endpoint = '$endpoint'/' $CONFIG;
+            if [ $(grep "Endpoint" $CONFIG|awk '{print $3}') != $endpoint ]; then
+                sed -i -r 's/Endpoint.*/Endpoint = '$endpoint'/' $CONFIG;
+            fi;
             ;;
     esac;
 };
