@@ -355,7 +355,7 @@ while getopts ":46i:c:a:l:p:e:k:td" OPT; do
 done;
 
 
-if [ $(already_running "$@") -eq 1 ]; then
+if [ $(uname -i) = 'pfSense' ] && [ $(already_running "$@") -eq 1 ]; then
     echo "Another process is already running.";
     exit;
 fi;
