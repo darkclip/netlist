@@ -4099,7 +4099,9 @@ add address=119.38.16.0/20 list=List_ChinaE3
 add address=119.38.32.0/19 list=List_ChinaE3
 add address=119.38.64.0/18 list=List_ChinaE3
 add address=119.38.128.0/17 list=List_ChinaE3
-add address=119.40.32.0/19 list=List_ChinaE3
+add address=119.40.32.0/21 list=List_ChinaE3
+add address=119.40.44.0/22 list=List_ChinaE3
+add address=119.40.48.0/20 list=List_ChinaE3
 add address=119.40.64.0/20 list=List_ChinaE3
 add address=119.42.128.0/20 list=List_ChinaE3
 add address=119.42.224.0/19 list=List_ChinaE3
