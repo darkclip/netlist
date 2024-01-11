@@ -240,35 +240,32 @@ main(){
     if [ -z $INTERFACE ]; then
         exit;
     fi;
-    if [ -z $CONFIG ]; then
-        exit;
-    fi;
     endpoint=$(wg show $INTERFACE endpoints | awk '{print $2}');
     serveraddress=$(echo $endpoint|awk -F: '{print $1}');
     serverport=$(echo $endpoint|awk -F: '{print $2}');
     case $(uname -i) in
         pfSense)
-            if [ $(pfSsh.php playback wgpeer $CONFIG) != $endpoint ]; then
-                echo "set pfSense config"
+            if [ $CONFIG ] && [ $(pfSsh.php playback wgpeer $CONFIG) != $endpoint ]; then
+                echo "set pfSense"
                 pfSsh.php playback wgpeer $CONFIG $serveraddress $serverport  || true;
             fi;
             ;;
         *)
+            if [ $CONFIG ] && [ $(grep -i "Endpoint" $CONFIG|awk '{print $3}') != $endpoint ]; then
+                echo "set config"
+                sed -i -r 's/Endpoint.*/Endpoint = '$endpoint'/i' $CONFIG;
+            fi;
             if [ $HOST ]; then
                 json=$(curl -ksSf "https://$HOST/api/wireguard/client/getClient/$UUID" -H "Authorization: Basic $BASIC") 2>&1;
                 s_add=$(get_json_value "$json" serveraddress)
                 s_port=$(get_json_value "$json" serverport)
                 if [ "$s_add:$s_port" != $endpoint ]; then
-                    echo "set opnSense config"
+                    echo "set opnSense"
                     curl -ksSfX POST "https://$HOST/api/wireguard/client/setClient/$UUID" \
                         -H "Content-Type: application/json" \
                         -H "Authorization: Basic $BASIC" \
                         -d '{"client":{"serveraddress":"'$serveraddress'","serverport":"'$serverport'","servers":"'$SERVER'"}}' 2>&1;
                 fi;
-            fi;
-            if [ $(grep -i "Endpoint" $CONFIG|awk '{print $3}') != $endpoint ]; then
-                echo "set config file"
-                sed -i -r 's/Endpoint.*/Endpoint = '$endpoint'/i' $CONFIG;
             fi;
             ;;
     esac;
