@@ -247,7 +247,7 @@ main(){
         pfSense)
             if [ $CONFIG ] && [ $(pfSsh.php playback wgpeer $CONFIG) != $endpoint ]; then
                 echo "set pfSense";
-                pfSsh.php playback wgpeer $CONFIG $serveraddress $serverport  || true;
+                pfSsh.php playback wgpeer $CONFIG $serveraddress $serverport || true;
             fi;
             ;;
         *)
