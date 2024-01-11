@@ -173,15 +173,15 @@ resolve_ip_addresses(){
 };
 
 get_json_value(){
-  json=$1;
-  key=$2;
-  if [ -z "$3" ]; then
-    num=1;
-  else
-    num=$3;
-  fi
-  value=$(echo "$json" | awk -F"[,:}]" '{for(i=1;i<=NF;i++){if($i~/'$key'\042/){print $(i+1)}}}' | tr -d '"' | sed -n $(echo $num)p);
-  echo $value;
+    json=$1;
+    key=$2;
+    if [ -z "$3" ]; then
+        num=1;
+    else
+        num=$3;
+    fi;
+    value=$(echo "$json" | awk -F"[,:}]" '{for(i=1;i<=NF;i++){if($i~/'$key'\042/){print $(i+1)}}}' | tr -d '"' | sed -n $(echo $num)p);
+    echo $value;
 };
 
 main(){
@@ -256,8 +256,8 @@ main(){
         *)
             if [ $HOST ]; then
                 json=$(curl -ksSf "https://$HOST/api/wireguard/client/getClient/$UUID" -H "Authorization: Basic $BASIC") 2>&1;
-                s_add=$(get_json_value $json serveraddress)
-                s_port=$(get_json_value $json serverport)
+                s_add=$(get_json_value "$json" serveraddress)
+                s_port=$(get_json_value "$json" serverport)
                 if [ "$s_add:$s_port" != $endpoint ]; then
                     echo "set opnSense config"
                     curl -ksSfX POST "https://$HOST/api/wireguard/client/setClient/$UUID" \
