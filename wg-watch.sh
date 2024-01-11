@@ -113,7 +113,7 @@ speedtest(){
     exe_file='/var/tmp/warp';
     result_file='/var/tmp/result.csv'
     if [ ! -x "$exe_file" ]; then
-        curl -Sfo "$exe_file" "https://git.tink.ltd:8443/netlist.git/tree/warp-$1?raw=true&h=better-warp-ip";
+        curl -Sfo "$exe_file" "https://git.tink.ltd:8443/netlist.git/tree/warp-$1?raw=true&h=better-warp-ip" 2>&1;
     fi;
     ulimit -n 102400;
     chmod +x "$exe_file" && "$exe_file" -file "$2" -output "$result_file" >/dev/null 2>&1;
@@ -193,15 +193,15 @@ main(){
     if [ $? -ne 0 ]; then
         retry=$dl_retry_times;
     fi;
-    echo "$arch"
+    echo "$arch";
     loss=$(get_ping_loss $WATCH_ADD);
     while [ $loss -ge $LOSS_THR ]; do
         if [ ! -r "$ENDPOINTS" ]; then
             if [ $retry -lt $dl_retry_times ]; then
-                echo "test ip speed"
+                echo "test ip speed";
                 cadidates=$(get_ip_cadidates $FAMILY $DEFAULT_PORT $num_cadidates 1);
             else
-                echo "random ip on $DEFAULT_PORT"
+                echo "random ip on $DEFAULT_PORT";
                 cadidates=$(get_ip_cadidates $FAMILY $DEFAULT_PORT $num_cadidates 0);
             fi;
             if [ $? -ne 0 ]; then
@@ -209,7 +209,7 @@ main(){
                 continue;
             fi;
         else
-            echo "file ip on $DEFAULT_PORT"
+            echo "file ip on $DEFAULT_PORT";
             cadidates=$(resolve_ip_addresses "$ENDPOINTS" $DEFAULT_PORT);
         fi;
         for ip_port in $cadidates; do
@@ -246,21 +246,21 @@ main(){
     case $(uname -i) in
         pfSense)
             if [ $CONFIG ] && [ $(pfSsh.php playback wgpeer $CONFIG) != $endpoint ]; then
-                echo "set pfSense"
+                echo "set pfSense";
                 pfSsh.php playback wgpeer $CONFIG $serveraddress $serverport  || true;
             fi;
             ;;
         *)
             if [ $CONFIG ] && [ $(grep -i "Endpoint" $CONFIG|awk '{print $3}') != $endpoint ]; then
-                echo "set config"
+                echo "set config";
                 sed -i -r 's/Endpoint.*/Endpoint = '$endpoint'/i' $CONFIG;
             fi;
             if [ $HOST ]; then
                 json=$(curl -ksSf "https://$HOST/api/wireguard/client/getClient/$UUID" -H "Authorization: Basic $BASIC") 2>&1;
-                s_add=$(get_json_value "$json" serveraddress)
-                s_port=$(get_json_value "$json" serverport)
+                s_add=$(get_json_value "$json" serveraddress);
+                s_port=$(get_json_value "$json" serverport);
                 if [ "$s_add:$s_port" != $endpoint ]; then
-                    echo "set opnSense"
+                    echo "set opnSense";
                     curl -ksSfX POST "https://$HOST/api/wireguard/client/setClient/$UUID" \
                         -H "Content-Type: application/json" \
                         -H "Authorization: Basic $BASIC" \
