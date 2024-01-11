@@ -180,7 +180,7 @@ get_json_value(){
     else
         num=$3;
     fi;
-    value=$(echo "$json" | awk -F"[,:}]" '{for(i=1;i<=NF;i++){if($i~/'$key'\042/){print $(i+1)}}}' | tr -d '"' | sed -n $(echo $num)p);
+    value=$(echo "$json" | awk -F"[,:}]" '{for(i=1;i<=NF;i++){if($i~/'$key'\042/){print $(i+1)}}}' | tr -d '"' | sed -n $num'p');
     echo $value;
 };
 
