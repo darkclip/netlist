@@ -240,7 +240,7 @@ main(){
             fi;
             ;;
         *)
-            if [ -n $HOST ]; then
+            if [ $HOST ]; then
                 curl -kX POST "https://$HOST/api/wireguard/client/setClient/$UUID" \
                     -H "Content-Type: application/json" \
                     -H "Authorization: Basic $BASIC" \
