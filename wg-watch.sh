@@ -112,7 +112,7 @@ generate_ips(){
 speedtest(){
     exe_file='/var/tmp/warp';
     result_file='/var/tmp/result.csv'
-    if [ ! -f "$exe_file" ]; then
+    if [ ! -x "$exe_file" ]; then
         curl -Sfo "$exe_file" "https://git.tink.ltd:8443/netlist.git/tree/warp-$1?raw=true&h=better-warp-ip";
     fi;
     ulimit -n 102400;
@@ -184,7 +184,7 @@ main(){
     echo "Running on $arch"
     loss=$(get_ping_loss $WATCH_ADD);
     while [ $loss -ge $LOSS_THR ]; do
-        if [ ! "$ENDPOINTS" ]; then
+        if [ ! -r "$ENDPOINTS" ]; then
             if [ $retry -lt $dl_retry_times ]; then
                 echo "Try to run speed test"
                 cadidates=$(get_ip_cadidates $FAMILY $DEFAULT_PORT $num_cadidates 1);
@@ -211,7 +211,7 @@ main(){
             if [ $DRY_RUN -eq 1 ]; then
                 continue;
             fi;
-            if [ ! $INTERFACE ]; then
+            if [ -z $INTERFACE ]; then
                 continue;
             fi;
             wg set $INTERFACE peer $PUB_KEY endpoint $ip_port;
@@ -224,10 +224,10 @@ main(){
     if [ $DRY_RUN -eq 1 ]; then
         exit;
     fi;
-    if [ ! $INTERFACE ]; then
+    if [ -z $INTERFACE ]; then
         exit;
     fi;
-    if [ ! $CONFIG ]; then
+    if [ -z $CONFIG ]; then
         exit;
     fi;
     endpoint=$(wg show $INTERFACE endpoints | awk '{print $2}');
@@ -240,7 +240,7 @@ main(){
             fi;
             ;;
         *)
-            if [ $HOST ]; then
+            if [ -n $HOST ]; then
                 curl -kX POST "https://$HOST/api/wireguard/client/setClient/$UUID" \
                     -H "Content-Type: application/json" \
                     -H "Authorization: Basic $BASIC" \
