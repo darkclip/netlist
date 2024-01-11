@@ -244,7 +244,7 @@ main(){
                 curl -kX POST "https://$HOST/api/wireguard/client/setClient/$UUID" \
                     -H "Content-Type: application/json" \
                     -H "Authorization: Basic $BASIC" \
-                    -d '{"client": {"serveraddress": "'$serveraddress'","serverport": "'$serverport'"}}';
+                    -d '{"client":{"serveraddress":"'$serveraddress'","serverport":"'$serverport'","servers":"'$SERVER'"}}';
             fi;
             if [ $(grep -i "Endpoint" $CONFIG|awk '{print $3}') != $endpoint ]; then
                 sed -i -r 's/Endpoint.*/Endpoint = '$endpoint'/i' $CONFIG;
@@ -300,6 +300,7 @@ usage(){
     echo "    -n <HOST>             Hostname for opnSense";
     echo "    -u <UUID>             UUID for opnSense wg client";
     echo "    -b <BASIC>            Basic auth string for opnSense";
+    echo "    -s <SERVER>           Server UUID for opnSense";
     echo "    -a <ADDRESS>          Watch address (default: $WATCH_ADD)";
     echo "    -l <LOSS>             Loss threshold percentage (default: $LOSS_THR)";
     echo "    -p <PORT>             endpoint's default port (default: $DEFAULT_PORT)";
@@ -316,6 +317,7 @@ CONFIG='';
 HOST='';
 UUID='';
 BASIC='';
+SERVER='';
 WATCH_ADD='1.1.1.1';
 LOSS_THR=30;
 DEFAULT_PORT=4500;
@@ -323,7 +325,7 @@ ENDPOINTS='';
 PUB_KEY='bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=';
 TEST_RUN=0;
 DRY_RUN=0;
-while getopts ":46i:c:n:u:b:a:l:p:e:k:td" OPT; do
+while getopts ":46i:c:n:u:b:s:a:l:p:e:k:td" OPT; do
     case $OPT in
         4)
             FAMILY=4;
@@ -345,6 +347,9 @@ while getopts ":46i:c:n:u:b:a:l:p:e:k:td" OPT; do
             ;;
         b)
             BASIC=$OPTARG;
+            ;;
+        s)
+            SERVER=$OPTARG;
             ;;
         a)
             WATCH_ADD=$OPTARG;
