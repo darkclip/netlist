@@ -241,7 +241,7 @@ main(){
             ;;
         *)
             if [ $HOST ]; then
-                curl -kX POST "https://$HOST/api/wireguard/client/setClient/$UUID" \
+                curl -ksSfX POST "https://$HOST/api/wireguard/client/setClient/$UUID" \
                     -H "Content-Type: application/json" \
                     -H "Authorization: Basic $BASIC" \
                     -d '{"client":{"serveraddress":"'$serveraddress'","serverport":"'$serverport'","servers":"'$SERVER'"}}';
