@@ -231,13 +231,21 @@ main(){
         exit;
     fi;
     endpoint=$(wg show $INTERFACE endpoints | awk '{print $2}');
+    serveraddress=$(echo $endpoint|awk -F: '{print $1}');
+    serverport=$(echo $endpoint|awk -F: '{print $2}');
     case $(uname -i) in
         pfSense)
             if [ $(pfSsh.php playback wgpeer $CONFIG) != $endpoint ]; then
-                pfSsh.php playback wgpeer $CONFIG $(echo $endpoint|awk -F: '{print $1}') $(echo $endpoint|awk -F: '{print $2}') || true;
+                pfSsh.php playback wgpeer $CONFIG $serveraddress $serverport  || true;
             fi;
             ;;
         *)
+            if [ $HOST ]; then
+                curl -kX POST "https://$HOST/api/wireguard/client/setClient/$UUID" \
+                    -H "Content-Type: application/json" \
+                    -H "Authorization: Basic $BASIC" \
+                    -d '{"client": {"serveraddress": "'$serveraddress'","serverport": "'$serverport'"}}';
+            fi;
             if [ $(grep -i "Endpoint" $CONFIG|awk '{print $3}') != $endpoint ]; then
                 sed -i -r 's/Endpoint.*/Endpoint = '$endpoint'/i' $CONFIG;
             fi;
@@ -288,7 +296,10 @@ usage(){
     echo "    -4                    IPv4 (default)";
     echo "    -6                    IPv6";
     echo "    -i <INTERFACE>        Interface";
-    echo "    -c <CONFIG>           Config";
+    echo "    -c <CONFIG>           Config file name or pfSense interface name";
+    echo "    -n <HOST>             Hostname for opnSense";
+    echo "    -u <UUID>             UUID for opnSense wg client";
+    echo "    -b <BASIC>            Basic auth string for opnSense";
     echo "    -a <ADDRESS>          Watch address (default: $WATCH_ADD)";
     echo "    -l <LOSS>             Loss threshold percentage (default: $LOSS_THR)";
     echo "    -p <PORT>             endpoint's default port (default: $DEFAULT_PORT)";
@@ -302,6 +313,9 @@ usage(){
 FAMILY=4;
 INTERFACE='';
 CONFIG='';
+HOST='';
+UUID='';
+BASIC='';
 WATCH_ADD='1.1.1.1';
 LOSS_THR=30;
 DEFAULT_PORT=4500;
@@ -309,7 +323,7 @@ ENDPOINTS='';
 PUB_KEY='bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=';
 TEST_RUN=0;
 DRY_RUN=0;
-while getopts ":46i:c:a:l:p:e:k:td" OPT; do
+while getopts ":46i:c:n:u:b:a:l:p:e:k:td" OPT; do
     case $OPT in
         4)
             FAMILY=4;
@@ -322,6 +336,15 @@ while getopts ":46i:c:a:l:p:e:k:td" OPT; do
             ;;
         c)
             CONFIG=$OPTARG;
+            ;;
+        n)
+            HOST=$OPTARG;
+            ;;
+        u)
+            UUID=$OPTARG;
+            ;;
+        b)
+            BASIC=$OPTARG;
             ;;
         a)
             WATCH_ADD=$OPTARG;
