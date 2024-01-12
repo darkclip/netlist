@@ -260,7 +260,6 @@ add address=81.173.20.0/22 list=List_Telecom
 add address=81.173.28.0/24 list=List_Telecom
 add address=101.1.0.0/22 list=List_Telecom
 add address=101.2.172.0/22 list=List_Telecom
-add address=101.36.0.0/18 list=List_Telecom
 add address=101.36.64.0/20 list=List_Telecom
 add address=101.36.128.0/17 list=List_Telecom
 add address=101.39.0.0/16 list=List_Telecom
