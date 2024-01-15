@@ -1,0 +1,77 @@
+name: build-vyos-list
+
+on:
+  push:
+    branches:
+      - 'master'
+    paths:
+      - '.github/workflows/build-vyos-list.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '10 16 * * *'
+
+jobs:
+  build-vyos-list:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Checkout reference branch 1
+        uses: actions/checkout@v3
+        with:
+          ref: net
+          path: ref1
+      - name: Checkout target branch
+        uses: actions/checkout@v3
+        with:
+          ref: vyos-list
+          path: target
+      - name: Clean target branch
+        continue-on-error: true
+        run: rm target/*
+      - name: Rebuild target branch
+        run: |
+          ./netgen.py ref1/china4.txt -o target/china4.conf -p 'set firewall group network-group Group_China network '
+          ./netgen.py ref1/china6.txt -o target/china6.conf -p 'set firewall group ipv6-network-group Group_China network '
+
+          ./netgen.py ref1/telecom4.txt -o target/telecom4.conf -p 'set firewall group network-group Group_Telecom network '
+          ./netgen.py ref1/telecom6.txt -o target/telecom6.conf -p 'set firewall group ipv6-network-group Group_Telecom network '
+
+          ./netgen.py ref1/unicom4.txt -o target/unicom4.conf -p 'set firewall group network-group Group_Unicom network '
+          ./netgen.py ref1/unicom6.txt -o target/unicom6.conf -p 'set firewall group ipv6-network-group Group_Unicom network '
+
+          ./netgen.py ref1/mobile4.txt -o target/mobile4.conf -p 'set firewall group network-group Group_Mobile network '
+          ./netgen.py ref1/mobile6.txt -o target/mobile6.conf -p 'set firewall group ipv6-network-group Group_Mobile network '
+
+          ./netgen.py ref1/chinae2v4.txt -o target/chinae2v4.conf -p 'set firewall group network-group Group_ChinaE2 network '
+          ./netgen.py ref1/chinae2v6.txt -o target/chinae2v6.conf -p 'set firewall group ipv6-network-group Group_ChinaE2 network '
+
+          ./netgen.py ref1/chinae3v4.txt -o target/chinae3v4.conf -p 'set firewall group network-group Group_ChinaE3 network '
+          ./netgen.py ref1/chinae3v6.txt -o target/chinae3v6.conf -p 'set firewall group ipv6-network-group Group_ChinaE3 network '
+
+          ./netgen.py ref1/foreign4.txt -o target/foreign4.conf -p 'set firewall group network-group Group_Foreign network '
+          ./netgen.py ref1/foreign6.txt -o target/foreign6.conf -p 'set firewall group ipv6-network-group Group_Foreign network '
+
+          ./netgen.py private4.txt -o target/private4.conf -p 'set firewall group network-group Group_Private network '
+          ./netgen.py private6.txt -o target/private6.conf -p 'set firewall group ipv6-network-group Group_Private network '
+
+          cd target
+          tree -H . -P "*.txt" -T "VyOS List - $(date +%Y-%m-%d)" > index.html
+      - name: Push to target branch
+        continue-on-error: true
+        run: |
+          cd target
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add .
+          git commit -m "update $(date +%Y-%m-%d)"
+          git push -q
