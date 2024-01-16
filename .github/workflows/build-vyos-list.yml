@@ -40,29 +40,77 @@ jobs:
         run: rm target/*
       - name: Rebuild target branch
         run: |
+          echo -e '#!/bin/vbash\nsource /opt/vyatta/etc/functions/script-template\nconfigure\n' > target/china4.conf
+          echo -e '#!/bin/vbash\nsource /opt/vyatta/etc/functions/script-template\nconfigure\n' > target/china6.conf
+          echo -e 'delete firewall group network-group Group_China\n' >> target/china4.conf
+          echo -e 'delete firewall group network-group Group_China\n' >> target/china6.conf
           ./netgen.py ref1/china4.txt -o target/china4.conf -p 'set firewall group network-group Group_China network '
           ./netgen.py ref1/china6.txt -o target/china6.conf -p 'set firewall group ipv6-network-group Group_China network '
+          echo -e '\ncommit\nexit' >> target/china4.conf
+          echo -e '\ncommit\nexit' >> target/china6.conf
 
+          echo -e '#!/bin/vbash\nsource /opt/vyatta/etc/functions/script-template\nconfigure\n' > target/telecom4.conf
+          echo -e '#!/bin/vbash\nsource /opt/vyatta/etc/functions/script-template\nconfigure\n' > target/telecom6.conf
+          echo -e 'delete firewall group network-group Group_Telecom\n' >> target/telecom4.conf
+          echo -e 'delete firewall group network-group Group_Telecom\n' >> target/telecom6.conf
           ./netgen.py ref1/telecom4.txt -o target/telecom4.conf -p 'set firewall group network-group Group_Telecom network '
           ./netgen.py ref1/telecom6.txt -o target/telecom6.conf -p 'set firewall group ipv6-network-group Group_Telecom network '
+          echo -e '\ncommit\nexit' >> target/telecom4.conf
+          echo -e '\ncommit\nexit' >> target/telecom6.conf
 
+          echo -e '#!/bin/vbash\nsource /opt/vyatta/etc/functions/script-template\nconfigure\n' > target/unicom4.conf
+          echo -e '#!/bin/vbash\nsource /opt/vyatta/etc/functions/script-template\nconfigure\n' > target/unicom6.conf
+          echo -e 'delete firewall group network-group Group_Unicom\n' >> target/unicom4.conf
+          echo -e 'delete firewall group network-group Group_Unicom\n' >> target/unicom6.conf
           ./netgen.py ref1/unicom4.txt -o target/unicom4.conf -p 'set firewall group network-group Group_Unicom network '
           ./netgen.py ref1/unicom6.txt -o target/unicom6.conf -p 'set firewall group ipv6-network-group Group_Unicom network '
+          echo -e '\ncommit\nexit' >> target/unicom4.conf
+          echo -e '\ncommit\nexit' >> target/unicom6.conf
 
+          echo -e '#!/bin/vbash\nsource /opt/vyatta/etc/functions/script-template\nconfigure\n' > target/mobile4.conf
+          echo -e '#!/bin/vbash\nsource /opt/vyatta/etc/functions/script-template\nconfigure\n' > target/mobile6.conf
+          echo -e 'delete firewall group network-group Group_Mobile\n' >> target/mobile4.conf
+          echo -e 'delete firewall group network-group Group_Mobile\n' >> target/mobile6.conf
           ./netgen.py ref1/mobile4.txt -o target/mobile4.conf -p 'set firewall group network-group Group_Mobile network '
           ./netgen.py ref1/mobile6.txt -o target/mobile6.conf -p 'set firewall group ipv6-network-group Group_Mobile network '
+          echo -e '\ncommit\nexit' >> target/mobile4.conf
+          echo -e '\ncommit\nexit' >> target/mobile6.conf
 
+          echo -e '#!/bin/vbash\nsource /opt/vyatta/etc/functions/script-template\nconfigure\n' > target/chinae2v4.conf
+          echo -e '#!/bin/vbash\nsource /opt/vyatta/etc/functions/script-template\nconfigure\n' > target/chinae2v6.conf
+          echo -e 'delete firewall group network-group Group_ChinaE2\n' >> target/chinae2v4.conf
+          echo -e 'delete firewall group network-group Group_ChinaE2\n' >> target/chinae2v6.conf
           ./netgen.py ref1/chinae2v4.txt -o target/chinae2v4.conf -p 'set firewall group network-group Group_ChinaE2 network '
           ./netgen.py ref1/chinae2v6.txt -o target/chinae2v6.conf -p 'set firewall group ipv6-network-group Group_ChinaE2 network '
+          echo -e '\ncommit\nexit' >> target/chinae2v4.conf
+          echo -e '\ncommit\nexit' >> target/chinae2v6.conf
 
+          echo -e '#!/bin/vbash\nsource /opt/vyatta/etc/functions/script-template\nconfigure\n' > target/chinae3v4.conf
+          echo -e '#!/bin/vbash\nsource /opt/vyatta/etc/functions/script-template\nconfigure\n' > target/chinae3v6.conf
+          echo -e 'delete firewall group network-group Group_ChinaE3\n' >> target/chinae3v4.conf
+          echo -e 'delete firewall group network-group Group_ChinaE3\n' >> target/chinae3v6.conf
           ./netgen.py ref1/chinae3v4.txt -o target/chinae3v4.conf -p 'set firewall group network-group Group_ChinaE3 network '
           ./netgen.py ref1/chinae3v6.txt -o target/chinae3v6.conf -p 'set firewall group ipv6-network-group Group_ChinaE3 network '
+          echo -e '\ncommit\nexit' >> target/chinae3v4.conf
+          echo -e '\ncommit\nexit' >> target/chinae3v6.conf
 
+          echo -e '#!/bin/vbash\nsource /opt/vyatta/etc/functions/script-template\nconfigure\n' > target/foreign4.conf
+          echo -e '#!/bin/vbash\nsource /opt/vyatta/etc/functions/script-template\nconfigure\n' > target/foreign6.conf
+          echo -e 'delete firewall group network-group Group_Foreign\n' >> target/foreign4.conf
+          echo -e 'delete firewall group network-group Group_Foreign\n' >> target/foreign6.conf
           ./netgen.py ref1/foreign4.txt -o target/foreign4.conf -p 'set firewall group network-group Group_Foreign network '
           ./netgen.py ref1/foreign6.txt -o target/foreign6.conf -p 'set firewall group ipv6-network-group Group_Foreign network '
+          echo -e '\ncommit\nexit' >> target/foreign4.conf
+          echo -e '\ncommit\nexit' >> target/foreign6.conf
 
+          echo -e '#!/bin/vbash\nsource /opt/vyatta/etc/functions/script-template\nconfigure\n' > target/private4.conf
+          echo -e '#!/bin/vbash\nsource /opt/vyatta/etc/functions/script-template\nconfigure\n' > target/private6.conf
+          echo -e 'delete firewall group network-group Group_Private\n' >> target/private4.conf
+          echo -e 'delete firewall group network-group Group_Private\n' >> target/private6.conf
           ./netgen.py private4.txt -o target/private4.conf -p 'set firewall group network-group Group_Private network '
           ./netgen.py private6.txt -o target/private6.conf -p 'set firewall group ipv6-network-group Group_Private network '
+          echo -e '\ncommit\nexit' >> target/private4.conf
+          echo -e '\ncommit\nexit' >> target/private6.conf
 
           cd target
           tree -H . -P "*.txt" -T "VyOS List - $(date +%Y-%m-%d)" > index.html
