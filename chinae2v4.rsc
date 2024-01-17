@@ -3030,7 +3030,7 @@ add address=103.245.60.0/22 list=List_ChinaE2
 add address=103.245.80.0/22 list=List_ChinaE2
 add address=103.245.124.0/22 list=List_ChinaE2
 add address=103.245.128.0/22 list=List_ChinaE2
-add address=103.246.12.0/22 list=List_ChinaE2
+add address=103.246.8.0/21 list=List_ChinaE2
 add address=103.246.120.0/21 list=List_ChinaE2
 add address=103.246.132.0/22 list=List_ChinaE2
 add address=103.247.172.0/22 list=List_ChinaE2
