@@ -769,7 +769,6 @@ add address=120.80.0.0/13 list=List_Unicom
 add address=120.92.128.0/18 list=List_Unicom
 add address=120.92.224.0/20 list=List_Unicom
 add address=120.128.0.0/21 list=List_Unicom
-add address=120.131.64.0/19 list=List_Unicom
 add address=120.132.32.0/19 list=List_Unicom
 add address=120.132.64.0/19 list=List_Unicom
 add address=120.132.116.0/22 list=List_Unicom

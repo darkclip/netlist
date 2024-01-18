@@ -4225,7 +4225,7 @@ add address=120.129.0.0/16 list=List_ChinaE2
 add address=120.130.0.0/16 list=List_ChinaE2
 add address=120.131.16.0/20 list=List_ChinaE2
 add address=120.131.32.0/19 list=List_ChinaE2
-add address=120.131.96.0/19 list=List_ChinaE2
+add address=120.131.64.0/18 list=List_ChinaE2
 add address=120.131.128.0/17 list=List_ChinaE2
 add address=120.132.113.0/24 list=List_ChinaE2
 add address=120.132.114.0/23 list=List_ChinaE2
