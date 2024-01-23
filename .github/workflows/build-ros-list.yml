@@ -76,7 +76,9 @@ jobs:
           ./netgen.py ref1/foreign6.txt -o target/foreign6.rsc -p 'add address=' -s ' list=List_Foreign'
 
           echo -e '/ip firewall address-list\nremove [find list=List_CF]\n' > target/cf4.rsc
+          echo -e '/ipv6 firewall address-list\nremove [find list=List_CF]\n' > target/cf6.rsc
           ./netgen.py ref1/cf4.txt -o target/cf4.rsc -p 'add address=' -s ' list=List_CF'
+          ./netgen.py ref1/cf6.txt -o target/cf6.rsc -p 'add address=' -s ' list=List_CF'
 
           echo -e '/ip firewall address-list\nremove [find list=List_Private]\n' > target/private4.rsc
           echo -e '/ipv6 firewall address-list\nremove [find list=List_Private]\n' > target/private6.rsc
