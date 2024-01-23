@@ -37,6 +37,12 @@ jobs:
           repository: loyalsoldier/v2ray-rules-dat
           ref: release
           path: ref2
+      - name: Checkout reference branch 3
+        uses: actions/checkout@v3
+        with:
+          repository: vfarid/cf-ip-scanner
+          ref: main
+          path: ref3
       - name: Checkout target branch
         uses: actions/checkout@v3
         with:
@@ -68,6 +74,8 @@ jobs:
 
           ./netgen.py 0.0.0.0/0 -e private4.txt target/china4.txt -o target/foreign4.txt
           ./netgen.py ::/0 -e private6.txt target/china6.txt -o target/foreign6.txt
+
+          ./netgen.py ref3/ipv4.txt -o target/cf4.txt
 
           ./netgen.py private4.txt -o target/private4.txt
           ./netgen.py private6.txt -o target/private6.txt
