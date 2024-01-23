@@ -506,7 +506,6 @@ add address=106.3.208.0/21 list=List_Unicom
 add address=106.3.224.0/21 list=List_Unicom
 add address=106.74.0.0/16 list=List_Unicom
 add address=106.75.0.0/17 list=List_Unicom
-add address=106.75.128.0/18 list=List_Unicom
 add address=106.75.208.0/20 list=List_Unicom
 add address=106.75.224.0/19 list=List_Unicom
 add address=110.6.0.0/15 list=List_Unicom
