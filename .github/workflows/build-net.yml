@@ -43,6 +43,12 @@ jobs:
           repository: vfarid/cf-ip-scanner
           ref: main
           path: ref3
+      - name: Checkout reference branch 4
+        uses: actions/checkout@v3
+        with:
+          repository: XIU2/CloudflareSpeedTest
+          ref: master
+          path: ref4
       - name: Checkout target branch
         uses: actions/checkout@v3
         with:
@@ -76,6 +82,7 @@ jobs:
           ./netgen.py ::/0 -e private6.txt target/china6.txt -o target/foreign6.txt
 
           ./netgen.py ref3/ipv4.txt -o target/cf4.txt
+          ./netgen.py ref4/ipv6.txt -o target/cf6.txt
 
           ./netgen.py private4.txt -o target/private4.txt
           ./netgen.py private6.txt -o target/private6.txt
