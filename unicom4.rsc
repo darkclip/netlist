@@ -271,9 +271,11 @@ add address=103.3.152.0/21 list=List_Unicom
 add address=103.5.168.0/22 list=List_Unicom
 add address=103.5.192.0/22 list=List_Unicom
 add address=103.6.222.0/23 list=List_Unicom
+add address=103.7.140.0/24 list=List_Unicom
 add address=103.7.212.0/22 list=List_Unicom
 add address=103.8.33.0/24 list=List_Unicom
 add address=103.8.34.0/23 list=List_Unicom
+add address=103.8.68.0/22 list=List_Unicom
 add address=103.9.248.0/22 list=List_Unicom
 add address=103.10.84.0/22 list=List_Unicom
 add address=103.14.132.0/23 list=List_Unicom

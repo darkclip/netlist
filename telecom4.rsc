@@ -1182,6 +1182,7 @@ add address=180.210.212.0/22 list=List_Telecom
 add address=180.212.0.0/15 list=List_Telecom
 add address=180.235.64.0/21 list=List_Telecom
 add address=180.235.72.0/23 list=List_Telecom
+add address=182.18.5.0/24 list=List_Telecom
 add address=182.18.32.0/19 list=List_Telecom
 add address=182.18.72.0/21 list=List_Telecom
 add address=182.18.80.0/20 list=List_Telecom
