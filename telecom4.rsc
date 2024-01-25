@@ -609,10 +609,7 @@ add address=106.112.0.0/12 list=List_Telecom
 add address=106.224.0.0/14 list=List_Telecom
 add address=106.228.0.0/15 list=List_Telecom
 add address=106.230.0.0/16 list=List_Telecom
-add address=110.40.17.0/24 list=List_Telecom
-add address=110.40.18.0/23 list=List_Telecom
-add address=110.40.20.0/22 list=List_Telecom
-add address=110.40.24.0/21 list=List_Telecom
+add address=110.40.16.0/20 list=List_Telecom
 add address=110.40.32.0/19 list=List_Telecom
 add address=110.40.64.0/18 list=List_Telecom
 add address=110.42.0.0/17 list=List_Telecom

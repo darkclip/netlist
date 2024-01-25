@@ -406,7 +406,6 @@ add address=103.202.112.0/22 list=List_Unicom
 add address=103.202.120.0/21 list=List_Unicom
 add address=103.202.128.0/20 list=List_Unicom
 add address=103.202.144.0/22 list=List_Unicom
-add address=103.204.72.0/22 list=List_Unicom
 add address=103.205.188.0/22 list=List_Unicom
 add address=103.205.192.0/22 list=List_Unicom
 add address=103.207.228.0/22 list=List_Unicom
