@@ -17,7 +17,7 @@ jobs:
       contents: write
     steps:
       - uses: actions/github-script@v7
-        id: latest_tag
+        id: latest-tag
         with:
           #result-encoding: string
           retries: 3
@@ -28,4 +28,4 @@ jobs:
             }).data
       - name: confirm release tag
         run: |
-          echo ${{ steps.latest_tag.outputs.result }}
+          echo ${{ steps.latest-tag.outputs.result }}
