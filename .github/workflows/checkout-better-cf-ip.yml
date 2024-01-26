@@ -28,4 +28,4 @@ jobs:
             })
       - name: confirm release tag
         run: |
-          echo ${{ steps.latestrelease.outputs }}
+          echo ${{ steps.latestrelease.outputs.result }}
