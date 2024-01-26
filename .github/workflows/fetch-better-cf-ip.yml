@@ -42,6 +42,33 @@ jobs:
         with:
           ref: better-cf-ip
           path: target
+      - name: Clean target branch
+        continue-on-error: true
+        run: rm target/*
       - name: Rebuild target branch
         run: |
-          ls ref1
+          for filepath in ref1/*; do
+            rename=$(echo $filepath | awk -F'[./]' '{print $2}')
+            exename=$(tar -tf $filepath 2>/dev/null | grep -i CloudflareST)
+            if [ ! -z $exename ]; then
+              tar -xf $filepath $exename -O >./target/$rename
+            fi
+            exename=$(unzip -l $filepath 2>/dev/null | awk '{print $4}' | grep -i CloudflareST)
+            if [ ! -z $exename ]; then
+              appendix=$(echo $exename | awk -F'.' '{print $2}')
+              if [ ! -z $appendix ]; then
+                rename=$rename.$appendix
+              fi
+              unzip -op $filepath $exename >./target/$rename
+            fi
+          done
+      - name: Push to target branch
+        continue-on-error: true
+        run: |
+          cd target
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add .
+          git commit -m "update $(date +%Y-%m-%d)"
+          git push -q
+
