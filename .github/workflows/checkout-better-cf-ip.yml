@@ -17,15 +17,17 @@ jobs:
       contents: write
     steps:
       - uses: actions/github-script@v7
-        id: latest-tag
+        id: latest_tag
         with:
           #result-encoding: string
           retries: 3
           script: |
-            return github.rest.repos.getLatestRelease({
+            const ret = github.rest.repos.getLatestRelease({
               owner: "XIU2",
               repo: "CloudflareSpeedTest"
-            }).data
+            })
+            console.log(ret)
+            return ret
       - name: confirm release tag
         run: |
-          echo ${{ steps.latest-tag.outputs.result }}
+          echo ${{ steps.latest_tag.outputs.result }}
