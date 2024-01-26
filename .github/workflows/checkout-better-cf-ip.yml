@@ -26,8 +26,19 @@ jobs:
               owner: "XIU2",
               repo: "CloudflareSpeedTest"
             })
-            console.log(ret)
+            console.log(ret.data.tag_name)
             return ret.data.tag_name
-      - name: confirm release tag
+      - name: Checkout reference branch 1
+        uses: actions/checkout@v4
+        with:
+          repository: XIU2/CloudflareSpeedTest
+          ref: ${{steps.latest_tag.outputs.result}}
+          path: ref1
+      - name: Checkout target branch
+        uses: actions/checkout@v4
+        with:
+          ref: better-cf-ip
+          path: target
+      - name: Rebuild target branch
         run: |
-          echo ${{ steps.latest_tag.outputs.result }}
+          ls ref1
