@@ -16,10 +16,11 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/github-script@v7
+      - name: Check latest release tag
+        uses: actions/github-script@v7
         id: latest_tag
         with:
-          #result-encoding: string
+          result-encoding: string
           retries: 3
           script: |
             const ret = await github.rest.repos.getLatestRelease({
