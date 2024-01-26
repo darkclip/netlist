@@ -16,7 +16,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
@@ -26,31 +26,31 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Checkout reference branch 1
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: gaoyifan/china-operator-ip
           ref: ip-lists
           path: ref1
       - name: Checkout reference branch 2
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: loyalsoldier/v2ray-rules-dat
           ref: release
           path: ref2
       - name: Checkout reference branch 3
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: vfarid/cf-ip-scanner
           ref: main
           path: ref3
       - name: Checkout reference branch 4
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: XIU2/CloudflareSpeedTest
           ref: master
           path: ref4
       - name: Checkout target branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: net
           path: target
