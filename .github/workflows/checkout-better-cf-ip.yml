@@ -25,7 +25,7 @@ jobs:
             return github.rest.repos.getLatestRelease({
               owner: "XIU2",
               repo: "CloudflareSpeedTest"
-            })
+            }).data.tag_name
       - name: confirm release tag
         run: |
           echo ${{ steps.latestrelease.outputs.result }}
