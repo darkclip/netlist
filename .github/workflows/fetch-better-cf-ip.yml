@@ -51,6 +51,7 @@ jobs:
             rename=$(echo $filepath | awk -F'[./]' '{print $2}')
             exename=$(tar -tf $filepath 2>/dev/null | grep -i CloudflareST)
             if [ ! -z $exename ]; then
+              echo "Extracting $exename"
               tar -xf $filepath $exename -O >./target/$rename
             fi
             exename=$(unzip -l $filepath 2>/dev/null | awk '{print $4}' | grep -i CloudflareST)
@@ -59,6 +60,7 @@ jobs:
               if [ ! -z $appendix ]; then
                 rename=$rename.$appendix
               fi
+              echo "Extracting $exename"
               unzip -op $filepath $exename >./target/$rename
             fi
           done
