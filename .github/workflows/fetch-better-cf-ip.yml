@@ -47,14 +47,16 @@ jobs:
         run: rm target/*
       - name: Rebuild target branch
         run: |
+          match=CloudflareST
           for filepath in ref1/*; do
-            rename=$(echo $filepath | awk -F'[./]' '{print $2}')
-            exename=$(tar -tf $filepath 2>/dev/null | grep -i CloudflareST || true)
+            rename=$(echo $filepath | awk -F'[./]' '{print $2}' | sed "s/$match/cf/g")
+
+            exename=$(tar -tf $filepath 2>/dev/null | grep -i $match || true)
             if [ ! -z $exename ]; then
               echo "Extracting $rename"
               tar -xf $filepath $exename -O >./target/$rename
             fi
-            exename=$(unzip -l $filepath 2>/dev/null | awk '{print $4}' | grep -i CloudflareST || true)
+            exename=$(unzip -l $filepath 2>/dev/null | awk '{print $4}' | grep -i $match || true)
             if [ ! -z $exename ]; then
               appendix=$(echo $exename | awk -F'.' '{print $2}')
               if [ ! -z $appendix ]; then
