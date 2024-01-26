@@ -253,7 +253,7 @@ main(){
         *)
             if [ $CONFIG ] && [ $(grep -i "Endpoint" $CONFIG|awk '{print $3}') != $endpoint ]; then
                 echo "set config";
-                sed -i -r 's/Endpoint.*/Endpoint = '$endpoint'/i' $CONFIG;
+                sed -i -r s/Endpoint.*/Endpoint = $endpoint/i $CONFIG;
             fi;
             if [ $HOST ]; then
                 json=$(curl -ksSf "https://$HOST/api/wireguard/client/getClient/$UUID" -H "Authorization: Basic $BASIC") 2>&1;
