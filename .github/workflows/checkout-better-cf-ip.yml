@@ -1,0 +1,31 @@
+name: checkout-better-cf-ip
+
+on:
+  push:
+    branches:
+      - 'master'
+    paths:
+      - '.github/workflows/checkout-better-cf-ip.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '0 16 * * *'
+
+jobs:
+  checkout-better-cf-ip:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/github-script@v7
+        id: latestrelease
+        with:
+          result-encoding: string
+          retries: 3
+          script: |
+            return github.rest.repos.getLatestRelease({
+              owner: XIU2,
+              repo: CloudflareSpeedTest
+            })
+      - name: confirm release tag
+        run: |
+          echo ${{ steps.latestrelease.outputs }}
