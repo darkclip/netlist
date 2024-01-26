@@ -22,12 +22,12 @@ jobs:
           #result-encoding: string
           retries: 3
           script: |
-            const ret = github.rest.repos.getLatestRelease({
+            const ret = await github.rest.repos.getLatestRelease({
               owner: "XIU2",
               repo: "CloudflareSpeedTest"
             })
             console.log(ret)
-            return ret
+            return ret.data.tag_name
       - name: confirm release tag
         run: |
           echo ${{ steps.latest_tag.outputs.result }}
