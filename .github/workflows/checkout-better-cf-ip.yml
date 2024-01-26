@@ -23,8 +23,8 @@ jobs:
           retries: 3
           script: |
             return github.rest.repos.getLatestRelease({
-              owner: XIU2,
-              repo: CloudflareSpeedTest
+              owner: "XIU2",
+              repo: "CloudflareSpeedTest"
             })
       - name: confirm release tag
         run: |
