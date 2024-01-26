@@ -49,18 +49,18 @@ jobs:
         run: |
           for filepath in ref1/*; do
             rename=$(echo $filepath | awk -F'[./]' '{print $2}')
-            exename=$(tar -tf $filepath 2>/dev/null | grep -i CloudflareST)
+            exename=$(tar -tf $filepath 2>/dev/null | grep -i CloudflareST || true)
             if [ ! -z $exename ]; then
-              echo "Extracting $exename"
+              echo "Extracting $rename"
               tar -xf $filepath $exename -O >./target/$rename
             fi
-            exename=$(unzip -l $filepath 2>/dev/null | awk '{print $4}' | grep -i CloudflareST)
+            exename=$(unzip -l $filepath 2>/dev/null | awk '{print $4}' | grep -i CloudflareST || true)
             if [ ! -z $exename ]; then
               appendix=$(echo $exename | awk -F'.' '{print $2}')
               if [ ! -z $appendix ]; then
                 rename=$rename.$appendix
               fi
-              echo "Extracting $exename"
+              echo "Extracting $rename"
               unzip -op $filepath $exename >./target/$rename
             fi
           done
