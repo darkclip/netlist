@@ -1,17 +1,17 @@
-name: checkout-better-cf-ip
+name: fetch-better-cf-ip
 
 on:
   push:
     branches:
       - 'master'
     paths:
-      - '.github/workflows/checkout-better-cf-ip.yml'
+      - '.github/workflows/fetch-better-cf-ip.yml'
   workflow_dispatch:
   schedule:
     - cron: '0 16 * * *'
 
 jobs:
-  checkout-better-cf-ip:
+  fetch-better-cf-ip:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -29,12 +29,14 @@ jobs:
             })
             console.log(ret.data.tag_name)
             return ret.data.tag_name
-      - name: Checkout reference branch 1
-        uses: actions/checkout@v4
+      - name: Fetch reference branch 1
+        uses: dsaltares/fetch-gh-release-asset@master
         with:
-          repository: XIU2/CloudflareSpeedTest
-          ref: ${{steps.latest_tag.outputs.result}}
-          path: ref1
+          repo: XIU2/CloudflareSpeedTest
+          version: tags/${{steps.latest_tag.outputs.result}}
+          regex: true
+          file: "CloudflareST_*"
+          target: 'ref1/'
       - name: Checkout target branch
         uses: actions/checkout@v4
         with:
