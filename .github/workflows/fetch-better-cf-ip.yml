@@ -8,7 +8,7 @@ on:
       - '.github/workflows/fetch-better-cf-ip.yml'
   workflow_dispatch:
   schedule:
-    - cron: '0 16 * * *'
+    - cron: '0 16 1 * *'
 
 jobs:
   fetch-better-cf-ip:
