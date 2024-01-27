@@ -735,7 +735,6 @@ add address=116.63.128.0/17 list=List_Telecom
 add address=116.68.136.0/21 list=List_Telecom
 add address=116.68.176.0/21 list=List_Telecom
 add address=116.90.80.0/20 list=List_Telecom
-add address=116.128.0.0/17 list=List_Telecom
 add address=116.192.0.0/16 list=List_Telecom
 add address=116.196.64.0/18 list=List_Telecom
 add address=116.196.144.0/24 list=List_Telecom
