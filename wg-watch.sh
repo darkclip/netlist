@@ -113,7 +113,7 @@ speedtest(){
     exe_file='/var/tmp/warp';
     result_file='/var/tmp/result.csv'
     if [ ! -x "$exe_file" ]; then
-        curl -Sfo "$exe_file" "https://git.tink.ltd:8443/netlist.git/tree/warp-$1?raw=true&h=better-warp-ip" 2>&1;
+        curl -SfLo "$exe_file" "https://git.tink.ltd:8443/netlist.git/tree/warp-$1?raw=true&h=better-warp-ip" 2>&1;
     fi;
     ulimit -n 102400;
     chmod +x "$exe_file" && "$exe_file" -file "$2" -output "$result_file" >/dev/null 2>&1;
@@ -256,12 +256,12 @@ main(){
                 sed -i -r s/Endpoint.*/Endpoint = $endpoint/i $CONFIG;
             fi;
             if [ $HOST ]; then
-                json=$(curl -ksSf "https://$HOST/api/wireguard/client/getClient/$UUID" -H "Authorization: Basic $BASIC") 2>&1;
+                json=$(curl -ksSfL "https://$HOST/api/wireguard/client/getClient/$UUID" -H "Authorization: Basic $BASIC") 2>&1;
                 s_add=$(get_json_value "$json" serveraddress);
                 s_port=$(get_json_value "$json" serverport);
                 if [ "$s_add:$s_port" != $endpoint ]; then
                     echo "set opnSense";
-                    curl -ksSfX POST "https://$HOST/api/wireguard/client/setClient/$UUID" \
+                    curl -ksSfLX POST "https://$HOST/api/wireguard/client/setClient/$UUID" \
                         -H "Content-Type: application/json" \
                         -H "Authorization: Basic $BASIC" \
                         -d '{"client":{"serveraddress":"'$serveraddress'","serverport":"'$serverport'","servers":"'$SERVER'"}}' 2>&1;
