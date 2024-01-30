@@ -111,7 +111,6 @@ add address=2605:9d80:9023::/48 list=List_Telecom
 add address=2605:9d80:9033::/48 list=List_Telecom
 add address=2605:9d80:9042::/48 list=List_Telecom
 add address=2605:9d80:9052::/48 list=List_Telecom
-add address=2605:9d80:9061::/48 list=List_Telecom
 add address=2605:9d80:9071::/48 list=List_Telecom
 add address=2605:9d80:9092::/48 list=List_Telecom
 add address=2804:1e48::/32 list=List_Telecom

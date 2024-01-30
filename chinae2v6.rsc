@@ -4225,6 +4225,7 @@ add address=2602:feda:d80::/48 list=List_ChinaE2
 add address=2602:feda:d83::/48 list=List_ChinaE2
 add address=2605:3e80:1b00::/40 list=List_ChinaE2
 add address=2605:640f:bcd7::/48 list=List_ChinaE2
+add address=2605:9d80:9061::/48 list=List_ChinaE2
 add address=2605:f440:cafe::/48 list=List_ChinaE2
 add address=2606:54c0:1eb8::/45 list=List_ChinaE2
 add address=2606:54c0:1ec0::/42 list=List_ChinaE2
