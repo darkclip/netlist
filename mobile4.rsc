@@ -92,7 +92,16 @@ add address=218.200.0.0/13 list=List_Mobile
 add address=221.130.0.0/15 list=List_Mobile
 add address=221.172.0.0/14 list=List_Mobile
 add address=221.176.0.0/13 list=List_Mobile
-add address=222.32.0.0/11 list=List_Mobile
+add address=222.32.0.0/13 list=List_Mobile
+add address=222.40.0.0/14 list=List_Mobile
+add address=222.44.0.0/16 list=List_Mobile
+add address=222.46.0.0/15 list=List_Mobile
+add address=222.48.0.0/16 list=List_Mobile
+add address=222.50.0.0/15 list=List_Mobile
+add address=222.52.0.0/14 list=List_Mobile
+add address=222.56.0.0/15 list=List_Mobile
+add address=222.58.0.0/16 list=List_Mobile
+add address=222.60.0.0/14 list=List_Mobile
 add address=223.64.0.0/10 list=List_Mobile
 add address=223.160.0.0/20 list=List_Mobile
 add address=223.160.16.0/21 list=List_Mobile
