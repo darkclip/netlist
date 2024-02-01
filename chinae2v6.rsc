@@ -2976,6 +2976,7 @@ add address=2407:9680::/32 list=List_ChinaE2
 add address=2407:9980::/32 list=List_ChinaE2
 add address=2407:9b40::/32 list=List_ChinaE2
 add address=2407:9bc0::/32 list=List_ChinaE2
+add address=2407:9f00::/32 list=List_ChinaE2
 add address=2407:9f80::/32 list=List_ChinaE2
 add address=2407:a040::/32 list=List_ChinaE2
 add address=2407:a640::/32 list=List_ChinaE2
