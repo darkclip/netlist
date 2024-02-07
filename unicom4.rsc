@@ -968,7 +968,6 @@ add address=168.159.158.0/24 list=List_Unicom
 add address=168.160.224.0/19 list=List_Unicom
 add address=171.34.0.0/15 list=List_Unicom
 add address=171.36.0.0/14 list=List_Unicom
-add address=171.84.0.0/21 list=List_Unicom
 add address=171.116.0.0/14 list=List_Unicom
 add address=171.120.0.0/13 list=List_Unicom
 add address=175.16.0.0/13 list=List_Unicom
@@ -1202,7 +1201,6 @@ add address=211.147.160.0/19 list=List_Unicom
 add address=211.148.64.0/18 list=List_Unicom
 add address=211.152.57.0/24 list=List_Unicom
 add address=211.152.58.0/24 list=List_Unicom
-add address=211.153.88.0/22 list=List_Unicom
 add address=211.153.92.0/23 list=List_Unicom
 add address=211.153.94.0/24 list=List_Unicom
 add address=211.153.112.0/21 list=List_Unicom
