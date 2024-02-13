@@ -112,7 +112,7 @@ generate_ips(){
 speedtest(){
     exe_file='/var/tmp/warp';
     result_file='/var/tmp/result.csv'
-    if [ ! -x "$exe_file" ]; thens
+    if [ ! -x "$exe_file" ]; then
         curl -SfLo "$exe_file" "https://git.tink.ltd:8443/tink/netlist/raw/branch/better-warp-ip/warp-$1" 2>&1;
     fi;
     ulimit -n 102400;
