@@ -3605,7 +3605,11 @@ add address=114.110.112.0/20 list=List_ChinaE2
 add address=114.111.2.0/23 list=List_ChinaE2
 add address=114.111.4.0/22 list=List_ChinaE2
 add address=114.111.8.0/21 list=List_ChinaE2
-add address=114.111.160.0/19 list=List_ChinaE2
+add address=114.111.160.0/20 list=List_ChinaE2
+add address=114.111.176.0/21 list=List_ChinaE2
+add address=114.111.184.0/22 list=List_ChinaE2
+add address=114.111.188.0/23 list=List_ChinaE2
+add address=114.111.190.0/24 list=List_ChinaE2
 add address=114.112.4.0/22 list=List_ChinaE2
 add address=114.112.8.0/22 list=List_ChinaE2
 add address=114.112.24.0/21 list=List_ChinaE2

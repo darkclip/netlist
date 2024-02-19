@@ -691,6 +691,7 @@ add address=114.104.0.0/14 list=List_Telecom
 add address=114.110.96.0/22 list=List_Telecom
 add address=114.111.0.0/23 list=List_Telecom
 add address=114.111.16.0/20 list=List_Telecom
+add address=114.111.191.0/24 list=List_Telecom
 add address=114.112.32.0/19 list=List_Telecom
 add address=114.112.64.0/19 list=List_Telecom
 add address=114.112.96.0/21 list=List_Telecom
