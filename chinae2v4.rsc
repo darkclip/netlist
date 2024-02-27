@@ -6379,9 +6379,7 @@ add address=203.100.32.0/20 list=List_ChinaE2
 add address=203.100.58.0/24 list=List_ChinaE2
 add address=203.100.60.0/24 list=List_ChinaE2
 add address=203.100.63.0/24 list=List_ChinaE2
-add address=203.100.80.0/22 list=List_ChinaE2
-add address=203.100.84.0/23 list=List_ChinaE2
-add address=203.100.86.0/24 list=List_ChinaE2
+add address=203.100.80.0/21 list=List_ChinaE2
 add address=203.100.88.0/22 list=List_ChinaE2
 add address=203.100.96.0/19 list=List_ChinaE2
 add address=203.105.96.0/19 list=List_ChinaE2
