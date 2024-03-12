@@ -3786,7 +3786,7 @@ add address=2408:8442::/31 list=List_ChinaE2
 add address=2408:8449::/32 list=List_ChinaE2
 add address=2408:844a::/32 list=List_ChinaE2
 add address=2408:8450::/31 list=List_ChinaE2
-add address=2408:8454::/31 list=List_ChinaE2
+add address=2408:8455::/32 list=List_ChinaE2
 add address=2408:845e::/31 list=List_ChinaE2
 add address=2408:8467::/32 list=List_ChinaE2
 add address=2408:8468::/32 list=List_ChinaE2

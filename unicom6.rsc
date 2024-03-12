@@ -365,6 +365,7 @@ add address=2408:8448::/32 list=List_Unicom
 add address=2408:844b::/32 list=List_Unicom
 add address=2408:844c::/30 list=List_Unicom
 add address=2408:8452::/31 list=List_Unicom
+add address=2408:8454::/32 list=List_Unicom
 add address=2408:8456::/31 list=List_Unicom
 add address=2408:8458::/30 list=List_Unicom
 add address=2408:845c::/31 list=List_Unicom
