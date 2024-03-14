@@ -427,7 +427,7 @@ add address=2408:8706::/31 list=List_Unicom
 add address=2408:8708::/29 list=List_Unicom
 add address=2408:8710::/30 list=List_Unicom
 add address=2408:8719::/32 list=List_Unicom
-add address=2408:871a::/32 list=List_Unicom
+add address=2408:871a::/31 list=List_Unicom
 add address=2408:8720::/30 list=List_Unicom
 add address=2408:8726::/32 list=List_Unicom
 add address=2408:872b::/32 list=List_Unicom
