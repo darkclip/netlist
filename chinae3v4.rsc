@@ -4376,10 +4376,7 @@ add address=122.72.32.0/22 list=List_ChinaE3
 add address=122.72.36.0/23 list=List_ChinaE3
 add address=122.72.39.0/24 list=List_ChinaE3
 add address=122.72.40.0/21 list=List_ChinaE3
-add address=122.72.48.0/21 list=List_ChinaE3
-add address=122.72.56.0/22 list=List_ChinaE3
-add address=122.72.60.0/24 list=List_ChinaE3
-add address=122.72.62.0/23 list=List_ChinaE3
+add address=122.72.48.0/20 list=List_ChinaE3
 add address=122.72.64.0/19 list=List_ChinaE3
 add address=122.72.96.0/20 list=List_ChinaE3
 add address=122.72.113.0/24 list=List_ChinaE3

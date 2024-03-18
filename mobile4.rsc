@@ -55,7 +55,6 @@ add address=122.70.0.0/15 list=List_Mobile
 add address=122.72.3.0/24 list=List_Mobile
 add address=122.72.16.0/24 list=List_Mobile
 add address=122.72.38.0/24 list=List_Mobile
-add address=122.72.61.0/24 list=List_Mobile
 add address=122.72.112.0/24 list=List_Mobile
 add address=122.84.0.0/16 list=List_Mobile
 add address=122.90.0.0/16 list=List_Mobile
