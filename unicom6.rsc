@@ -35,6 +35,7 @@ add address=2406:4d00::/48 list=List_Unicom
 add address=2406:cf00::/48 list=List_Unicom
 add address=2407:37c0:ffff::/48 list=List_Unicom
 add address=2407:6c40:1500::/48 list=List_Unicom
+add address=2407:8f40:2::/48 list=List_Unicom
 add address=2407:b380:8000::/48 list=List_Unicom
 add address=2407:c080:1800::/37 list=List_Unicom
 add address=2408:8000::/48 list=List_Unicom
