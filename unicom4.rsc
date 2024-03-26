@@ -720,7 +720,8 @@ add address=118.187.0.0/16 list=List_Unicom
 add address=118.191.4.0/22 list=List_Unicom
 add address=118.191.8.0/22 list=List_Unicom
 add address=118.191.12.0/24 list=List_Unicom
-add address=118.194.32.0/19 list=List_Unicom
+add address=118.194.32.0/21 list=List_Unicom
+add address=118.194.48.0/20 list=List_Unicom
 add address=118.194.240.0/21 list=List_Unicom
 add address=118.199.0.0/16 list=List_Unicom
 add address=118.212.0.0/16 list=List_Unicom
