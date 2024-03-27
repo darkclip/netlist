@@ -1403,10 +1403,12 @@ add address=103.5.252.0/22 list=List_ChinaE3
 add address=103.6.76.0/22 list=List_ChinaE3
 add address=103.6.108.0/22 list=List_ChinaE3
 add address=103.6.228.0/22 list=List_ChinaE3
+add address=103.7.140.0/22 list=List_ChinaE3
 add address=103.7.216.0/21 list=List_ChinaE3
 add address=103.8.0.0/21 list=List_ChinaE3
 add address=103.8.8.0/22 list=List_ChinaE3
 add address=103.8.52.0/22 list=List_ChinaE3
+add address=103.8.68.0/22 list=List_ChinaE3
 add address=103.8.108.0/22 list=List_ChinaE3
 add address=103.8.156.0/22 list=List_ChinaE3
 add address=103.8.200.0/23 list=List_ChinaE3

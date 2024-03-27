@@ -307,9 +307,7 @@ add address=103.1.168.0/22 list=List_Telecom
 add address=103.2.108.0/22 list=List_Telecom
 add address=103.5.192.0/22 list=List_Telecom
 add address=103.6.220.0/22 list=List_Telecom
-add address=103.7.140.0/22 list=List_Telecom
 add address=103.8.32.0/24 list=List_Telecom
-add address=103.8.68.0/22 list=List_Telecom
 add address=103.8.220.0/22 list=List_Telecom
 add address=103.9.252.0/22 list=List_Telecom
 add address=103.10.84.0/22 list=List_Telecom
