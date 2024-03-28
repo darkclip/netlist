@@ -1313,6 +1313,7 @@ add address=101.192.0.0/14 list=List_ChinaE3
 add address=101.196.0.0/15 list=List_ChinaE3
 add address=101.198.128.0/18 list=List_ChinaE3
 add address=101.198.192.0/22 list=List_ChinaE3
+add address=101.198.196.0/23 list=List_ChinaE3
 add address=101.198.200.0/21 list=List_ChinaE3
 add address=101.198.208.0/20 list=List_ChinaE3
 add address=101.198.224.0/19 list=List_ChinaE3
