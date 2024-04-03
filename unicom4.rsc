@@ -379,8 +379,6 @@ add address=103.90.188.0/22 list=List_Unicom
 add address=103.91.176.0/22 list=List_Unicom
 add address=103.91.208.0/22 list=List_Unicom
 add address=103.93.180.0/22 list=List_Unicom
-add address=103.95.220.0/23 list=List_Unicom
-add address=103.95.222.0/24 list=List_Unicom
 add address=103.95.252.0/22 list=List_Unicom
 add address=103.96.224.0/23 list=List_Unicom
 add address=103.98.44.0/22 list=List_Unicom
