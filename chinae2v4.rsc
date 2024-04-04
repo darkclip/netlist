@@ -739,6 +739,7 @@ add address=45.115.100.0/22 list=List_ChinaE2
 add address=45.115.120.0/22 list=List_ChinaE2
 add address=45.115.132.0/22 list=List_ChinaE2
 add address=45.115.156.0/22 list=List_ChinaE2
+add address=45.115.200.0/22 list=List_ChinaE2
 add address=45.115.212.0/22 list=List_ChinaE2
 add address=45.115.244.0/22 list=List_ChinaE2
 add address=45.115.248.0/22 list=List_ChinaE2
