@@ -487,6 +487,7 @@ add address=103.235.248.0/21 list=List_Unicom
 add address=103.236.120.0/22 list=List_Unicom
 add address=103.236.240.0/22 list=List_Unicom
 add address=103.237.8.0/22 list=List_Unicom
+add address=103.237.248.0/23 list=List_Unicom
 add address=103.238.0.0/21 list=List_Unicom
 add address=103.238.144.0/22 list=List_Unicom
 add address=103.238.160.0/22 list=List_Unicom
