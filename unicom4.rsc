@@ -1034,7 +1034,9 @@ add address=171.120.0.0/13 list=List_Unicom
 add address=175.16.0.0/13 list=List_Unicom
 add address=175.25.16.0/21 list=List_Unicom
 add address=175.25.24.0/22 list=List_Unicom
-add address=175.25.32.0/21 list=List_Unicom
+add address=175.25.32.0/20 list=List_Unicom
+add address=175.25.48.0/22 list=List_Unicom
+add address=175.25.56.0/21 list=List_Unicom
 add address=175.42.0.0/15 list=List_Unicom
 add address=175.44.0.0/16 list=List_Unicom
 add address=175.102.16.0/20 list=List_Unicom
