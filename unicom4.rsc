@@ -967,8 +967,6 @@ add address=140.210.94.0/24 list=List_Unicom
 add address=140.210.128.0/19 list=List_Unicom
 add address=140.210.192.0/19 list=List_Unicom
 add address=140.210.224.0/20 list=List_Unicom
-add address=140.242.223.0/24 list=List_Unicom
-add address=140.242.224.0/24 list=List_Unicom
 add address=144.36.146.0/23 list=List_Unicom
 add address=144.48.64.0/22 list=List_Unicom
 add address=146.196.68.0/22 list=List_Unicom

@@ -4691,6 +4691,8 @@ add address=140.210.8.0/21 list=List_ChinaE2
 add address=140.210.32.0/19 list=List_ChinaE2
 add address=140.210.160.0/19 list=List_ChinaE2
 add address=140.210.240.0/20 list=List_ChinaE2
+add address=140.242.223.0/24 list=List_ChinaE2
+add address=140.242.224.0/24 list=List_ChinaE2
 add address=140.248.33.2/31 list=List_ChinaE2
 add address=142.70.0.0/16 list=List_ChinaE2
 add address=142.86.0.0/16 list=List_ChinaE2
