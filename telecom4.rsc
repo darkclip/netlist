@@ -551,7 +551,6 @@ add address=103.236.244.0/22 list=List_Telecom
 add address=103.236.248.0/22 list=List_Telecom
 add address=103.237.8.0/22 list=List_Telecom
 add address=103.237.28.0/23 list=List_Telecom
-add address=103.237.248.0/21 list=List_Telecom
 add address=103.238.132.0/22 list=List_Telecom
 add address=103.238.188.0/22 list=List_Telecom
 add address=103.238.204.0/22 list=List_Telecom
