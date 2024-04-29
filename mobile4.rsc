@@ -70,6 +70,7 @@ add address=103.9.252.0/22 list=List_Mobile
 add address=103.20.112.0/22 list=List_Mobile
 add address=103.21.116.0/22 list=List_Mobile
 add address=103.21.176.0/22 list=List_Mobile
+add address=103.27.4.0/22 list=List_Mobile
 add address=103.35.104.0/22 list=List_Mobile
 add address=103.37.47.0/24 list=List_Mobile
 add address=103.37.72.0/24 list=List_Mobile
