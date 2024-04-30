@@ -3557,12 +3557,7 @@ add address=112.124.0.0/14 list=List_ChinaE3
 add address=112.128.0.0/14 list=List_ChinaE3
 add address=112.137.48.0/21 list=List_ChinaE3
 add address=113.11.192.0/19 list=List_ChinaE3
-add address=113.31.0.0/20 list=List_ChinaE3
-add address=113.31.16.0/21 list=List_ChinaE3
-add address=113.31.24.0/22 list=List_ChinaE3
-add address=113.31.28.0/24 list=List_ChinaE3
-add address=113.31.30.0/24 list=List_ChinaE3
-add address=113.31.32.0/19 list=List_ChinaE3
+add address=113.31.0.0/18 list=List_ChinaE3
 add address=113.31.64.0/20 list=List_ChinaE3
 add address=113.31.80.0/21 list=List_ChinaE3
 add address=113.31.90.0/23 list=List_ChinaE3
@@ -4121,8 +4116,7 @@ add address=119.80.163.0/24 list=List_ChinaE3
 add address=119.80.164.0/22 list=List_ChinaE3
 add address=119.80.168.0/21 list=List_ChinaE3
 add address=119.80.176.0/20 list=List_ChinaE3
-add address=119.80.200.0/21 list=List_ChinaE3
-add address=119.80.208.0/20 list=List_ChinaE3
+add address=119.80.192.0/19 list=List_ChinaE3
 add address=119.80.224.0/20 list=List_ChinaE3
 add address=119.80.244.0/22 list=List_ChinaE3
 add address=119.82.208.0/20 list=List_ChinaE3
@@ -4758,6 +4752,8 @@ add address=140.179.0.0/17 list=List_ChinaE3
 add address=140.179.128.0/18 list=List_ChinaE3
 add address=140.179.192.0/19 list=List_ChinaE3
 add address=140.205.0.0/16 list=List_ChinaE3
+add address=140.210.0.0/22 list=List_ChinaE3
+add address=140.210.8.0/21 list=List_ChinaE3
 add address=140.210.32.0/19 list=List_ChinaE3
 add address=140.210.160.0/19 list=List_ChinaE3
 add address=140.210.240.0/20 list=List_ChinaE3
@@ -5191,8 +5187,7 @@ add address=180.210.214.0/23 list=List_ChinaE3
 add address=180.210.233.0/24 list=List_ChinaE3
 add address=180.210.236.0/22 list=List_ChinaE3
 add address=180.222.224.0/19 list=List_ChinaE3
-add address=180.233.16.0/20 list=List_ChinaE3
-add address=180.233.32.0/19 list=List_ChinaE3
+add address=180.233.0.0/18 list=List_ChinaE3
 add address=180.233.64.0/19 list=List_ChinaE3
 add address=180.233.144.0/22 list=List_ChinaE3
 add address=180.235.74.0/23 list=List_ChinaE3

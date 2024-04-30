@@ -2954,7 +2954,7 @@ add address=2407:6c40:1510::/44 list=List_ChinaE2
 add address=2407:6c40:1520::/43 list=List_ChinaE2
 add address=2407:6c40:1540::/42 list=List_ChinaE2
 add address=2407:6c40:1580::/41 list=List_ChinaE2
-add address=2407:6c40:1600::/39 list=List_ChinaE2
+add address=2407:6c40:1700::/40 list=List_ChinaE2
 add address=2407:6c40:1800::/44 list=List_ChinaE2
 add address=2407:6c40:1811::/48 list=List_ChinaE2
 add address=2407:6c40:1812::/47 list=List_ChinaE2
