@@ -22,6 +22,7 @@ add address=2403:1ec0:1200::/48 list=List_Unicom
 add address=2403:1ec0:1400::/48 list=List_Unicom
 add address=2403:4280::/48 list=List_Unicom
 add address=2403:4c80::/48 list=List_Unicom
+add address=2403:5c80::/48 list=List_Unicom
 add address=2403:a200:a1ff::/48 list=List_Unicom
 add address=2403:a200:a2ff::/48 list=List_Unicom
 add address=2403:a200:a3ff::/48 list=List_Unicom
