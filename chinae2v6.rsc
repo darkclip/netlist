@@ -2853,7 +2853,6 @@ add address=2406:e080::/32 list=List_ChinaE2
 add address=2406:e180::/32 list=List_ChinaE2
 add address=2406:e2c0::/32 list=List_ChinaE2
 add address=2406:e380::/32 list=List_ChinaE2
-add address=2406:e3c0::/32 list=List_ChinaE2
 add address=2406:e500::/32 list=List_ChinaE2
 add address=2406:e580::/32 list=List_ChinaE2
 add address=2406:e680::/32 list=List_ChinaE2
