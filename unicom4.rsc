@@ -1043,6 +1043,7 @@ add address=202.41.152.0/21 list=List_Unicom
 add address=202.46.224.0/22 list=List_Unicom
 add address=202.47.104.0/22 list=List_Unicom
 add address=202.47.108.0/23 list=List_Unicom
+add address=202.57.192.0/24 list=List_Unicom
 add address=202.63.160.0/20 list=List_Unicom
 add address=202.75.208.0/21 list=List_Unicom
 add address=202.85.208.0/20 list=List_Unicom
