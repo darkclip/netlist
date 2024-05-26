@@ -139,6 +139,7 @@ add address=45.119.106.0/24 list=List_Telecom
 add address=45.120.100.0/22 list=List_Telecom
 add address=45.123.168.0/21 list=List_Telecom
 add address=45.123.176.0/21 list=List_Telecom
+add address=45.124.21.0/24 list=List_Telecom
 add address=45.124.68.0/22 list=List_Telecom
 add address=45.124.80.0/22 list=List_Telecom
 add address=45.124.124.0/22 list=List_Telecom
