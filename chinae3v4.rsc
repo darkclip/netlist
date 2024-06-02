@@ -6587,7 +6587,7 @@ add address=207.226.153.0/24 list=List_ChinaE3
 add address=207.226.154.0/24 list=List_ChinaE3
 add address=208.103.182.0/24 list=List_ChinaE3
 add address=210.0.158.0/24 list=List_ChinaE3
-add address=210.2.0.0/23 list=List_ChinaE3
+add address=210.2.1.0/24 list=List_ChinaE3
 add address=210.2.2.0/24 list=List_ChinaE3
 add address=210.2.4.0/22 list=List_ChinaE3
 add address=210.2.8.0/21 list=List_ChinaE3
