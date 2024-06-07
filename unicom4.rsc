@@ -870,6 +870,8 @@ add address=122.200.120.0/22 list=List_Unicom
 add address=122.200.124.0/24 list=List_Unicom
 add address=123.4.0.0/14 list=List_Unicom
 add address=123.8.0.0/13 list=List_Unicom
+add address=123.49.226.0/23 list=List_Unicom
+add address=123.49.228.0/24 list=List_Unicom
 add address=123.58.0.0/20 list=List_Unicom
 add address=123.58.32.0/23 list=List_Unicom
 add address=123.58.34.0/24 list=List_Unicom
