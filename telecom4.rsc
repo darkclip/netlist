@@ -305,6 +305,7 @@ add address=101.254.100.0/22 list=List_Telecom
 add address=101.254.104.0/21 list=List_Telecom
 add address=101.254.112.0/20 list=List_Telecom
 add address=101.254.128.0/17 list=List_Telecom
+add address=103.1.8.0/22 list=List_Telecom
 add address=103.2.108.0/22 list=List_Telecom
 add address=103.5.192.0/22 list=List_Telecom
 add address=103.6.220.0/22 list=List_Telecom
