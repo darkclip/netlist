@@ -4882,7 +4882,6 @@ add address=157.10.246.0/23 list=List_ChinaE3
 add address=157.15.74.0/23 list=List_ChinaE3
 add address=157.15.94.0/23 list=List_ChinaE3
 add address=157.15.100.0/22 list=List_ChinaE3
-add address=157.15.104.0/23 list=List_ChinaE3
 add address=157.15.200.0/23 list=List_ChinaE3
 add address=157.20.33.0/24 list=List_ChinaE3
 add address=157.20.136.0/23 list=List_ChinaE3
