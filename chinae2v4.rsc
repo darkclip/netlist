@@ -4662,7 +4662,9 @@ add address=140.179.192.0/19 list=List_ChinaE2
 add address=140.205.0.0/16 list=List_ChinaE2
 add address=140.210.0.0/22 list=List_ChinaE2
 add address=140.210.8.0/21 list=List_ChinaE2
-add address=140.210.32.0/19 list=List_ChinaE2
+add address=140.210.36.0/22 list=List_ChinaE2
+add address=140.210.40.0/21 list=List_ChinaE2
+add address=140.210.48.0/20 list=List_ChinaE2
 add address=140.210.160.0/19 list=List_ChinaE2
 add address=140.210.240.0/20 list=List_ChinaE2
 add address=140.242.223.0/24 list=List_ChinaE2
