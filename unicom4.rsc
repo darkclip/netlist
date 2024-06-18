@@ -649,9 +649,7 @@ add address=114.118.64.0/19 list=List_Unicom
 add address=114.118.96.0/21 list=List_Unicom
 add address=114.119.10.0/24 list=List_Unicom
 add address=114.119.32.0/24 list=List_Unicom
-add address=114.119.35.0/24 list=List_Unicom
 add address=114.119.36.0/24 list=List_Unicom
-add address=114.119.41.0/24 list=List_Unicom
 add address=114.119.117.0/24 list=List_Unicom
 add address=114.119.119.0/24 list=List_Unicom
 add address=114.240.0.0/12 list=List_Unicom

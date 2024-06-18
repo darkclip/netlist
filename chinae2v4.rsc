@@ -3642,12 +3642,10 @@ add address=114.119.11.0/24 list=List_ChinaE2
 add address=114.119.12.0/22 list=List_ChinaE2
 add address=114.119.16.0/20 list=List_ChinaE2
 add address=114.119.33.0/24 list=List_ChinaE2
-add address=114.119.34.0/24 list=List_ChinaE2
+add address=114.119.34.0/23 list=List_ChinaE2
 add address=114.119.37.0/24 list=List_ChinaE2
 add address=114.119.38.0/23 list=List_ChinaE2
-add address=114.119.40.0/24 list=List_ChinaE2
-add address=114.119.42.0/23 list=List_ChinaE2
-add address=114.119.44.0/22 list=List_ChinaE2
+add address=114.119.40.0/21 list=List_ChinaE2
 add address=114.119.48.0/20 list=List_ChinaE2
 add address=114.119.64.0/19 list=List_ChinaE2
 add address=114.119.96.0/20 list=List_ChinaE2
