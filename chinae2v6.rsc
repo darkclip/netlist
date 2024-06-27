@@ -2983,16 +2983,7 @@ add address=2407:5840::/32 list=List_ChinaE2
 add address=2407:6040::/32 list=List_ChinaE2
 add address=2407:6580::/32 list=List_ChinaE2
 add address=2407:6c40::/36 list=List_ChinaE2
-add address=2407:6c40:1000::/40 list=List_ChinaE2
-add address=2407:6c40:1101::/48 list=List_ChinaE2
-add address=2407:6c40:1102::/47 list=List_ChinaE2
-add address=2407:6c40:1104::/46 list=List_ChinaE2
-add address=2407:6c40:1108::/45 list=List_ChinaE2
-add address=2407:6c40:1110::/44 list=List_ChinaE2
-add address=2407:6c40:1120::/43 list=List_ChinaE2
-add address=2407:6c40:1140::/42 list=List_ChinaE2
-add address=2407:6c40:1180::/41 list=List_ChinaE2
-add address=2407:6c40:1200::/39 list=List_ChinaE2
+add address=2407:6c40:1000::/38 list=List_ChinaE2
 add address=2407:6c40:1400::/40 list=List_ChinaE2
 add address=2407:6c40:1501::/48 list=List_ChinaE2
 add address=2407:6c40:1502::/47 list=List_ChinaE2
