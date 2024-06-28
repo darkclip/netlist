@@ -827,7 +827,6 @@ add address=45.9.11.0/24 list=List_China
 add address=45.40.192.0/18 list=List_China
 add address=45.65.16.0/20 list=List_China
 add address=45.82.236.0/22 list=List_China
-add address=45.84.102.0/24 list=List_China
 add address=45.112.132.0/22 list=List_China
 add address=45.112.188.0/22 list=List_China
 add address=45.112.208.0/20 list=List_China
@@ -1920,7 +1919,6 @@ add address=103.68.128.0/22 list=List_China
 add address=103.68.168.0/24 list=List_China
 add address=103.69.16.0/22 list=List_China
 add address=103.69.62.0/23 list=List_China
-add address=103.69.116.0/22 list=List_China
 add address=103.70.8.0/22 list=List_China
 add address=103.70.14.0/23 list=List_China
 add address=103.70.148.0/22 list=List_China
@@ -2322,7 +2320,6 @@ add address=103.116.184.0/22 list=List_China
 add address=103.116.220.0/22 list=List_China
 add address=103.116.224.0/21 list=List_China
 add address=103.117.16.0/22 list=List_China
-add address=103.117.72.0/24 list=List_China
 add address=103.117.88.0/22 list=List_China
 add address=103.117.188.0/22 list=List_China
 add address=103.117.220.0/22 list=List_China
@@ -4654,14 +4651,7 @@ add address=139.5.160.0/22 list=List_China
 add address=139.5.192.0/22 list=List_China
 add address=139.5.204.0/22 list=List_China
 add address=139.5.244.0/22 list=List_China
-add address=139.9.0.0/18 list=List_China
-add address=139.9.64.0/19 list=List_China
-add address=139.9.96.0/23 list=List_China
-add address=139.9.98.0/24 list=List_China
-add address=139.9.100.0/22 list=List_China
-add address=139.9.104.0/21 list=List_China
-add address=139.9.112.0/20 list=List_China
-add address=139.9.128.0/17 list=List_China
+add address=139.9.0.0/16 list=List_China
 add address=139.129.0.0/16 list=List_China
 add address=139.138.238.0/28 list=List_China
 add address=139.148.0.0/16 list=List_China
@@ -4720,7 +4710,6 @@ add address=140.248.33.2/31 list=List_China
 add address=140.249.0.0/16 list=List_China
 add address=140.250.0.0/16 list=List_China
 add address=140.255.0.0/16 list=List_China
-add address=141.11.9.0/24 list=List_China
 add address=142.70.0.0/16 list=List_China
 add address=142.86.0.0/16 list=List_China
 add address=143.64.0.0/16 list=List_China
@@ -6702,7 +6691,6 @@ add address=203.171.224.0/20 list=List_China
 add address=203.174.4.0/24 list=List_China
 add address=203.174.6.0/23 list=List_China
 add address=203.174.96.0/19 list=List_China
-add address=203.175.14.0/24 list=List_China
 add address=203.175.128.0/19 list=List_China
 add address=203.175.192.0/18 list=List_China
 add address=203.176.0.0/18 list=List_China

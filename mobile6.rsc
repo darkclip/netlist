@@ -1,10 +1,12 @@
 /ipv6 firewall address-list
 remove [find list=List_Mobile]
 
+add address=2400:ed60::/48 list=List_Mobile
 add address=2401:1320::/32 list=List_Mobile
 add address=2401:8be0::/48 list=List_Mobile
 add address=2401:8da0::/48 list=List_Mobile
 add address=2402:9a80::/32 list=List_Mobile
+add address=2403:4c80:128::/48 list=List_Mobile
 add address=2405:4540:8000::/48 list=List_Mobile
 add address=2407:37c0::/32 list=List_Mobile
 add address=2407:6c40:1210::/48 list=List_Mobile
