@@ -420,6 +420,7 @@ add address=103.90.189.0/24 list=List_Telecom
 add address=103.90.190.0/24 list=List_Telecom
 add address=103.93.204.0/22 list=List_Telecom
 add address=103.96.214.0/23 list=List_Telecom
+add address=103.96.224.0/23 list=List_Telecom
 add address=103.97.60.0/24 list=List_Telecom
 add address=103.97.112.0/24 list=List_Telecom
 add address=103.98.220.0/22 list=List_Telecom
