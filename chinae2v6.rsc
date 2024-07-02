@@ -4094,13 +4094,7 @@ add address=2408:8a06:1000::/36 list=List_ChinaE2
 add address=2408:8a06:2000::/35 list=List_ChinaE2
 add address=2408:8a06:4000::/34 list=List_ChinaE2
 add address=2408:8a06:8000::/33 list=List_ChinaE2
-add address=2408:8a07::/34 list=List_ChinaE2
-add address=2408:8a07:4000::/35 list=List_ChinaE2
-add address=2408:8a07:6500::/40 list=List_ChinaE2
-add address=2408:8a07:6600::/39 list=List_ChinaE2
-add address=2408:8a07:6800::/37 list=List_ChinaE2
-add address=2408:8a07:7000::/36 list=List_ChinaE2
-add address=2408:8a07:8000::/33 list=List_ChinaE2
+add address=2408:8a07::/32 list=List_ChinaE2
 add address=2408:8a08::/29 list=List_ChinaE2
 add address=2408:8a10::/28 list=List_ChinaE2
 add address=2408:8a20::/32 list=List_ChinaE2

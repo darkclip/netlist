@@ -518,8 +518,6 @@ add address=2408:8a05:6000::/35 list=List_Unicom
 add address=2408:8a05:8000::/36 list=List_Unicom
 add address=2408:8a06::/47 list=List_Unicom
 add address=2408:8a06:100::/47 list=List_Unicom
-add address=2408:8a07:6000::/38 list=List_Unicom
-add address=2408:8a07:6400::/40 list=List_Unicom
 add address=2408:8a21:4000::/35 list=List_Unicom
 add address=2408:8a22:9200::/39 list=List_Unicom
 add address=2408:8a22:9400::/38 list=List_Unicom
