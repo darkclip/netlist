@@ -53,6 +53,11 @@ add address=110.172.200.0/21 list=List_Mobile
 add address=110.199.0.0/16 list=List_Mobile
 add address=110.211.0.0/16 list=List_Mobile
 add address=110.218.0.0/16 list=List_Mobile
+add address=110.219.64.0/23 list=List_Mobile
+add address=110.219.66.0/24 list=List_Mobile
+add address=110.219.129.0/24 list=List_Mobile
+add address=110.219.130.0/23 list=List_Mobile
+add address=110.219.240.0/24 list=List_Mobile
 add address=110.236.0.0/15 list=List_Mobile
 add address=111.0.0.0/10 list=List_Mobile
 add address=111.132.0.0/16 list=List_Mobile
