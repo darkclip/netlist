@@ -2972,7 +2972,13 @@ add address=2406:d440:f000::/37 list=List_ChinaE2
 add address=2406:d440:f800::/38 list=List_ChinaE2
 add address=2406:d440:fc00::/39 list=List_ChinaE2
 add address=2406:d440:fe00::/40 list=List_ChinaE2
-add address=2406:d440:ff00::/41 list=List_ChinaE2
+add address=2406:d440:ff01::/48 list=List_ChinaE2
+add address=2406:d440:ff02::/47 list=List_ChinaE2
+add address=2406:d440:ff04::/46 list=List_ChinaE2
+add address=2406:d440:ff08::/45 list=List_ChinaE2
+add address=2406:d440:ff10::/44 list=List_ChinaE2
+add address=2406:d440:ff20::/43 list=List_ChinaE2
+add address=2406:d440:ff40::/42 list=List_ChinaE2
 add address=2406:d440:ff80::/42 list=List_ChinaE2
 add address=2406:d440:ffc0::/43 list=List_ChinaE2
 add address=2406:d440:ffe0::/44 list=List_ChinaE2
@@ -4024,7 +4030,7 @@ add address=2408:8806:4000::/34 list=List_ChinaE2
 add address=2408:8806:8000::/33 list=List_ChinaE2
 add address=2408:8807::/32 list=List_ChinaE2
 add address=2408:8808::/30 list=List_ChinaE2
-add address=2408:8817::/32 list=List_ChinaE2
+add address=2408:8816::/31 list=List_ChinaE2
 add address=2408:881a::/31 list=List_ChinaE2
 add address=2408:881c::/30 list=List_ChinaE2
 add address=2408:8820::/29 list=List_ChinaE2
