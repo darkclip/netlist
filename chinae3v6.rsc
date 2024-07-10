@@ -531,7 +531,9 @@ add address=2400:cb80::/37 list=List_ChinaE3
 add address=2400:cb80:800::/38 list=List_ChinaE3
 add address=2400:cb80:c00::/39 list=List_ChinaE3
 add address=2400:cb80:e00::/43 list=List_ChinaE3
-add address=2400:cb80:e20::/44 list=List_ChinaE3
+add address=2400:cb80:e20::/45 list=List_ChinaE3
+add address=2400:cb80:e28::/46 list=List_ChinaE3
+add address=2400:cb80:e2c::/47 list=List_ChinaE3
 add address=2400:cb80:e50::/44 list=List_ChinaE3
 add address=2400:cb80:e60::/43 list=List_ChinaE3
 add address=2400:cb80:e80::/41 list=List_ChinaE3

@@ -1267,10 +1267,8 @@ add address=218.104.0.0/15 list=List_Unicom
 add address=218.106.0.0/16 list=List_Unicom
 add address=218.107.0.0/18 list=List_Unicom
 add address=218.107.128.0/17 list=List_Unicom
-add address=218.240.160.0/21 list=List_Unicom
-add address=218.240.168.0/22 list=List_Unicom
-add address=218.240.172.0/23 list=List_Unicom
-add address=218.240.174.0/24 list=List_Unicom
+add address=218.240.160.0/22 list=List_Unicom
+add address=218.240.164.0/23 list=List_Unicom
 add address=218.241.128.0/17 list=List_Unicom
 add address=218.244.44.0/22 list=List_Unicom
 add address=218.244.49.0/24 list=List_Unicom
