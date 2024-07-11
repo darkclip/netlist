@@ -1588,6 +1588,7 @@ add address=218.240.0.0/18 list=List_Telecom
 add address=218.240.128.0/19 list=List_Telecom
 add address=218.240.160.0/21 list=List_Telecom
 add address=218.240.176.0/24 list=List_Telecom
+add address=218.240.179.0/24 list=List_Telecom
 add address=218.240.255.0/24 list=List_Telecom
 add address=218.241.16.0/21 list=List_Telecom
 add address=218.241.152.0/21 list=List_Telecom
