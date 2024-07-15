@@ -580,7 +580,6 @@ add address=43.240.60.0/22 list=List_ChinaE3
 add address=43.240.68.0/22 list=List_ChinaE3
 add address=43.240.76.0/22 list=List_ChinaE3
 add address=43.240.84.0/22 list=List_ChinaE3
-add address=43.240.125.0/24 list=List_ChinaE3
 add address=43.240.132.0/22 list=List_ChinaE3
 add address=43.240.144.0/22 list=List_ChinaE3
 add address=43.240.160.0/19 list=List_ChinaE3
