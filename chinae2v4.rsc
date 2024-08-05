@@ -465,7 +465,6 @@ add address=43.226.168.0/21 list=List_ChinaE2
 add address=43.226.176.0/20 list=List_ChinaE2
 add address=43.226.192.0/20 list=List_ChinaE2
 add address=43.226.208.0/21 list=List_ChinaE2
-add address=43.226.239.0/24 list=List_ChinaE2
 add address=43.226.240.0/20 list=List_ChinaE2
 add address=43.227.0.0/21 list=List_ChinaE2
 add address=43.227.8.0/22 list=List_ChinaE2
