@@ -2507,7 +2507,7 @@ add address=103.165.52.0/23 list=List_ChinaE2
 add address=103.165.82.0/23 list=List_ChinaE2
 add address=103.165.110.0/23 list=List_ChinaE2
 add address=103.166.50.0/23 list=List_ChinaE2
-add address=103.166.52.0/22 list=List_ChinaE2
+add address=103.166.54.0/23 list=List_ChinaE2
 add address=103.166.84.0/23 list=List_ChinaE2
 add address=103.166.138.0/23 list=List_ChinaE2
 add address=103.166.174.0/24 list=List_ChinaE2
