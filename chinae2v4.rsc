@@ -1872,7 +1872,7 @@ add address=103.72.32.0/20 list=List_ChinaE2
 add address=103.72.48.0/21 list=List_ChinaE2
 add address=103.72.114.0/23 list=List_ChinaE2
 add address=103.72.116.0/22 list=List_ChinaE2
-add address=103.72.120.0/21 list=List_ChinaE2
+add address=103.72.124.0/22 list=List_ChinaE2
 add address=103.72.128.0/21 list=List_ChinaE2
 add address=103.72.173.0/24 list=List_ChinaE2
 add address=103.72.174.0/23 list=List_ChinaE2

@@ -3754,6 +3754,7 @@ add address=103.72.8.0/22 list=List_Foreign
 add address=103.72.56.0/21 list=List_Foreign
 add address=103.72.64.0/19 list=List_Foreign
 add address=103.72.96.0/20 list=List_Foreign
+add address=103.72.120.0/22 list=List_Foreign
 add address=103.72.136.0/21 list=List_Foreign
 add address=103.72.144.0/20 list=List_Foreign
 add address=103.72.160.0/21 list=List_Foreign

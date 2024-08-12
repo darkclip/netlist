@@ -44638,7 +44638,6 @@ add address=2a13:a5c7:1a00::/39 list=List_Foreign
 add address=2a13:a5c7:1c00::/38 list=List_Foreign
 add address=2a13:a5c7:2000::/40 list=List_Foreign
 add address=2a13:a5c7:2100::/47 list=List_Foreign
-add address=2a13:a5c7:2102::/48 list=List_Foreign
 add address=2a13:a5c7:2104::/47 list=List_Foreign
 add address=2a13:a5c7:2107::/48 list=List_Foreign
 add address=2a13:a5c7:2108::/48 list=List_Foreign

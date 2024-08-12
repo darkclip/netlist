@@ -13891,7 +13891,7 @@ add address=2a13:a5c7:1801::/48 list=List_ChinaE3
 add address=2a13:a5c7:1802::/47 list=List_ChinaE3
 add address=2a13:a5c7:1804::/47 list=List_ChinaE3
 add address=2a13:a5c7:1888::/48 list=List_ChinaE3
-add address=2a13:a5c7:2103::/48 list=List_ChinaE3
+add address=2a13:a5c7:2102::/47 list=List_ChinaE3
 add address=2a13:a5c7:2106::/48 list=List_ChinaE3
 add address=2a13:a5c7:2109::/48 list=List_ChinaE3
 add address=2a13:a5c7:2200::/40 list=List_ChinaE3
