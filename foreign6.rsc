@@ -43999,7 +43999,7 @@ add address=2a0f:7803:fe26::/47 list=List_Foreign
 add address=2a0f:7803:fe28::/45 list=List_Foreign
 add address=2a0f:7803:fe30::/44 list=List_Foreign
 add address=2a0f:7803:fe41::/48 list=List_Foreign
-add address=2a0f:7803:fe42::/47 list=List_Foreign
+add address=2a0f:7803:fe42::/48 list=List_Foreign
 add address=2a0f:7803:fe44::/46 list=List_Foreign
 add address=2a0f:7803:fe48::/45 list=List_Foreign
 add address=2a0f:7803:fe50::/44 list=List_Foreign
