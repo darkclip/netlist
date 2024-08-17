@@ -9,6 +9,7 @@ add address=2400:cb80:e2e::/47 list=List_Unicom
 add address=2400:cb80:e30::/44 list=List_Unicom
 add address=2400:cb80:e40::/44 list=List_Unicom
 add address=2401:1d40:3000::/48 list=List_Unicom
+add address=2401:71c0::/48 list=List_Unicom
 add address=2401:a140:1::/48 list=List_Unicom
 add address=2401:be00::/48 list=List_Unicom
 add address=2402:5ec0:1000::/39 list=List_Unicom

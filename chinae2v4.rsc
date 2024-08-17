@@ -2763,7 +2763,8 @@ add address=103.219.84.0/22 list=List_ChinaE2
 add address=103.219.88.0/22 list=List_ChinaE2
 add address=103.219.93.0/24 list=List_ChinaE2
 add address=103.219.94.0/23 list=List_ChinaE2
-add address=103.219.96.0/21 list=List_ChinaE2
+add address=103.219.96.0/22 list=List_ChinaE2
+add address=103.219.102.0/23 list=List_ChinaE2
 add address=103.220.48.0/22 list=List_ChinaE2
 add address=103.220.60.0/22 list=List_ChinaE2
 add address=103.220.92.0/22 list=List_ChinaE2
