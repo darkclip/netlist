@@ -205,3 +205,4 @@ add address=223.160.236.0/23 list=List_Mobile
 add address=223.161.198.0/23 list=List_Mobile
 add address=223.161.224.0/23 list=List_Mobile
 add address=223.161.232.0/23 list=List_Mobile
+add address=223.161.246.0/23 list=List_Mobile
