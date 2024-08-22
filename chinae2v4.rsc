@@ -6826,7 +6826,9 @@ add address=218.108.0.0/15 list=List_ChinaE2
 add address=218.185.192.0/19 list=List_ChinaE2
 add address=218.192.0.0/12 list=List_ChinaE2
 add address=218.240.64.0/18 list=List_ChinaE2
-add address=218.240.168.0/21 list=List_ChinaE2
+add address=218.240.169.0/24 list=List_ChinaE2
+add address=218.240.170.0/23 list=List_ChinaE2
+add address=218.240.172.0/22 list=List_ChinaE2
 add address=218.240.185.0/24 list=List_ChinaE2
 add address=218.240.186.0/23 list=List_ChinaE2
 add address=218.240.188.0/22 list=List_ChinaE2
