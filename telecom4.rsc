@@ -323,6 +323,7 @@ add address=103.9.252.0/22 list=List_Telecom
 add address=103.10.84.0/22 list=List_Telecom
 add address=103.15.96.0/22 list=List_Telecom
 add address=103.17.40.0/22 list=List_Telecom
+add address=103.18.186.0/23 list=List_Telecom
 add address=103.19.232.0/22 list=List_Telecom
 add address=103.20.248.0/23 list=List_Telecom
 add address=103.21.116.0/22 list=List_Telecom
