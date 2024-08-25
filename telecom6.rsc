@@ -81,6 +81,7 @@ add address=2403:c980::/32 list=List_Telecom
 add address=2403:e7c0:1::/48 list=List_Telecom
 add address=2403:f4c0::/48 list=List_Telecom
 add address=2404:1c80::/32 list=List_Telecom
+add address=2404:3700::/48 list=List_Telecom
 add address=2404:6380::/48 list=List_Telecom
 add address=2404:6380:1000::/48 list=List_Telecom
 add address=2405:1480:1000::/48 list=List_Telecom
