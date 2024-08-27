@@ -313,6 +313,7 @@ add address=103.40.212.0/22 list=List_Unicom
 add address=103.40.232.0/22 list=List_Unicom
 add address=103.41.0.0/23 list=List_Unicom
 add address=103.41.164.0/22 list=List_Unicom
+add address=103.43.134.0/23 list=List_Unicom
 add address=103.43.184.0/22 list=List_Unicom
 add address=103.44.80.0/22 list=List_Unicom
 add address=103.45.72.0/21 list=List_Unicom
