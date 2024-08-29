@@ -3522,7 +3522,10 @@ add address=110.218.180.0/22 list=List_ChinaE3
 add address=110.218.184.0/21 list=List_ChinaE3
 add address=110.218.208.0/20 list=List_ChinaE3
 add address=110.218.240.0/20 list=List_ChinaE3
-add address=110.219.0.0/18 list=List_ChinaE3
+add address=110.219.4.0/22 list=List_ChinaE3
+add address=110.219.8.0/21 list=List_ChinaE3
+add address=110.219.16.0/20 list=List_ChinaE3
+add address=110.219.32.0/19 list=List_ChinaE3
 add address=110.219.69.0/24 list=List_ChinaE3
 add address=110.219.70.0/23 list=List_ChinaE3
 add address=110.219.72.0/21 list=List_ChinaE3
