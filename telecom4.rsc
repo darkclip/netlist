@@ -526,6 +526,7 @@ add address=103.220.124.0/22 list=List_Telecom
 add address=103.220.128.0/19 list=List_Telecom
 add address=103.220.160.0/22 list=List_Telecom
 add address=103.220.240.0/22 list=List_Telecom
+add address=103.221.141.0/24 list=List_Telecom
 add address=103.221.142.0/23 list=List_Telecom
 add address=103.222.33.0/24 list=List_Telecom
 add address=103.222.40.0/22 list=List_Telecom
