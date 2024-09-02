@@ -444,8 +444,6 @@ add address=103.229.212.0/22 list=List_Unicom
 add address=103.230.212.0/22 list=List_Unicom
 add address=103.231.16.0/24 list=List_Unicom
 add address=103.231.64.0/21 list=List_Unicom
-add address=103.231.144.0/23 list=List_Unicom
-add address=103.231.146.0/24 list=List_Unicom
 add address=103.233.128.0/22 list=List_Unicom
 add address=103.233.162.0/23 list=List_Unicom
 add address=103.234.20.0/22 list=List_Unicom
