@@ -1046,7 +1046,6 @@ add address=202.91.186.0/24 list=List_Unicom
 add address=202.91.190.0/23 list=List_Unicom
 add address=202.91.224.0/20 list=List_Unicom
 add address=202.93.252.0/22 list=List_Unicom
-add address=202.94.1.0/24 list=List_Unicom
 add address=202.95.0.0/19 list=List_Unicom
 add address=202.96.0.0/18 list=List_Unicom
 add address=202.96.64.0/19 list=List_Unicom
