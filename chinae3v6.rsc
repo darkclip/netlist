@@ -8958,7 +8958,10 @@ add address=2403:1ec0:1420::/43 list=List_ChinaE3
 add address=2403:1ec0:1440::/42 list=List_ChinaE3
 add address=2403:1ec0:1480::/41 list=List_ChinaE3
 add address=2403:1ec0:1500::/40 list=List_ChinaE3
-add address=2403:1ec0:1600::/44 list=List_ChinaE3
+add address=2403:1ec0:1601::/48 list=List_ChinaE3
+add address=2403:1ec0:1602::/47 list=List_ChinaE3
+add address=2403:1ec0:1604::/46 list=List_ChinaE3
+add address=2403:1ec0:1608::/45 list=List_ChinaE3
 add address=2403:1ec0:1611::/48 list=List_ChinaE3
 add address=2403:1ec0:1612::/47 list=List_ChinaE3
 add address=2403:1ec0:1614::/46 list=List_ChinaE3
