@@ -68,6 +68,8 @@ add address=2401:a140:1::/48 list=List_Telecom
 add address=2401:be00::/48 list=List_Telecom
 add address=2402:5ec0::/32 list=List_Telecom
 add address=2402:92c0::/48 list=List_Telecom
+add address=2402:db40:5100::/48 list=List_Telecom
+add address=2402:db40:5f00::/46 list=List_Telecom
 add address=2403:1ec0:1400::/48 list=List_Telecom
 add address=2403:1ec0:1600::/48 list=List_Telecom
 add address=2403:1ec0:1610::/48 list=List_Telecom
