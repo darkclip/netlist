@@ -11825,7 +11825,7 @@ add address=2408:8806:4000::/34 list=List_ChinaE3
 add address=2408:8806:8000::/33 list=List_ChinaE3
 add address=2408:8807::/32 list=List_ChinaE3
 add address=2408:8808::/30 list=List_ChinaE3
-add address=2408:8816::/31 list=List_ChinaE3
+add address=2408:8817::/32 list=List_ChinaE3
 add address=2408:881a::/31 list=List_ChinaE3
 add address=2408:881c::/30 list=List_ChinaE3
 add address=2408:8820::/29 list=List_ChinaE3

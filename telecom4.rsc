@@ -811,7 +811,8 @@ add address=117.72.0.0/24 list=List_Telecom
 add address=117.72.8.0/21 list=List_Telecom
 add address=117.72.16.0/23 list=List_Telecom
 add address=117.72.32.0/20 list=List_Telecom
-add address=117.72.64.0/19 list=List_Telecom
+add address=117.72.48.0/21 list=List_Telecom
+add address=117.72.64.0/18 list=List_Telecom
 add address=117.73.0.0/20 list=List_Telecom
 add address=117.73.16.0/21 list=List_Telecom
 add address=117.73.252.0/22 list=List_Telecom
