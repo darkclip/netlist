@@ -34,6 +34,9 @@ add address=240a:40b0:83a::/48 list=List_Mobile
 add address=240a:40b0:283a::/48 list=List_Mobile
 add address=240a:40b0:483a::/48 list=List_Mobile
 add address=240a:40b0:683a::/48 list=List_Mobile
+add address=240a:40c0:8000::/43 list=List_Mobile
+add address=240a:40c0:c000::/43 list=List_Mobile
+add address=240a:40c1:2000::/43 list=List_Mobile
 add address=240a:40c1:a000::/43 list=List_Mobile
 add address=240a:40c2:a000::/43 list=List_Mobile
 add address=240a:40c2:c000::/43 list=List_Mobile
@@ -43,3 +46,4 @@ add address=240a:42c0::/27 list=List_Mobile
 add address=240a:42e0::/28 list=List_Mobile
 add address=240a:42f0::/29 list=List_Mobile
 add address=240a:42f8::/30 list=List_Mobile
+add address=240c::/48 list=List_Mobile
