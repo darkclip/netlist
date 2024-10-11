@@ -1053,8 +1053,6 @@ add address=125.213.32.0/20 list=List_Telecom
 add address=125.254.128.0/19 list=List_Telecom
 add address=125.254.168.0/21 list=List_Telecom
 add address=125.254.176.0/21 list=List_Telecom
-add address=128.1.12.0/23 list=List_Telecom
-add address=128.1.15.0/24 list=List_Telecom
 add address=131.221.80.0/22 list=List_Telecom
 add address=139.5.60.0/22 list=List_Telecom
 add address=139.9.144.0/20 list=List_Telecom
