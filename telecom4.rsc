@@ -720,7 +720,6 @@ add address=114.113.64.0/18 list=List_Telecom
 add address=114.113.144.0/20 list=List_Telecom
 add address=114.113.208.0/21 list=List_Telecom
 add address=114.113.224.0/20 list=List_Telecom
-add address=114.114.112.0/21 list=List_Telecom
 add address=114.115.0.0/17 list=List_Telecom
 add address=114.115.128.0/18 list=List_Telecom
 add address=114.115.224.0/19 list=List_Telecom
