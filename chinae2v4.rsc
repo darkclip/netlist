@@ -1086,8 +1086,7 @@ add address=59.81.12.0/22 list=List_ChinaE2
 add address=59.81.16.0/22 list=List_ChinaE2
 add address=59.81.22.0/23 list=List_ChinaE2
 add address=59.81.24.0/21 list=List_ChinaE2
-add address=59.81.32.0/22 list=List_ChinaE2
-add address=59.81.38.0/23 list=List_ChinaE2
+add address=59.81.32.0/21 list=List_ChinaE2
 add address=59.81.42.0/23 list=List_ChinaE2
 add address=59.81.44.0/23 list=List_ChinaE2
 add address=59.81.47.0/24 list=List_ChinaE2
