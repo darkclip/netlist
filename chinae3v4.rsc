@@ -7262,9 +7262,11 @@ add address=223.160.240.0/20 list=List_ChinaE3
 add address=223.161.0.0/17 list=List_ChinaE3
 add address=223.161.128.0/18 list=List_ChinaE3
 add address=223.161.192.0/23 list=List_ChinaE3
-add address=223.161.200.0/22 list=List_ChinaE3
+add address=223.161.202.0/23 list=List_ChinaE3
 add address=223.161.204.0/23 list=List_ChinaE3
-add address=223.161.208.0/20 list=List_ChinaE3
+add address=223.161.208.0/21 list=List_ChinaE3
+add address=223.161.216.0/22 list=List_ChinaE3
+add address=223.161.222.0/23 list=List_ChinaE3
 add address=223.161.228.0/22 list=List_ChinaE3
 add address=223.161.234.0/23 list=List_ChinaE3
 add address=223.161.238.0/23 list=List_ChinaE3
