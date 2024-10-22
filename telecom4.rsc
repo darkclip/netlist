@@ -1011,7 +1011,6 @@ add address=123.103.48.0/20 list=List_Telecom
 add address=123.103.72.0/21 list=List_Telecom
 add address=123.103.80.0/20 list=List_Telecom
 add address=123.103.112.0/20 list=List_Telecom
-add address=123.108.88.0/24 list=List_Telecom
 add address=123.149.0.0/16 list=List_Telecom
 add address=123.150.0.0/15 list=List_Telecom
 add address=123.160.0.0/12 list=List_Telecom
