@@ -6,7 +6,6 @@ add address=2401:1320::/32 list=List_Mobile
 add address=2401:8be0::/48 list=List_Mobile
 add address=2401:8da0::/48 list=List_Mobile
 add address=2402:9a80::/32 list=List_Mobile
-add address=2405:4540:8000::/48 list=List_Mobile
 add address=2407:37c0::/32 list=List_Mobile
 add address=2407:6c40:1210::/48 list=List_Mobile
 add address=2407:8f40:2::/48 list=List_Mobile
@@ -50,9 +49,11 @@ add address=240a:40c2:c000::/43 list=List_Mobile
 add address=240a:40c3::/43 list=List_Mobile
 add address=240a:40c3:2000::/43 list=List_Mobile
 add address=240a:40c3:4000::/43 list=List_Mobile
+add address=240a:40c3:8000::/43 list=List_Mobile
 add address=240a:40c3:c000::/43 list=List_Mobile
 add address=240a:4280::/26 list=List_Mobile
 add address=240a:42c0::/27 list=List_Mobile
 add address=240a:42e0::/28 list=List_Mobile
 add address=240a:42f0::/29 list=List_Mobile
 add address=240a:42f8::/30 list=List_Mobile
+add address=240c::/48 list=List_Mobile

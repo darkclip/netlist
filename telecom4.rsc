@@ -414,7 +414,6 @@ add address=103.74.126.0/24 list=List_Telecom
 add address=103.76.220.0/22 list=List_Telecom
 add address=103.76.224.0/22 list=List_Telecom
 add address=103.77.28.0/22 list=List_Telecom
-add address=103.78.126.0/23 list=List_Telecom
 add address=103.78.228.0/22 list=List_Telecom
 add address=103.79.200.0/22 list=List_Telecom
 add address=103.81.48.0/22 list=List_Telecom
