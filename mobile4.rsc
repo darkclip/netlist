@@ -206,13 +206,7 @@ add address=223.161.194.0/23 list=List_Mobile
 add address=223.161.196.0/22 list=List_Mobile
 add address=223.161.200.0/22 list=List_Mobile
 add address=223.161.206.0/23 list=List_Mobile
+add address=223.161.208.0/23 list=List_Mobile
 add address=223.161.212.0/23 list=List_Mobile
-add address=223.161.220.0/22 list=List_Mobile
-add address=223.161.224.0/22 list=List_Mobile
-add address=223.161.230.0/23 list=List_Mobile
-add address=223.161.232.0/23 list=List_Mobile
-add address=223.161.236.0/22 list=List_Mobile
-add address=223.161.240.0/23 list=List_Mobile
-add address=223.161.246.0/23 list=List_Mobile
-add address=223.161.248.0/22 list=List_Mobile
-add address=223.161.252.0/23 list=List_Mobile
+add address=223.161.216.0/21 list=List_Mobile
+add address=223.161.224.0/19 list=List_Mobile

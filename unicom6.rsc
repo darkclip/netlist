@@ -23,7 +23,6 @@ add address=2402:f140:ff10::/47 list=List_Unicom
 add address=2402:f140:ff12::/48 list=List_Unicom
 add address=2402:f140:ff14::/48 list=List_Unicom
 add address=2403:1ec0:1200::/48 list=List_Unicom
-add address=2403:1ec0:1400::/48 list=List_Unicom
 add address=2403:1ec0:1610::/48 list=List_Unicom
 add address=2403:4280::/48 list=List_Unicom
 add address=2403:4c80::/48 list=List_Unicom
@@ -122,7 +121,9 @@ add address=2408:8244::/30 list=List_Unicom
 add address=2408:8248::/30 list=List_Unicom
 add address=2408:824c::/32 list=List_Unicom
 add address=2408:824e::/31 list=List_Unicom
-add address=2408:8250::/29 list=List_Unicom
+add address=2408:8250::/30 list=List_Unicom
+add address=2408:8254::/32 list=List_Unicom
+add address=2408:8256::/31 list=List_Unicom
 add address=2408:8258::/30 list=List_Unicom
 add address=2408:825c::/31 list=List_Unicom
 add address=2408:8260::/32 list=List_Unicom
@@ -551,6 +552,5 @@ add address=2408:8a23:4000::/34 list=List_Unicom
 add address=2408:8a24:4000::/34 list=List_Unicom
 add address=2408:8a26:c000::/34 list=List_Unicom
 add address=2408:8a27:4000::/35 list=List_Unicom
-add address=2409:27b::/48 list=List_Unicom
 add address=2409:27fa::/48 list=List_Unicom
 add address=2409:27fa:f000::/48 list=List_Unicom
