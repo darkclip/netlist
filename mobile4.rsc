@@ -39,7 +39,6 @@ add address=101.125.130.0/24 list=List_Mobile
 add address=101.144.0.0/12 list=List_Mobile
 add address=103.1.10.0/23 list=List_Mobile
 add address=103.3.128.0/22 list=List_Mobile
-add address=103.8.223.0/24 list=List_Mobile
 add address=103.20.112.0/22 list=List_Mobile
 add address=103.21.176.0/22 list=List_Mobile
 add address=103.25.216.0/22 list=List_Mobile
