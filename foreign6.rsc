@@ -45075,7 +45075,7 @@ add address=2a0e:aa07:e193::/48 list=List_Foreign
 add address=2a0e:aa07:e194::/46 list=List_Foreign
 add address=2a0e:aa07:e198::/45 list=List_Foreign
 add address=2a0e:aa07:e1c0::/43 list=List_Foreign
-add address=2a0e:aa07:e1e0::/47 list=List_Foreign
+add address=2a0e:aa07:e1e0::/48 list=List_Foreign
 add address=2a0e:aa07:e1e5::/48 list=List_Foreign
 add address=2a0e:aa07:e1e6::/47 list=List_Foreign
 add address=2a0e:aa07:e1e8::/45 list=List_Foreign
@@ -45934,18 +45934,12 @@ add address=2a13:a5c7:1680::/41 list=List_Foreign
 add address=2a13:a5c7:1700::/40 list=List_Foreign
 add address=2a13:a5c7:1800::/48 list=List_Foreign
 add address=2a13:a5c7:1802::/48 list=List_Foreign
-add address=2a13:a5c7:1806::/47 list=List_Foreign
+add address=2a13:a5c7:1804::/46 list=List_Foreign
 add address=2a13:a5c7:1808::/45 list=List_Foreign
 add address=2a13:a5c7:1810::/44 list=List_Foreign
 add address=2a13:a5c7:1820::/43 list=List_Foreign
 add address=2a13:a5c7:1840::/42 list=List_Foreign
-add address=2a13:a5c7:1880::/45 list=List_Foreign
-add address=2a13:a5c7:1889::/48 list=List_Foreign
-add address=2a13:a5c7:188a::/47 list=List_Foreign
-add address=2a13:a5c7:188c::/46 list=List_Foreign
-add address=2a13:a5c7:1890::/44 list=List_Foreign
-add address=2a13:a5c7:18a0::/43 list=List_Foreign
-add address=2a13:a5c7:18c0::/42 list=List_Foreign
+add address=2a13:a5c7:1880::/41 list=List_Foreign
 add address=2a13:a5c7:1900::/40 list=List_Foreign
 add address=2a13:a5c7:1a00::/39 list=List_Foreign
 add address=2a13:a5c7:1c00::/38 list=List_Foreign
@@ -45962,7 +45956,6 @@ add address=2a13:a5c7:2118::/45 list=List_Foreign
 add address=2a13:a5c7:2120::/43 list=List_Foreign
 add address=2a13:a5c7:2140::/42 list=List_Foreign
 add address=2a13:a5c7:2180::/41 list=List_Foreign
-add address=2a13:a5c7:2300::/40 list=List_Foreign
 add address=2a13:a5c7:2400::/38 list=List_Foreign
 add address=2a13:a5c7:2800::/37 list=List_Foreign
 add address=2a13:a5c7:3000::/36 list=List_Foreign
