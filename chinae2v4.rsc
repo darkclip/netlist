@@ -6606,9 +6606,7 @@ add address=211.90.208.0/21 list=List_ChinaE2
 add address=211.91.112.0/21 list=List_ChinaE2
 add address=211.91.192.0/20 list=List_ChinaE2
 add address=211.91.208.0/21 list=List_ChinaE2
-add address=211.92.176.0/20 list=List_ChinaE2
-add address=211.92.192.0/19 list=List_ChinaE2
-add address=211.92.224.0/20 list=List_ChinaE2
+add address=211.92.240.0/22 list=List_ChinaE2
 add address=211.92.248.0/21 list=List_ChinaE2
 add address=211.93.152.0/21 list=List_ChinaE2
 add address=211.93.202.0/23 list=List_ChinaE2
