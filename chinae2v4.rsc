@@ -2291,6 +2291,8 @@ add address=103.135.100.0/24 list=List_ChinaE2
 add address=103.135.124.0/22 list=List_ChinaE2
 add address=103.135.148.0/22 list=List_ChinaE2
 add address=103.135.156.0/22 list=List_ChinaE2
+add address=103.135.160.0/24 list=List_ChinaE2
+add address=103.135.162.0/23 list=List_ChinaE2
 add address=103.135.164.0/22 list=List_ChinaE2
 add address=103.135.176.0/22 list=List_ChinaE2
 add address=103.135.184.0/22 list=List_ChinaE2
