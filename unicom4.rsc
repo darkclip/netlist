@@ -494,7 +494,6 @@ add address=103.251.240.0/22 list=List_Unicom
 add address=103.252.36.0/24 list=List_Unicom
 add address=103.252.248.0/22 list=List_Unicom
 add address=103.253.60.0/22 list=List_Unicom
-add address=103.253.224.0/22 list=List_Unicom
 add address=103.254.68.0/22 list=List_Unicom
 add address=103.255.92.0/22 list=List_Unicom
 add address=103.255.200.0/22 list=List_Unicom
