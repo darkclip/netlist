@@ -97,6 +97,7 @@ add address=2408:8120:2::/48 list=List_Unicom
 add address=2408:8120:7000::/36 list=List_Unicom
 add address=2408:8140:2000::/48 list=List_Unicom
 add address=2408:815f:e000::/35 list=List_Unicom
+add address=2408:8182:6000::/40 list=List_Unicom
 add address=2408:8182:c000::/40 list=List_Unicom
 add address=2408:81a2:2000::/35 list=List_Unicom
 add address=2408:81a2:4000::/35 list=List_Unicom

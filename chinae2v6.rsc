@@ -11308,7 +11308,13 @@ add address=2408:815f:8000::/34 list=List_ChinaE2
 add address=2408:815f:c000::/35 list=List_ChinaE2
 add address=2408:8160::/27 list=List_ChinaE2
 add address=2408:8180::/31 list=List_ChinaE2
-add address=2408:8182::/33 list=List_ChinaE2
+add address=2408:8182::/34 list=List_ChinaE2
+add address=2408:8182:4000::/35 list=List_ChinaE2
+add address=2408:8182:6100::/40 list=List_ChinaE2
+add address=2408:8182:6200::/39 list=List_ChinaE2
+add address=2408:8182:6400::/38 list=List_ChinaE2
+add address=2408:8182:6800::/37 list=List_ChinaE2
+add address=2408:8182:7000::/36 list=List_ChinaE2
 add address=2408:8182:8000::/34 list=List_ChinaE2
 add address=2408:8182:c100::/40 list=List_ChinaE2
 add address=2408:8182:c200::/39 list=List_ChinaE2
