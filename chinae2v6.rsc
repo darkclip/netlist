@@ -12865,6 +12865,8 @@ add address=2a04:4e41:4052:f000::/52 list=List_ChinaE2
 add address=2a04:4e41:4062:f000::/52 list=List_ChinaE2
 add address=2a04:4e41:4072:f000::/52 list=List_ChinaE2
 add address=2a04:4e41:4082:f000::/52 list=List_ChinaE2
+add address=2a04:f580:9002::/48 list=List_ChinaE2
+add address=2a04:f580:9202::/48 list=List_ChinaE2
 add address=2a05:1087::/32 list=List_ChinaE2
 add address=2a05:4140:66::/48 list=List_ChinaE2
 add address=2a05:4140:319::/48 list=List_ChinaE2

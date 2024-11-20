@@ -1125,7 +1125,6 @@ add address=59.81.84.0/22 list=List_ChinaE3
 add address=59.81.88.0/22 list=List_ChinaE3
 add address=59.81.92.0/23 list=List_ChinaE3
 add address=59.81.96.0/22 list=List_ChinaE3
-add address=59.81.100.0/23 list=List_ChinaE3
 add address=59.81.108.0/22 list=List_ChinaE3
 add address=59.81.112.0/20 list=List_ChinaE3
 add address=59.81.128.0/17 list=List_ChinaE3
