@@ -111,6 +111,7 @@ add address=117.48.144.0/20 list=List_Mobile
 add address=117.128.0.0/10 list=List_Mobile
 add address=118.191.248.0/21 list=List_Mobile
 add address=118.193.127.0/24 list=List_Mobile
+add address=119.44.205.0/24 list=List_Mobile
 add address=119.161.183.0/24 list=List_Mobile
 add address=120.133.128.0/20 list=List_Mobile
 add address=120.192.0.0/10 list=List_Mobile

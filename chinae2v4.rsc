@@ -2004,6 +2004,8 @@ add address=103.91.108.0/22 list=List_ChinaE2
 add address=103.91.112.0/23 list=List_ChinaE2
 add address=103.91.138.0/23 list=List_ChinaE2
 add address=103.91.152.0/22 list=List_ChinaE2
+add address=103.91.176.0/23 list=List_ChinaE2
+add address=103.91.178.0/24 list=List_ChinaE2
 add address=103.91.200.0/22 list=List_ChinaE2
 add address=103.91.212.0/22 list=List_ChinaE2
 add address=103.91.236.0/22 list=List_ChinaE2
