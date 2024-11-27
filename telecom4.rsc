@@ -285,10 +285,7 @@ add address=101.125.252.0/22 list=List_Telecom
 add address=101.128.0.0/22 list=List_Telecom
 add address=101.198.0.0/22 list=List_Telecom
 add address=101.198.198.0/23 list=List_Telecom
-add address=101.199.97.0/24 list=List_Telecom
-add address=101.199.112.0/23 list=List_Telecom
-add address=101.199.114.0/24 list=List_Telecom
-add address=101.199.125.0/24 list=List_Telecom
+add address=101.199.112.0/24 list=List_Telecom
 add address=101.203.172.0/22 list=List_Telecom
 add address=101.224.0.0/13 list=List_Telecom
 add address=101.234.76.0/22 list=List_Telecom
