@@ -597,7 +597,6 @@ add address=114.113.144.0/20 list=List_Unicom
 add address=114.113.221.0/24 list=List_Unicom
 add address=114.113.223.0/24 list=List_Unicom
 add address=114.113.224.0/20 list=List_Unicom
-add address=114.114.112.0/21 list=List_Unicom
 add address=114.115.128.0/17 list=List_Unicom
 add address=114.116.0.0/17 list=List_Unicom
 add address=114.116.128.0/18 list=List_Unicom
