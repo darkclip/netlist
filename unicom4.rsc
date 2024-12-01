@@ -386,7 +386,6 @@ add address=103.143.16.0/22 list=List_Unicom
 add address=103.144.159.0/24 list=List_Unicom
 add address=103.146.126.0/23 list=List_Unicom
 add address=103.147.124.0/24 list=List_Unicom
-add address=103.151.142.0/23 list=List_Unicom
 add address=103.151.148.0/23 list=List_Unicom
 add address=103.152.76.0/23 list=List_Unicom
 add address=103.155.76.0/23 list=List_Unicom

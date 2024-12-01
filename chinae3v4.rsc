@@ -2405,6 +2405,7 @@ add address=103.150.212.0/24 list=List_ChinaE3
 add address=103.150.216.0/23 list=List_ChinaE3
 add address=103.150.244.0/23 list=List_ChinaE3
 add address=103.151.4.0/24 list=List_ChinaE3
+add address=103.151.142.0/23 list=List_ChinaE3
 add address=103.151.158.0/23 list=List_ChinaE3
 add address=103.151.178.0/23 list=List_ChinaE3
 add address=103.151.216.0/23 list=List_ChinaE3
