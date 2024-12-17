@@ -11551,7 +11551,15 @@ add address=2408:815f::/33 list=List_ChinaE3
 add address=2408:815f:8000::/34 list=List_ChinaE3
 add address=2408:815f:c000::/35 list=List_ChinaE3
 add address=2408:8160::/27 list=List_ChinaE3
-add address=2408:8180::/31 list=List_ChinaE3
+add address=2408:8180::/32 list=List_ChinaE3
+add address=2408:8181::/33 list=List_ChinaE3
+add address=2408:8181:8000::/35 list=List_ChinaE3
+add address=2408:8181:a100::/40 list=List_ChinaE3
+add address=2408:8181:a200::/39 list=List_ChinaE3
+add address=2408:8181:a400::/38 list=List_ChinaE3
+add address=2408:8181:a800::/37 list=List_ChinaE3
+add address=2408:8181:b000::/36 list=List_ChinaE3
+add address=2408:8181:c000::/34 list=List_ChinaE3
 add address=2408:8182::/34 list=List_ChinaE3
 add address=2408:8182:4000::/35 list=List_ChinaE3
 add address=2408:8182:6100::/40 list=List_ChinaE3
