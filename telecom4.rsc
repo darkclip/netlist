@@ -399,7 +399,6 @@ add address=103.69.16.0/22 list=List_Telecom
 add address=103.70.8.0/22 list=List_Telecom
 add address=103.71.69.0/24 list=List_Telecom
 add address=103.71.70.0/23 list=List_Telecom
-add address=103.72.112.0/24 list=List_Telecom
 add address=103.73.116.0/22 list=List_Telecom
 add address=103.73.136.0/21 list=List_Telecom
 add address=103.73.144.0/22 list=List_Telecom

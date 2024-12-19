@@ -1052,8 +1052,6 @@ add address=202.136.255.0/24 list=List_Unicom
 add address=202.168.160.0/19 list=List_Unicom
 add address=202.170.128.0/19 list=List_Unicom
 add address=202.181.28.0/24 list=List_Unicom
-add address=202.189.4.0/22 list=List_Unicom
-add address=202.189.8.0/21 list=List_Unicom
 add address=203.65.240.0/22 list=List_Unicom
 add address=203.76.208.0/21 list=List_Unicom
 add address=203.76.216.0/22 list=List_Unicom
