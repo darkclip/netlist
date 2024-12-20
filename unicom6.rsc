@@ -1,7 +1,6 @@
 /ipv6 firewall address-list
 remove [find list=List_Unicom]
 
-add address=2400:73e0:201::/48 list=List_Unicom
 add address=2400:89c0:1010::/44 list=List_Unicom
 add address=2400:89c0:1020::/43 list=List_Unicom
 add address=2400:a860:2::/48 list=List_Unicom
@@ -29,7 +28,6 @@ add address=2403:4c80::/48 list=List_Unicom
 add address=2403:5c80::/48 list=List_Unicom
 add address=2403:a200:a1ff::/48 list=List_Unicom
 add address=2403:a200:a2ff::/48 list=List_Unicom
-add address=2403:a200:a3ff::/48 list=List_Unicom
 add address=2404:6500:dcb3::/48 list=List_Unicom
 add address=2404:c940::/48 list=List_Unicom
 add address=2405:1480:1000::/48 list=List_Unicom
@@ -44,6 +42,7 @@ add address=2406:cf00::/48 list=List_Unicom
 add address=2406:d440:ffff::/48 list=List_Unicom
 add address=2407:6c40:1500::/48 list=List_Unicom
 add address=2407:6c40:1600::/40 list=List_Unicom
+add address=2407:8f40:2::/48 list=List_Unicom
 add address=2407:c080:1800::/37 list=List_Unicom
 add address=2408:8000::/48 list=List_Unicom
 add address=2408:8000:2::/47 list=List_Unicom
@@ -101,6 +100,7 @@ add address=2408:815f:e000::/35 list=List_Unicom
 add address=2408:8181:a000::/40 list=List_Unicom
 add address=2408:8182:6000::/40 list=List_Unicom
 add address=2408:8182:c000::/40 list=List_Unicom
+add address=2408:8183:4000::/40 list=List_Unicom
 add address=2408:81a2:2000::/35 list=List_Unicom
 add address=2408:81a2:4000::/35 list=List_Unicom
 add address=2408:81a3:6000::/35 list=List_Unicom
