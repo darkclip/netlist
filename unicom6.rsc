@@ -28,6 +28,7 @@ add address=2403:4c80::/48 list=List_Unicom
 add address=2403:5c80::/48 list=List_Unicom
 add address=2403:a200:a1ff::/48 list=List_Unicom
 add address=2403:a200:a2ff::/48 list=List_Unicom
+add address=2403:a200:a3ff::/48 list=List_Unicom
 add address=2404:6500:dcb3::/48 list=List_Unicom
 add address=2404:c940::/48 list=List_Unicom
 add address=2405:1480:1000::/48 list=List_Unicom
@@ -556,3 +557,4 @@ add address=2408:8a27:4000::/35 list=List_Unicom
 add address=2409:27fa::/48 list=List_Unicom
 add address=2409:27fa:f000::/48 list=List_Unicom
 add address=2409:27fb::/48 list=List_Unicom
+add address=2409:27fc::/48 list=List_Unicom
