@@ -10856,7 +10856,13 @@ add address=2408:8183:4400::/38 list=List_ChinaE3
 add address=2408:8183:4800::/37 list=List_ChinaE3
 add address=2408:8183:5000::/36 list=List_ChinaE3
 add address=2408:8183:6000::/35 list=List_ChinaE3
-add address=2408:8183:8000::/33 list=List_ChinaE3
+add address=2408:8183:8100::/40 list=List_ChinaE3
+add address=2408:8183:8200::/39 list=List_ChinaE3
+add address=2408:8183:8400::/38 list=List_ChinaE3
+add address=2408:8183:8800::/37 list=List_ChinaE3
+add address=2408:8183:9000::/36 list=List_ChinaE3
+add address=2408:8183:a000::/35 list=List_ChinaE3
+add address=2408:8183:c000::/34 list=List_ChinaE3
 add address=2408:8184::/30 list=List_ChinaE3
 add address=2408:8188::/29 list=List_ChinaE3
 add address=2408:8190::/28 list=List_ChinaE3
