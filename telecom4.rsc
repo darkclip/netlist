@@ -17,7 +17,6 @@ add address=5.10.142.0/23 list=List_Telecom
 add address=5.154.132.0/23 list=List_Telecom
 add address=5.154.136.0/22 list=List_Telecom
 add address=5.154.140.0/23 list=List_Telecom
-add address=5.154.158.0/23 list=List_Telecom
 add address=14.16.0.0/12 list=List_Telecom
 add address=14.103.0.0/16 list=List_Telecom
 add address=14.104.0.0/13 list=List_Telecom

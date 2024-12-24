@@ -130,7 +130,6 @@ add address=2a04:f580:8010::/47 list=List_Telecom
 add address=2a04:f580:8090::/48 list=List_Telecom
 add address=2a04:f580:8210::/47 list=List_Telecom
 add address=2a04:f580:8290::/48 list=List_Telecom
-add address=2a04:f580:9001::/48 list=List_Telecom
 add address=2a04:f580:9010::/48 list=List_Telecom
 add address=2a04:f580:9012::/47 list=List_Telecom
 add address=2a04:f580:9020::/48 list=List_Telecom
