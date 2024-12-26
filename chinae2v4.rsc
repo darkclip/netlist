@@ -4639,7 +4639,13 @@ add address=139.198.88.0/24 list=List_ChinaE2
 add address=139.198.90.0/23 list=List_ChinaE2
 add address=139.198.92.0/22 list=List_ChinaE2
 add address=139.198.96.0/22 list=List_ChinaE2
-add address=139.198.128.0/17 list=List_ChinaE2
+add address=139.198.128.0/18 list=List_ChinaE2
+add address=139.198.192.0/19 list=List_ChinaE2
+add address=139.198.224.0/20 list=List_ChinaE2
+add address=139.198.240.0/21 list=List_ChinaE2
+add address=139.198.248.0/22 list=List_ChinaE2
+add address=139.198.252.0/23 list=List_ChinaE2
+add address=139.198.254.0/24 list=List_ChinaE2
 add address=139.199.0.0/16 list=List_ChinaE2
 add address=139.217.0.0/16 list=List_ChinaE2
 add address=139.219.0.0/16 list=List_ChinaE2

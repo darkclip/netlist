@@ -10763,7 +10763,13 @@ add address=2408:815f:8000::/34 list=List_ChinaE2
 add address=2408:815f:c000::/35 list=List_ChinaE2
 add address=2408:8160::/27 list=List_ChinaE2
 add address=2408:8180::/32 list=List_ChinaE2
-add address=2408:8181::/33 list=List_ChinaE2
+add address=2408:8181::/34 list=List_ChinaE2
+add address=2408:8181:4000::/35 list=List_ChinaE2
+add address=2408:8181:6100::/40 list=List_ChinaE2
+add address=2408:8181:6200::/39 list=List_ChinaE2
+add address=2408:8181:6400::/38 list=List_ChinaE2
+add address=2408:8181:6800::/37 list=List_ChinaE2
+add address=2408:8181:7000::/36 list=List_ChinaE2
 add address=2408:8181:8000::/35 list=List_ChinaE2
 add address=2408:8181:a100::/40 list=List_ChinaE2
 add address=2408:8181:a200::/39 list=List_ChinaE2

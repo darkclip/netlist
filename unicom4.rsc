@@ -889,6 +889,7 @@ add address=139.159.112.0/23 list=List_Unicom
 add address=139.159.164.0/22 list=List_Unicom
 add address=139.159.168.0/22 list=List_Unicom
 add address=139.170.0.0/16 list=List_Unicom
+add address=139.198.255.0/24 list=List_Unicom
 add address=139.208.0.0/13 list=List_Unicom
 add address=139.220.192.0/22 list=List_Unicom
 add address=139.220.240.0/22 list=List_Unicom
