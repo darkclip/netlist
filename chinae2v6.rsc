@@ -10779,7 +10779,11 @@ add address=2408:8181:6200::/39 list=List_ChinaE2
 add address=2408:8181:6400::/38 list=List_ChinaE2
 add address=2408:8181:6800::/37 list=List_ChinaE2
 add address=2408:8181:7000::/36 list=List_ChinaE2
-add address=2408:8181:8000::/35 list=List_ChinaE2
+add address=2408:8181:8100::/40 list=List_ChinaE2
+add address=2408:8181:8200::/39 list=List_ChinaE2
+add address=2408:8181:8400::/38 list=List_ChinaE2
+add address=2408:8181:8800::/37 list=List_ChinaE2
+add address=2408:8181:9000::/36 list=List_ChinaE2
 add address=2408:8181:a100::/40 list=List_ChinaE2
 add address=2408:8181:a200::/39 list=List_ChinaE2
 add address=2408:8181:a400::/38 list=List_ChinaE2
