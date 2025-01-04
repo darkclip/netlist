@@ -3796,7 +3796,6 @@ add address=116.90.184.0/21 list=List_ChinaE3
 add address=116.128.0.0/17 list=List_ChinaE3
 add address=116.128.192.0/21 list=List_ChinaE3
 add address=116.134.0.0/16 list=List_ChinaE3
-add address=116.144.0.0/15 list=List_ChinaE3
 add address=116.150.0.0/15 list=List_ChinaE3
 add address=116.152.0.0/16 list=List_ChinaE3
 add address=116.156.0.0/14 list=List_ChinaE3
