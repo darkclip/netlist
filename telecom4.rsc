@@ -837,7 +837,6 @@ add address=118.120.0.0/14 list=List_Telecom
 add address=118.124.0.0/15 list=List_Telecom
 add address=118.126.2.0/23 list=List_Telecom
 add address=118.126.4.0/23 list=List_Telecom
-add address=118.126.8.0/23 list=List_Telecom
 add address=118.126.12.0/23 list=List_Telecom
 add address=118.126.18.0/24 list=List_Telecom
 add address=118.126.140.0/23 list=List_Telecom

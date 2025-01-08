@@ -3894,7 +3894,7 @@ add address=118.103.168.0/21 list=List_ChinaE2
 add address=118.103.176.0/22 list=List_ChinaE2
 add address=118.126.1.0/24 list=List_ChinaE2
 add address=118.126.6.0/23 list=List_ChinaE2
-add address=118.126.10.0/23 list=List_ChinaE2
+add address=118.126.8.0/22 list=List_ChinaE2
 add address=118.126.14.0/23 list=List_ChinaE2
 add address=118.126.16.0/23 list=List_ChinaE2
 add address=118.126.32.0/19 list=List_ChinaE2
