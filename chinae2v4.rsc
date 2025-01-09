@@ -6483,7 +6483,8 @@ add address=203.176.168.0/21 list=List_ChinaE2
 add address=203.184.80.0/20 list=List_ChinaE2
 add address=203.184.131.0/24 list=List_ChinaE2
 add address=203.184.132.0/24 list=List_ChinaE2
-add address=203.189.112.0/22 list=List_ChinaE2
+add address=203.189.112.0/24 list=List_ChinaE2
+add address=203.189.114.0/23 list=List_ChinaE2
 add address=203.189.240.0/22 list=List_ChinaE2
 add address=203.190.96.0/20 list=List_ChinaE2
 add address=203.190.249.0/24 list=List_ChinaE2
