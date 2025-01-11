@@ -1149,7 +1149,6 @@ add address=175.102.196.0/24 list=List_Telecom
 add address=175.188.188.0/22 list=List_Telecom
 add address=175.190.24.0/21 list=List_Telecom
 add address=175.190.126.0/23 list=List_Telecom
-add address=177.105.200.0/24 list=List_Telecom
 add address=180.76.198.0/23 list=List_Telecom
 add address=180.89.56.0/22 list=List_Telecom
 add address=180.89.60.0/23 list=List_Telecom
