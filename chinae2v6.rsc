@@ -10999,7 +10999,8 @@ add address=2408:830c::/30 list=List_ChinaE2
 add address=2408:8314::/30 list=List_ChinaE2
 add address=2408:8318::/29 list=List_ChinaE2
 add address=2408:8320::/29 list=List_ChinaE2
-add address=2408:8328::/30 list=List_ChinaE2
+add address=2408:8328::/31 list=List_ChinaE2
+add address=2408:832b::/32 list=List_ChinaE2
 add address=2408:832c::/31 list=List_ChinaE2
 add address=2408:8334::/30 list=List_ChinaE2
 add address=2408:8339::/32 list=List_ChinaE2

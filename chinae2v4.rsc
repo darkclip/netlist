@@ -691,6 +691,7 @@ add address=43.254.84.0/22 list=List_ChinaE2
 add address=43.254.92.0/22 list=List_ChinaE2
 add address=43.254.107.0/24 list=List_ChinaE2
 add address=43.254.112.0/22 list=List_ChinaE2
+add address=43.254.128.0/22 list=List_ChinaE2
 add address=43.254.142.0/23 list=List_ChinaE2
 add address=43.254.153.0/24 list=List_ChinaE2
 add address=43.254.154.0/23 list=List_ChinaE2
@@ -1113,6 +1114,8 @@ add address=59.83.160.0/20 list=List_ChinaE2
 add address=59.83.180.0/22 list=List_ChinaE2
 add address=59.83.184.0/21 list=List_ChinaE2
 add address=59.107.128.0/17 list=List_ChinaE2
+add address=59.109.220.0/22 list=List_ChinaE2
+add address=59.109.224.0/19 list=List_ChinaE2
 add address=59.110.0.0/15 list=List_ChinaE2
 add address=59.152.16.0/20 list=List_ChinaE2
 add address=59.152.32.0/24 list=List_ChinaE2
@@ -2702,7 +2705,10 @@ add address=103.212.196.0/22 list=List_ChinaE2
 add address=103.212.200.0/22 list=List_ChinaE2
 add address=103.212.252.0/22 list=List_ChinaE2
 add address=103.213.40.0/21 list=List_ChinaE2
-add address=103.213.48.0/20 list=List_ChinaE2
+add address=103.213.49.0/24 list=List_ChinaE2
+add address=103.213.50.0/23 list=List_ChinaE2
+add address=103.213.52.0/22 list=List_ChinaE2
+add address=103.213.56.0/21 list=List_ChinaE2
 add address=103.213.64.0/20 list=List_ChinaE2
 add address=103.213.80.0/21 list=List_ChinaE2
 add address=103.213.136.0/21 list=List_ChinaE2
@@ -2980,8 +2986,7 @@ add address=103.248.124.0/22 list=List_ChinaE2
 add address=103.248.168.0/22 list=List_ChinaE2
 add address=103.248.192.0/22 list=List_ChinaE2
 add address=103.248.212.0/22 list=List_ChinaE2
-add address=103.249.8.0/22 list=List_ChinaE2
-add address=103.249.12.0/23 list=List_ChinaE2
+add address=103.249.8.0/21 list=List_ChinaE2
 add address=103.249.128.0/22 list=List_ChinaE2
 add address=103.249.136.0/22 list=List_ChinaE2
 add address=103.249.144.0/22 list=List_ChinaE2
@@ -6957,8 +6962,7 @@ add address=220.113.112.0/20 list=List_ChinaE2
 add address=220.113.128.0/20 list=List_ChinaE2
 add address=220.113.144.0/22 list=List_ChinaE2
 add address=220.113.148.0/23 list=List_ChinaE2
-add address=220.113.168.0/21 list=List_ChinaE2
-add address=220.113.176.0/20 list=List_ChinaE2
+add address=220.113.160.0/19 list=List_ChinaE2
 add address=220.113.192.0/19 list=List_ChinaE2
 add address=220.114.0.0/17 list=List_ChinaE2
 add address=220.114.128.0/18 list=List_ChinaE2

@@ -145,6 +145,7 @@ add address=2408:827a::/32 list=List_Unicom
 add address=2408:8306::/31 list=List_Unicom
 add address=2408:8308::/30 list=List_Unicom
 add address=2408:8310::/30 list=List_Unicom
+add address=2408:832a::/32 list=List_Unicom
 add address=2408:832e::/31 list=List_Unicom
 add address=2408:8330::/30 list=List_Unicom
 add address=2408:8338::/32 list=List_Unicom
