@@ -1243,7 +1243,8 @@ add address=202.38.134.0/24 list=List_Telecom
 add address=202.46.227.0/24 list=List_Telecom
 add address=202.47.104.0/21 list=List_Telecom
 add address=202.55.0.0/19 list=List_Telecom
-add address=202.57.196.0/23 list=List_Telecom
+add address=202.57.196.0/22 list=List_Telecom
+add address=202.57.200.0/24 list=List_Telecom
 add address=202.59.213.0/24 list=List_Telecom
 add address=202.59.214.0/23 list=List_Telecom
 add address=202.60.132.0/22 list=List_Telecom
