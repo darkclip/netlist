@@ -60,6 +60,7 @@ add address=240a:40c3:6000::/43 list=List_Mobile
 add address=240a:40c3:8000::/43 list=List_Mobile
 add address=240a:40c3:c000::/43 list=List_Mobile
 add address=240a:40c3:e000::/43 list=List_Mobile
+add address=240a:40c4::/43 list=List_Mobile
 add address=240a:40c4:2000::/43 list=List_Mobile
 add address=240a:40c4:4000::/43 list=List_Mobile
 add address=240a:4280::/26 list=List_Mobile
