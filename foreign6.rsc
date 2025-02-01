@@ -45163,8 +45163,7 @@ add address=2a14:67c1:740::/42 list=List_Foreign
 add address=2a14:67c1:780::/41 list=List_Foreign
 add address=2a14:67c1:801::/48 list=List_Foreign
 add address=2a14:67c1:803::/48 list=List_Foreign
-add address=2a14:67c1:805::/48 list=List_Foreign
-add address=2a14:67c1:806::/47 list=List_Foreign
+add address=2a14:67c1:804::/46 list=List_Foreign
 add address=2a14:67c1:808::/47 list=List_Foreign
 add address=2a14:67c1:80a::/48 list=List_Foreign
 add address=2a14:67c1:80c::/46 list=List_Foreign
