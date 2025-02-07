@@ -107,7 +107,6 @@ add address=5.175.192.0/19 list=List_Foreign
 add address=5.175.224.0/21 list=List_Foreign
 add address=5.175.232.0/22 list=List_Foreign
 add address=5.175.236.0/24 list=List_Foreign
-add address=5.175.239.0/24 list=List_Foreign
 add address=5.175.240.0/20 list=List_Foreign
 add address=5.176.0.0/12 list=List_Foreign
 add address=5.192.0.0/10 list=List_Foreign
