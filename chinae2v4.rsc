@@ -6959,6 +6959,7 @@ add address=220.101.192.0/18 list=List_ChinaE2
 add address=220.112.64.0/18 list=List_ChinaE2
 add address=220.112.128.0/18 list=List_ChinaE2
 add address=220.112.208.0/20 list=List_ChinaE2
+add address=220.112.224.0/19 list=List_ChinaE2
 add address=220.113.0.0/18 list=List_ChinaE2
 add address=220.113.64.0/19 list=List_ChinaE2
 add address=220.113.104.0/21 list=List_ChinaE2

@@ -1272,7 +1272,6 @@ add address=219.235.32.0/19 list=List_Unicom
 add address=219.238.0.0/15 list=List_Unicom
 add address=220.112.0.0/18 list=List_Unicom
 add address=220.112.192.0/20 list=List_Unicom
-add address=220.112.224.0/19 list=List_Unicom
 add address=220.113.150.0/23 list=List_Unicom
 add address=220.113.152.0/21 list=List_Unicom
 add address=220.114.250.0/23 list=List_Unicom
