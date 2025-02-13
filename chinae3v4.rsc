@@ -4984,7 +4984,7 @@ add address=158.79.16.0/20 list=List_ChinaE3
 add address=158.79.32.0/19 list=List_ChinaE3
 add address=158.79.64.0/18 list=List_ChinaE3
 add address=158.79.128.0/17 list=List_ChinaE3
-add address=158.140.254.0/23 list=List_ChinaE3
+add address=158.140.252.0/22 list=List_ChinaE3
 add address=159.27.0.0/16 list=List_ChinaE3
 add address=159.75.0.0/16 list=List_ChinaE3
 add address=159.226.0.0/16 list=List_ChinaE3
