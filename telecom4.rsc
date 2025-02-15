@@ -1222,7 +1222,6 @@ add address=183.128.0.0/11 list=List_Telecom
 add address=183.160.0.0/13 list=List_Telecom
 add address=185.75.173.0/24 list=List_Telecom
 add address=185.75.174.0/24 list=List_Telecom
-add address=192.140.160.0/21 list=List_Telecom
 add address=192.140.208.0/21 list=List_Telecom
 add address=192.163.11.0/24 list=List_Telecom
 add address=192.232.97.0/24 list=List_Telecom
