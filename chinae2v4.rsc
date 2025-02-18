@@ -6868,11 +6868,7 @@ add address=218.241.64.0/18 list=List_ChinaE2
 add address=218.241.128.0/20 list=List_ChinaE2
 add address=218.241.144.0/21 list=List_ChinaE2
 add address=218.241.160.0/19 list=List_ChinaE2
-add address=218.241.192.0/19 list=List_ChinaE2
-add address=218.241.224.0/20 list=List_ChinaE2
-add address=218.241.240.0/23 list=List_ChinaE2
-add address=218.241.244.0/22 list=List_ChinaE2
-add address=218.241.248.0/21 list=List_ChinaE2
+add address=218.241.192.0/18 list=List_ChinaE2
 add address=218.242.0.0/15 list=List_ChinaE2
 add address=218.244.0.0/19 list=List_ChinaE2
 add address=218.244.32.0/21 list=List_ChinaE2

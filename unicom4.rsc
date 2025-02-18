@@ -946,6 +946,7 @@ add address=160.191.0.0/24 list=List_Unicom
 add address=161.207.0.0/16 list=List_Unicom
 add address=163.0.0.0/16 list=List_Unicom
 add address=163.47.4.0/22 list=List_Unicom
+add address=163.53.44.0/24 list=List_Unicom
 add address=163.53.88.0/21 list=List_Unicom
 add address=163.53.168.0/22 list=List_Unicom
 add address=163.125.0.0/16 list=List_Unicom
