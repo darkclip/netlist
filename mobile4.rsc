@@ -103,7 +103,6 @@ add address=112.0.0.0/10 list=List_Mobile
 add address=113.18.0.0/16 list=List_Mobile
 add address=117.48.144.0/20 list=List_Mobile
 add address=117.128.0.0/10 list=List_Mobile
-add address=118.191.248.0/21 list=List_Mobile
 add address=118.193.127.0/24 list=List_Mobile
 add address=119.44.202.0/23 list=List_Mobile
 add address=119.44.204.0/23 list=List_Mobile
