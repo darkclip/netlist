@@ -613,8 +613,8 @@ add address=115.173.0.0/19 list=List_Unicom
 add address=115.183.0.0/16 list=List_Unicom
 add address=116.2.0.0/15 list=List_Unicom
 add address=116.63.0.0/16 list=List_Unicom
-add address=116.66.48.0/22 list=List_Unicom
-add address=116.66.52.0/23 list=List_Unicom
+add address=116.66.48.0/23 list=List_Unicom
+add address=116.66.53.0/24 list=List_Unicom
 add address=116.78.0.0/16 list=List_Unicom
 add address=116.90.80.0/21 list=List_Unicom
 add address=116.95.0.0/16 list=List_Unicom
