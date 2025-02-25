@@ -805,7 +805,10 @@ add address=117.48.160.0/20 list=List_Telecom
 add address=117.48.192.0/21 list=List_Telecom
 add address=117.48.200.0/22 list=List_Telecom
 add address=117.48.216.0/21 list=List_Telecom
-add address=117.48.224.0/20 list=List_Telecom
+add address=117.48.224.0/21 list=List_Telecom
+add address=117.48.232.0/23 list=List_Telecom
+add address=117.48.234.0/24 list=List_Telecom
+add address=117.48.236.0/22 list=List_Telecom
 add address=117.50.0.0/16 list=List_Telecom
 add address=117.51.160.0/23 list=List_Telecom
 add address=117.51.168.0/21 list=List_Telecom

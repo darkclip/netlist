@@ -667,7 +667,8 @@ add address=117.48.144.0/20 list=List_Unicom
 add address=117.48.192.0/22 list=List_Unicom
 add address=117.48.204.0/22 list=List_Unicom
 add address=117.48.216.0/22 list=List_Unicom
-add address=117.48.232.0/22 list=List_Unicom
+add address=117.48.232.0/23 list=List_Unicom
+add address=117.48.234.0/24 list=List_Unicom
 add address=117.50.0.0/16 list=List_Unicom
 add address=117.72.1.0/24 list=List_Unicom
 add address=117.72.255.0/24 list=List_Unicom
