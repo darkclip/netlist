@@ -60,6 +60,7 @@ add address=2401:1d40:3f00::/48 list=List_Telecom
 add address=2401:1d40:3f02::/48 list=List_Telecom
 add address=2401:3480::/36 list=List_Telecom
 add address=2401:3480:2000::/35 list=List_Telecom
+add address=2401:5c20:10::/48 list=List_Telecom
 add address=2401:71c0::/48 list=List_Telecom
 add address=2401:a140:1::/48 list=List_Telecom
 add address=2401:be00::/48 list=List_Telecom
