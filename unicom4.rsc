@@ -989,7 +989,6 @@ add address=180.129.128.0/17 list=List_Unicom
 add address=180.130.0.0/16 list=List_Unicom
 add address=180.150.176.0/20 list=List_Unicom
 add address=180.178.252.0/22 list=List_Unicom
-add address=182.18.80.0/20 list=List_Unicom
 add address=182.48.96.0/20 list=List_Unicom
 add address=182.48.112.0/21 list=List_Unicom
 add address=182.50.8.0/21 list=List_Unicom

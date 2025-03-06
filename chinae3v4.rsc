@@ -3895,7 +3895,6 @@ add address=117.48.92.0/22 list=List_ChinaE3
 add address=117.48.98.0/23 list=List_ChinaE3
 add address=117.48.176.0/20 list=List_ChinaE3
 add address=117.48.208.0/21 list=List_ChinaE3
-add address=117.48.235.0/24 list=List_ChinaE3
 add address=117.48.240.0/20 list=List_ChinaE3
 add address=117.49.0.0/16 list=List_ChinaE3
 add address=117.51.0.0/17 list=List_ChinaE3
