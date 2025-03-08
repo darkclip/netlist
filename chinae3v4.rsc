@@ -6981,7 +6981,7 @@ add address=203.107.70.0/23 list=List_ChinaE3
 add address=203.107.72.0/21 list=List_ChinaE3
 add address=203.107.80.0/20 list=List_ChinaE3
 add address=203.107.96.0/19 list=List_ChinaE3
-add address=203.110.232.0/23 list=List_ChinaE3
+add address=203.110.233.0/24 list=List_ChinaE3
 add address=203.114.80.0/20 list=List_ChinaE3
 add address=203.114.244.0/22 list=List_ChinaE3
 add address=203.118.192.0/19 list=List_ChinaE3
