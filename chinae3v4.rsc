@@ -6001,7 +6001,7 @@ add address=202.46.128.0/24 list=List_ChinaE3
 add address=202.46.224.0/23 list=List_ChinaE3
 add address=202.46.226.0/24 list=List_ChinaE3
 add address=202.46.230.0/23 list=List_ChinaE3
-add address=202.46.232.0/21 list=List_ChinaE3
+add address=202.46.236.0/22 list=List_ChinaE3
 add address=202.47.82.0/23 list=List_ChinaE3
 add address=202.47.96.0/21 list=List_ChinaE3
 add address=202.47.126.0/24 list=List_ChinaE3
