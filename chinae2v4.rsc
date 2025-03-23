@@ -2398,7 +2398,8 @@ add address=103.132.104.0/21 list=List_ChinaE2
 add address=103.132.112.0/21 list=List_ChinaE2
 add address=103.132.120.0/22 list=List_ChinaE2
 add address=103.132.188.0/22 list=List_ChinaE2
-add address=103.132.208.0/21 list=List_ChinaE2
+add address=103.132.208.0/22 list=List_ChinaE2
+add address=103.132.214.0/23 list=List_ChinaE2
 add address=103.132.234.0/23 list=List_ChinaE2
 add address=103.133.12.0/22 list=List_ChinaE2
 add address=103.133.40.0/22 list=List_ChinaE2
