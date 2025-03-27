@@ -1483,6 +1483,7 @@ add address=203.168.0.0/22 list=List_Telecom
 add address=203.168.8.0/24 list=List_Telecom
 add address=203.168.16.0/23 list=List_Telecom
 add address=203.168.18.0/24 list=List_Telecom
+add address=203.170.58.0/24 list=List_Telecom
 add address=203.174.4.0/24 list=List_Telecom
 add address=203.174.112.0/21 list=List_Telecom
 add address=203.176.92.0/22 list=List_Telecom

@@ -58,7 +58,6 @@ add address=2408:8024::/31 list=List_Unicom
 add address=2408:8026::/32 list=List_Unicom
 add address=2408:802a:8000::/33 list=List_Unicom
 add address=2408:802c::/32 list=List_Unicom
-add address=2408:8034::/32 list=List_Unicom
 add address=2408:803e::/32 list=List_Unicom
 add address=2408:8056::/32 list=List_Unicom
 add address=2408:805c::/30 list=List_Unicom
@@ -72,7 +71,6 @@ add address=2408:80da:8000::/34 list=List_Unicom
 add address=2408:80e0:4000::/34 list=List_Unicom
 add address=2408:80e0:8000::/33 list=List_Unicom
 add address=2408:80e2::/33 list=List_Unicom
-add address=2408:80e3:8000::/33 list=List_Unicom
 add address=2408:80e9:4000::/34 list=List_Unicom
 add address=2408:80ea:4000::/34 list=List_Unicom
 add address=2408:80ea:8000::/33 list=List_Unicom
