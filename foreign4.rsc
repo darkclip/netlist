@@ -10916,7 +10916,8 @@ add address=163.181.226.0/23 list=List_Foreign
 add address=163.181.235.0/24 list=List_Foreign
 add address=163.181.240.0/24 list=List_Foreign
 add address=163.181.247.0/24 list=List_Foreign
-add address=163.181.252.0/22 list=List_Foreign
+add address=163.181.252.0/24 list=List_Foreign
+add address=163.181.254.0/24 list=List_Foreign
 add address=163.182.0.0/15 list=List_Foreign
 add address=163.184.0.0/13 list=List_Foreign
 add address=163.192.0.0/13 list=List_Foreign
