@@ -8319,6 +8319,18 @@ add address=2401:3380::/32 list=List_ChinaE2
 add address=2401:33c0::/32 list=List_ChinaE2
 add address=2401:3440::/32 list=List_ChinaE2
 add address=2401:3480:1000::/36 list=List_ChinaE2
+add address=2401:3480:2001::/48 list=List_ChinaE2
+add address=2401:3480:2002::/47 list=List_ChinaE2
+add address=2401:3480:2004::/46 list=List_ChinaE2
+add address=2401:3480:2008::/45 list=List_ChinaE2
+add address=2401:3480:2010::/44 list=List_ChinaE2
+add address=2401:3480:2020::/43 list=List_ChinaE2
+add address=2401:3480:2040::/42 list=List_ChinaE2
+add address=2401:3480:2080::/41 list=List_ChinaE2
+add address=2401:3480:2100::/40 list=List_ChinaE2
+add address=2401:3480:2200::/39 list=List_ChinaE2
+add address=2401:3480:2400::/38 list=List_ChinaE2
+add address=2401:3480:2800::/37 list=List_ChinaE2
 add address=2401:3480:4000::/34 list=List_ChinaE2
 add address=2401:3480:8000::/33 list=List_ChinaE2
 add address=2401:34a0::/31 list=List_ChinaE2
@@ -12033,6 +12045,7 @@ add address=2408:895c::/30 list=List_ChinaE2
 add address=2408:8960::/31 list=List_ChinaE2
 add address=2408:8967::/32 list=List_ChinaE2
 add address=2408:8968::/30 list=List_ChinaE2
+add address=2408:896d::/32 list=List_ChinaE2
 add address=2408:8970::/31 list=List_ChinaE2
 add address=2408:8973::/32 list=List_ChinaE2
 add address=2408:8974::/30 list=List_ChinaE2
