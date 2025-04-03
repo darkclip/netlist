@@ -109,6 +109,8 @@ add address=2409:27fa::/48 list=List_Telecom
 add address=2409:27fa:f000::/48 list=List_Telecom
 add address=2409:27fb::/48 list=List_Telecom
 add address=2409:27fc::/48 list=List_Telecom
+add address=240a:2001:1811::/48 list=List_Telecom
+add address=240a:2001:1861::/48 list=List_Telecom
 add address=240a:6001::/48 list=List_Telecom
 add address=240c:409f::/46 list=List_Telecom
 add address=240e::/20 list=List_Telecom
