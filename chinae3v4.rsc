@@ -7513,12 +7513,18 @@ add address=219.239.128.0/17 list=List_ChinaE3
 add address=219.242.0.0/15 list=List_ChinaE3
 add address=219.244.0.0/14 list=List_ChinaE3
 add address=220.101.192.0/18 list=List_ChinaE3
+add address=220.112.1.0/24 list=List_ChinaE3
+add address=220.112.2.0/23 list=List_ChinaE3
 add address=220.112.4.0/22 list=List_ChinaE3
 add address=220.112.9.0/24 list=List_ChinaE3
 add address=220.112.10.0/23 list=List_ChinaE3
 add address=220.112.12.0/22 list=List_ChinaE3
 add address=220.112.16.0/20 list=List_ChinaE3
 add address=220.112.32.0/21 list=List_ChinaE3
+add address=220.112.41.0/24 list=List_ChinaE3
+add address=220.112.43.0/24 list=List_ChinaE3
+add address=220.112.44.0/23 list=List_ChinaE3
+add address=220.112.47.0/24 list=List_ChinaE3
 add address=220.112.48.0/23 list=List_ChinaE3
 add address=220.112.55.0/24 list=List_ChinaE3
 add address=220.112.56.0/23 list=List_ChinaE3
@@ -7530,6 +7536,8 @@ add address=220.112.192.0/23 list=List_ChinaE3
 add address=220.112.195.0/24 list=List_ChinaE3
 add address=220.112.197.0/24 list=List_ChinaE3
 add address=220.112.198.0/23 list=List_ChinaE3
+add address=220.112.200.0/22 list=List_ChinaE3
+add address=220.112.204.0/23 list=List_ChinaE3
 add address=220.112.208.0/20 list=List_ChinaE3
 add address=220.112.224.0/19 list=List_ChinaE3
 add address=220.113.0.0/18 list=List_ChinaE3
