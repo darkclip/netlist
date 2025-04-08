@@ -303,7 +303,6 @@ add address=103.38.40.0/22 list=List_Unicom
 add address=103.38.92.0/23 list=List_Unicom
 add address=103.38.224.0/22 list=List_Unicom
 add address=103.38.232.0/22 list=List_Unicom
-add address=103.40.12.0/22 list=List_Unicom
 add address=103.40.192.0/22 list=List_Unicom
 add address=103.40.232.0/22 list=List_Unicom
 add address=103.41.0.0/23 list=List_Unicom
@@ -340,7 +339,6 @@ add address=103.79.24.0/22 list=List_Unicom
 add address=103.79.228.0/24 list=List_Unicom
 add address=103.81.48.0/22 list=List_Unicom
 add address=103.82.224.0/22 list=List_Unicom
-add address=103.83.72.0/22 list=List_Unicom
 add address=103.85.84.0/22 list=List_Unicom
 add address=103.85.164.0/22 list=List_Unicom
 add address=103.85.168.0/21 list=List_Unicom
