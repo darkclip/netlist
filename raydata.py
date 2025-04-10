@@ -129,10 +129,11 @@ def run(args: argparse.Namespace) -> None:
             print(line, end='')
     else:
         output_file = output.resolve()
-        if not output_file.parent.exists():
-            output_file.parent.mkdir(parents=True)
         if output_file.is_dir():
             print('Can not write to directory.')
+            sys.exit(1)
+        if not output_file.parent.exists():
+            output_file.parent.mkdir(parents=True)
         if output_file.exists():
             with output_file.open('a', encoding='utf-8') as wfp:
                 wfp.writelines(output_lines)
