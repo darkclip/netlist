@@ -3,8 +3,8 @@
 from __future__ import annotations
 
 import typing
+import argparse
 import sys
-import os
 import json
 from pathlib import Path
 from ipaddress import IPv4Network, IPv6Network, AddressValueError
@@ -13,7 +13,7 @@ import ray_pb2
 
 def load_formatter(formatter: Path | None) -> dict | None:
     try:
-        format_file_path = formatter.resolve()
+        format_file_path = formatter.resolve()  # type: ignore
         with format_file_path.open(encoding='utf-8') as fp:
             return json.load(fp)
     except (AttributeError, OSError, json.JSONDecodeError, TypeError):
@@ -21,11 +21,11 @@ def load_formatter(formatter: Path | None) -> dict | None:
     return None
 
 
-def init_protobuf(data_type: str = None) -> tuple:
+def init_protobuf(data_type: str | None = None) -> tuple:
     if data_type == 'geoip':
-        return (ray_pb2.GeoIPList(), 'cidr')
+        return (ray_pb2.GeoIPList(), 'cidr')  # type: ignore
     if data_type == 'geosite':
-        return (ray_pb2.GeoSiteList(), 'domain')
+        return (ray_pb2.GeoSiteList(), 'domain')  # type: ignore
     return (None, None)
 
 
@@ -68,10 +68,10 @@ def load_resource(
                         if brief_search.lower() not in entry.country_code.lower():
                             continue
                 print(
-                    f"{entry.country_code}: {sum(map(lambda record: not domain_types or record.type in domain_types, getattr(entry, list_name, None)))}"
+                    f'{entry.country_code}: {sum(map(lambda record: not domain_types or record.type in domain_types, getattr(entry, list_name, [])))}'
                 )
                 continue
-            for record in getattr(entry, list_name, None):
+            for record in getattr(entry, list_name, []):
                 if list_name == 'cidr':
                     try:
                         resources.append(IPv4Network((record.ip, record.prefix)))
@@ -87,16 +87,16 @@ def load_resource(
                     prefix = ''
                     suffix = ''
                     if format_dict:
-                        prefix = format_dict.get('prefix').get(str(record.type))
-                        suffix = format_dict.get('suffix').get(str(record.type))
+                        prefix = format_dict.get('prefix', {}).get(str(record.type))
+                        suffix = format_dict.get('suffix', {}).get(str(record.type))
                     if record.value:
                         resources.append(f'{prefix}{record.value}{suffix}')
     return resources
 
 
-def main(args):
+def run(args: argparse.Namespace) -> None:
     input_files = getattr(args, 'input', [])
-    output = getattr(args, 'output', None)
+    output: Path | None = getattr(args, 'output', None)
 
     if (search := getattr(args, 'brief', None)) is not None:
         load_resource(
@@ -121,17 +121,16 @@ def main(args):
         print('No legal data.')
         sys.exit(1)
     output_lines = [
-        f"{getattr(args,'prefix','')}{str(entry)}{getattr(args,'suffix','')}"
+        f'{getattr(args, "prefix", "")}{str(entry)}{getattr(args, "suffix", "")}'
         for entry in data_list
     ]
     if output is None:
         for line in output_lines:
             print(line, end='')
     else:
-        output: Path
         output_file = output.resolve()
         if not output_file.parent.exists():
-            os.makedirs(output_file.parent)
+            output_file.parent.mkdir(parents=True)
         if output_file.is_dir():
             print('Can not write to directory.')
         if output_file.exists():
@@ -143,9 +142,7 @@ def main(args):
         print(f'Output: {len(output_lines)}')
 
 
-if __name__ == '__main__':
-    import argparse
-
+def main() -> None:
     parser = argparse.ArgumentParser(
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
@@ -185,11 +182,11 @@ if __name__ == '__main__':
     parser.add_argument(
         '-s', '--suffix', type=str, default='\n', help='write line suffix'
     )
-    parser.set_defaults(func=main)
+    parser.set_defaults(func=run)
 
     subparser = parser.add_subparsers(dest='data_type', required=True)
 
-    parser_geoip = subparser.add_parser(
+    _parser_geoip = subparser.add_parser(
         'geoip',
         help='use geoip as input',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
@@ -214,3 +211,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     args.func(args)
+
+
+if __name__ == '__main__':
+    main()

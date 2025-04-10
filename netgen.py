@@ -3,8 +3,8 @@
 from __future__ import annotations
 
 import typing
+import argparse
 import sys
-import os
 from pathlib import Path
 from ipaddress import IPv4Network, IPv6Network, AddressValueError
 
@@ -15,7 +15,7 @@ except ImportError:
 
 
 def prepare_networks(
-    nets_or_files: typing.List[str], family: typing.List[int] | None = None
+    nets_or_files: typing.List[str], family: typing.List[int]
 ) -> typing.List[IPv4Network | IPv6Network]:
     networks = []
     for net in nets_or_files:
@@ -53,20 +53,19 @@ def find_updated_networks(
 ) -> typing.List[IPv4Network | IPv6Network]:
     copied_networks = networks.copy()
     for index, network in enumerate(networks):
-        try:
-            if subnet.subnet_of(network):
-                copied_networks.pop(index)
-                copied_networks.extend(list(network.address_exclude(subnet)))
-        except TypeError:
-            pass
+        if type(network) is not type(subnet):
+            continue
+        if subnet.subnet_of(network):  # type: ignore
+            copied_networks.pop(index)
+            copied_networks.extend(list(network.address_exclude(subnet)))  # type: ignore
     return copied_networks
 
 
-def main(args):
+def run(args: argparse.Namespace) -> None:
     includes = getattr(args, 'include', [])
     excludes = getattr(args, 'exclude', [])
-    family = getattr(args, 'family', None)
-    output = getattr(args, 'output', None)
+    family = getattr(args, 'family', [])
+    output: Path | None = getattr(args, 'output', None)
 
     in_networks = prepare_networks(includes, family)
     if len(in_networks) == 0:
@@ -91,7 +90,7 @@ def main(args):
         out_networks.extend(out6)
 
     output_lines = [
-        f"{getattr(args,'prefix','')}{str(network)}{getattr(args,'suffix','')}\n"
+        f'{getattr(args, "prefix", "")}{str(network)}{getattr(args, "suffix", "")}\n'
         for network in out_networks
     ]
 
@@ -100,10 +99,9 @@ def main(args):
             print(line, end='')
     else:
         print(f'Included Networks: {len(in_networks)}')
-        output: Path
         output_file = output.resolve()
         if not output_file.parent.exists():
-            os.makedirs(output_file.parent)
+            output_file.parent.mkdir(parents=True)
         if output_file.is_dir():
             print('Can not write to directory.')
         if output_file.exists():
@@ -115,9 +113,7 @@ def main(args):
         print(f'Generated Networks: {len(output_lines)}')
 
 
-if __name__ == '__main__':
-    import argparse
-
+def main() -> None:
     parser = argparse.ArgumentParser(
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
@@ -157,6 +153,10 @@ if __name__ == '__main__':
     parser.add_argument(
         '-s', '--suffix', type=str, default='', help='write line suffix'
     )
-    parser.set_defaults(func=main)
+    parser.set_defaults(func=run)
     args = parser.parse_args()
     args.func(args)
+
+
+if __name__ == '__main__':
+    main()
