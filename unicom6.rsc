@@ -8,6 +8,10 @@ add address=2400:b700::/48 list=List_Unicom
 add address=2400:cb80:e2e::/47 list=List_Unicom
 add address=2400:cb80:e30::/44 list=List_Unicom
 add address=2400:cb80:e40::/44 list=List_Unicom
+add address=2401:1d40:100::/48 list=List_Unicom
+add address=2401:1d40:f21::/48 list=List_Unicom
+add address=2401:1d40:f22::/47 list=List_Unicom
+add address=2401:1d40:f24::/48 list=List_Unicom
 add address=2401:1d40:3000::/48 list=List_Unicom
 add address=2401:71c0::/48 list=List_Unicom
 add address=2401:a140:1::/48 list=List_Unicom
