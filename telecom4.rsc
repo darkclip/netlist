@@ -67,7 +67,7 @@ add address=43.225.255.0/24 list=List_Telecom
 add address=43.226.32.0/19 list=List_Telecom
 add address=43.226.64.0/20 list=List_Telecom
 add address=43.226.128.0/19 list=List_Telecom
-add address=43.226.236.0/23 list=List_Telecom
+add address=43.226.237.0/24 list=List_Telecom
 add address=43.226.239.0/24 list=List_Telecom
 add address=43.227.56.0/21 list=List_Telecom
 add address=43.227.64.0/21 list=List_Telecom
