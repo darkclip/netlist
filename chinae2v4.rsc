@@ -4631,8 +4631,7 @@ add address=119.91.0.0/16 list=List_ChinaE2
 add address=119.148.160.0/19 list=List_ChinaE2
 add address=119.151.192.0/18 list=List_ChinaE2
 add address=119.160.200.0/21 list=List_ChinaE2
-add address=119.161.125.0/24 list=List_ChinaE2
-add address=119.161.126.0/23 list=List_ChinaE2
+add address=119.161.124.0/22 list=List_ChinaE2
 add address=119.161.136.0/23 list=List_ChinaE2
 add address=119.161.138.0/24 list=List_ChinaE2
 add address=119.161.140.0/22 list=List_ChinaE2
