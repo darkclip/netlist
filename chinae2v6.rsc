@@ -11687,7 +11687,11 @@ add address=2408:8181:8400::/38 list=List_ChinaE2
 add address=2408:8181:8800::/37 list=List_ChinaE2
 add address=2408:8181:9000::/36 list=List_ChinaE2
 add address=2408:8181:a100::/40 list=List_ChinaE2
-add address=2408:8181:a200::/39 list=List_ChinaE2
+add address=2408:8181:a200::/43 list=List_ChinaE2
+add address=2408:8181:a230::/44 list=List_ChinaE2
+add address=2408:8181:a240::/42 list=List_ChinaE2
+add address=2408:8181:a280::/41 list=List_ChinaE2
+add address=2408:8181:a300::/40 list=List_ChinaE2
 add address=2408:8181:a400::/38 list=List_ChinaE2
 add address=2408:8181:a800::/37 list=List_ChinaE2
 add address=2408:8181:b000::/36 list=List_ChinaE2
