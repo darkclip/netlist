@@ -669,7 +669,6 @@ add address=113.21.232.0/23 list=List_Telecom
 add address=113.21.234.0/24 list=List_Telecom
 add address=113.21.236.0/22 list=List_Telecom
 add address=113.24.0.0/14 list=List_Telecom
-add address=113.31.88.0/23 list=List_Telecom
 add address=113.31.96.0/19 list=List_Telecom
 add address=113.31.144.0/20 list=List_Telecom
 add address=113.31.160.0/19 list=List_Telecom
