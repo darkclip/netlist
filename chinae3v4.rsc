@@ -5373,7 +5373,6 @@ add address=157.119.132.0/22 list=List_ChinaE3
 add address=157.119.136.0/21 list=List_ChinaE3
 add address=157.119.144.0/20 list=List_ChinaE3
 add address=157.119.160.0/21 list=List_ChinaE3
-add address=157.119.172.0/22 list=List_ChinaE3
 add address=157.119.192.0/21 list=List_ChinaE3
 add address=157.119.240.0/22 list=List_ChinaE3
 add address=157.119.252.0/22 list=List_ChinaE3
