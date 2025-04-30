@@ -1665,11 +1665,7 @@ add address=220.181.128.0/20 list=List_Telecom
 add address=220.181.144.0/24 list=List_Telecom
 add address=220.181.148.0/22 list=List_Telecom
 add address=220.181.152.0/21 list=List_Telecom
-add address=220.181.160.0/20 list=List_Telecom
-add address=220.181.176.0/21 list=List_Telecom
-add address=220.181.184.0/22 list=List_Telecom
-add address=220.181.188.0/23 list=List_Telecom
-add address=220.181.190.0/24 list=List_Telecom
+add address=220.181.160.0/19 list=List_Telecom
 add address=220.182.0.0/18 list=List_Telecom
 add address=220.184.0.0/13 list=List_Telecom
 add address=220.231.32.0/20 list=List_Telecom

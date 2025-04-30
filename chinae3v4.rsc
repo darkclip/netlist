@@ -7581,7 +7581,6 @@ add address=220.155.128.0/17 list=List_ChinaE3
 add address=220.158.240.0/22 list=List_ChinaE3
 add address=220.181.145.0/24 list=List_ChinaE3
 add address=220.181.146.0/23 list=List_ChinaE3
-add address=220.181.191.0/24 list=List_ChinaE3
 add address=220.181.192.0/18 list=List_ChinaE3
 add address=220.182.64.0/18 list=List_ChinaE3
 add address=220.182.128.0/17 list=List_ChinaE3
