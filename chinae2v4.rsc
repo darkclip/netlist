@@ -5868,6 +5868,8 @@ add address=202.46.40.0/24 list=List_ChinaE2
 add address=202.46.45.0/24 list=List_ChinaE2
 add address=202.46.46.0/24 list=List_ChinaE2
 add address=202.46.128.0/24 list=List_ChinaE2
+add address=202.46.224.0/23 list=List_ChinaE2
+add address=202.46.226.0/24 list=List_ChinaE2
 add address=202.46.230.0/23 list=List_ChinaE2
 add address=202.46.236.0/22 list=List_ChinaE2
 add address=202.47.82.0/23 list=List_ChinaE2
