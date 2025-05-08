@@ -4372,7 +4372,7 @@ add address=116.251.120.32/27 list=List_ChinaE3
 add address=116.251.120.64/26 list=List_ChinaE3
 add address=116.251.120.128/25 list=List_ChinaE3
 add address=116.251.124.0/22 list=List_ChinaE3
-add address=116.254.128.0/18 list=List_ChinaE3
+add address=116.254.128.0/17 list=List_ChinaE3
 add address=117.48.92.0/22 list=List_ChinaE3
 add address=117.48.96.0/22 list=List_ChinaE3
 add address=117.48.176.0/20 list=List_ChinaE3
