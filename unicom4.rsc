@@ -631,6 +631,7 @@ add address=116.198.160.0/20 list=List_Unicom
 add address=116.198.176.0/21 list=List_Unicom
 add address=116.199.0.0/17 list=List_Unicom
 add address=116.242.0.0/16 list=List_Unicom
+add address=116.254.192.0/18 list=List_Unicom
 add address=116.255.128.0/17 list=List_Unicom
 add address=117.8.0.0/13 list=List_Unicom
 add address=117.48.156.0/23 list=List_Unicom

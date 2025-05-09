@@ -2,7 +2,7 @@
 remove [find list=List_Unicom]
 
 add address=2400:89c0:1010::/44 list=List_Unicom
-add address=2400:89c0:1020::/43 list=List_Unicom
+add address=2400:89c0:1020::/44 list=List_Unicom
 add address=2400:a860:2::/48 list=List_Unicom
 add address=2400:b700::/48 list=List_Unicom
 add address=2400:cb80:e2e::/47 list=List_Unicom
