@@ -362,6 +362,7 @@ add address=103.38.252.0/23 list=List_Telecom
 add address=103.39.208.0/20 list=List_Telecom
 add address=103.39.224.0/21 list=List_Telecom
 add address=103.39.232.0/22 list=List_Telecom
+add address=103.40.175.0/24 list=List_Telecom
 add address=103.40.192.0/22 list=List_Telecom
 add address=103.40.240.0/20 list=List_Telecom
 add address=103.41.0.0/22 list=List_Telecom

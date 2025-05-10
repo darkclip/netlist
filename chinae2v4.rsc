@@ -1613,7 +1613,7 @@ add address=103.40.16.0/20 list=List_ChinaE2
 add address=103.40.32.0/20 list=List_ChinaE2
 add address=103.40.88.0/22 list=List_ChinaE2
 add address=103.40.158.0/23 list=List_ChinaE2
-add address=103.40.174.0/23 list=List_ChinaE2
+add address=103.40.174.0/24 list=List_ChinaE2
 add address=103.40.212.0/22 list=List_ChinaE2
 add address=103.40.220.0/22 list=List_ChinaE2
 add address=103.40.228.0/22 list=List_ChinaE2
