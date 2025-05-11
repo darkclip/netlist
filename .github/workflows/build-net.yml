@@ -72,7 +72,7 @@ jobs:
           curl -fsSL https://www.cloudflare.com/ips-v4 -o cf4.txt
           curl -fsSL https://www.cloudflare.com/ips-v6 -o cf6.txt
 
-          ./netgen.py cf4.txt -o target/cf4.txt
+          ./netgen.py cf4.txt 1.1.1.0/24 1.0.0.0/24 -o target/cf4.txt
           ./netgen.py cf6.txt -o target/cf6.txt
 
           ./netgen.py private4.txt -o target/private4.txt
