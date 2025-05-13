@@ -70,6 +70,7 @@ add address=2402:5ec0::/32 list=List_Telecom
 add address=2402:92c0::/48 list=List_Telecom
 add address=2402:db40:5100::/48 list=List_Telecom
 add address=2402:db40:5f00::/46 list=List_Telecom
+add address=2402:f8c0:2::/48 list=List_Telecom
 add address=2403:1ec0:1200::/48 list=List_Telecom
 add address=2403:1ec0:1400::/48 list=List_Telecom
 add address=2403:1ec0:1600::/48 list=List_Telecom
