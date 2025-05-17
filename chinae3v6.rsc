@@ -12453,7 +12453,7 @@ add address=2408:8643::/32 list=List_ChinaE3
 add address=2408:864a::/31 list=List_ChinaE3
 add address=2408:864d::/32 list=List_ChinaE3
 add address=2408:8654::/31 list=List_ChinaE3
-add address=2408:865e::/31 list=List_ChinaE3
+add address=2408:865e::/32 list=List_ChinaE3
 add address=2408:8661::/32 list=List_ChinaE3
 add address=2408:8667::/32 list=List_ChinaE3
 add address=2408:8668::/31 list=List_ChinaE3
