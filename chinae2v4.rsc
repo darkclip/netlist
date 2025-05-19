@@ -5420,10 +5420,6 @@ add address=164.155.133.0/24 list=List_ChinaE2
 add address=166.111.0.0/16 list=List_ChinaE2
 add address=167.189.0.0/16 list=List_ChinaE2
 add address=167.220.244.0/22 list=List_ChinaE2
-add address=168.159.144.0/21 list=List_ChinaE2
-add address=168.159.152.0/22 list=List_ChinaE2
-add address=168.159.156.0/23 list=List_ChinaE2
-add address=168.159.158.0/24 list=List_ChinaE2
 add address=168.160.0.0/17 list=List_ChinaE2
 add address=168.160.128.0/18 list=List_ChinaE2
 add address=168.160.192.0/19 list=List_ChinaE2
