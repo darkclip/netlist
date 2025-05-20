@@ -459,8 +459,7 @@ add address=43.228.188.0/22 list=List_ChinaE2
 add address=43.228.204.0/22 list=List_ChinaE2
 add address=43.228.240.0/22 list=List_ChinaE2
 add address=43.229.40.0/22 list=List_ChinaE2
-add address=43.229.49.0/24 list=List_ChinaE2
-add address=43.229.50.0/23 list=List_ChinaE2
+add address=43.229.50.0/24 list=List_ChinaE2
 add address=43.229.56.0/22 list=List_ChinaE2
 add address=43.229.96.0/22 list=List_ChinaE2
 add address=43.229.136.0/21 list=List_ChinaE2
