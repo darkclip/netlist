@@ -4,6 +4,7 @@ remove [find list=List_Unicom]
 add address=1.1.8.0/24 list=List_Unicom
 add address=1.24.0.0/13 list=List_Unicom
 add address=1.56.0.0/13 list=List_Unicom
+add address=1.119.178.0/23 list=List_Unicom
 add address=1.119.192.0/21 list=List_Unicom
 add address=1.119.200.0/22 list=List_Unicom
 add address=1.119.208.0/22 list=List_Unicom
