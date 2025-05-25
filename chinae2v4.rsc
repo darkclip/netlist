@@ -2833,7 +2833,6 @@ add address=103.213.51.0/24 list=List_ChinaE2
 add address=103.213.52.0/22 list=List_ChinaE2
 add address=103.213.56.0/22 list=List_ChinaE2
 add address=103.213.60.0/23 list=List_ChinaE2
-add address=103.213.63.0/24 list=List_ChinaE2
 add address=103.213.64.0/20 list=List_ChinaE2
 add address=103.213.80.0/21 list=List_ChinaE2
 add address=103.213.136.0/21 list=List_ChinaE2
