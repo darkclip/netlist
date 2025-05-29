@@ -11986,7 +11986,6 @@ add address=2408:8406:b800::/37 list=List_ChinaE2
 add address=2408:8406:c000::/34 list=List_ChinaE2
 add address=2408:8407::/38 list=List_ChinaE2
 add address=2408:8407:400::/40 list=List_ChinaE2
-add address=2408:8407:500::/44 list=List_ChinaE2
 add address=2408:8407:520::/43 list=List_ChinaE2
 add address=2408:8407:540::/42 list=List_ChinaE2
 add address=2408:8407:580::/41 list=List_ChinaE2

@@ -721,6 +721,7 @@ add address=114.112.32.0/19 list=List_Telecom
 add address=114.112.64.0/19 list=List_Telecom
 add address=114.112.96.0/21 list=List_Telecom
 add address=114.112.104.0/22 list=List_Telecom
+add address=114.113.63.0/24 list=List_Telecom
 add address=114.113.64.0/18 list=List_Telecom
 add address=114.113.144.0/20 list=List_Telecom
 add address=114.113.208.0/21 list=List_Telecom

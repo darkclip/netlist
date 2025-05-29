@@ -3727,6 +3727,11 @@ add address=114.112.144.0/20 list=List_ChinaE2
 add address=114.112.160.0/19 list=List_ChinaE2
 add address=114.112.192.0/21 list=List_ChinaE2
 add address=114.113.0.0/20 list=List_ChinaE2
+add address=114.113.32.0/20 list=List_ChinaE2
+add address=114.113.48.0/21 list=List_ChinaE2
+add address=114.113.56.0/22 list=List_ChinaE2
+add address=114.113.60.0/23 list=List_ChinaE2
+add address=114.113.62.0/24 list=List_ChinaE2
 add address=114.113.128.0/21 list=List_ChinaE2
 add address=114.113.140.0/22 list=List_ChinaE2
 add address=114.113.160.0/19 list=List_ChinaE2
