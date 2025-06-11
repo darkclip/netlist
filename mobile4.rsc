@@ -16,6 +16,7 @@ add address=36.213.0.0/17 list=List_Mobile
 add address=36.213.128.0/18 list=List_Mobile
 add address=36.213.192.0/20 list=List_Mobile
 add address=36.213.208.0/23 list=List_Mobile
+add address=36.213.210.0/24 list=List_Mobile
 add address=39.128.0.0/10 list=List_Mobile
 add address=42.157.192.0/21 list=List_Mobile
 add address=43.228.116.0/22 list=List_Mobile
