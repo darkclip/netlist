@@ -47,7 +47,6 @@ add address=45.250.40.0/22 list=List_Mobile
 add address=45.251.96.0/22 list=List_Mobile
 add address=54.222.46.0/23 list=List_Mobile
 add address=58.67.192.0/19 list=List_Mobile
-add address=58.82.0.0/17 list=List_Mobile
 add address=58.83.0.0/17 list=List_Mobile
 add address=58.83.160.0/23 list=List_Mobile
 add address=58.83.176.0/23 list=List_Mobile

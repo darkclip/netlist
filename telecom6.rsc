@@ -36,7 +36,6 @@ add address=2400:9380:9202::/48 list=List_Telecom
 add address=2400:9380:9220::/47 list=List_Telecom
 add address=2400:9380:9240::/47 list=List_Telecom
 add address=2400:9380:9250::/47 list=List_Telecom
-add address=2400:9380:9252::/48 list=List_Telecom
 add address=2400:9380:9260::/48 list=List_Telecom
 add address=2400:9380:9271::/48 list=List_Telecom
 add address=2400:9380:9272::/48 list=List_Telecom
