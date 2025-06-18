@@ -13088,14 +13088,7 @@ add address=240a:40c1:6200::/39 list=List_ChinaE3
 add address=240a:40c1:6400::/38 list=List_ChinaE3
 add address=240a:40c1:6800::/37 list=List_ChinaE3
 add address=240a:40c1:7000::/36 list=List_ChinaE3
-add address=240a:40c1:8020::/43 list=List_ChinaE3
-add address=240a:40c1:8040::/42 list=List_ChinaE3
-add address=240a:40c1:8080::/41 list=List_ChinaE3
-add address=240a:40c1:8100::/40 list=List_ChinaE3
-add address=240a:40c1:8200::/39 list=List_ChinaE3
-add address=240a:40c1:8400::/38 list=List_ChinaE3
-add address=240a:40c1:8800::/37 list=List_ChinaE3
-add address=240a:40c1:9000::/36 list=List_ChinaE3
+add address=240a:40c1:8000::/35 list=List_ChinaE3
 add address=240a:40c1:a020::/43 list=List_ChinaE3
 add address=240a:40c1:a040::/42 list=List_ChinaE3
 add address=240a:40c1:a080::/41 list=List_ChinaE3
