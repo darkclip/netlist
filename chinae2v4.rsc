@@ -4600,6 +4600,10 @@ add address=119.42.0.0/19 list=List_ChinaE2
 add address=119.42.128.0/20 list=List_ChinaE2
 add address=119.42.224.0/19 list=List_ChinaE2
 add address=119.44.0.0/15 list=List_ChinaE2
+add address=119.57.0.0/18 list=List_ChinaE2
+add address=119.57.64.0/19 list=List_ChinaE2
+add address=119.57.96.0/20 list=List_ChinaE2
+add address=119.57.128.0/17 list=List_ChinaE2
 add address=119.58.0.0/16 list=List_ChinaE2
 add address=119.59.208.0/22 list=List_ChinaE2
 add address=119.59.220.0/22 list=List_ChinaE2

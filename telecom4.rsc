@@ -911,7 +911,7 @@ add address=119.37.12.0/24 list=List_Telecom
 add address=119.37.192.0/21 list=List_Telecom
 add address=119.40.41.0/24 list=List_Telecom
 add address=119.41.0.0/16 list=List_Telecom
-add address=119.57.0.0/16 list=List_Telecom
+add address=119.57.112.0/20 list=List_Telecom
 add address=119.60.0.0/15 list=List_Telecom
 add address=119.80.240.0/22 list=List_Telecom
 add address=119.80.248.0/21 list=List_Telecom
