@@ -13450,8 +13450,6 @@ add address=2610:a1:3074::/46 list=List_ChinaE2
 add address=2610:a1:3078::/46 list=List_ChinaE2
 add address=2620:123:2080::/48 list=List_ChinaE2
 add address=2620:171:fb::/48 list=List_ChinaE2
-add address=2804:1e48:9001::/48 list=List_ChinaE2
-add address=2804:1e48:9002::/48 list=List_ChinaE2
 add address=2a00:79e0:200:500::/56 list=List_ChinaE2
 add address=2a00:79e0:ffe5:3a00::/56 list=List_ChinaE2
 add address=2a00:79e1:abc:1900::/56 list=List_ChinaE2
