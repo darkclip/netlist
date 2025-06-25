@@ -5015,11 +5015,7 @@ add address=123.49.194.0/23 list=List_ChinaE3
 add address=123.49.196.0/22 list=List_ChinaE3
 add address=123.49.200.0/21 list=List_ChinaE3
 add address=123.49.208.0/20 list=List_ChinaE3
-add address=123.49.224.0/20 list=List_ChinaE3
-add address=123.49.240.0/22 list=List_ChinaE3
-add address=123.49.244.0/24 list=List_ChinaE3
-add address=123.49.246.0/23 list=List_ChinaE3
-add address=123.49.248.0/21 list=List_ChinaE3
+add address=123.49.224.0/19 list=List_ChinaE3
 add address=123.50.160.0/19 list=List_ChinaE3
 add address=123.56.0.0/15 list=List_ChinaE3
 add address=123.58.35.0/24 list=List_ChinaE3
