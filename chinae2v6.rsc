@@ -11932,7 +11932,16 @@ add address=240c:409f:200::/39 list=List_ChinaE2
 add address=240c:409f:400::/38 list=List_ChinaE2
 add address=240c:409f:800::/37 list=List_ChinaE2
 add address=240c:409f:1000::/36 list=List_ChinaE2
-add address=240c:409f:2000::/35 list=List_ChinaE2
+add address=240c:409f:2000::/36 list=List_ChinaE2
+add address=240c:409f:3008::/45 list=List_ChinaE2
+add address=240c:409f:3010::/44 list=List_ChinaE2
+add address=240c:409f:3020::/43 list=List_ChinaE2
+add address=240c:409f:3040::/42 list=List_ChinaE2
+add address=240c:409f:3080::/41 list=List_ChinaE2
+add address=240c:409f:3100::/40 list=List_ChinaE2
+add address=240c:409f:3200::/39 list=List_ChinaE2
+add address=240c:409f:3400::/38 list=List_ChinaE2
+add address=240c:409f:3800::/37 list=List_ChinaE2
 add address=240c:409f:4008::/45 list=List_ChinaE2
 add address=240c:409f:4010::/44 list=List_ChinaE2
 add address=240c:409f:4020::/43 list=List_ChinaE2
