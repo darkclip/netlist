@@ -1281,6 +1281,7 @@ add address=193.119.15.0/24 list=List_Telecom
 add address=193.119.19.0/24 list=List_Telecom
 add address=193.119.20.0/23 list=List_Telecom
 add address=193.119.25.0/24 list=List_Telecom
+add address=193.119.28.0/24 list=List_Telecom
 add address=193.119.30.0/24 list=List_Telecom
 add address=198.208.17.0/24 list=List_Telecom
 add address=198.208.19.0/24 list=List_Telecom

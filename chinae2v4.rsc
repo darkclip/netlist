@@ -5695,7 +5695,7 @@ add address=193.119.18.0/24 list=List_ChinaE2
 add address=193.119.22.0/23 list=List_ChinaE2
 add address=193.119.24.0/24 list=List_ChinaE2
 add address=193.119.26.0/23 list=List_ChinaE2
-add address=193.119.28.0/23 list=List_ChinaE2
+add address=193.119.29.0/24 list=List_ChinaE2
 add address=193.119.31.0/24 list=List_ChinaE2
 add address=193.200.222.160/28 list=List_ChinaE2
 add address=194.15.39.0/24 list=List_ChinaE2
