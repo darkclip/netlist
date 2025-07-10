@@ -723,8 +723,7 @@ add address=44.32.188.0/24 list=List_ChinaE3
 add address=44.32.192.0/24 list=List_ChinaE3
 add address=45.9.11.0/24 list=List_ChinaE3
 add address=45.40.192.0/18 list=List_ChinaE3
-add address=45.65.16.0/21 list=List_ChinaE3
-add address=45.65.28.0/22 list=List_ChinaE3
+add address=45.65.16.0/20 list=List_ChinaE3
 add address=45.112.132.0/22 list=List_ChinaE3
 add address=45.112.188.0/22 list=List_ChinaE3
 add address=45.112.208.0/21 list=List_ChinaE3
