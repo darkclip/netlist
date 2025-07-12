@@ -106,6 +106,7 @@ add address=2408:8181:8000::/40 list=List_Unicom
 add address=2408:8181:a000::/40 list=List_Unicom
 add address=2408:8181:a220::/44 list=List_Unicom
 add address=2408:8181:e000::/40 list=List_Unicom
+add address=2408:8182:6000::/40 list=List_Unicom
 add address=2408:8182:c000::/40 list=List_Unicom
 add address=2408:8183:4000::/40 list=List_Unicom
 add address=2408:8183:8000::/40 list=List_Unicom

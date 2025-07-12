@@ -803,7 +803,7 @@ add address=123.103.30.0/24 list=List_Unicom
 add address=123.103.40.0/21 list=List_Unicom
 add address=123.103.48.0/20 list=List_Unicom
 add address=123.103.64.0/18 list=List_Unicom
-add address=123.108.88.0/24 list=List_Unicom
+add address=123.108.88.0/23 list=List_Unicom
 add address=123.108.208.0/22 list=List_Unicom
 add address=123.108.212.0/23 list=List_Unicom
 add address=123.108.220.0/22 list=List_Unicom
@@ -1193,6 +1193,7 @@ add address=218.60.0.0/15 list=List_Unicom
 add address=218.62.0.0/17 list=List_Unicom
 add address=218.67.128.0/17 list=List_Unicom
 add address=218.68.0.0/15 list=List_Unicom
+add address=218.96.128.0/24 list=List_Unicom
 add address=218.98.0.0/18 list=List_Unicom
 add address=218.98.160.0/24 list=List_Unicom
 add address=218.104.0.0/15 list=List_Unicom
