@@ -131,6 +131,7 @@ add address=45.125.56.0/22 list=List_Unicom
 add address=45.127.144.0/21 list=List_Unicom
 add address=45.249.212.0/22 list=List_Unicom
 add address=45.250.32.0/21 list=List_Unicom
+add address=45.250.152.0/24 list=List_Unicom
 add address=45.250.180.0/23 list=List_Unicom
 add address=45.250.188.0/24 list=List_Unicom
 add address=45.251.20.0/22 list=List_Unicom
