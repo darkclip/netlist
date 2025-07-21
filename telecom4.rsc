@@ -24,7 +24,6 @@ add address=14.208.0.0/12 list=List_Telecom
 add address=27.0.204.0/22 list=List_Telecom
 add address=27.0.208.0/21 list=List_Telecom
 add address=27.16.0.0/12 list=List_Telecom
-add address=27.54.224.0/19 list=List_Telecom
 add address=27.109.124.0/22 list=List_Telecom
 add address=27.128.0.0/15 list=List_Telecom
 add address=27.148.0.0/14 list=List_Telecom

@@ -170,7 +170,7 @@ add address=27.34.232.0/21 list=List_ChinaE3
 add address=27.50.40.0/21 list=List_ChinaE3
 add address=27.54.72.0/21 list=List_ChinaE3
 add address=27.54.152.0/21 list=List_ChinaE3
-add address=27.54.192.0/19 list=List_ChinaE3
+add address=27.54.192.0/18 list=List_ChinaE3
 add address=27.98.208.0/20 list=List_ChinaE3
 add address=27.103.0.0/16 list=List_ChinaE3
 add address=27.106.204.0/22 list=List_ChinaE3
