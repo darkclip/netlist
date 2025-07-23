@@ -2753,6 +2753,7 @@ add address=103.202.116.0/22 list=List_ChinaE3
 add address=103.202.152.0/21 list=List_ChinaE3
 add address=103.202.160.0/19 list=List_ChinaE3
 add address=103.202.192.0/20 list=List_ChinaE3
+add address=103.202.212.0/22 list=List_ChinaE3
 add address=103.202.228.0/22 list=List_ChinaE3
 add address=103.202.236.0/22 list=List_ChinaE3
 add address=103.202.240.0/20 list=List_ChinaE3
