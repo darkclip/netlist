@@ -7,6 +7,9 @@ add address=1.68.0.0/14 list=List_Telecom
 add address=1.80.0.0/13 list=List_Telecom
 add address=1.93.0.0/16 list=List_Telecom
 add address=1.119.128.0/18 list=List_Telecom
+add address=1.119.192.0/21 list=List_Telecom
+add address=1.119.200.0/22 list=List_Telecom
+add address=1.119.208.0/22 list=List_Telecom
 add address=1.180.0.0/14 list=List_Telecom
 add address=1.192.0.0/13 list=List_Telecom
 add address=1.202.0.0/15 list=List_Telecom
