@@ -1985,8 +1985,7 @@ add address=103.73.248.0/22 list=List_ChinaE3
 add address=103.74.32.0/20 list=List_ChinaE3
 add address=103.74.56.0/21 list=List_ChinaE3
 add address=103.74.80.0/22 list=List_ChinaE3
-add address=103.74.124.0/23 list=List_ChinaE3
-add address=103.74.127.0/24 list=List_ChinaE3
+add address=103.74.124.0/22 list=List_ChinaE3
 add address=103.74.148.0/22 list=List_ChinaE3
 add address=103.74.152.0/21 list=List_ChinaE3
 add address=103.74.204.0/22 list=List_ChinaE3
