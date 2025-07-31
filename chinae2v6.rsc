@@ -8504,7 +8504,6 @@ add address=2402:4b80::/32 list=List_ChinaE2
 add address=2402:4bc0::/32 list=List_ChinaE2
 add address=2402:4c40::/32 list=List_ChinaE2
 add address=2402:4d80::/32 list=List_ChinaE2
-add address=2402:4e00::/32 list=List_ChinaE2
 add address=2402:4ec0::/32 list=List_ChinaE2
 add address=2402:4f80::/32 list=List_ChinaE2
 add address=2402:5180::/32 list=List_ChinaE2

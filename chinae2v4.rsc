@@ -7477,7 +7477,9 @@ add address=220.114.252.0/22 list=List_ChinaE2
 add address=220.115.0.0/16 list=List_ChinaE2
 add address=220.154.0.0/17 list=List_ChinaE2
 add address=220.154.132.0/22 list=List_ChinaE2
-add address=220.154.136.0/21 list=List_ChinaE2
+add address=220.154.136.0/22 list=List_ChinaE2
+add address=220.154.141.0/24 list=List_ChinaE2
+add address=220.154.142.0/23 list=List_ChinaE2
 add address=220.154.145.0/24 list=List_ChinaE2
 add address=220.154.146.0/23 list=List_ChinaE2
 add address=220.154.148.0/22 list=List_ChinaE2
