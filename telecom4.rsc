@@ -1311,6 +1311,7 @@ add address=202.59.213.0/24 list=List_Telecom
 add address=202.59.214.0/23 list=List_Telecom
 add address=202.60.132.0/22 list=List_Telecom
 add address=202.62.112.0/22 list=List_Telecom
+add address=202.65.96.0/24 list=List_Telecom
 add address=202.67.3.0/24 list=List_Telecom
 add address=202.69.4.0/23 list=List_Telecom
 add address=202.72.112.0/20 list=List_Telecom
