@@ -1733,6 +1733,7 @@ add address=220.231.128.0/17 list=List_Telecom
 add address=220.243.144.0/20 list=List_Telecom
 add address=220.243.160.0/20 list=List_Telecom
 add address=221.122.0.0/16 list=List_Telecom
+add address=221.123.112.0/20 list=List_Telecom
 add address=221.123.128.0/17 list=List_Telecom
 add address=221.133.225.0/24 list=List_Telecom
 add address=221.133.226.0/24 list=List_Telecom
