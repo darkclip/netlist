@@ -388,6 +388,8 @@ add address=103.193.192.0/22 list=List_Unicom
 add address=103.196.88.0/21 list=List_Unicom
 add address=103.197.1.0/24 list=List_Unicom
 add address=103.198.60.0/22 list=List_Unicom
+add address=103.200.220.0/24 list=List_Unicom
+add address=103.200.222.0/23 list=List_Unicom
 add address=103.202.92.0/22 list=List_Unicom
 add address=103.202.96.0/20 list=List_Unicom
 add address=103.202.112.0/22 list=List_Unicom

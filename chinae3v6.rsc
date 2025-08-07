@@ -11162,7 +11162,6 @@ add address=2408:8407:2000::/35 list=List_ChinaE3
 add address=2408:8407:4000::/34 list=List_ChinaE3
 add address=2408:8407:8000::/33 list=List_ChinaE3
 add address=2408:8408::/32 list=List_ChinaE3
-add address=2408:8409:100::/43 list=List_ChinaE3
 add address=2408:8409:1e0::/43 list=List_ChinaE3
 add address=2408:8409:200::/39 list=List_ChinaE3
 add address=2408:8409:400::/38 list=List_ChinaE3

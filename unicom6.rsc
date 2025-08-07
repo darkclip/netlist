@@ -251,8 +251,7 @@ add address=2408:8406:b500::/41 list=List_Unicom
 add address=2408:8406:b580::/42 list=List_Unicom
 add address=2408:8407:500::/43 list=List_Unicom
 add address=2408:8409::/40 list=List_Unicom
-add address=2408:8409:120::/43 list=List_Unicom
-add address=2408:8409:140::/42 list=List_Unicom
+add address=2408:8409:100::/41 list=List_Unicom
 add address=2408:8409:180::/42 list=List_Unicom
 add address=2408:8409:1c0::/43 list=List_Unicom
 add address=2408:8409:c00::/40 list=List_Unicom
