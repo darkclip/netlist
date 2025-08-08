@@ -106,6 +106,7 @@ add address=2406:e3c0::/32 list=List_Telecom
 add address=2407:3740::/48 list=List_Telecom
 add address=2407:6c40:1100::/48 list=List_Telecom
 add address=2407:6c40:1810::/48 list=List_Telecom
+add address=2407:8f40:2::/48 list=List_Telecom
 add address=2407:b380:8000::/48 list=List_Telecom
 add address=2407:c080:1800::/37 list=List_Telecom
 add address=2409:27fa::/48 list=List_Telecom
