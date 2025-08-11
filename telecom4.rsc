@@ -968,6 +968,7 @@ add address=119.255.128.0/17 list=List_Telecom
 add address=120.31.66.0/23 list=List_Telecom
 add address=120.31.68.0/22 list=List_Telecom
 add address=120.31.128.0/20 list=List_Telecom
+add address=120.31.144.0/24 list=List_Telecom
 add address=120.32.0.0/13 list=List_Telecom
 add address=120.40.0.0/14 list=List_Telecom
 add address=120.44.0.0/16 list=List_Telecom
