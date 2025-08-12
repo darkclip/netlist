@@ -616,7 +616,6 @@ add address=106.13.244.0/22 list=List_Telecom
 add address=106.13.248.0/21 list=List_Telecom
 add address=106.16.0.0/14 list=List_Telecom
 add address=106.32.0.0/12 list=List_Telecom
-add address=106.48.0.0/21 list=List_Telecom
 add address=106.48.16.0/21 list=List_Telecom
 add address=106.56.0.0/14 list=List_Telecom
 add address=106.60.0.0/15 list=List_Telecom
