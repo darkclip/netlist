@@ -1809,6 +1809,7 @@ add address=103.56.94.0/23 list=List_ChinaE2
 add address=103.56.100.0/22 list=List_ChinaE2
 add address=103.56.104.0/22 list=List_ChinaE2
 add address=103.56.140.0/22 list=List_ChinaE2
+add address=103.56.184.0/22 list=List_ChinaE2
 add address=103.56.200.0/22 list=List_ChinaE2
 add address=103.57.12.0/22 list=List_ChinaE2
 add address=103.57.52.0/22 list=List_ChinaE2
