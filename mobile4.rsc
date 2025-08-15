@@ -324,7 +324,6 @@ add address=221.172.0.0/16 list=List_Mobile
 add address=221.174.0.0/16 list=List_Mobile
 add address=221.176.0.0/13 list=List_Mobile
 add address=222.35.0.0/16 list=List_Mobile
-add address=222.41.10.0/24 list=List_Mobile
 add address=222.42.115.0/24 list=List_Mobile
 add address=222.44.0.0/16 list=List_Mobile
 add address=222.45.8.0/21 list=List_Mobile
