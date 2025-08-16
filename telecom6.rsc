@@ -85,7 +85,6 @@ add address=2403:a200:a1ff::/48 list=List_Telecom
 add address=2403:a200:a2ff::/48 list=List_Telecom
 add address=2403:a200:a3ff::/48 list=List_Telecom
 add address=2403:c980::/32 list=List_Telecom
-add address=2403:e7c0:1::/48 list=List_Telecom
 add address=2403:f4c0::/48 list=List_Telecom
 add address=2404:1c80::/32 list=List_Telecom
 add address=2404:3700::/48 list=List_Telecom
@@ -105,7 +104,6 @@ add address=2406:d440:ff00::/48 list=List_Telecom
 add address=2406:e3c0::/32 list=List_Telecom
 add address=2407:3740::/48 list=List_Telecom
 add address=2407:6c40:1100::/48 list=List_Telecom
-add address=2407:6c40:1810::/48 list=List_Telecom
 add address=2407:8f40:2::/48 list=List_Telecom
 add address=2407:b380:8000::/48 list=List_Telecom
 add address=2407:c080:1800::/37 list=List_Telecom
