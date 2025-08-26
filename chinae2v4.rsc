@@ -3694,7 +3694,8 @@ add address=114.113.48.0/21 list=List_ChinaE2
 add address=114.113.56.0/22 list=List_ChinaE2
 add address=114.113.60.0/23 list=List_ChinaE2
 add address=114.113.62.0/24 list=List_ChinaE2
-add address=114.113.84.0/22 list=List_ChinaE2
+add address=114.113.85.0/24 list=List_ChinaE2
+add address=114.113.86.0/23 list=List_ChinaE2
 add address=114.113.128.0/21 list=List_ChinaE2
 add address=114.113.140.0/22 list=List_ChinaE2
 add address=114.113.160.0/19 list=List_ChinaE2
