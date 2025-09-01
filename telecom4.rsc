@@ -446,7 +446,6 @@ add address=103.98.220.0/22 list=List_Telecom
 add address=103.101.124.0/23 list=List_Telecom
 add address=103.101.180.0/22 list=List_Telecom
 add address=103.102.200.0/22 list=List_Telecom
-add address=103.103.200.0/22 list=List_Telecom
 add address=103.105.12.0/22 list=List_Telecom
 add address=103.105.60.0/22 list=List_Telecom
 add address=103.107.188.0/22 list=List_Telecom
