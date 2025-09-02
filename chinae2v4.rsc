@@ -5557,7 +5557,7 @@ add address=193.119.5.0/24 list=List_ChinaE2
 add address=193.119.7.0/24 list=List_ChinaE2
 add address=193.119.9.0/24 list=List_ChinaE2
 add address=193.119.14.0/24 list=List_ChinaE2
-add address=193.119.16.0/23 list=List_ChinaE2
+add address=193.119.16.0/24 list=List_ChinaE2
 add address=193.119.18.0/24 list=List_ChinaE2
 add address=193.119.22.0/23 list=List_ChinaE2
 add address=193.119.24.0/24 list=List_ChinaE2
