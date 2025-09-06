@@ -9548,7 +9548,15 @@ add address=2406:840:fa90::/44 list=List_China
 add address=2406:840:faa0::/43 list=List_China
 add address=2406:840:fac0::/42 list=List_China
 add address=2406:840:fb00::/40 list=List_China
-add address=2406:840:fc00::/39 list=List_China
+add address=2406:840:fc00::/40 list=List_China
+add address=2406:840:fd00::/41 list=List_China
+add address=2406:840:fd80::/42 list=List_China
+add address=2406:840:fdc0::/43 list=List_China
+add address=2406:840:fde0::/48 list=List_China
+add address=2406:840:fde2::/47 list=List_China
+add address=2406:840:fde4::/46 list=List_China
+add address=2406:840:fde8::/45 list=List_China
+add address=2406:840:fdf0::/44 list=List_China
 add address=2406:840:fe00::/40 list=List_China
 add address=2406:840:ff10::/47 list=List_China
 add address=2406:840:ff13::/48 list=List_China
@@ -10170,8 +10178,8 @@ add address=2602:2e0:ff::/48 list=List_China
 add address=2602:814:f006::/48 list=List_China
 add address=2602:f7b8:4::/47 list=List_China
 add address=2602:f7ee:ee::/48 list=List_China
+add address=2602:f92a:d1ff::/48 list=List_China
 add address=2602:f92a:e100::/44 list=List_China
-add address=2602:f92a:f000::/48 list=List_China
 add address=2602:f93b:400::/38 list=List_China
 add address=2602:f9ba:a8::/48 list=List_China
 add address=2602:f9ba:10c::/48 list=List_China
