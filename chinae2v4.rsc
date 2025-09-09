@@ -1979,7 +1979,7 @@ add address=103.79.188.0/22 list=List_ChinaE2
 add address=103.79.192.0/21 list=List_ChinaE2
 add address=103.79.204.0/22 list=List_ChinaE2
 add address=103.79.208.0/21 list=List_ChinaE2
-add address=103.79.228.0/24 list=List_ChinaE2
+add address=103.79.229.0/24 list=List_ChinaE2
 add address=103.80.44.0/22 list=List_ChinaE2
 add address=103.80.72.0/22 list=List_ChinaE2
 add address=103.80.176.0/21 list=List_ChinaE2
@@ -3531,6 +3531,7 @@ add address=111.66.178.0/24 list=List_ChinaE2
 add address=111.66.180.0/22 list=List_ChinaE2
 add address=111.66.184.0/21 list=List_ChinaE2
 add address=111.66.192.0/18 list=List_ChinaE2
+add address=111.67.192.0/20 list=List_ChinaE2
 add address=111.92.248.0/21 list=List_ChinaE2
 add address=111.114.0.0/15 list=List_ChinaE2
 add address=111.116.0.0/15 list=List_ChinaE2
