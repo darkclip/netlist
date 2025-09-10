@@ -1154,9 +1154,6 @@ add address=211.147.160.0/19 list=List_Unicom
 add address=211.148.64.0/18 list=List_Unicom
 add address=211.152.57.0/24 list=List_Unicom
 add address=211.152.58.0/24 list=List_Unicom
-add address=211.153.92.0/23 list=List_Unicom
-add address=211.153.94.0/24 list=List_Unicom
-add address=211.153.112.0/23 list=List_Unicom
 add address=211.154.0.0/24 list=List_Unicom
 add address=211.154.5.0/24 list=List_Unicom
 add address=211.154.10.0/24 list=List_Unicom
