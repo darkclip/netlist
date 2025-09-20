@@ -893,7 +893,8 @@ add address=45.250.104.0/21 list=List_ChinaE3
 add address=45.250.112.0/20 list=List_ChinaE3
 add address=45.250.128.0/20 list=List_ChinaE3
 add address=45.250.144.0/21 list=List_ChinaE3
-add address=45.250.152.0/22 list=List_ChinaE3
+add address=45.250.153.0/24 list=List_ChinaE3
+add address=45.250.154.0/23 list=List_ChinaE3
 add address=45.250.164.0/22 list=List_ChinaE3
 add address=45.250.182.0/23 list=List_ChinaE3
 add address=45.250.189.0/24 list=List_ChinaE3
@@ -2008,7 +2009,7 @@ add address=103.79.188.0/22 list=List_ChinaE3
 add address=103.79.192.0/21 list=List_ChinaE3
 add address=103.79.204.0/22 list=List_ChinaE3
 add address=103.79.208.0/21 list=List_ChinaE3
-add address=103.79.228.0/24 list=List_ChinaE3
+add address=103.79.229.0/24 list=List_ChinaE3
 add address=103.80.44.0/22 list=List_ChinaE3
 add address=103.80.72.0/22 list=List_ChinaE3
 add address=103.80.176.0/21 list=List_ChinaE3
