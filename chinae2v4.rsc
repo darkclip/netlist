@@ -874,7 +874,6 @@ add address=45.250.104.0/21 list=List_ChinaE2
 add address=45.250.112.0/20 list=List_ChinaE2
 add address=45.250.128.0/20 list=List_ChinaE2
 add address=45.250.144.0/21 list=List_ChinaE2
-add address=45.250.153.0/24 list=List_ChinaE2
 add address=45.250.154.0/23 list=List_ChinaE2
 add address=45.250.164.0/22 list=List_ChinaE2
 add address=45.250.182.0/23 list=List_ChinaE2
