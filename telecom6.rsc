@@ -116,6 +116,7 @@ add address=240a:2001:1811::/48 list=List_Telecom
 add address=240a:2001:1861::/48 list=List_Telecom
 add address=240a:6001::/48 list=List_Telecom
 add address=240c:409f::/46 list=List_Telecom
+add address=240c:409f:2000::/46 list=List_Telecom
 add address=240c:409f:3000::/45 list=List_Telecom
 add address=240c:409f:4000::/45 list=List_Telecom
 add address=240e::/20 list=List_Telecom
