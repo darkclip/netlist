@@ -7002,10 +7002,7 @@ add address=203.166.180.0/22 list=List_ChinaE3
 add address=203.166.184.0/23 list=List_ChinaE3
 add address=203.166.190.0/24 list=List_ChinaE3
 add address=203.167.28.0/22 list=List_ChinaE3
-add address=203.168.4.0/22 list=List_ChinaE3
-add address=203.168.9.0/24 list=List_ChinaE3
-add address=203.168.10.0/23 list=List_ChinaE3
-add address=203.168.12.0/22 list=List_ChinaE3
+add address=203.168.4.0/24 list=List_ChinaE3
 add address=203.168.19.0/24 list=List_ChinaE3
 add address=203.168.20.0/22 list=List_ChinaE3
 add address=203.168.24.0/21 list=List_ChinaE3
