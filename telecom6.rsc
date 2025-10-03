@@ -133,8 +133,6 @@ add address=2605:9d80:9033::/48 list=List_Telecom
 add address=2605:9d80:9042::/48 list=List_Telecom
 add address=2605:9d80:9071::/48 list=List_Telecom
 add address=2605:9d80:9092::/48 list=List_Telecom
-add address=2804:1e48:9001::/48 list=List_Telecom
-add address=2804:1e48:9002::/48 list=List_Telecom
 add address=2a04:f580:8010::/47 list=List_Telecom
 add address=2a04:f580:8090::/48 list=List_Telecom
 add address=2a04:f580:8210::/47 list=List_Telecom
