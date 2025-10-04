@@ -11254,8 +11254,6 @@ add address=2606:54c3:0:1a50::/64 list=List_ChinaE2
 add address=2606:54c3:0:1a5a::/64 list=List_ChinaE2
 add address=2606:54c3:0:1a66::/64 list=List_ChinaE2
 add address=2606:54c3:0:1a91::/64 list=List_ChinaE2
-add address=2804:1e48:9001::/48 list=List_ChinaE2
-add address=2804:1e48:9002::/48 list=List_ChinaE2
 add address=2a00:79e0:200:500::/56 list=List_ChinaE2
 add address=2a00:79e0:ffe5:3a00::/56 list=List_ChinaE2
 add address=2a00:79e1:abc:1900::/56 list=List_ChinaE2
