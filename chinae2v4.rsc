@@ -5254,7 +5254,6 @@ add address=160.19.82.0/23 list=List_ChinaE2
 add address=160.19.212.0/22 list=List_ChinaE2
 add address=160.19.216.0/22 list=List_ChinaE2
 add address=160.20.16.0/23 list=List_ChinaE2
-add address=160.20.19.0/24 list=List_ChinaE2
 add address=160.20.48.0/22 list=List_ChinaE2
 add address=160.20.130.0/23 list=List_ChinaE2
 add address=160.22.58.0/23 list=List_ChinaE2
