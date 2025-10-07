@@ -17,6 +17,7 @@ add address=27.36.0.0/14 list=List_Unicom
 add address=27.40.0.0/13 list=List_Unicom
 add address=27.50.128.0/17 list=List_Unicom
 add address=27.98.224.0/19 list=List_Unicom
+add address=27.99.128.0/17 list=List_Unicom
 add address=27.106.128.0/18 list=List_Unicom
 add address=27.112.0.0/21 list=List_Unicom
 add address=27.115.0.0/17 list=List_Unicom
