@@ -444,7 +444,7 @@ add address=2408:8426::/31 list=List_Unicom
 add address=2408:842a::/31 list=List_Unicom
 add address=2408:842c::/32 list=List_Unicom
 add address=2408:842e::/32 list=List_Unicom
-add address=2408:8431::/32 list=List_Unicom
+add address=2408:8430::/31 list=List_Unicom
 add address=2408:8434::/30 list=List_Unicom
 add address=2408:8438::/31 list=List_Unicom
 add address=2408:843c::/30 list=List_Unicom
