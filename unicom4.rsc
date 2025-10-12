@@ -307,7 +307,6 @@ add address=103.53.211.0/24 list=List_Unicom
 add address=103.55.228.0/22 list=List_Unicom
 add address=103.56.32.0/22 list=List_Unicom
 add address=103.56.60.0/22 list=List_Unicom
-add address=103.56.78.0/24 list=List_Unicom
 add address=103.59.124.0/22 list=List_Unicom
 add address=103.59.164.0/22 list=List_Unicom
 add address=103.60.236.0/22 list=List_Unicom
