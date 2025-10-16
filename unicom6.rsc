@@ -41,6 +41,8 @@ add address=2404:c940::/48 list=List_Unicom
 add address=2405:1480:1000::/48 list=List_Unicom
 add address=2405:1480:2000::/48 list=List_Unicom
 add address=2405:1480:3000::/47 list=List_Unicom
+add address=2405:6f00:c101::/48 list=List_Unicom
+add address=2405:6f00:c170::/48 list=List_Unicom
 add address=2405:7040:6001::/48 list=List_Unicom
 add address=2405:a900:ffee::/48 list=List_Unicom
 add address=2406:cac0::/40 list=List_Unicom
