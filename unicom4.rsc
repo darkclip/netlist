@@ -54,6 +54,9 @@ add address=43.229.48.0/24 list=List_Unicom
 add address=43.229.186.0/23 list=List_Unicom
 add address=43.231.41.0/24 list=List_Unicom
 add address=43.231.46.0/23 list=List_Unicom
+add address=43.231.96.0/23 list=List_Unicom
+add address=43.231.98.0/24 list=List_Unicom
+add address=43.231.103.0/24 list=List_Unicom
 add address=43.231.144.0/20 list=List_Unicom
 add address=43.231.160.0/21 list=List_Unicom
 add address=43.231.168.0/23 list=List_Unicom
