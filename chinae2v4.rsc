@@ -1395,6 +1395,7 @@ add address=103.5.52.0/23 list=List_ChinaE2
 add address=103.5.56.0/22 list=List_ChinaE2
 add address=103.5.152.0/22 list=List_ChinaE2
 add address=103.5.168.0/22 list=List_ChinaE2
+add address=103.5.195.0/24 list=List_ChinaE2
 add address=103.5.252.0/22 list=List_ChinaE2
 add address=103.6.76.0/22 list=List_ChinaE2
 add address=103.6.108.0/22 list=List_ChinaE2
