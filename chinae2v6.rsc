@@ -7265,6 +7265,7 @@ add address=2400:8fc0::/32 list=List_ChinaE2
 add address=2400:9020::/32 list=List_ChinaE2
 add address=2400:9040::/32 list=List_ChinaE2
 add address=2400:9340::/32 list=List_ChinaE2
+add address=2400:9380:9241::/48 list=List_ChinaE2
 add address=2400:9380:9272::/48 list=List_ChinaE2
 add address=2400:9380:9282::/48 list=List_ChinaE2
 add address=2400:93e0::/32 list=List_ChinaE2
