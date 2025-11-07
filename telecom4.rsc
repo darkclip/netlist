@@ -1750,6 +1750,7 @@ add address=220.154.0.0/20 list=List_Telecom
 add address=220.154.16.0/22 list=List_Telecom
 add address=220.154.128.0/22 list=List_Telecom
 add address=220.154.132.0/23 list=List_Telecom
+add address=220.154.134.0/24 list=List_Telecom
 add address=220.154.140.0/24 list=List_Telecom
 add address=220.154.144.0/24 list=List_Telecom
 add address=220.160.0.0/12 list=List_Telecom
