@@ -3077,8 +3077,6 @@ add address=103.248.0.0/24 list=List_ChinaE2
 add address=103.248.64.0/23 list=List_ChinaE2
 add address=103.248.100.0/22 list=List_ChinaE2
 add address=103.248.124.0/22 list=List_ChinaE2
-add address=103.248.152.0/23 list=List_ChinaE2
-add address=103.248.154.0/24 list=List_ChinaE2
 add address=103.248.168.0/22 list=List_ChinaE2
 add address=103.248.192.0/22 list=List_ChinaE2
 add address=103.248.212.0/22 list=List_ChinaE2
