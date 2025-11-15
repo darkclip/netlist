@@ -3830,7 +3830,6 @@ add address=116.163.64.0/18 list=List_ChinaE2
 add address=116.163.128.0/17 list=List_ChinaE2
 add address=116.164.0.0/16 list=List_ChinaE2
 add address=116.166.0.0/16 list=List_ChinaE2
-add address=116.170.0.0/16 list=List_ChinaE2
 add address=116.172.0.0/18 list=List_ChinaE2
 add address=116.173.0.0/16 list=List_ChinaE2
 add address=116.180.0.0/16 list=List_ChinaE2
