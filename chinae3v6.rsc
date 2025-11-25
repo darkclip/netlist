@@ -7455,6 +7455,8 @@ add address=2400:8fc0::/32 list=List_ChinaE3
 add address=2400:9020::/32 list=List_ChinaE3
 add address=2400:9040::/32 list=List_ChinaE3
 add address=2400:9340::/32 list=List_ChinaE3
+add address=2400:9380:90b0::/48 list=List_ChinaE3
+add address=2400:9380:92b0::/48 list=List_ChinaE3
 add address=2400:93e0::/32 list=List_ChinaE3
 add address=2400:9520::/32 list=List_ChinaE3
 add address=2400:9580::/32 list=List_ChinaE3

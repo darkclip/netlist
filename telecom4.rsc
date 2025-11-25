@@ -1044,7 +1044,6 @@ add address=121.58.0.0/17 list=List_Telecom
 add address=121.58.156.0/22 list=List_Telecom
 add address=121.59.4.0/22 list=List_Telecom
 add address=121.59.8.0/21 list=List_Telecom
-add address=121.59.17.0/24 list=List_Telecom
 add address=121.59.160.0/20 list=List_Telecom
 add address=121.59.255.0/24 list=List_Telecom
 add address=121.60.0.0/14 list=List_Telecom
@@ -1747,9 +1746,8 @@ add address=220.113.96.0/21 list=List_Telecom
 add address=220.113.150.0/23 list=List_Telecom
 add address=220.154.0.0/20 list=List_Telecom
 add address=220.154.16.0/22 list=List_Telecom
-add address=220.154.128.0/22 list=List_Telecom
-add address=220.154.132.0/23 list=List_Telecom
-add address=220.154.134.0/24 list=List_Telecom
+add address=220.154.128.0/21 list=List_Telecom
+add address=220.154.136.0/22 list=List_Telecom
 add address=220.154.140.0/24 list=List_Telecom
 add address=220.154.144.0/24 list=List_Telecom
 add address=220.160.0.0/12 list=List_Telecom

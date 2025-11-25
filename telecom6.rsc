@@ -28,7 +28,9 @@ add address=2400:9380:9050::/47 list=List_Telecom
 add address=2400:9380:9060::/48 list=List_Telecom
 add address=2400:9380:9071::/48 list=List_Telecom
 add address=2400:9380:9080::/47 list=List_Telecom
-add address=2400:9380:90b0::/45 list=List_Telecom
+add address=2400:9380:90b1::/48 list=List_Telecom
+add address=2400:9380:90b2::/47 list=List_Telecom
+add address=2400:9380:90b4::/46 list=List_Telecom
 add address=2400:9380:9100::/47 list=List_Telecom
 add address=2400:9380:9121::/48 list=List_Telecom
 add address=2400:9380:9201::/48 list=List_Telecom
@@ -39,7 +41,9 @@ add address=2400:9380:9250::/47 list=List_Telecom
 add address=2400:9380:9260::/48 list=List_Telecom
 add address=2400:9380:9271::/48 list=List_Telecom
 add address=2400:9380:9280::/47 list=List_Telecom
-add address=2400:9380:92b0::/45 list=List_Telecom
+add address=2400:9380:92b1::/48 list=List_Telecom
+add address=2400:9380:92b2::/47 list=List_Telecom
+add address=2400:9380:92b4::/46 list=List_Telecom
 add address=2400:9600:8800::/48 list=List_Telecom
 add address=2400:b620::/48 list=List_Telecom
 add address=2400:b700::/48 list=List_Telecom
