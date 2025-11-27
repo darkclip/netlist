@@ -422,6 +422,8 @@ add address=2408:840d:dd00::/42 list=List_Unicom
 add address=2408:840d:de00::/42 list=List_Unicom
 add address=2408:840e:dd00::/40 list=List_Unicom
 add address=2408:840e:de00::/40 list=List_Unicom
+add address=2408:840f:1e0::/46 list=List_Unicom
+add address=2408:840f:1e4::/47 list=List_Unicom
 add address=2408:8410::/30 list=List_Unicom
 add address=2408:8414::/31 list=List_Unicom
 add address=2408:8417::/32 list=List_Unicom
