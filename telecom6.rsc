@@ -102,6 +102,7 @@ add address=2406:2700::/32 list=List_Telecom
 add address=2406:4d00::/48 list=List_Telecom
 add address=2406:cf00::/48 list=List_Telecom
 add address=2406:cf00:1000::/43 list=List_Telecom
+add address=2406:d440:210::/44 list=List_Telecom
 add address=2406:d440:ff00::/48 list=List_Telecom
 add address=2406:e3c0::/32 list=List_Telecom
 add address=2407:3740::/48 list=List_Telecom
