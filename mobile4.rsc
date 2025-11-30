@@ -461,7 +461,14 @@ add address=211.98.88.0/22 list=List_Mobile
 add address=211.98.92.0/23 list=List_Mobile
 add address=211.98.94.0/24 list=List_Mobile
 add address=211.98.96.0/19 list=List_Mobile
-add address=211.98.128.0/17 list=List_Mobile
+add address=211.98.128.0/19 list=List_Mobile
+add address=211.98.160.0/20 list=List_Mobile
+add address=211.98.177.0/24 list=List_Mobile
+add address=211.98.178.0/23 list=List_Mobile
+add address=211.98.180.0/22 list=List_Mobile
+add address=211.98.184.0/22 list=List_Mobile
+add address=211.98.190.0/23 list=List_Mobile
+add address=211.98.192.0/18 list=List_Mobile
 add address=211.99.117.0/24 list=List_Mobile
 add address=211.99.118.0/23 list=List_Mobile
 add address=211.99.120.0/23 list=List_Mobile
