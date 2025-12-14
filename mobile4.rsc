@@ -888,10 +888,9 @@ add address=210.14.128.0/19 list=List_Mobile
 add address=210.73.204.0/24 list=List_Mobile
 add address=210.74.0.0/22 list=List_Mobile
 add address=210.75.239.0/24 list=List_Mobile
-add address=210.77.180.0/23 list=List_Mobile
+add address=210.77.181.0/24 list=List_Mobile
 add address=210.77.184.0/24 list=List_Mobile
 add address=210.77.189.0/24 list=List_Mobile
-add address=210.77.190.0/24 list=List_Mobile
 add address=211.98.0.0/16 list=List_Mobile
 add address=211.99.13.0/24 list=List_Mobile
 add address=211.99.96.0/22 list=List_Mobile
