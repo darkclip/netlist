@@ -345,6 +345,7 @@ add address=2401:71c0::/48 list=List_Unicom
 add address=2401:7660::/48 list=List_Unicom
 add address=2401:a140:1::/48 list=List_Unicom
 add address=2401:b180:5::/48 list=List_Unicom
+add address=2401:b180:3003::/48 list=List_Unicom
 add address=2401:b180:8002::/48 list=List_Unicom
 add address=2401:b400::/45 list=List_Unicom
 add address=2401:b400:14::/48 list=List_Unicom
@@ -1065,6 +1066,7 @@ add address=240e:c:800::/37 list=List_Unicom
 add address=240e:c:1800::/37 list=List_Unicom
 add address=240e:4b:c000::/37 list=List_Unicom
 add address=240e:4c::/36 list=List_Unicom
+add address=240e:5e:4000::/48 list=List_Unicom
 add address=240e:b1:8800::/37 list=List_Unicom
 add address=240e:b1:9800::/37 list=List_Unicom
 add address=240e:108:10f3::/48 list=List_Unicom

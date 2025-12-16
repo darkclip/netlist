@@ -813,6 +813,7 @@ add address=106.3.128.0/19 list=List_Unicom
 add address=106.3.208.0/21 list=List_Unicom
 add address=106.3.224.0/21 list=List_Unicom
 add address=106.9.36.0/23 list=List_Unicom
+add address=106.11.24.0/24 list=List_Unicom
 add address=106.13.244.0/22 list=List_Unicom
 add address=106.13.248.0/23 list=List_Unicom
 add address=106.37.0.0/19 list=List_Unicom
@@ -1594,7 +1595,18 @@ add address=144.7.4.0/22 list=List_Unicom
 add address=144.7.8.0/21 list=List_Unicom
 add address=144.7.16.0/20 list=List_Unicom
 add address=144.7.32.0/19 list=List_Unicom
-add address=144.7.64.0/18 list=List_Unicom
+add address=144.7.64.0/20 list=List_Unicom
+add address=144.7.80.0/22 list=List_Unicom
+add address=144.7.84.0/23 list=List_Unicom
+add address=144.7.86.0/24 list=List_Unicom
+add address=144.7.89.0/24 list=List_Unicom
+add address=144.7.90.0/23 list=List_Unicom
+add address=144.7.92.0/22 list=List_Unicom
+add address=144.7.96.0/24 list=List_Unicom
+add address=144.7.99.0/24 list=List_Unicom
+add address=144.7.100.0/22 list=List_Unicom
+add address=144.7.104.0/21 list=List_Unicom
+add address=144.7.112.0/20 list=List_Unicom
 add address=144.36.147.0/24 list=List_Unicom
 add address=144.48.64.0/22 list=List_Unicom
 add address=146.196.68.0/22 list=List_Unicom
