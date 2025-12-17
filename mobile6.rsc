@@ -53,7 +53,6 @@ add address=2405:b7c0::/32 list=List_Mobile
 add address=2406:52c0::/32 list=List_Mobile
 add address=2406:5340:6666::/48 list=List_Mobile
 add address=2406:5340:8888::/48 list=List_Mobile
-add address=2406:d440:110::/44 list=List_Mobile
 add address=2406:d440:210::/44 list=List_Mobile
 add address=2407:23c0::/48 list=List_Mobile
 add address=2407:2840::/48 list=List_Mobile
