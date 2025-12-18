@@ -9394,7 +9394,7 @@ add address=2402:f140:f000::/37 list=List_ChinaE2
 add address=2402:f140:f800::/38 list=List_ChinaE2
 add address=2402:f140:fc00::/39 list=List_ChinaE2
 add address=2402:f140:fe00::/40 list=List_ChinaE2
-add address=2402:f140:ff02::/47 list=List_ChinaE2
+add address=2402:f140:ff02::/48 list=List_ChinaE2
 add address=2402:f140:ff04::/46 list=List_ChinaE2
 add address=2402:f140:ff08::/45 list=List_ChinaE2
 add address=2402:f140:ff15::/48 list=List_ChinaE2
