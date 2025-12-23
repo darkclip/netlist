@@ -102,6 +102,7 @@ add address=2001:250:5812::/48 list=List_ChinaE3
 add address=2001:250:5837::/48 list=List_ChinaE3
 add address=2001:250:586b::/48 list=List_ChinaE3
 add address=2001:250:5872::/48 list=List_ChinaE3
+add address=2001:250:587a::/48 list=List_ChinaE3
 add address=2001:250:5899::/48 list=List_ChinaE3
 add address=2001:250:589a::/47 list=List_ChinaE3
 add address=2001:250:589c::/46 list=List_ChinaE3

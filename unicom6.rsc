@@ -97,7 +97,9 @@ add address=2001:250:586c::/46 list=List_Unicom
 add address=2001:250:5870::/47 list=List_Unicom
 add address=2001:250:5873::/48 list=List_Unicom
 add address=2001:250:5874::/46 list=List_Unicom
-add address=2001:250:5878::/45 list=List_Unicom
+add address=2001:250:5878::/47 list=List_Unicom
+add address=2001:250:587b::/48 list=List_Unicom
+add address=2001:250:587c::/46 list=List_Unicom
 add address=2001:250:5880::/44 list=List_Unicom
 add address=2001:250:5890::/45 list=List_Unicom
 add address=2001:250:5898::/48 list=List_Unicom
