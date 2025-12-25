@@ -25,6 +25,7 @@ add address=2402:1440:1000::/36 list=List_Mobile
 add address=2402:1440:2000::/35 list=List_Mobile
 add address=2402:1440:4000::/34 list=List_Mobile
 add address=2402:1440:8000::/33 list=List_Mobile
+add address=2402:36e0::/48 list=List_Mobile
 add address=2402:3c00::/32 list=List_Mobile
 add address=2402:5ec0::/36 list=List_Mobile
 add address=2402:5ec0:1000::/40 list=List_Mobile
