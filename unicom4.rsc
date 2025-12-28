@@ -504,7 +504,6 @@ add address=103.5.194.0/24 list=List_Unicom
 add address=103.6.222.0/23 list=List_Unicom
 add address=103.7.141.0/24 list=List_Unicom
 add address=103.7.142.0/23 list=List_Unicom
-add address=103.8.8.0/22 list=List_Unicom
 add address=103.8.33.0/24 list=List_Unicom
 add address=103.8.34.0/23 list=List_Unicom
 add address=103.10.0.0/22 list=List_Unicom

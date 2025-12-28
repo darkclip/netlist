@@ -1883,6 +1883,7 @@ add address=103.6.228.0/22 list=List_ChinaE2
 add address=103.7.212.0/22 list=List_ChinaE2
 add address=103.7.216.0/21 list=List_ChinaE2
 add address=103.8.0.0/21 list=List_ChinaE2
+add address=103.8.8.0/22 list=List_ChinaE2
 add address=103.8.52.0/22 list=List_ChinaE2
 add address=103.8.108.0/22 list=List_ChinaE2
 add address=103.8.156.0/22 list=List_ChinaE2
