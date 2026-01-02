@@ -30,10 +30,10 @@ jobs:
           path: target
       - name: Clean target branch
         continue-on-error: true
-        run: rm target/* || true
+        run: rm target/*
       - name: Rebuild target branch
         run: |
-          match=cfst
+          match="cfst"
           for filepath in ref1/*; do
             rename=$(echo $filepath | awk -F'[./]' '{print $2}' | sed "s/$match/cf/g")
 
