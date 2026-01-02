@@ -30,7 +30,7 @@ jobs:
           path: target
       - name: Clean target branch
         continue-on-error: true
-        run: rm target/*
+        run: rm target/* || true
       - name: Rebuild target branch
         run: |
           match=cfst
