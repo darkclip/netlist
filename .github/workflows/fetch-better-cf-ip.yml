@@ -33,11 +33,12 @@ jobs:
         run: rm target/*
       - name: Rebuild target branch
         run: |
-          match="cfst"
+          match=cfst
           for filepath in ref1/*; do
-            rename=$(echo $filepath | awk -F'[./]' '{print $2}' | sed "s/$match/cf/g")
+            rename=$(echo $filepath | awk -F'[./]' '{print $2}' | sed "s/cfst/cf/g")
 
             exename=$(tar -tf $filepath 2>/dev/null | grep -i $match || true)
+            echo $rename $exename
             if [ ! -z $exename ]; then
               echo "Extracting $rename"
               tar -xf $filepath $exename -O >./target/$rename
