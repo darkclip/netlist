@@ -361,7 +361,6 @@ add address=58.154.37.0/24 list=List_Telecom
 add address=58.154.48.0/20 list=List_Telecom
 add address=58.154.96.0/20 list=List_Telecom
 add address=58.154.128.0/17 list=List_Telecom
-add address=58.155.0.0/20 list=List_Telecom
 add address=58.155.32.0/19 list=List_Telecom
 add address=58.155.71.0/24 list=List_Telecom
 add address=58.155.96.0/20 list=List_Telecom
