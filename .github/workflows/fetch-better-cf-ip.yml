@@ -21,8 +21,7 @@ jobs:
         with:
           repository: 'XIU2/CloudflareSpeedTest'
           latest: true
-          tarBall: true
-          zipBall: true
+          fileName: 'cfst_*.*'
           out-file-path: 'ref1'
       - name: Checkout target branch
         uses: actions/checkout@v4
@@ -34,7 +33,7 @@ jobs:
         run: rm target/*
       - name: Rebuild target branch
         run: |
-          match=CloudflareST
+          match=cfst
           for filepath in ref1/*; do
             rename=$(echo $filepath | awk -F'[./]' '{print $2}' | sed "s/$match/cf/g")
 
