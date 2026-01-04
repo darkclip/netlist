@@ -824,6 +824,7 @@ add address=203.196.4.0/24 list=List_Mobile
 add address=203.212.12.0/22 list=List_Mobile
 add address=210.2.4.0/24 list=List_Mobile
 add address=210.5.0.0/19 list=List_Mobile
+add address=210.5.151.0/24 list=List_Mobile
 add address=210.5.155.0/24 list=List_Mobile
 add address=210.14.128.0/19 list=List_Mobile
 add address=210.73.204.0/24 list=List_Mobile

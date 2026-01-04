@@ -3012,7 +3012,9 @@ add address=210.2.0.0/24 list=List_Telecom
 add address=210.5.56.0/24 list=List_Telecom
 add address=210.5.58.0/23 list=List_Telecom
 add address=210.5.60.0/22 list=List_Telecom
-add address=210.5.144.0/21 list=List_Telecom
+add address=210.5.144.0/22 list=List_Telecom
+add address=210.5.148.0/23 list=List_Telecom
+add address=210.5.150.0/24 list=List_Telecom
 add address=210.5.152.0/23 list=List_Telecom
 add address=210.5.154.0/24 list=List_Telecom
 add address=210.5.156.0/22 list=List_Telecom
