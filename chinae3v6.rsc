@@ -1120,7 +1120,9 @@ add address=240c:c000::/32 list=List_ChinaE3
 add address=240c:c002::/31 list=List_ChinaE3
 add address=240c:c004::/30 list=List_ChinaE3
 add address=240c:c008::/29 list=List_ChinaE3
-add address=240c:c010::/29 list=List_ChinaE3
+add address=240c:c010::/30 list=List_ChinaE3
+add address=240c:c014::/31 list=List_ChinaE3
+add address=240c:c016::/32 list=List_ChinaE3
 add address=240c:c019::/32 list=List_ChinaE3
 add address=240c:c01a::/31 list=List_ChinaE3
 add address=240c:c01c::/30 list=List_ChinaE3

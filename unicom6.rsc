@@ -999,6 +999,7 @@ add address=240b:e004::/30 list=List_Unicom
 add address=240b:e008::/29 list=List_Unicom
 add address=240b:e010::/32 list=List_Unicom
 add address=240c:c001::/32 list=List_Unicom
+add address=240c:c017::/32 list=List_Unicom
 add address=240c:c018::/32 list=List_Unicom
 add address=240c:c02f::/32 list=List_Unicom
 add address=240c:c0a0::/31 list=List_Unicom
