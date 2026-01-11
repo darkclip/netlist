@@ -1062,6 +1062,7 @@ add address=240e:c:800::/37 list=List_Unicom
 add address=240e:c:1800::/37 list=List_Unicom
 add address=240e:4b:c000::/37 list=List_Unicom
 add address=240e:4c::/36 list=List_Unicom
+add address=240e:54:c003::/48 list=List_Unicom
 add address=240e:b1:8800::/37 list=List_Unicom
 add address=240e:b1:9800::/37 list=List_Unicom
 add address=240e:108:10f3::/48 list=List_Unicom
