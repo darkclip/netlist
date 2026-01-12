@@ -444,6 +444,7 @@ add address=116.85.96.0/19 list=List_Mobile
 add address=116.85.128.0/18 list=List_Mobile
 add address=116.85.192.0/19 list=List_Mobile
 add address=116.85.224.0/20 list=List_Mobile
+add address=116.90.84.0/22 list=List_Mobile
 add address=117.48.0.0/19 list=List_Mobile
 add address=117.48.92.0/22 list=List_Mobile
 add address=117.48.144.0/21 list=List_Mobile
