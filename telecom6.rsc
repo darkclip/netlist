@@ -2,7 +2,6 @@
 remove [find list=List_Telecom]
 
 add address=2001:c68::/32 list=List_Telecom
-add address=2001:dc7:2dff::/48 list=List_Telecom
 add address=2001:dc7:8888::/48 list=List_Telecom
 add address=2001:dc7:cd00::/48 list=List_Telecom
 add address=2001:dc7:cd02::/47 list=List_Telecom
@@ -319,8 +318,7 @@ add address=2c0f:f7a8:805f::/48 list=List_Telecom
 add address=2c0f:f7a8:8150::/48 list=List_Telecom
 add address=2c0f:f7a8:815f::/48 list=List_Telecom
 add address=2c0f:f7a8:8211::/48 list=List_Telecom
-add address=2c0f:f7a8:9010::/48 list=List_Telecom
 add address=2c0f:f7a8:9020::/48 list=List_Telecom
 add address=2c0f:f7a8:9041::/48 list=List_Telecom
-add address=2c0f:f7a8:9210::/47 list=List_Telecom
+add address=2c0f:f7a8:9211::/48 list=List_Telecom
 add address=2c0f:f7a8:9220::/48 list=List_Telecom
