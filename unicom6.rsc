@@ -337,6 +337,8 @@ add address=2401:1d40:100::/48 list=List_Unicom
 add address=2401:1d40:f21::/48 list=List_Unicom
 add address=2401:1d40:f22::/47 list=List_Unicom
 add address=2401:1d40:f24::/48 list=List_Unicom
+add address=2401:1d40:3100::/48 list=List_Unicom
+add address=2401:1d40:3f02::/48 list=List_Unicom
 add address=2401:71c0::/48 list=List_Unicom
 add address=2401:7660::/48 list=List_Unicom
 add address=2401:a140:1::/48 list=List_Unicom
