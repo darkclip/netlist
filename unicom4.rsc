@@ -2530,7 +2530,6 @@ add address=220.112.40.0/21 list=List_Unicom
 add address=220.112.50.0/23 list=List_Unicom
 add address=220.112.52.0/23 list=List_Unicom
 add address=220.112.54.0/24 list=List_Unicom
-add address=220.112.59.0/24 list=List_Unicom
 add address=220.112.194.0/24 list=List_Unicom
 add address=220.112.196.0/24 list=List_Unicom
 add address=220.112.200.0/21 list=List_Unicom
@@ -2561,6 +2560,7 @@ add address=220.200.192.0/18 list=List_Unicom
 add address=220.201.0.0/16 list=List_Unicom
 add address=220.202.0.0/16 list=List_Unicom
 add address=220.203.0.0/18 list=List_Unicom
+add address=220.203.128.0/18 list=List_Unicom
 add address=220.203.216.0/23 list=List_Unicom
 add address=220.203.220.0/22 list=List_Unicom
 add address=220.203.224.0/19 list=List_Unicom
