@@ -152,7 +152,7 @@ add address=2001:250:7410::/44 list=List_Unicom
 add address=2001:250:7420::/44 list=List_Unicom
 add address=2001:250:7430::/48 list=List_Unicom
 add address=2001:250:7801::/48 list=List_Unicom
-add address=2001:250:7802::/47 list=List_Unicom
+add address=2001:250:7803::/48 list=List_Unicom
 add address=2001:250:7804::/46 list=List_Unicom
 add address=2001:250:7808::/45 list=List_Unicom
 add address=2001:250:7810::/46 list=List_Unicom
@@ -312,7 +312,7 @@ add address=2001:da8:b011::/48 list=List_Unicom
 add address=2001:da8:b012::/48 list=List_Unicom
 add address=2001:da8:b800::/47 list=List_Unicom
 add address=2001:da8:b803::/48 list=List_Unicom
-add address=2001:da8:b804::/47 list=List_Unicom
+add address=2001:da8:b805::/48 list=List_Unicom
 add address=2001:da8:b807::/48 list=List_Unicom
 add address=2001:da8:b808::/47 list=List_Unicom
 add address=2001:da8:b80a::/48 list=List_Unicom
