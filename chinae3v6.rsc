@@ -54,6 +54,7 @@ add address=2001:250:900::/40 list=List_ChinaE3
 add address=2001:250:a00::/39 list=List_ChinaE3
 add address=2001:250:c00::/38 list=List_ChinaE3
 add address=2001:250:1000::/48 list=List_ChinaE3
+add address=2001:250:1017::/48 list=List_ChinaE3
 add address=2001:250:1023::/48 list=List_ChinaE3
 add address=2001:250:1036::/47 list=List_ChinaE3
 add address=2001:250:1038::/45 list=List_ChinaE3
