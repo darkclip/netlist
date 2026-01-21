@@ -743,7 +743,8 @@ add address=2401:fa00:59::/48 list=List_ChinaE2
 add address=2401:fa00:5a::/47 list=List_ChinaE2
 add address=2401:fa00:5c::/47 list=List_ChinaE2
 add address=2401:fa00:5e::/48 list=List_ChinaE2
-add address=2402:840:d000::/46 list=List_ChinaE2
+add address=2402:840:d001::/48 list=List_ChinaE2
+add address=2402:840:d002::/47 list=List_ChinaE2
 add address=2402:ea0::/40 list=List_ChinaE2
 add address=2402:1440::/32 list=List_ChinaE2
 add address=2402:1460::/32 list=List_ChinaE2
