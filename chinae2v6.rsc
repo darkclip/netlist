@@ -743,8 +743,7 @@ add address=2401:fa00:59::/48 list=List_ChinaE2
 add address=2401:fa00:5a::/47 list=List_ChinaE2
 add address=2401:fa00:5c::/47 list=List_ChinaE2
 add address=2401:fa00:5e::/48 list=List_ChinaE2
-add address=2402:840:d001::/48 list=List_ChinaE2
-add address=2402:840:d002::/47 list=List_ChinaE2
+add address=2402:840:d000::/46 list=List_ChinaE2
 add address=2402:ea0::/40 list=List_ChinaE2
 add address=2402:1440::/32 list=List_ChinaE2
 add address=2402:1460::/32 list=List_ChinaE2
@@ -802,6 +801,7 @@ add address=2402:93c0::/48 list=List_ChinaE2
 add address=2402:93c0:20::/48 list=List_ChinaE2
 add address=2402:93c0:100::/48 list=List_ChinaE2
 add address=2402:9a80::/32 list=List_ChinaE2
+add address=2402:a200::/32 list=List_ChinaE2
 add address=2402:b8c0:6::/48 list=List_ChinaE2
 add address=2402:b8c0:86::/48 list=List_ChinaE2
 add address=2402:b8c0:106::/48 list=List_ChinaE2
@@ -816,7 +816,6 @@ add address=2402:e7c0::/32 list=List_ChinaE2
 add address=2402:f000:2::/47 list=List_ChinaE2
 add address=2402:f000:4::/48 list=List_ChinaE2
 add address=2402:f8c0::/47 list=List_ChinaE2
-add address=2402:f8c0:5::/48 list=List_ChinaE2
 add address=2403:c80::/32 list=List_ChinaE2
 add address=2403:1ec0:1900::/48 list=List_ChinaE2
 add address=2403:4240::/32 list=List_ChinaE2
