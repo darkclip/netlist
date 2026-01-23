@@ -116,6 +116,7 @@ add address=2401:fa00:44::/46 list=List_Telecom
 add address=2401:fa00:48::/48 list=List_Telecom
 add address=2401:fa00:58::/48 list=List_Telecom
 add address=2401:fa00:5f::/48 list=List_Telecom
+add address=2402:840:d000::/48 list=List_Telecom
 add address=2402:840:e000::/46 list=List_Telecom
 add address=2402:840:f000::/38 list=List_Telecom
 add address=2402:c60::/48 list=List_Telecom
