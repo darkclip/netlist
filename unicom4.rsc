@@ -1535,6 +1535,7 @@ add address=202.14.238.0/24 list=List_Unicom
 add address=202.38.8.0/21 list=List_Unicom
 add address=202.38.152.0/23 list=List_Unicom
 add address=202.38.164.0/22 list=List_Unicom
+add address=202.41.243.0/24 list=List_Unicom
 add address=202.46.224.0/22 list=List_Unicom
 add address=202.46.228.0/23 list=List_Unicom
 add address=202.46.232.0/23 list=List_Unicom
