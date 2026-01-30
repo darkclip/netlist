@@ -167,6 +167,7 @@ add address=2001:250:782c::/48 list=List_Unicom
 add address=2001:250:a809::/48 list=List_Unicom
 add address=2001:250:c006::/48 list=List_Unicom
 add address=2001:250:fe01::/48 list=List_Unicom
+add address=2001:67c:1233::/48 list=List_Unicom
 add address=2001:da8:a0::/48 list=List_Unicom
 add address=2001:da8:a3::/48 list=List_Unicom
 add address=2001:da8:a4::/48 list=List_Unicom
@@ -358,7 +359,6 @@ add address=2402:7d80:240::/48 list=List_Unicom
 add address=2402:8cc0::/40 list=List_Unicom
 add address=2402:8cc0:200::/40 list=List_Unicom
 add address=2402:92c0::/48 list=List_Unicom
-add address=2402:a200::/32 list=List_Unicom
 add address=2402:d340::/32 list=List_Unicom
 add address=2402:db40:5100::/48 list=List_Unicom
 add address=2402:db40:5f00::/46 list=List_Unicom
