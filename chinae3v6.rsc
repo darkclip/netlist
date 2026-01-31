@@ -794,7 +794,6 @@ add address=2402:7d80:241::/48 list=List_ChinaE3
 add address=2402:93c0::/48 list=List_ChinaE3
 add address=2402:93c0:20::/48 list=List_ChinaE3
 add address=2402:93c0:100::/48 list=List_ChinaE3
-add address=2402:a200::/32 list=List_ChinaE3
 add address=2402:b8c0:6::/48 list=List_ChinaE3
 add address=2402:b8c0:86::/48 list=List_ChinaE3
 add address=2402:b8c0:106::/48 list=List_ChinaE3

@@ -167,7 +167,6 @@ add address=2001:250:782c::/48 list=List_Unicom
 add address=2001:250:a809::/48 list=List_Unicom
 add address=2001:250:c006::/48 list=List_Unicom
 add address=2001:250:fe01::/48 list=List_Unicom
-add address=2001:67c:1233::/48 list=List_Unicom
 add address=2001:da8:a0::/48 list=List_Unicom
 add address=2001:da8:a3::/48 list=List_Unicom
 add address=2001:da8:a4::/48 list=List_Unicom
@@ -336,8 +335,6 @@ add address=2401:1d40:100::/48 list=List_Unicom
 add address=2401:1d40:f21::/48 list=List_Unicom
 add address=2401:1d40:f22::/47 list=List_Unicom
 add address=2401:1d40:f24::/48 list=List_Unicom
-add address=2401:1d40:3100::/48 list=List_Unicom
-add address=2401:1d40:3f02::/48 list=List_Unicom
 add address=2401:71c0::/48 list=List_Unicom
 add address=2401:7660::/48 list=List_Unicom
 add address=2401:a140:1::/48 list=List_Unicom
@@ -359,6 +356,7 @@ add address=2402:7d80:240::/48 list=List_Unicom
 add address=2402:8cc0::/40 list=List_Unicom
 add address=2402:8cc0:200::/40 list=List_Unicom
 add address=2402:92c0::/48 list=List_Unicom
+add address=2402:a200::/32 list=List_Unicom
 add address=2402:d340::/32 list=List_Unicom
 add address=2402:db40:5100::/48 list=List_Unicom
 add address=2402:db40:5f00::/46 list=List_Unicom
@@ -393,6 +391,7 @@ add address=2403:4c80::/48 list=List_Unicom
 add address=2403:5c80::/48 list=List_Unicom
 add address=2403:6740::/48 list=List_Unicom
 add address=2403:8c00::/32 list=List_Unicom
+add address=2403:9b00:2000::/48 list=List_Unicom
 add address=2403:a100::/48 list=List_Unicom
 add address=2403:a200:a1ff::/48 list=List_Unicom
 add address=2403:a200:a2ff::/48 list=List_Unicom
@@ -616,6 +615,7 @@ add address=2408:8406:a980::/42 list=List_Unicom
 add address=2408:8406:b4c0::/42 list=List_Unicom
 add address=2408:8406:b500::/41 list=List_Unicom
 add address=2408:8406:b580::/42 list=List_Unicom
+add address=2408:8407:500::/43 list=List_Unicom
 add address=2408:8407:520::/44 list=List_Unicom
 add address=2408:8409::/40 list=List_Unicom
 add address=2408:8409:100::/41 list=List_Unicom
