@@ -2419,11 +2419,7 @@ add address=103.72.128.0/21 list=List_ChinaE3
 add address=103.72.173.0/24 list=List_ChinaE3
 add address=103.72.174.0/23 list=List_ChinaE3
 add address=103.72.180.0/22 list=List_ChinaE3
-add address=103.72.225.0/24 list=List_ChinaE3
-add address=103.72.226.0/23 list=List_ChinaE3
-add address=103.72.228.0/22 list=List_ChinaE3
-add address=103.72.232.0/21 list=List_ChinaE3
-add address=103.72.240.0/20 list=List_ChinaE3
+add address=103.72.224.0/19 list=List_ChinaE3
 add address=103.73.0.0/19 list=List_ChinaE3
 add address=103.73.49.0/24 list=List_ChinaE3
 add address=103.73.50.0/23 list=List_ChinaE3

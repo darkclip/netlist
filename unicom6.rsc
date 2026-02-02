@@ -151,7 +151,7 @@ add address=2001:250:7410::/44 list=List_Unicom
 add address=2001:250:7420::/44 list=List_Unicom
 add address=2001:250:7430::/48 list=List_Unicom
 add address=2001:250:7801::/48 list=List_Unicom
-add address=2001:250:7802::/48 list=List_Unicom
+add address=2001:250:7802::/47 list=List_Unicom
 add address=2001:250:7804::/46 list=List_Unicom
 add address=2001:250:7808::/45 list=List_Unicom
 add address=2001:250:7810::/46 list=List_Unicom
