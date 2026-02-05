@@ -1139,6 +1139,7 @@ add address=2408:4040::/26 list=List_ChinaE2
 add address=2408:4080::/25 list=List_ChinaE2
 add address=2408:4100::/24 list=List_ChinaE2
 add address=2408:4200::/23 list=List_ChinaE2
+add address=2408:8407:520::/44 list=List_ChinaE2
 add address=2409:2000::/31 list=List_ChinaE2
 add address=2409:2002::/32 list=List_ChinaE2
 add address=2409:2003::/47 list=List_ChinaE2
