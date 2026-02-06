@@ -107,7 +107,8 @@ add address=2401:b680::/32 list=List_Telecom
 add address=2401:be00::/48 list=List_Telecom
 add address=2401:d0e0:3::/48 list=List_Telecom
 add address=2401:fa00:40::/47 list=List_Telecom
-add address=2401:fa00:44::/46 list=List_Telecom
+add address=2401:fa00:44::/48 list=List_Telecom
+add address=2401:fa00:46::/47 list=List_Telecom
 add address=2401:fa00:48::/48 list=List_Telecom
 add address=2401:fa00:58::/48 list=List_Telecom
 add address=2401:fa00:5f::/48 list=List_Telecom
