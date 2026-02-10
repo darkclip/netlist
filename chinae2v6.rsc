@@ -64,7 +64,6 @@ add address=2001:250:1200::/39 list=List_ChinaE2
 add address=2001:250:1400::/38 list=List_ChinaE2
 add address=2001:250:1800::/38 list=List_ChinaE2
 add address=2001:250:1c0c::/48 list=List_ChinaE2
-add address=2001:250:1c11::/48 list=List_ChinaE2
 add address=2001:250:1c12::/47 list=List_ChinaE2
 add address=2001:250:1c14::/46 list=List_ChinaE2
 add address=2001:250:1c18::/45 list=List_ChinaE2
@@ -802,7 +801,6 @@ add address=2402:93c0::/48 list=List_ChinaE2
 add address=2402:93c0:20::/48 list=List_ChinaE2
 add address=2402:93c0:100::/48 list=List_ChinaE2
 add address=2402:9a80::/32 list=List_ChinaE2
-add address=2402:a200::/32 list=List_ChinaE2
 add address=2402:b8c0:6::/48 list=List_ChinaE2
 add address=2402:b8c0:86::/48 list=List_ChinaE2
 add address=2402:b8c0:106::/48 list=List_ChinaE2
