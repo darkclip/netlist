@@ -10,6 +10,7 @@ add address=2001:dc7:cd1a::/48 list=List_Telecom
 add address=2001:dd8:1::/48 list=List_Telecom
 add address=2001:4510:400::/40 list=List_Telecom
 add address=2400:5280:f803::/48 list=List_Telecom
+add address=2400:5a00::/32 list=List_Telecom
 add address=2400:6e60:1301::/48 list=List_Telecom
 add address=2400:75aa::/32 list=List_Telecom
 add address=2400:8200::/32 list=List_Telecom
