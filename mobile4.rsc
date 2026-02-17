@@ -260,7 +260,7 @@ add address=103.52.176.0/23 list=List_Mobile
 add address=103.53.124.0/22 list=List_Mobile
 add address=103.54.48.0/22 list=List_Mobile
 add address=103.56.184.0/22 list=List_Mobile
-add address=103.57.14.0/23 list=List_Mobile
+add address=103.57.12.0/23 list=List_Mobile
 add address=103.59.116.0/22 list=List_Mobile
 add address=103.59.148.0/22 list=List_Mobile
 add address=103.60.164.0/22 list=List_Mobile
