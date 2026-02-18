@@ -6023,7 +6023,7 @@ add address=125.98.120.0/23 list=List_ChinaE3
 add address=125.98.123.0/24 list=List_ChinaE3
 add address=125.98.124.0/22 list=List_ChinaE3
 add address=125.169.0.0/16 list=List_ChinaE3
-add address=125.208.32.0/24 list=List_ChinaE3
+add address=125.208.32.0/23 list=List_ChinaE3
 add address=125.208.34.0/24 list=List_ChinaE3
 add address=125.208.36.0/22 list=List_ChinaE3
 add address=125.208.40.0/24 list=List_ChinaE3

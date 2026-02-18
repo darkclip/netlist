@@ -797,7 +797,6 @@ add address=124.251.244.0/22 list=List_Mobile
 add address=124.251.248.0/22 list=List_Mobile
 add address=124.251.253.0/24 list=List_Mobile
 add address=124.251.254.0/23 list=List_Mobile
-add address=125.208.33.0/24 list=List_Mobile
 add address=125.208.35.0/24 list=List_Mobile
 add address=125.208.41.0/24 list=List_Mobile
 add address=125.208.42.0/23 list=List_Mobile
