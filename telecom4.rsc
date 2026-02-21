@@ -280,8 +280,7 @@ add address=45.124.124.0/22 list=List_Telecom
 add address=45.126.112.0/22 list=List_Telecom
 add address=45.126.120.0/22 list=List_Telecom
 add address=45.127.144.0/21 list=List_Telecom
-add address=45.162.136.0/24 list=List_Telecom
-add address=45.170.160.0/24 list=List_Telecom
+add address=45.150.236.0/23 list=List_Telecom
 add address=45.195.6.0/24 list=List_Telecom
 add address=45.248.108.0/24 list=List_Telecom
 add address=45.250.40.0/22 list=List_Telecom

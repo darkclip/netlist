@@ -6056,6 +6056,8 @@ add address=124.42.88.0/21 list=List_ChinaE2
 add address=124.42.96.0/19 list=List_ChinaE2
 add address=124.42.128.0/22 list=List_ChinaE2
 add address=124.42.136.0/22 list=List_ChinaE2
+add address=124.42.144.0/22 list=List_ChinaE2
+add address=124.42.156.0/22 list=List_ChinaE2
 add address=124.47.0.0/19 list=List_ChinaE2
 add address=124.47.32.0/20 list=List_ChinaE2
 add address=124.47.48.0/21 list=List_ChinaE2
