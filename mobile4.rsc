@@ -638,7 +638,10 @@ add address=120.192.0.0/10 list=List_Mobile
 add address=121.46.16.0/20 list=List_Mobile
 add address=121.46.192.0/21 list=List_Mobile
 add address=121.46.200.0/22 list=List_Mobile
-add address=121.52.208.0/20 list=List_Mobile
+add address=121.52.208.0/21 list=List_Mobile
+add address=121.52.217.0/24 list=List_Mobile
+add address=121.52.218.0/23 list=List_Mobile
+add address=121.52.220.0/22 list=List_Mobile
 add address=121.70.0.0/17 list=List_Mobile
 add address=121.79.128.0/20 list=List_Mobile
 add address=121.79.144.0/22 list=List_Mobile
