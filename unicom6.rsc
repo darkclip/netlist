@@ -307,7 +307,8 @@ add address=2001:da8:aaa9::/48 list=List_Unicom
 add address=2001:da8:b000::/45 list=List_Unicom
 add address=2001:da8:b008::/48 list=List_Unicom
 add address=2001:da8:b00a::/47 list=List_Unicom
-add address=2001:da8:b00c::/46 list=List_Unicom
+add address=2001:da8:b00d::/48 list=List_Unicom
+add address=2001:da8:b00e::/47 list=List_Unicom
 add address=2001:da8:b011::/48 list=List_Unicom
 add address=2001:da8:b012::/48 list=List_Unicom
 add address=2001:da8:b800::/47 list=List_Unicom

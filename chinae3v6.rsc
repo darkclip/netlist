@@ -432,6 +432,7 @@ add address=2001:da8:aac0::/42 list=List_ChinaE3
 add address=2001:da8:ab00::/40 list=List_ChinaE3
 add address=2001:da8:ac00::/38 list=List_ChinaE3
 add address=2001:da8:b009::/48 list=List_ChinaE3
+add address=2001:da8:b00c::/48 list=List_ChinaE3
 add address=2001:da8:b010::/48 list=List_ChinaE3
 add address=2001:da8:b013::/48 list=List_ChinaE3
 add address=2001:da8:b014::/46 list=List_ChinaE3
