@@ -3463,7 +3463,9 @@ add address=211.146.32.0/22 list=List_Telecom
 add address=211.146.36.0/23 list=List_Telecom
 add address=211.147.0.0/22 list=List_Telecom
 add address=211.147.12.0/22 list=List_Telecom
-add address=211.147.64.0/24 list=List_Telecom
+add address=211.147.64.0/22 list=List_Telecom
+add address=211.147.69.0/24 list=List_Telecom
+add address=211.147.70.0/24 list=List_Telecom
 add address=211.147.208.0/20 list=List_Telecom
 add address=211.147.224.0/21 list=List_Telecom
 add address=211.147.232.0/22 list=List_Telecom
