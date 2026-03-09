@@ -2453,7 +2453,7 @@ add address=154.72.44.0/24 list=List_Telecom
 add address=154.72.47.0/24 list=List_Telecom
 add address=154.84.180.0/24 list=List_Telecom
 add address=155.126.176.0/23 list=List_Telecom
-add address=156.107.160.0/24 list=List_Telecom
+add address=156.107.160.0/23 list=List_Telecom
 add address=156.107.170.0/24 list=List_Telecom
 add address=156.107.179.0/24 list=List_Telecom
 add address=156.107.181.0/24 list=List_Telecom

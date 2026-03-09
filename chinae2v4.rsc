@@ -6475,6 +6475,7 @@ add address=156.59.202.0/23 list=List_ChinaE2
 add address=156.59.204.0/23 list=List_ChinaE2
 add address=156.59.206.0/24 list=List_ChinaE2
 add address=156.59.216.0/24 list=List_ChinaE2
+add address=156.107.160.0/24 list=List_ChinaE2
 add address=156.154.62.0/23 list=List_ChinaE2
 add address=156.230.11.0/24 list=List_ChinaE2
 add address=156.231.163.0/24 list=List_ChinaE2
