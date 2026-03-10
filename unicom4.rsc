@@ -2446,7 +2446,9 @@ add address=202.189.16.0/20 list=List_Unicom
 add address=202.189.32.0/20 list=List_Unicom
 add address=202.189.48.0/22 list=List_Unicom
 add address=202.193.0.0/20 list=List_Unicom
-add address=202.193.24.0/21 list=List_Unicom
+add address=202.193.25.0/24 list=List_Unicom
+add address=202.193.26.0/23 list=List_Unicom
+add address=202.193.28.0/22 list=List_Unicom
 add address=202.193.48.0/20 list=List_Unicom
 add address=202.193.64.0/20 list=List_Unicom
 add address=202.193.80.0/23 list=List_Unicom

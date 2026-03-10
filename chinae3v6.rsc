@@ -220,6 +220,7 @@ add address=2001:678:53c::/48 list=List_ChinaE3
 add address=2001:678:10d0::/48 list=List_ChinaE3
 add address=2001:678:114c::/48 list=List_ChinaE3
 add address=2001:67c:ebc::/48 list=List_ChinaE3
+add address=2001:67c:1233::/48 list=List_ChinaE3
 add address=2001:7fa:5::/48 list=List_ChinaE3
 add address=2001:cc0::/32 list=List_ChinaE3
 add address=2001:da8::/41 list=List_ChinaE3
