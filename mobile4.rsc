@@ -450,6 +450,7 @@ add address=115.182.208.0/21 list=List_Mobile
 add address=115.182.220.0/22 list=List_Mobile
 add address=115.182.224.0/20 list=List_Mobile
 add address=116.63.0.0/19 list=List_Mobile
+add address=116.85.0.0/24 list=List_Mobile
 add address=116.85.4.0/22 list=List_Mobile
 add address=116.85.8.0/22 list=List_Mobile
 add address=116.85.12.0/24 list=List_Mobile
