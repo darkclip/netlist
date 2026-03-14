@@ -399,6 +399,7 @@ add address=2403:a200:a2ff::/48 list=List_Unicom
 add address=2403:a200:a3ff::/48 list=List_Unicom
 add address=2403:ac00::/32 list=List_Unicom
 add address=2403:d400::/32 list=List_Unicom
+add address=2403:e7c0:3::/48 list=List_Unicom
 add address=2404:4dc0::/32 list=List_Unicom
 add address=2404:6500:dcb3::/48 list=List_Unicom
 add address=2404:7600:101::/48 list=List_Unicom
