@@ -1063,7 +1063,8 @@ add address=103.253.60.0/22 list=List_Unicom
 add address=103.254.77.0/24 list=List_Unicom
 add address=103.254.78.0/24 list=List_Unicom
 add address=103.255.92.0/22 list=List_Unicom
-add address=103.255.203.0/24 list=List_Unicom
+add address=103.255.201.0/24 list=List_Unicom
+add address=103.255.202.0/23 list=List_Unicom
 add address=106.3.96.0/22 list=List_Unicom
 add address=106.3.128.0/19 list=List_Unicom
 add address=106.3.208.0/21 list=List_Unicom
