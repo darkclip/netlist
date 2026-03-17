@@ -2436,7 +2436,7 @@ add address=146.196.116.0/22 list=List_Telecom
 add address=146.222.79.0/24 list=List_Telecom
 add address=146.222.81.0/24 list=List_Telecom
 add address=146.222.94.0/24 list=List_Telecom
-add address=147.78.132.0/24 list=List_Telecom
+add address=147.78.132.0/23 list=List_Telecom
 add address=147.78.134.0/24 list=List_Telecom
 add address=150.129.252.0/22 list=List_Telecom
 add address=150.138.0.0/15 list=List_Telecom
