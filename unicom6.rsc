@@ -288,7 +288,8 @@ add address=2001:da8:802c::/46 list=List_Unicom
 add address=2001:da8:8030::/48 list=List_Unicom
 add address=2001:da8:8032::/47 list=List_Unicom
 add address=2001:da8:9000::/45 list=List_Unicom
-add address=2001:da8:9008::/46 list=List_Unicom
+add address=2001:da8:9008::/48 list=List_Unicom
+add address=2001:da8:900a::/47 list=List_Unicom
 add address=2001:da8:900c::/48 list=List_Unicom
 add address=2001:da8:900e::/47 list=List_Unicom
 add address=2001:da8:9010::/48 list=List_Unicom

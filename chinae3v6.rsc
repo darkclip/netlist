@@ -400,6 +400,7 @@ add address=2001:da8:8100::/40 list=List_ChinaE3
 add address=2001:da8:8200::/39 list=List_ChinaE3
 add address=2001:da8:8400::/38 list=List_ChinaE3
 add address=2001:da8:8800::/37 list=List_ChinaE3
+add address=2001:da8:9009::/48 list=List_ChinaE3
 add address=2001:da8:900d::/48 list=List_ChinaE3
 add address=2001:da8:9011::/48 list=List_ChinaE3
 add address=2001:da8:901c::/47 list=List_ChinaE3
