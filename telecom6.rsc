@@ -183,6 +183,7 @@ add address=2404:7600:1000::/36 list=List_Telecom
 add address=2404:7600:2000::/35 list=List_Telecom
 add address=2404:7600:4000::/34 list=List_Telecom
 add address=2404:7600:8000::/33 list=List_Telecom
+add address=2404:7cc0:7f04::/47 list=List_Telecom
 add address=2404:e8c0::/32 list=List_Telecom
 add address=2405:1480:1000::/48 list=List_Telecom
 add address=2405:1480:2000::/48 list=List_Telecom
