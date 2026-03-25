@@ -1318,6 +1318,7 @@ add address=2602:feda:1d1::/48 list=List_ChinaE3
 add address=2602:feda:1df::/48 list=List_ChinaE3
 add address=2602:feda:2d0::/44 list=List_ChinaE3
 add address=2602:feda:2f0::/44 list=List_ChinaE3
+add address=2605:9d80:8081::/48 list=List_ChinaE3
 add address=2a01:f100:1f8::/48 list=List_ChinaE3
 add address=2a04:3e00:1002::/48 list=List_ChinaE3
 add address=2a05:1087::/32 list=List_ChinaE3
