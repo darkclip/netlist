@@ -3675,7 +3675,11 @@ add address=219.216.0.0/17 list=List_Telecom
 add address=219.216.128.0/18 list=List_Telecom
 add address=219.216.192.0/20 list=List_Telecom
 add address=219.216.216.0/21 list=List_Telecom
-add address=219.216.224.0/19 list=List_Telecom
+add address=219.216.224.0/21 list=List_Telecom
+add address=219.216.232.0/22 list=List_Telecom
+add address=219.216.236.0/23 list=List_Telecom
+add address=219.216.238.0/24 list=List_Telecom
+add address=219.216.240.0/20 list=List_Telecom
 add address=219.217.0.0/18 list=List_Telecom
 add address=219.217.64.0/22 list=List_Telecom
 add address=219.217.72.0/21 list=List_Telecom
