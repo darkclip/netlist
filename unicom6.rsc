@@ -352,6 +352,7 @@ add address=2401:cb80::/32 list=List_Unicom
 add address=2401:cc00::/32 list=List_Unicom
 add address=2401:ce00::/32 list=List_Unicom
 add address=2401:ec00::/32 list=List_Unicom
+add address=2402:18a0::/32 list=List_Unicom
 add address=2402:2000::/32 list=List_Unicom
 add address=2402:5ec0:1000::/39 list=List_Unicom
 add address=2402:7d80:240::/48 list=List_Unicom
