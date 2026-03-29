@@ -862,7 +862,7 @@ add address=103.73.144.0/22 list=List_Telecom
 add address=103.73.204.0/22 list=List_Telecom
 add address=103.74.24.0/21 list=List_Telecom
 add address=103.74.48.0/22 list=List_Telecom
-add address=103.75.107.0/24 list=List_Telecom
+add address=103.75.104.0/22 list=List_Telecom
 add address=103.76.220.0/23 list=List_Telecom
 add address=103.76.224.0/22 list=List_Telecom
 add address=103.77.28.0/22 list=List_Telecom
