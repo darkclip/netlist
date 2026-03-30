@@ -639,7 +639,6 @@ add address=240a:4225:1000::/44 list=List_Telecom
 add address=240a:4230::/31 list=List_Telecom
 add address=240a:4242::/31 list=List_Telecom
 add address=240a:6001::/48 list=List_Telecom
-add address=240a:c0c0::/32 list=List_Telecom
 add address=240c:4000::/25 list=List_Telecom
 add address=240c:4080::/28 list=List_Telecom
 add address=240c:4090::/29 list=List_Telecom

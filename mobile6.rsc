@@ -114,15 +114,4 @@ add address=240a:42c0::/27 list=List_Mobile
 add address=240a:42e0::/28 list=List_Mobile
 add address=240a:42f0::/29 list=List_Mobile
 add address=240a:42f8::/30 list=List_Mobile
-add address=240a:c000::/25 list=List_Mobile
-add address=240a:c080::/26 list=List_Mobile
-add address=240a:c0c1::/32 list=List_Mobile
-add address=240a:c0c2::/31 list=List_Mobile
-add address=240a:c0c4::/30 list=List_Mobile
-add address=240a:c0c8::/29 list=List_Mobile
-add address=240a:c0d0::/28 list=List_Mobile
-add address=240a:c0e0::/27 list=List_Mobile
-add address=240a:c100::/24 list=List_Mobile
-add address=240a:c200::/23 list=List_Mobile
-add address=240a:c400::/22 list=List_Mobile
-add address=240a:c800::/21 list=List_Mobile
+add address=240a:c000::/20 list=List_Mobile
