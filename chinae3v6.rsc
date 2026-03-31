@@ -843,6 +843,7 @@ add address=2402:3180::/46 list=List_ChinaE3
 add address=2402:3180:8000::/33 list=List_ChinaE3
 add address=2402:33e0::/32 list=List_ChinaE3
 add address=2402:3f80:1400::/40 list=List_ChinaE3
+add address=2402:4060:8888::/48 list=List_ChinaE3
 add address=2402:4b80::/32 list=List_ChinaE3
 add address=2402:4e00::/36 list=List_ChinaE3
 add address=2402:4e00:1000::/37 list=List_ChinaE3

@@ -1047,6 +1047,7 @@ add address=240a:2001:1900::/40 list=List_Unicom
 add address=240a:2001:1a00::/39 list=List_Unicom
 add address=240a:2001:1c00::/38 list=List_Unicom
 add address=240a:a000::/20 list=List_Unicom
+add address=240a:c0c0::/32 list=List_Unicom
 add address=240b:e001::/32 list=List_Unicom
 add address=240b:e002::/31 list=List_Unicom
 add address=240b:e004::/30 list=List_Unicom
