@@ -201,14 +201,16 @@ add address=2001:250:7410::/44 list=List_Telecom
 add address=2001:250:7420::/44 list=List_Telecom
 add address=2001:250:7430::/48 list=List_Telecom
 add address=2001:250:7801::/48 list=List_Telecom
-add address=2001:250:7802::/47 list=List_Telecom
+add address=2001:250:7802::/48 list=List_Telecom
 add address=2001:250:7804::/46 list=List_Telecom
 add address=2001:250:7808::/45 list=List_Telecom
 add address=2001:250:7810::/46 list=List_Telecom
 add address=2001:250:7814::/47 list=List_Telecom
 add address=2001:250:7817::/48 list=List_Telecom
 add address=2001:250:7818::/45 list=List_Telecom
-add address=2001:250:7820::/45 list=List_Telecom
+add address=2001:250:7820::/46 list=List_Telecom
+add address=2001:250:7824::/48 list=List_Telecom
+add address=2001:250:7826::/48 list=List_Telecom
 add address=2001:250:7828::/47 list=List_Telecom
 add address=2001:250:782a::/48 list=List_Telecom
 add address=2001:250:782c::/48 list=List_Telecom
@@ -336,9 +338,7 @@ add address=2001:da8:b803::/48 list=List_Telecom
 add address=2001:da8:b804::/47 list=List_Telecom
 add address=2001:da8:b807::/48 list=List_Telecom
 add address=2001:da8:b808::/47 list=List_Telecom
-add address=2001:da8:b80a::/48 list=List_Telecom
 add address=2001:da8:b80d::/48 list=List_Telecom
-add address=2001:da8:b80e::/48 list=List_Telecom
 add address=2001:da8:b813::/48 list=List_Telecom
 add address=2001:da8:b81c::/48 list=List_Telecom
 add address=2001:da8:c000::/45 list=List_Telecom
@@ -578,6 +578,7 @@ add address=2403:a200:a2ff::/48 list=List_Telecom
 add address=2403:a200:a3ff::/48 list=List_Telecom
 add address=2403:c980::/32 list=List_Telecom
 add address=2403:f4c0::/48 list=List_Telecom
+add address=2404:bc0:4620::/44 list=List_Telecom
 add address=2404:1c80::/32 list=List_Telecom
 add address=2404:3700::/48 list=List_Telecom
 add address=2404:6380::/48 list=List_Telecom
@@ -636,7 +637,6 @@ add address=2406:cf00::/48 list=List_Telecom
 add address=2406:cf00:1000::/43 list=List_Telecom
 add address=2406:d440:100::/44 list=List_Telecom
 add address=2406:d440:210::/44 list=List_Telecom
-add address=2406:d440:310::/44 list=List_Telecom
 add address=2406:d440:ff00::/48 list=List_Telecom
 add address=2406:e3c0::/36 list=List_Telecom
 add address=2406:e3c0:1000::/37 list=List_Telecom
@@ -691,6 +691,7 @@ add address=240a:4224:c000::/44 list=List_Telecom
 add address=240a:4224:d000::/44 list=List_Telecom
 add address=240a:4224:e000::/44 list=List_Telecom
 add address=240a:4225:1000::/44 list=List_Telecom
+add address=240a:4225:3000::/44 list=List_Telecom
 add address=240a:4230::/31 list=List_Telecom
 add address=240a:4242::/31 list=List_Telecom
 add address=240a:6001::/48 list=List_Telecom
