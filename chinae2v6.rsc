@@ -335,7 +335,6 @@ add address=2001:250:7480::/41 list=List_ChinaE2
 add address=2001:250:7500::/40 list=List_ChinaE2
 add address=2001:250:7600::/39 list=List_ChinaE2
 add address=2001:250:7800::/48 list=List_ChinaE2
-add address=2001:250:7803::/48 list=List_ChinaE2
 add address=2001:250:7816::/48 list=List_ChinaE2
 add address=2001:250:7825::/48 list=List_ChinaE2
 add address=2001:250:7827::/48 list=List_ChinaE2
