@@ -2658,7 +2658,14 @@ add address=211.144.40.0/21 list=List_Unicom
 add address=211.144.48.0/20 list=List_Unicom
 add address=211.144.96.0/23 list=List_Unicom
 add address=211.144.100.0/24 list=List_Unicom
-add address=211.144.128.0/19 list=List_Unicom
+add address=211.144.128.0/21 list=List_Unicom
+add address=211.144.136.0/22 list=List_Unicom
+add address=211.144.140.0/23 list=List_Unicom
+add address=211.144.142.0/24 list=List_Unicom
+add address=211.144.144.0/21 list=List_Unicom
+add address=211.144.152.0/22 list=List_Unicom
+add address=211.144.156.0/23 list=List_Unicom
+add address=211.144.158.0/24 list=List_Unicom
 add address=211.144.192.0/20 list=List_Unicom
 add address=211.144.224.0/19 list=List_Unicom
 add address=211.145.0.0/18 list=List_Unicom

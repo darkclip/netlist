@@ -714,9 +714,9 @@ add address=2001:da8:b200::/39 list=List_ChinaE3
 add address=2001:da8:b400::/38 list=List_ChinaE3
 add address=2001:da8:b802::/48 list=List_ChinaE3
 add address=2001:da8:b806::/48 list=List_ChinaE3
-add address=2001:da8:b80b::/48 list=List_ChinaE3
+add address=2001:da8:b80a::/47 list=List_ChinaE3
 add address=2001:da8:b80c::/48 list=List_ChinaE3
-add address=2001:da8:b80f::/48 list=List_ChinaE3
+add address=2001:da8:b80e::/47 list=List_ChinaE3
 add address=2001:da8:b810::/47 list=List_ChinaE3
 add address=2001:da8:b812::/48 list=List_ChinaE3
 add address=2001:da8:b814::/46 list=List_ChinaE3
