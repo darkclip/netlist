@@ -92,7 +92,6 @@ add address=2001:250:c2e::/48 list=List_ChinaE3
 add address=2001:250:c38::/47 list=List_ChinaE3
 add address=2001:250:c3a::/48 list=List_ChinaE3
 add address=2001:250:c3c::/47 list=List_ChinaE3
-add address=2001:250:c3f::/48 list=List_ChinaE3
 add address=2001:250:c40::/42 list=List_ChinaE3
 add address=2001:250:c80::/41 list=List_ChinaE3
 add address=2001:250:d00::/40 list=List_ChinaE3
@@ -151,7 +150,6 @@ add address=2001:250:3600::/39 list=List_ChinaE3
 add address=2001:250:3804::/47 list=List_ChinaE3
 add address=2001:250:3807::/48 list=List_ChinaE3
 add address=2001:250:3812::/48 list=List_ChinaE3
-add address=2001:250:3814::/48 list=List_ChinaE3
 add address=2001:250:3819::/48 list=List_ChinaE3
 add address=2001:250:381a::/47 list=List_ChinaE3
 add address=2001:250:381c::/46 list=List_ChinaE3
@@ -336,6 +334,8 @@ add address=2001:250:7500::/40 list=List_ChinaE3
 add address=2001:250:7600::/39 list=List_ChinaE3
 add address=2001:250:7800::/48 list=List_ChinaE3
 add address=2001:250:7816::/48 list=List_ChinaE3
+add address=2001:250:7825::/48 list=List_ChinaE3
+add address=2001:250:7827::/48 list=List_ChinaE3
 add address=2001:250:782b::/48 list=List_ChinaE3
 add address=2001:250:782d::/48 list=List_ChinaE3
 add address=2001:250:782e::/47 list=List_ChinaE3
@@ -712,9 +712,9 @@ add address=2001:da8:b200::/39 list=List_ChinaE3
 add address=2001:da8:b400::/38 list=List_ChinaE3
 add address=2001:da8:b802::/48 list=List_ChinaE3
 add address=2001:da8:b806::/48 list=List_ChinaE3
-add address=2001:da8:b80b::/48 list=List_ChinaE3
+add address=2001:da8:b80a::/47 list=List_ChinaE3
 add address=2001:da8:b80c::/48 list=List_ChinaE3
-add address=2001:da8:b80f::/48 list=List_ChinaE3
+add address=2001:da8:b80e::/47 list=List_ChinaE3
 add address=2001:da8:b810::/47 list=List_ChinaE3
 add address=2001:da8:b812::/48 list=List_ChinaE3
 add address=2001:da8:b814::/46 list=List_ChinaE3
@@ -952,7 +952,6 @@ add address=2401:34a1:1000::/36 list=List_ChinaE3
 add address=2401:34a1:2000::/35 list=List_ChinaE3
 add address=2401:34a1:4000::/34 list=List_ChinaE3
 add address=2401:34a1:8000::/33 list=List_ChinaE3
-add address=2401:7700::/32 list=List_ChinaE3
 add address=2401:8d00::/47 list=List_ChinaE3
 add address=2401:8d00:3::/48 list=List_ChinaE3
 add address=2401:8d00:4::/48 list=List_ChinaE3
