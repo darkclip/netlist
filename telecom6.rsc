@@ -664,7 +664,7 @@ add address=240a:4080:8000::/35 list=List_Telecom
 add address=240a:4084:2000::/35 list=List_Telecom
 add address=240a:4088:a000::/35 list=List_Telecom
 add address=240a:408c:2000::/35 list=List_Telecom
-add address=240a:4090:8000::/35 list=List_Telecom
+add address=240a:4090:8000::/34 list=List_Telecom
 add address=240a:4093::/35 list=List_Telecom
 add address=240a:4094:2000::/35 list=List_Telecom
 add address=240a:409c:2000::/35 list=List_Telecom

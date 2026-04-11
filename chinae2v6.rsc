@@ -1392,6 +1392,7 @@ add address=240a:4090:5000::/39 list=List_ChinaE2
 add address=240a:4090:5200::/40 list=List_ChinaE2
 add address=240a:4090:7000::/39 list=List_ChinaE2
 add address=240a:4090:7200::/40 list=List_ChinaE2
+add address=240a:4090:8000::/35 list=List_ChinaE2
 add address=240a:40b0:83a::/48 list=List_ChinaE2
 add address=240a:40b0:283a::/48 list=List_ChinaE2
 add address=240a:40b0:483a::/48 list=List_ChinaE2
