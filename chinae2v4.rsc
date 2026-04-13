@@ -750,7 +750,6 @@ add address=43.250.14.192/26 list=List_ChinaE2
 add address=43.250.15.0/24 list=List_ChinaE2
 add address=43.250.16.0/21 list=List_ChinaE2
 add address=43.250.28.0/22 list=List_ChinaE2
-add address=43.250.32.0/23 list=List_ChinaE2
 add address=43.250.36.0/22 list=List_ChinaE2
 add address=43.250.100.0/22 list=List_ChinaE2
 add address=43.250.107.0/24 list=List_ChinaE2
@@ -3480,7 +3479,6 @@ add address=103.246.8.0/21 list=List_ChinaE2
 add address=103.246.120.0/21 list=List_ChinaE2
 add address=103.246.132.0/22 list=List_ChinaE2
 add address=103.247.172.0/22 list=List_ChinaE2
-add address=103.247.176.0/22 list=List_ChinaE2
 add address=103.247.200.0/22 list=List_ChinaE2
 add address=103.247.212.0/22 list=List_ChinaE2
 add address=103.248.0.0/24 list=List_ChinaE2
