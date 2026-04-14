@@ -1096,6 +1096,7 @@ add address=2402:b8c0:6::/48 list=List_ChinaE2
 add address=2402:b8c0:86::/48 list=List_ChinaE2
 add address=2402:b8c0:106::/48 list=List_ChinaE2
 add address=2402:b8c0:186::/48 list=List_ChinaE2
+add address=2402:d340::/32 list=List_ChinaE2
 add address=2402:e480::/32 list=List_ChinaE2
 add address=2402:e7c0::/32 list=List_ChinaE2
 add address=2402:e880::/48 list=List_ChinaE2
