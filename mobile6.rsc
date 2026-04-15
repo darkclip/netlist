@@ -1,7 +1,6 @@
 /ipv6 firewall address-list
 remove [find list=List_Mobile]
 
-add address=2001:dc7:fffb::/48 list=List_Mobile
 add address=2400:9020:f012::/47 list=List_Mobile
 add address=2400:a860:1::/48 list=List_Mobile
 add address=2400:a860:2::/47 list=List_Mobile
