@@ -1194,6 +1194,7 @@ add address=110.173.8.0/21 list=List_Telecom
 add address=110.173.16.0/20 list=List_Telecom
 add address=110.173.32.0/20 list=List_Telecom
 add address=110.176.0.0/12 list=List_Telecom
+add address=111.31.25.0/24 list=List_Telecom
 add address=111.72.0.0/13 list=List_Telecom
 add address=111.112.0.0/15 list=List_Telecom
 add address=111.120.0.0/14 list=List_Telecom
@@ -1274,7 +1275,12 @@ add address=113.240.0.0/13 list=List_Telecom
 add address=113.248.0.0/14 list=List_Telecom
 add address=114.28.68.0/22 list=List_Telecom
 add address=114.28.72.0/21 list=List_Telecom
-add address=114.28.128.0/18 list=List_Telecom
+add address=114.28.128.0/22 list=List_Telecom
+add address=114.28.132.0/23 list=List_Telecom
+add address=114.28.135.0/24 list=List_Telecom
+add address=114.28.136.0/21 list=List_Telecom
+add address=114.28.144.0/20 list=List_Telecom
+add address=114.28.160.0/19 list=List_Telecom
 add address=114.60.0.0/14 list=List_Telecom
 add address=114.64.0.0/16 list=List_Telecom
 add address=114.66.0.0/18 list=List_Telecom
@@ -1555,6 +1561,7 @@ add address=117.124.240.0/22 list=List_Telecom
 add address=117.124.244.0/24 list=List_Telecom
 add address=117.124.246.0/24 list=List_Telecom
 add address=117.126.0.0/16 list=List_Telecom
+add address=117.131.200.0/24 list=List_Telecom
 add address=118.25.0.0/17 list=List_Telecom
 add address=118.25.128.0/18 list=List_Telecom
 add address=118.25.192.0/20 list=List_Telecom
@@ -1699,7 +1706,6 @@ add address=118.244.0.0/21 list=List_Telecom
 add address=118.244.196.0/22 list=List_Telecom
 add address=118.244.200.0/21 list=List_Telecom
 add address=118.244.208.0/22 list=List_Telecom
-add address=118.244.212.0/24 list=List_Telecom
 add address=118.244.216.0/21 list=List_Telecom
 add address=118.244.224.0/23 list=List_Telecom
 add address=118.244.226.0/24 list=List_Telecom
@@ -1877,11 +1883,7 @@ add address=120.133.28.0/23 list=List_Telecom
 add address=120.133.30.0/24 list=List_Telecom
 add address=120.133.32.0/20 list=List_Telecom
 add address=120.133.51.0/24 list=List_Telecom
-add address=120.133.64.0/24 list=List_Telecom
-add address=120.133.66.0/23 list=List_Telecom
-add address=120.133.68.0/22 list=List_Telecom
-add address=120.133.72.0/21 list=List_Telecom
-add address=120.133.80.0/20 list=List_Telecom
+add address=120.133.64.0/19 list=List_Telecom
 add address=120.133.128.0/18 list=List_Telecom
 add address=120.133.192.0/19 list=List_Telecom
 add address=120.133.228.0/22 list=List_Telecom
