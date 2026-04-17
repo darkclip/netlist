@@ -127,6 +127,7 @@ add address=2400:cb80:e30::/44 list=List_China
 add address=2400:cb80:e40::/44 list=List_China
 add address=2400:da00::/32 list=List_China
 add address=2400:dd00::/28 list=List_China
+add address=2400:e680::/32 list=List_China
 add address=2400:ee00::/32 list=List_China
 add address=2400:f6e0::/32 list=List_China
 add address=2400:f720::/32 list=List_China
