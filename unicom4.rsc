@@ -1100,8 +1100,7 @@ add address=114.213.176.0/23 list=List_Unicom
 add address=114.213.178.0/24 list=List_Unicom
 add address=114.213.192.0/18 list=List_Unicom
 add address=114.214.0.0/19 list=List_Unicom
-add address=114.214.64.0/20 list=List_Unicom
-add address=114.214.80.0/21 list=List_Unicom
+add address=114.214.64.0/19 list=List_Unicom
 add address=114.214.96.0/20 list=List_Unicom
 add address=114.214.124.0/22 list=List_Unicom
 add address=114.214.128.0/17 list=List_Unicom
@@ -2301,6 +2300,7 @@ add address=210.44.32.0/20 list=List_Unicom
 add address=210.44.64.0/19 list=List_Unicom
 add address=210.44.112.0/20 list=List_Unicom
 add address=210.44.128.0/18 list=List_Unicom
+add address=210.44.192.0/20 list=List_Unicom
 add address=210.44.232.0/21 list=List_Unicom
 add address=210.44.244.0/22 list=List_Unicom
 add address=210.44.248.0/21 list=List_Unicom

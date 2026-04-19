@@ -948,7 +948,7 @@ add address=210.74.0.0/22 list=List_Mobile
 add address=210.75.239.0/24 list=List_Mobile
 add address=210.77.179.0/24 list=List_Mobile
 add address=210.77.181.0/24 list=List_Mobile
-add address=210.77.184.0/23 list=List_Mobile
+add address=210.77.184.0/24 list=List_Mobile
 add address=210.77.189.0/24 list=List_Mobile
 add address=210.77.191.0/24 list=List_Mobile
 add address=211.98.0.0/16 list=List_Mobile
