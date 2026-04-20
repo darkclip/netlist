@@ -266,7 +266,11 @@ add address=58.59.138.0/24 list=List_Unicom
 add address=58.68.236.0/24 list=List_Unicom
 add address=58.68.247.0/24 list=List_Unicom
 add address=58.83.17.0/24 list=List_Unicom
-add address=58.83.128.0/19 list=List_Unicom
+add address=58.83.128.0/21 list=List_Unicom
+add address=58.83.136.0/22 list=List_Unicom
+add address=58.83.141.0/24 list=List_Unicom
+add address=58.83.142.0/23 list=List_Unicom
+add address=58.83.144.0/20 list=List_Unicom
 add address=58.83.162.0/23 list=List_Unicom
 add address=58.83.164.0/22 list=List_Unicom
 add address=58.83.168.0/21 list=List_Unicom
