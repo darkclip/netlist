@@ -113,7 +113,7 @@ speedtest(){
     exe_file='/var/tmp/warp';
     result_file='/var/tmp/result.csv'
     if [ ! -x "$exe_file" ]; then
-        curl -SfLo "$exe_file" "https://git.tink.ltd:8443/tink/netlist/raw/branch/better-warp-ip/warp-$1" 2>&1;
+        curl -SfLo "$exe_file" "https://git.hanv.net/tink/netlist/raw/branch/better-warp-ip/warp-$1" 2>&1;
     fi;
     ulimit -n 102400;
     chmod +x "$exe_file" && "$exe_file" -file "$2" -output "$result_file" >/dev/null 2>&1;
