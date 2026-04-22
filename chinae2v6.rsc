@@ -1483,6 +1483,7 @@ add address=240c:c080::/27 list=List_ChinaE2
 add address=240c:c0a0::/32 list=List_ChinaE2
 add address=240c:c0a2::/31 list=List_ChinaE2
 add address=240c:c0a4::/30 list=List_ChinaE2
+add address=240c:c0a8:3c82::/48 list=List_ChinaE2
 add address=240c:c0a8:5c26::/48 list=List_ChinaE2
 add address=240c:c0a8:5c49::/48 list=List_ChinaE2
 add address=240c:c0a8:9c01::/48 list=List_ChinaE2
