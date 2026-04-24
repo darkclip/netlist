@@ -6867,6 +6867,7 @@ add address=203.217.164.0/22 list=List_China
 add address=203.223.21.0/24 list=List_China
 add address=204.55.160.0/24 list=List_China
 add address=204.79.135.24/32 list=List_China
+add address=206.109.75.0/24 list=List_China
 add address=210.2.0.0/23 list=List_China
 add address=210.2.2.0/24 list=List_China
 add address=210.2.4.0/22 list=List_China
