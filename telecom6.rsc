@@ -350,7 +350,6 @@ add address=2001:dc7:cd00::/48 list=List_Telecom
 add address=2001:dc7:cd02::/47 list=List_Telecom
 add address=2001:dc7:cd1a::/48 list=List_Telecom
 add address=2001:dd8:1::/48 list=List_Telecom
-add address=2001:df0:e540::/48 list=List_Telecom
 add address=2001:4510:400::/40 list=List_Telecom
 add address=2001:4510:1480::/41 list=List_Telecom
 add address=2001:4511:1480::/41 list=List_Telecom
@@ -698,7 +697,7 @@ add address=240a:c0c0::/32 list=List_Telecom
 add address=240c:4000::/22 list=List_Telecom
 add address=240c:c001::/32 list=List_Telecom
 add address=240c:c017::/32 list=List_Telecom
-add address=240c:c018::/32 list=List_Telecom
+add address=240c:c018::/31 list=List_Telecom
 add address=240c:c02f::/32 list=List_Telecom
 add address=240c:c035::/32 list=List_Telecom
 add address=240c:c0a1::/32 list=List_Telecom
