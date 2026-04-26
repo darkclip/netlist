@@ -700,10 +700,6 @@ add address=122.115.32.0/19 list=List_Mobile
 add address=122.144.194.0/24 list=List_Mobile
 add address=122.144.236.0/24 list=List_Mobile
 add address=122.144.240.0/24 list=List_Mobile
-add address=122.200.78.0/24 list=List_Mobile
-add address=122.200.82.0/24 list=List_Mobile
-add address=122.200.86.0/24 list=List_Mobile
-add address=122.200.92.0/24 list=List_Mobile
 add address=123.49.194.0/24 list=List_Mobile
 add address=123.49.231.0/24 list=List_Mobile
 add address=123.49.232.0/24 list=List_Mobile
