@@ -2428,9 +2428,8 @@ add address=211.101.0.0/18 list=List_Unicom
 add address=211.101.192.0/20 list=List_Unicom
 add address=211.101.240.0/22 list=List_Unicom
 add address=211.102.128.0/21 list=List_Unicom
-add address=211.102.144.0/20 list=List_Unicom
+add address=211.102.144.0/21 list=List_Unicom
 add address=211.102.160.0/20 list=List_Unicom
-add address=211.102.184.0/21 list=List_Unicom
 add address=211.103.128.0/20 list=List_Unicom
 add address=211.103.144.0/21 list=List_Unicom
 add address=211.103.160.0/19 list=List_Unicom
