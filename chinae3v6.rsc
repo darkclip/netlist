@@ -163,7 +163,7 @@ add address=2001:250:3c12::/48 list=List_ChinaE3
 add address=2001:250:3c1f::/48 list=List_ChinaE3
 add address=2001:250:3c21::/48 list=List_ChinaE3
 add address=2001:250:3c24::/48 list=List_ChinaE3
-add address=2001:250:3c26::/47 list=List_ChinaE3
+add address=2001:250:3c27::/48 list=List_ChinaE3
 add address=2001:250:3c28::/45 list=List_ChinaE3
 add address=2001:250:3c30::/44 list=List_ChinaE3
 add address=2001:250:3c40::/42 list=List_ChinaE3
