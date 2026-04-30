@@ -110,6 +110,7 @@ add address=2001:250:5078::/47 list=List_Unicom
 add address=2001:250:507a::/48 list=List_Unicom
 add address=2001:250:507c::/46 list=List_Unicom
 add address=2001:250:5080::/48 list=List_Unicom
+add address=2001:250:5083::/48 list=List_Unicom
 add address=2001:250:5400::/43 list=List_Unicom
 add address=2001:250:5420::/45 list=List_Unicom
 add address=2001:250:5428::/47 list=List_Unicom
@@ -1148,6 +1149,7 @@ add address=2408:8872::/32 list=List_Unicom
 add address=2408:8878::/31 list=List_Unicom
 add address=2408:887e::/32 list=List_Unicom
 add address=2408:8906:20::/44 list=List_Unicom
+add address=2408:8906:40::/43 list=List_Unicom
 add address=2408:8907:9000::/44 list=List_Unicom
 add address=2408:890c::/31 list=List_Unicom
 add address=2408:8912::/31 list=List_Unicom

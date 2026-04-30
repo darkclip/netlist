@@ -190,7 +190,7 @@ add address=2001:250:506e::/47 list=List_ChinaE3
 add address=2001:250:5073::/48 list=List_ChinaE3
 add address=2001:250:507b::/48 list=List_ChinaE3
 add address=2001:250:5081::/48 list=List_ChinaE3
-add address=2001:250:5082::/47 list=List_ChinaE3
+add address=2001:250:5082::/48 list=List_ChinaE3
 add address=2001:250:5084::/46 list=List_ChinaE3
 add address=2001:250:5088::/45 list=List_ChinaE3
 add address=2001:250:5090::/44 list=List_ChinaE3

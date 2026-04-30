@@ -2,6 +2,7 @@
 remove [find list=List_Mobile]
 
 add address=2400:9020:f012::/47 list=List_Mobile
+add address=2400:95e0::/48 list=List_Mobile
 add address=2400:a860:1::/48 list=List_Mobile
 add address=2400:a860:2::/47 list=List_Mobile
 add address=2400:a860:4::/47 list=List_Mobile
