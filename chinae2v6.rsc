@@ -1043,7 +1043,6 @@ add address=2401:fa00:5e::/48 list=List_ChinaE2
 add address=2402:840:d001::/48 list=List_ChinaE2
 add address=2402:840:d002::/47 list=List_ChinaE2
 add address=2402:1440::/32 list=List_ChinaE2
-add address=2402:2e60::/39 list=List_ChinaE2
 add address=2402:3c00::/32 list=List_ChinaE2
 add address=2402:3f80:1400::/40 list=List_ChinaE2
 add address=2402:4b80::/32 list=List_ChinaE2
