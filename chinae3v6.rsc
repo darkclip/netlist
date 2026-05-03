@@ -1729,6 +1729,7 @@ add address=2a0f:1cc5:130::/44 list=List_ChinaE3
 add address=2a0f:1cc5:140::/43 list=List_ChinaE3
 add address=2a0f:1cc5:600::/47 list=List_ChinaE3
 add address=2a0f:1cc5:603::/48 list=List_ChinaE3
+add address=2a0f:1cc5:642::/48 list=List_ChinaE3
 add address=2a0f:1cc5:645::/48 list=List_ChinaE3
 add address=2a0f:1cc5:661::/48 list=List_ChinaE3
 add address=2a0f:1cc5:662::/48 list=List_ChinaE3
@@ -1749,9 +1750,8 @@ add address=2a0f:1cc5:2520::/44 list=List_ChinaE3
 add address=2a0f:1cc5:2600::/40 list=List_ChinaE3
 add address=2a0f:1cc5:2d01::/48 list=List_ChinaE3
 add address=2a0f:1cc5:2d03::/48 list=List_ChinaE3
-add address=2a0f:1cc5:3200::/46 list=List_ChinaE3
-add address=2a0f:1cc5:3204::/47 list=List_ChinaE3
-add address=2a0f:1cc5:3206::/48 list=List_ChinaE3
+add address=2a0f:1cc5:3200::/45 list=List_ChinaE3
+add address=2a0f:1cc5:3208::/47 list=List_ChinaE3
 add address=2a0f:1cc5:3222::/48 list=List_ChinaE3
 add address=2a0f:1cc6:b110::/47 list=List_ChinaE3
 add address=2a0f:2706::/32 list=List_ChinaE3

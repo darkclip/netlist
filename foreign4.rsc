@@ -9303,9 +9303,7 @@ add address=144.240.0.0/13 list=List_Foreign
 add address=144.248.0.0/14 list=List_Foreign
 add address=144.252.0.0/15 list=List_Foreign
 add address=144.254.0.0/16 list=List_Foreign
-add address=145.0.0.0/14 list=List_Foreign
-add address=145.4.0.0/15 list=List_Foreign
-add address=145.7.0.0/16 list=List_Foreign
+add address=145.0.0.0/13 list=List_Foreign
 add address=145.8.0.0/14 list=List_Foreign
 add address=145.12.0.0/15 list=List_Foreign
 add address=145.14.0.0/18 list=List_Foreign
