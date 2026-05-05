@@ -525,8 +525,7 @@ add address=117.132.0.0/15 list=List_Mobile
 add address=117.134.0.0/17 list=List_Mobile
 add address=117.134.128.0/18 list=List_Mobile
 add address=117.134.195.0/24 list=List_Mobile
-add address=117.134.201.0/24 list=List_Mobile
-add address=117.134.202.0/23 list=List_Mobile
+add address=117.134.203.0/24 list=List_Mobile
 add address=117.134.204.0/22 list=List_Mobile
 add address=117.134.208.0/20 list=List_Mobile
 add address=117.134.224.0/19 list=List_Mobile
