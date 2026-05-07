@@ -295,6 +295,7 @@ add address=2001:da8:303a::/48 list=List_Telecom
 add address=2001:da8:304f::/48 list=List_Telecom
 add address=2001:da8:7013::/48 list=List_Telecom
 add address=2001:da8:701f::/48 list=List_Telecom
+add address=2001:da8:702a::/48 list=List_Telecom
 add address=2001:da8:9000::/45 list=List_Telecom
 add address=2001:da8:9008::/46 list=List_Telecom
 add address=2001:da8:900c::/48 list=List_Telecom

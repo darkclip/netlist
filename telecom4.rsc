@@ -3206,7 +3206,6 @@ add address=203.148.86.0/23 list=List_Telecom
 add address=203.156.192.0/18 list=List_Telecom
 add address=203.160.129.0/24 list=List_Telecom
 add address=203.160.192.0/19 list=List_Telecom
-add address=203.161.192.0/19 list=List_Telecom
 add address=203.168.0.0/19 list=List_Telecom
 add address=203.170.58.0/23 list=List_Telecom
 add address=203.174.4.0/24 list=List_Telecom
