@@ -21,7 +21,7 @@ add address=2001:250:21c::/47 list=List_ChinaE3
 add address=2001:250:220::/47 list=List_ChinaE3
 add address=2001:250:222::/48 list=List_ChinaE3
 add address=2001:250:224::/46 list=List_ChinaE3
-add address=2001:250:229::/48 list=List_ChinaE3
+add address=2001:250:228::/47 list=List_ChinaE3
 add address=2001:250:22a::/48 list=List_ChinaE3
 add address=2001:250:22c::/48 list=List_ChinaE3
 add address=2001:250:22f::/48 list=List_ChinaE3
@@ -123,18 +123,7 @@ add address=2001:250:1440::/42 list=List_ChinaE3
 add address=2001:250:1480::/41 list=List_ChinaE3
 add address=2001:250:1500::/40 list=List_ChinaE3
 add address=2001:250:1600::/39 list=List_ChinaE3
-add address=2001:250:1800::/38 list=List_ChinaE3
-add address=2001:250:1c00::/45 list=List_ChinaE3
-add address=2001:250:1c08::/48 list=List_ChinaE3
-add address=2001:250:1c0a::/47 list=List_ChinaE3
-add address=2001:250:1c0c::/48 list=List_ChinaE3
-add address=2001:250:1c0e::/47 list=List_ChinaE3
-add address=2001:250:1c10::/44 list=List_ChinaE3
-add address=2001:250:1c20::/43 list=List_ChinaE3
-add address=2001:250:1c40::/42 list=List_ChinaE3
-add address=2001:250:1c80::/41 list=List_ChinaE3
-add address=2001:250:1d00::/40 list=List_ChinaE3
-add address=2001:250:1e00::/39 list=List_ChinaE3
+add address=2001:250:1800::/37 list=List_ChinaE3
 add address=2001:250:2000::/36 list=List_ChinaE3
 add address=2001:250:3011::/48 list=List_ChinaE3
 add address=2001:250:3014::/48 list=List_ChinaE3
@@ -863,8 +852,6 @@ add address=2001:dc7:d000::/36 list=List_ChinaE3
 add address=2001:dc7:e000::/35 list=List_ChinaE3
 add address=2001:dd9::/48 list=List_ChinaE3
 add address=2001:df6:40::/48 list=List_ChinaE3
-add address=2001:4510:1480::/41 list=List_ChinaE3
-add address=2001:4511:1480::/41 list=List_ChinaE3
 add address=2400:1160::/32 list=List_ChinaE3
 add address=2400:3200::/32 list=List_ChinaE3
 add address=2400:5a60:2::/48 list=List_ChinaE3
@@ -887,6 +874,7 @@ add address=2400:89c0:2100::/48 list=List_ChinaE3
 add address=2400:89c0:2200::/48 list=List_ChinaE3
 add address=2400:89c0:3010::/44 list=List_ChinaE3
 add address=2400:89c0:6100::/48 list=List_ChinaE3
+add address=2400:9580::/48 list=List_ChinaE3
 add address=2400:a860:3::/48 list=List_ChinaE3
 add address=2400:a980::/29 list=List_ChinaE3
 add address=2400:b200::/32 list=List_ChinaE3
