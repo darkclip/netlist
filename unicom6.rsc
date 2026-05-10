@@ -566,7 +566,6 @@ add address=2402:5ec0:1000::/39 list=List_Unicom
 add address=2402:7040::/32 list=List_Unicom
 add address=2402:7d80:240::/48 list=List_Unicom
 add address=2402:92c0::/48 list=List_Unicom
-add address=2402:a200::/32 list=List_Unicom
 add address=2402:db40:5100::/48 list=List_Unicom
 add address=2402:db40:5f00::/46 list=List_Unicom
 add address=2402:dfc0::/44 list=List_Unicom
