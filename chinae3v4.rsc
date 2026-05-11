@@ -37,7 +37,11 @@ add address=1.10.12.0/22 list=List_ChinaE3
 add address=1.10.16.0/20 list=List_ChinaE3
 add address=1.10.32.0/19 list=List_ChinaE3
 add address=1.10.64.0/18 list=List_ChinaE3
-add address=1.12.0.0/14 list=List_ChinaE3
+add address=1.12.0.0/21 list=List_ChinaE3
+add address=1.12.8.0/22 list=List_ChinaE3
+add address=1.12.12.0/23 list=List_ChinaE3
+add address=1.12.34.0/23 list=List_ChinaE3
+add address=1.14.0.0/17 list=List_ChinaE3
 add address=1.18.128.0/24 list=List_ChinaE3
 add address=1.51.0.0/23 list=List_ChinaE3
 add address=1.51.2.0/24 list=List_ChinaE3
@@ -52,7 +56,6 @@ add address=1.51.116.0/22 list=List_ChinaE3
 add address=1.51.128.0/20 list=List_ChinaE3
 add address=1.51.192.0/18 list=List_ChinaE3
 add address=1.92.0.0/14 list=List_ChinaE3
-add address=1.116.0.0/15 list=List_ChinaE3
 add address=1.118.1.0/24 list=List_ChinaE3
 add address=1.118.3.0/24 list=List_ChinaE3
 add address=1.118.4.0/22 list=List_ChinaE3
@@ -154,8 +157,6 @@ add address=14.1.24.0/22 list=List_ChinaE3
 add address=14.1.108.0/22 list=List_ChinaE3
 add address=14.102.128.0/22 list=List_ChinaE3
 add address=14.102.180.0/22 list=List_ChinaE3
-add address=14.103.0.0/24 list=List_ChinaE3
-add address=14.103.2.0/23 list=List_ChinaE3
 add address=14.103.56.0/23 list=List_ChinaE3
 add address=14.130.0.0/15 list=List_ChinaE3
 add address=14.192.61.0/24 list=List_ChinaE3
@@ -1555,10 +1556,7 @@ add address=61.29.236.0/22 list=List_ChinaE3
 add address=61.45.128.0/18 list=List_ChinaE3
 add address=61.45.224.0/20 list=List_ChinaE3
 add address=61.186.2.0/24 list=List_ChinaE3
-add address=61.236.0.0/18 list=List_ChinaE3
-add address=61.236.64.0/20 list=List_ChinaE3
-add address=61.236.120.0/21 list=List_ChinaE3
-add address=61.236.128.0/17 list=List_ChinaE3
+add address=61.236.0.0/16 list=List_ChinaE3
 add address=61.241.224.0/19 list=List_ChinaE3
 add address=62.234.0.0/16 list=List_ChinaE3
 add address=64.235.230.152/30 list=List_ChinaE3
@@ -5650,8 +5648,7 @@ add address=122.14.190.0/24 list=List_ChinaE3
 add address=122.49.0.0/21 list=List_ChinaE3
 add address=122.49.48.0/20 list=List_ChinaE3
 add address=122.51.0.0/16 list=List_ChinaE3
-add address=122.65.0.0/16 list=List_ChinaE3
-add address=122.66.0.0/15 list=List_ChinaE3
+add address=122.64.0.0/14 list=List_ChinaE3
 add address=122.68.0.0/15 list=List_ChinaE3
 add address=122.72.0.0/23 list=List_ChinaE3
 add address=122.72.2.0/24 list=List_ChinaE3
@@ -5665,10 +5662,7 @@ add address=122.72.32.0/22 list=List_ChinaE3
 add address=122.72.36.0/23 list=List_ChinaE3
 add address=122.72.39.0/24 list=List_ChinaE3
 add address=122.72.40.0/21 list=List_ChinaE3
-add address=122.72.48.0/21 list=List_ChinaE3
-add address=122.72.56.0/24 list=List_ChinaE3
-add address=122.72.58.0/23 list=List_ChinaE3
-add address=122.72.60.0/22 list=List_ChinaE3
+add address=122.72.48.0/20 list=List_ChinaE3
 add address=122.72.64.0/19 list=List_ChinaE3
 add address=122.72.96.0/20 list=List_ChinaE3
 add address=122.72.113.0/24 list=List_ChinaE3
@@ -5839,7 +5833,7 @@ add address=123.77.192.0/18 list=List_ChinaE3
 add address=123.78.0.0/15 list=List_ChinaE3
 add address=123.80.0.0/15 list=List_ChinaE3
 add address=123.82.128.0/17 list=List_ChinaE3
-add address=123.83.0.0/17 list=List_ChinaE3
+add address=123.83.0.0/16 list=List_ChinaE3
 add address=123.84.0.0/14 list=List_ChinaE3
 add address=123.91.0.0/16 list=List_ChinaE3
 add address=123.92.0.0/14 list=List_ChinaE3

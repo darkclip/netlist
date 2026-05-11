@@ -1936,7 +1936,6 @@ add address=139.198.8.0/24 list=List_Unicom
 add address=139.198.22.0/24 list=List_Unicom
 add address=139.198.44.0/22 list=List_Unicom
 add address=139.198.89.0/24 list=List_Unicom
-add address=139.198.100.0/22 list=List_Unicom
 add address=139.198.104.0/22 list=List_Unicom
 add address=139.198.110.0/23 list=List_Unicom
 add address=139.198.255.0/24 list=List_Unicom
