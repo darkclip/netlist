@@ -506,7 +506,6 @@ add address=2401:a140:1::/48 list=List_Telecom
 add address=2401:b680::/32 list=List_Telecom
 add address=2401:be00::/48 list=List_Telecom
 add address=2401:ca00::/32 list=List_Telecom
-add address=2401:ce00:a003::/48 list=List_Telecom
 add address=2401:ce00:b800::/38 list=List_Telecom
 add address=2401:ce00:c000::/37 list=List_Telecom
 add address=2401:ce00:cc00::/38 list=List_Telecom
