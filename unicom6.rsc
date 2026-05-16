@@ -525,13 +525,11 @@ add address=2401:ce00:e000::/35 list=List_Unicom
 add address=2401:ec00::/32 list=List_Unicom
 add address=2402:18a0::/32 list=List_Unicom
 add address=2402:2000::/32 list=List_Unicom
-add address=2402:2e60::/39 list=List_Unicom
 add address=2402:34e0::/32 list=List_Unicom
 add address=2402:5ec0:1000::/39 list=List_Unicom
 add address=2402:7040::/32 list=List_Unicom
 add address=2402:7d80:240::/48 list=List_Unicom
 add address=2402:92c0::/48 list=List_Unicom
-add address=2402:a200::/32 list=List_Unicom
 add address=2402:db40:5100::/48 list=List_Unicom
 add address=2402:db40:5f00::/46 list=List_Unicom
 add address=2402:dfc0::/44 list=List_Unicom

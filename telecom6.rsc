@@ -522,7 +522,6 @@ add address=2402:840:d000::/48 list=List_Telecom
 add address=2402:840:e000::/46 list=List_Telecom
 add address=2402:840:f000::/38 list=List_Telecom
 add address=2402:c60::/48 list=List_Telecom
-add address=2402:2e60::/39 list=List_Telecom
 add address=2402:34e0::/32 list=List_Telecom
 add address=2402:36e0::/44 list=List_Telecom
 add address=2402:4440:9000::/39 list=List_Telecom
