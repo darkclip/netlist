@@ -2251,11 +2251,7 @@ add address=202.111.128.0/18 list=List_Unicom
 add address=202.112.24.0/23 list=List_Unicom
 add address=202.112.27.0/24 list=List_Unicom
 add address=202.112.28.0/24 list=List_Unicom
-add address=202.119.0.0/19 list=List_Unicom
-add address=202.119.40.0/24 list=List_Unicom
-add address=202.119.46.0/24 list=List_Unicom
-add address=202.119.50.0/24 list=List_Unicom
-add address=202.119.64.0/18 list=List_Unicom
+add address=202.119.0.0/17 list=List_Unicom
 add address=202.119.128.0/23 list=List_Unicom
 add address=202.119.133.0/24 list=List_Unicom
 add address=202.119.134.0/23 list=List_Unicom
