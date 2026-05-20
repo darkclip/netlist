@@ -59,9 +59,7 @@ add address=2001:250:3440::/46 list=List_Unicom
 add address=2001:250:3445::/48 list=List_Unicom
 add address=2001:250:3446::/47 list=List_Unicom
 add address=2001:250:3448::/45 list=List_Unicom
-add address=2001:250:3450::/46 list=List_Unicom
-add address=2001:250:3454::/47 list=List_Unicom
-add address=2001:250:3457::/48 list=List_Unicom
+add address=2001:250:3450::/45 list=List_Unicom
 add address=2001:250:3458::/47 list=List_Unicom
 add address=2001:250:345a::/48 list=List_Unicom
 add address=2001:250:345c::/47 list=List_Unicom
@@ -486,7 +484,6 @@ add address=2400:73e0::/32 list=List_Unicom
 add address=2400:89c0:1010::/44 list=List_Unicom
 add address=2400:8fc0:571::/48 list=List_Unicom
 add address=2400:a860:2::/48 list=List_Unicom
-add address=2400:b600::/32 list=List_Unicom
 add address=2400:b620::/48 list=List_Unicom
 add address=2400:b700::/48 list=List_Unicom
 add address=2400:cb80:e2e::/47 list=List_Unicom
