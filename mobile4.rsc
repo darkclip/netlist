@@ -772,6 +772,8 @@ add address=123.186.144.0/20 list=List_Mobile
 add address=123.196.112.0/20 list=List_Mobile
 add address=123.245.192.0/20 list=List_Mobile
 add address=123.246.96.0/20 list=List_Mobile
+add address=124.14.15.0/24 list=List_Mobile
+add address=124.14.22.0/24 list=List_Mobile
 add address=124.201.0.0/17 list=List_Mobile
 add address=124.202.128.0/24 list=List_Mobile
 add address=124.202.130.0/23 list=List_Mobile

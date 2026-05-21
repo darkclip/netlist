@@ -29,6 +29,7 @@ add address=2001:250:24f::/48 list=List_Unicom
 add address=2001:250:251::/48 list=List_Unicom
 add address=2001:250:803::/48 list=List_Unicom
 add address=2001:250:101f::/48 list=List_Unicom
+add address=2001:250:2058::/48 list=List_Unicom
 add address=2001:250:3000::/44 list=List_Unicom
 add address=2001:250:3010::/48 list=List_Unicom
 add address=2001:250:3012::/47 list=List_Unicom
