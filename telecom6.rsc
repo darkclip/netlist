@@ -354,7 +354,6 @@ add address=2001:dc7:cd00::/48 list=List_Telecom
 add address=2001:dc7:cd02::/47 list=List_Telecom
 add address=2001:dc7:cd1a::/48 list=List_Telecom
 add address=2001:dd8:1::/48 list=List_Telecom
-add address=2001:df0:e540::/48 list=List_Telecom
 add address=2001:4510:400::/40 list=List_Telecom
 add address=2001:4510:1480::/41 list=List_Telecom
 add address=2001:4511:1480::/41 list=List_Telecom

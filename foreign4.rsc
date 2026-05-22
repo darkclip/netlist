@@ -788,9 +788,7 @@ add address=44.31.32.0/19 list=List_Foreign
 add address=44.31.64.0/18 list=List_Foreign
 add address=44.31.128.0/18 list=List_Foreign
 add address=44.31.192.0/20 list=List_Foreign
-add address=44.31.208.0/22 list=List_Foreign
-add address=44.31.213.0/24 list=List_Foreign
-add address=44.31.214.0/23 list=List_Foreign
+add address=44.31.208.0/21 list=List_Foreign
 add address=44.31.217.0/24 list=List_Foreign
 add address=44.31.218.0/23 list=List_Foreign
 add address=44.31.220.0/22 list=List_Foreign
@@ -3929,6 +3927,7 @@ add address=103.235.216.0/22 list=List_Foreign
 add address=103.236.0.0/19 list=List_Foreign
 add address=103.236.32.0/20 list=List_Foreign
 add address=103.236.48.0/22 list=List_Foreign
+add address=103.236.99.0/24 list=List_Foreign
 add address=103.236.100.0/22 list=List_Foreign
 add address=103.236.104.0/21 list=List_Foreign
 add address=103.236.112.0/21 list=List_Foreign
@@ -7701,6 +7700,7 @@ add address=202.41.160.0/19 list=List_Foreign
 add address=202.41.192.0/19 list=List_Foreign
 add address=202.41.224.0/20 list=List_Foreign
 add address=202.41.240.0/24 list=List_Foreign
+add address=202.41.243.0/24 list=List_Foreign
 add address=202.42.0.0/15 list=List_Foreign
 add address=202.44.0.0/15 list=List_Foreign
 add address=202.46.0.0/17 list=List_Foreign
@@ -9045,7 +9045,6 @@ add address=211.94.38.0/23 list=List_Foreign
 add address=211.94.40.0/21 list=List_Foreign
 add address=211.94.48.0/20 list=List_Foreign
 add address=211.95.160.0/19 list=List_Foreign
-add address=211.97.168.0/21 list=List_Foreign
 add address=211.99.0.0/21 list=List_Foreign
 add address=211.99.18.0/23 list=List_Foreign
 add address=211.99.20.0/22 list=List_Foreign
