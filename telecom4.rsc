@@ -3673,7 +3673,6 @@ add address=211.160.253.0/24 list=List_Telecom
 add address=211.160.254.0/23 list=List_Telecom
 add address=211.161.24.0/22 list=List_Telecom
 add address=211.161.120.0/21 list=List_Telecom
-add address=211.161.192.0/22 list=List_Telecom
 add address=211.161.224.0/20 list=List_Telecom
 add address=211.162.0.0/21 list=List_Telecom
 add address=211.167.96.0/19 list=List_Telecom
