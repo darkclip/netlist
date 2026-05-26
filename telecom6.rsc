@@ -115,6 +115,9 @@ add address=2001:250:e20::/47 list=List_Telecom
 add address=2001:250:e22::/48 list=List_Telecom
 add address=2001:250:e24::/46 list=List_Telecom
 add address=2001:250:e28::/47 list=List_Telecom
+add address=2001:250:1012::/48 list=List_Telecom
+add address=2001:250:1022::/48 list=List_Telecom
+add address=2001:250:102e::/48 list=List_Telecom
 add address=2001:250:1400::/46 list=List_Telecom
 add address=2001:250:1404::/47 list=List_Telecom
 add address=2001:250:1406::/48 list=List_Telecom
