@@ -1522,6 +1522,7 @@ add address=240a:42c0::/27 list=List_ChinaE2
 add address=240a:42e0::/28 list=List_ChinaE2
 add address=240a:42f0::/29 list=List_ChinaE2
 add address=240a:42f8::/30 list=List_ChinaE2
+add address=240a:a801::/32 list=List_ChinaE2
 add address=240a:c000::/25 list=List_ChinaE2
 add address=240a:c080::/26 list=List_ChinaE2
 add address=240a:c0c1::/32 list=List_ChinaE2
