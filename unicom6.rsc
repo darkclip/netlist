@@ -534,6 +534,7 @@ add address=2402:db40:5100::/48 list=List_Unicom
 add address=2402:db40:5f00::/46 list=List_Unicom
 add address=2402:dfc0::/44 list=List_Unicom
 add address=2402:dfc0:50::/44 list=List_Unicom
+add address=2402:e740::/32 list=List_Unicom
 add address=2402:e7c0:400::/42 list=List_Unicom
 add address=2402:e7c0:800::/42 list=List_Unicom
 add address=2402:ef40::/32 list=List_Unicom
@@ -635,20 +636,12 @@ add address=2408:802a:8000::/33 list=List_Unicom
 add address=2408:802c::/32 list=List_Unicom
 add address=2408:803e::/32 list=List_Unicom
 add address=2408:8056::/32 list=List_Unicom
-add address=2408:805c::/30 list=List_Unicom
-add address=2408:8060::/33 list=List_Unicom
 add address=2408:80c2::/33 list=List_Unicom
 add address=2408:80c5::/33 list=List_Unicom
-add address=2408:80ca::/33 list=List_Unicom
-add address=2408:80ca:8000::/34 list=List_Unicom
-add address=2408:80da::/33 list=List_Unicom
-add address=2408:80da:8000::/34 list=List_Unicom
 add address=2408:80e0:4000::/34 list=List_Unicom
 add address=2408:80e0:8000::/33 list=List_Unicom
 add address=2408:80e2::/33 list=List_Unicom
 add address=2408:80e9:4000::/34 list=List_Unicom
-add address=2408:80ea:4000::/34 list=List_Unicom
-add address=2408:80ea:8000::/33 list=List_Unicom
 add address=2408:80f0:4000::/34 list=List_Unicom
 add address=2408:80f0:8000::/33 list=List_Unicom
 add address=2408:80f1::/42 list=List_Unicom
@@ -665,8 +658,6 @@ add address=2408:80f1:1e0::/44 list=List_Unicom
 add address=2408:80f1:200::/40 list=List_Unicom
 add address=2408:80f5:4000::/34 list=List_Unicom
 add address=2408:80f9:4000::/34 list=List_Unicom
-add address=2408:80fa:4000::/34 list=List_Unicom
-add address=2408:80fa:8000::/33 list=List_Unicom
 add address=2408:8120:1::/48 list=List_Unicom
 add address=2408:8120:2::/48 list=List_Unicom
 add address=2408:8120:7000::/36 list=List_Unicom
