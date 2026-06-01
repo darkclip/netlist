@@ -435,6 +435,7 @@ add address=2001:da8:239::/48 list=List_ChinaE2
 add address=2001:da8:23c::/48 list=List_ChinaE2
 add address=2001:da8:23f::/48 list=List_ChinaE2
 add address=2001:da8:245::/48 list=List_ChinaE2
+add address=2001:da8:246::/48 list=List_ChinaE2
 add address=2001:da8:248::/48 list=List_ChinaE2
 add address=2001:da8:24a::/47 list=List_ChinaE2
 add address=2001:da8:24c::/47 list=List_ChinaE2

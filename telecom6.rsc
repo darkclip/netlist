@@ -258,7 +258,7 @@ add address=2001:da8:23d::/48 list=List_Telecom
 add address=2001:da8:23e::/48 list=List_Telecom
 add address=2001:da8:240::/46 list=List_Telecom
 add address=2001:da8:244::/48 list=List_Telecom
-add address=2001:da8:246::/47 list=List_Telecom
+add address=2001:da8:247::/48 list=List_Telecom
 add address=2001:da8:249::/48 list=List_Telecom
 add address=2001:da8:24f::/48 list=List_Telecom
 add address=2001:da8:250::/48 list=List_Telecom
