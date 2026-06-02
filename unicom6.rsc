@@ -517,7 +517,8 @@ add address=2401:cb80::/32 list=List_Unicom
 add address=2401:cc00::/32 list=List_Unicom
 add address=2401:ce00::/33 list=List_Unicom
 add address=2401:ce00:8000::/35 list=List_Unicom
-add address=2401:ce00:a000::/36 list=List_Unicom
+add address=2401:ce00:a400::/38 list=List_Unicom
+add address=2401:ce00:a800::/37 list=List_Unicom
 add address=2401:ce00:b000::/37 list=List_Unicom
 add address=2401:ce00:bc00::/38 list=List_Unicom
 add address=2401:ce00:c800::/38 list=List_Unicom

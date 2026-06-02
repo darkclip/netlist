@@ -503,11 +503,15 @@ add address=2401:5c20:10::/48 list=List_Telecom
 add address=2401:71c0::/48 list=List_Telecom
 add address=2401:7700::/32 list=List_Telecom
 add address=2401:7d40::/32 list=List_Telecom
+add address=2401:7e00:fff8::/46 list=List_Telecom
+add address=2401:7e00:fffc::/47 list=List_Telecom
+add address=2401:7e00:fffe::/48 list=List_Telecom
 add address=2401:8d00:12::/48 list=List_Telecom
 add address=2401:a140:1::/48 list=List_Telecom
 add address=2401:b680::/32 list=List_Telecom
 add address=2401:be00::/48 list=List_Telecom
 add address=2401:ca00::/32 list=List_Telecom
+add address=2401:ce00:a000::/38 list=List_Telecom
 add address=2401:ce00:b800::/38 list=List_Telecom
 add address=2401:ce00:c000::/37 list=List_Telecom
 add address=2401:ce00:cc00::/38 list=List_Telecom
