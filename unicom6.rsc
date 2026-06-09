@@ -658,8 +658,8 @@ add address=2408:8000:2000::/35 list=List_Unicom
 add address=2408:8000:4000::/34 list=List_Unicom
 add address=2408:8000:8000::/33 list=List_Unicom
 add address=2408:8001::/32 list=List_Unicom
-add address=2408:8020::/30 list=List_Unicom
-add address=2408:8024::/31 list=List_Unicom
+add address=2408:8024:8000::/33 list=List_Unicom
+add address=2408:8025::/32 list=List_Unicom
 add address=2408:8026::/32 list=List_Unicom
 add address=2408:802a:8000::/33 list=List_Unicom
 add address=2408:802c::/32 list=List_Unicom
@@ -667,12 +667,10 @@ add address=2408:803e::/32 list=List_Unicom
 add address=2408:8056::/32 list=List_Unicom
 add address=2408:80c2::/33 list=List_Unicom
 add address=2408:80c5::/33 list=List_Unicom
-add address=2408:80e0:4000::/34 list=List_Unicom
-add address=2408:80e0:8000::/33 list=List_Unicom
+add address=2408:80e0:4000::/36 list=List_Unicom
 add address=2408:80e2::/33 list=List_Unicom
 add address=2408:80e9:4000::/34 list=List_Unicom
-add address=2408:80f0:4000::/34 list=List_Unicom
-add address=2408:80f0:8000::/33 list=List_Unicom
+add address=2408:80f0:4000::/36 list=List_Unicom
 add address=2408:80f1::/42 list=List_Unicom
 add address=2408:80f1:40::/43 list=List_Unicom
 add address=2408:80f1:70::/44 list=List_Unicom

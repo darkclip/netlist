@@ -42,6 +42,8 @@ add address=2403:b400::/32 list=List_Mobile
 add address=2403:c980::/32 list=List_Mobile
 add address=2404:7240:6000::/48 list=List_Mobile
 add address=2404:e280::/47 list=List_Mobile
+add address=2405:80:10::/48 list=List_Mobile
+add address=2405:80:13::/48 list=List_Mobile
 add address=2405:6c0:2::/48 list=List_Mobile
 add address=2405:6c0:4::/48 list=List_Mobile
 add address=2405:6f00:c101::/48 list=List_Mobile
