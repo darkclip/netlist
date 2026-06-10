@@ -1325,7 +1325,6 @@ add address=2406:5340:8888::/48 list=List_ChinaE2
 add address=2406:b640:100::/48 list=List_ChinaE2
 add address=2406:b640:4100::/48 list=List_ChinaE2
 add address=2406:d440:110::/44 list=List_ChinaE2
-add address=2406:d440:200::/44 list=List_ChinaE2
 add address=2406:d440:300::/43 list=List_ChinaE2
 add address=2406:e3c0:1800::/37 list=List_ChinaE2
 add address=2406:e500::/33 list=List_ChinaE2
