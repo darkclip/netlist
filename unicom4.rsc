@@ -133,7 +133,7 @@ add address=43.224.52.0/23 list=List_Unicom
 add address=43.224.80.0/22 list=List_Unicom
 add address=43.224.240.0/24 list=List_Unicom
 add address=43.226.116.0/22 list=List_Unicom
-add address=43.226.128.0/23 list=List_Unicom
+add address=43.226.129.0/24 list=List_Unicom
 add address=43.226.164.0/22 list=List_Unicom
 add address=43.226.238.0/24 list=List_Unicom
 add address=43.227.104.0/22 list=List_Unicom
@@ -1699,7 +1699,6 @@ add address=123.4.0.0/14 list=List_Unicom
 add address=123.8.0.0/13 list=List_Unicom
 add address=123.49.192.0/23 list=List_Unicom
 add address=123.49.194.0/24 list=List_Unicom
-add address=123.49.245.0/24 list=List_Unicom
 add address=123.58.32.0/23 list=List_Unicom
 add address=123.58.34.0/24 list=List_Unicom
 add address=123.58.36.0/24 list=List_Unicom
