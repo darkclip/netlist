@@ -2399,9 +2399,7 @@ add address=202.121.209.0/24 list=List_ChinaE3
 add address=202.121.210.0/23 list=List_ChinaE3
 add address=202.121.212.0/22 list=List_ChinaE3
 add address=202.121.216.0/21 list=List_ChinaE3
-add address=202.121.226.0/23 list=List_ChinaE3
-add address=202.121.228.0/22 list=List_ChinaE3
-add address=202.121.232.0/21 list=List_ChinaE3
+add address=202.121.224.0/20 list=List_ChinaE3
 add address=202.121.248.0/22 list=List_ChinaE3
 add address=202.122.32.0/21 list=List_ChinaE3
 add address=202.123.96.0/24 list=List_ChinaE3
