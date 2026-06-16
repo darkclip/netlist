@@ -1,7 +1,6 @@
 /ip firewall address-list
 remove [find list=List_ChinaE2]
 
-add address=1.2.4.0/24 list=List_ChinaE2
 add address=1.8.1.0/24 list=List_ChinaE2
 add address=1.8.8.0/24 list=List_ChinaE2
 add address=1.14.0.0/17 list=List_ChinaE2
@@ -277,7 +276,6 @@ add address=43.248.184.0/21 list=List_ChinaE2
 add address=43.248.196.0/22 list=List_ChinaE2
 add address=43.248.200.0/21 list=List_ChinaE2
 add address=43.248.234.0/23 list=List_ChinaE2
-add address=43.249.168.0/24 list=List_ChinaE2
 add address=43.249.170.0/23 list=List_ChinaE2
 add address=43.249.192.0/22 list=List_ChinaE2
 add address=43.250.236.0/22 list=List_ChinaE2
@@ -3127,6 +3125,7 @@ add address=203.152.64.0/19 list=List_ChinaE2
 add address=203.174.6.0/24 list=List_ChinaE2
 add address=203.174.96.0/20 list=List_ChinaE2
 add address=203.174.120.0/21 list=List_ChinaE2
+add address=203.189.115.0/24 list=List_ChinaE2
 add address=203.191.2.0/24 list=List_ChinaE2
 add address=203.191.7.0/24 list=List_ChinaE2
 add address=203.192.3.0/24 list=List_ChinaE2
