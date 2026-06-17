@@ -389,7 +389,7 @@ add address=2001:250:fe40::/42 list=List_ChinaE2
 add address=2001:250:fe80::/41 list=List_ChinaE2
 add address=2001:250:ff00::/40 list=List_ChinaE2
 add address=2001:251::/32 list=List_ChinaE2
-add address=2001:252::/31 list=List_ChinaE2
+add address=2001:253::/32 list=List_ChinaE2
 add address=2001:254::/33 list=List_ChinaE2
 add address=2001:255::/32 list=List_ChinaE2
 add address=2001:256:100::/48 list=List_ChinaE2
