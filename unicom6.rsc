@@ -1185,6 +1185,7 @@ add address=2408:8a06::/47 list=List_Unicom
 add address=2408:8a06:100::/47 list=List_Unicom
 add address=2408:8a07::/40 list=List_Unicom
 add address=2408:8a21:4000::/35 list=List_Unicom
+add address=2408:8a22::/35 list=List_Unicom
 add address=2408:8a23:4000::/34 list=List_Unicom
 add address=2408:8a24:4000::/34 list=List_Unicom
 add address=2408:8a26:c000::/34 list=List_Unicom
