@@ -2184,7 +2184,6 @@ add address=183.162.222.0/24 list=List_Unicom
 add address=183.184.0.0/13 list=List_Unicom
 add address=187.54.48.0/24 list=List_Unicom
 add address=192.163.11.0/24 list=List_Unicom
-add address=194.138.203.0/24 list=List_Unicom
 add address=195.49.78.0/23 list=List_Unicom
 add address=202.1.90.0/23 list=List_Unicom
 add address=202.1.112.0/23 list=List_Unicom
