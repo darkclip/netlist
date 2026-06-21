@@ -2361,7 +2361,7 @@ add address=140.246.0.0/16 list=List_Telecom
 add address=140.249.0.0/16 list=List_Telecom
 add address=140.250.0.0/16 list=List_Telecom
 add address=140.255.0.0/16 list=List_Telecom
-add address=141.11.50.0/23 list=List_Telecom
+add address=141.11.51.0/24 list=List_Telecom
 add address=144.0.0.0/16 list=List_Telecom
 add address=144.7.0.0/17 list=List_Telecom
 add address=144.12.0.0/16 list=List_Telecom
