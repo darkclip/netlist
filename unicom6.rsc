@@ -485,7 +485,7 @@ add address=2001:4511:1480::/41 list=List_Unicom
 add address=2400:5280:f803::/48 list=List_Unicom
 add address=2400:73e0::/32 list=List_Unicom
 add address=2400:89c0:1010::/44 list=List_Unicom
-add address=2400:8fc0:571::/48 list=List_Unicom
+add address=2400:8fc0::/32 list=List_Unicom
 add address=2400:a860:2::/48 list=List_Unicom
 add address=2400:b620::/48 list=List_Unicom
 add address=2400:b700::/48 list=List_Unicom

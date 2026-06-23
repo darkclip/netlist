@@ -876,6 +876,7 @@ add address=2400:89c0:2100::/48 list=List_ChinaE2
 add address=2400:89c0:2200::/48 list=List_ChinaE2
 add address=2400:89c0:3010::/44 list=List_ChinaE2
 add address=2400:89c0:6100::/48 list=List_ChinaE2
+add address=2400:8fc0:571::/48 list=List_ChinaE2
 add address=2400:9020:f012::/47 list=List_ChinaE2
 add address=2400:95e0::/48 list=List_ChinaE2
 add address=2400:a860:1::/48 list=List_ChinaE2
