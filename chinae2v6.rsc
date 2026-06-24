@@ -2013,3 +2013,4 @@ add address=2a14:7586:6300::/44 list=List_ChinaE2
 add address=2a14:7586:6500::/48 list=List_ChinaE2
 add address=2a14:7dc0:506::/48 list=List_ChinaE2
 add address=2a14:ae00:50::/44 list=List_ChinaE2
+add address=2c0f:f7a8:9211::/48 list=List_ChinaE2
