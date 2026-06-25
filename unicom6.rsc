@@ -652,6 +652,7 @@ add address=2407:6c40:1600::/40 list=List_Unicom
 add address=2407:8f40:2::/48 list=List_Unicom
 add address=2407:c080:304::/48 list=List_Unicom
 add address=2407:c080:1800::/37 list=List_Unicom
+add address=2408:4016:3::/48 list=List_Unicom
 add address=2408:8000::/48 list=List_Unicom
 add address=2408:8000:2::/47 list=List_Unicom
 add address=2408:8000:1000::/36 list=List_Unicom

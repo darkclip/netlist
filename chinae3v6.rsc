@@ -1353,7 +1353,6 @@ add address=2408:4004::/30 list=List_ChinaE3
 add address=2408:4008::/29 list=List_ChinaE3
 add address=2408:4010::/30 list=List_ChinaE3
 add address=2408:4014::/31 list=List_ChinaE3
-add address=2408:4016:3::/48 list=List_ChinaE3
 add address=2408:4016:4::/46 list=List_ChinaE3
 add address=2408:4016:8::/45 list=List_ChinaE3
 add address=2408:4016:10::/44 list=List_ChinaE3
