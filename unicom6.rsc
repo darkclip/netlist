@@ -143,6 +143,7 @@ add address=2001:250:5878::/45 list=List_Unicom
 add address=2001:250:5880::/44 list=List_Unicom
 add address=2001:250:5890::/45 list=List_Unicom
 add address=2001:250:5898::/47 list=List_Unicom
+add address=2001:250:589b::/48 list=List_Unicom
 add address=2001:250:6000::/47 list=List_Unicom
 add address=2001:250:6006::/47 list=List_Unicom
 add address=2001:250:6009::/48 list=List_Unicom
