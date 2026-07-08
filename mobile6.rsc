@@ -11,10 +11,7 @@ add address=2400:ae00:1981::/48 list=List_Mobile
 add address=2400:ee00:ffec::/46 list=List_Mobile
 add address=2400:ee00:fff0::/44 list=List_Mobile
 add address=2401:1320::/32 list=List_Mobile
-add address=2401:2a00:f000::/44 list=List_Mobile
-add address=2401:2a00:f010::/46 list=List_Mobile
-add address=2401:2a00:f014::/47 list=List_Mobile
-add address=2401:2a00:f018::/45 list=List_Mobile
+add address=2401:2a00:f000::/43 list=List_Mobile
 add address=2401:8be0::/48 list=List_Mobile
 add address=2401:9a00::/44 list=List_Mobile
 add address=2401:9a00:10::/46 list=List_Mobile

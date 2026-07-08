@@ -69,8 +69,7 @@ add address=2001:250:856::/47 list=List_Telecom
 add address=2001:250:858::/47 list=List_Telecom
 add address=2001:250:85a::/48 list=List_Telecom
 add address=2001:250:85c::/46 list=List_Telecom
-add address=2001:250:860::/48 list=List_Telecom
-add address=2001:250:862::/47 list=List_Telecom
+add address=2001:250:860::/46 list=List_Telecom
 add address=2001:250:865::/48 list=List_Telecom
 add address=2001:250:866::/48 list=List_Telecom
 add address=2001:250:868::/45 list=List_Telecom
@@ -87,6 +86,7 @@ add address=2001:250:88d::/48 list=List_Telecom
 add address=2001:250:88e::/47 list=List_Telecom
 add address=2001:250:891::/48 list=List_Telecom
 add address=2001:250:892::/47 list=List_Telecom
+add address=2001:250:895::/48 list=List_Telecom
 add address=2001:250:c00::/45 list=List_Telecom
 add address=2001:250:c08::/46 list=List_Telecom
 add address=2001:250:c0d::/48 list=List_Telecom
@@ -134,10 +134,7 @@ add address=2001:250:5012::/47 list=List_Telecom
 add address=2001:250:5014::/46 list=List_Telecom
 add address=2001:250:5018::/45 list=List_Telecom
 add address=2001:250:5020::/43 list=List_Telecom
-add address=2001:250:5040::/46 list=List_Telecom
-add address=2001:250:5044::/47 list=List_Telecom
-add address=2001:250:5047::/48 list=List_Telecom
-add address=2001:250:5048::/45 list=List_Telecom
+add address=2001:250:5040::/44 list=List_Telecom
 add address=2001:250:5050::/46 list=List_Telecom
 add address=2001:250:5055::/48 list=List_Telecom
 add address=2001:250:5056::/47 list=List_Telecom

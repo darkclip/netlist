@@ -90,10 +90,7 @@ add address=2001:250:5012::/47 list=List_Unicom
 add address=2001:250:5014::/46 list=List_Unicom
 add address=2001:250:5018::/45 list=List_Unicom
 add address=2001:250:5020::/43 list=List_Unicom
-add address=2001:250:5040::/46 list=List_Unicom
-add address=2001:250:5044::/47 list=List_Unicom
-add address=2001:250:5047::/48 list=List_Unicom
-add address=2001:250:5048::/45 list=List_Unicom
+add address=2001:250:5040::/44 list=List_Unicom
 add address=2001:250:5050::/46 list=List_Unicom
 add address=2001:250:5055::/48 list=List_Unicom
 add address=2001:250:5056::/47 list=List_Unicom
