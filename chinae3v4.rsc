@@ -2723,7 +2723,6 @@ add address=211.99.144.0/24 list=List_ChinaE3
 add address=211.99.157.0/24 list=List_ChinaE3
 add address=211.99.190.0/23 list=List_ChinaE3
 add address=211.99.216.0/24 list=List_ChinaE3
-add address=211.144.22.0/24 list=List_ChinaE3
 add address=211.144.101.0/24 list=List_ChinaE3
 add address=211.144.102.0/23 list=List_ChinaE3
 add address=211.144.104.0/22 list=List_ChinaE3

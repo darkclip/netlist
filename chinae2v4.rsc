@@ -3208,7 +3208,6 @@ add address=211.101.199.0/24 list=List_ChinaE2
 add address=211.102.208.0/20 list=List_ChinaE2
 add address=211.103.0.0/17 list=List_ChinaE2
 add address=211.136.0.0/13 list=List_ChinaE2
-add address=211.144.22.0/24 list=List_ChinaE2
 add address=211.144.101.0/24 list=List_ChinaE2
 add address=211.144.102.0/23 list=List_ChinaE2
 add address=211.144.104.0/22 list=List_ChinaE2
