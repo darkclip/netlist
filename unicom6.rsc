@@ -82,7 +82,6 @@ add address=2001:250:3c22::/47 list=List_Unicom
 add address=2001:250:3c25::/48 list=List_Unicom
 add address=2001:250:3c26::/48 list=List_Unicom
 add address=2001:250:4038::/48 list=List_Unicom
-add address=2001:250:485d::/48 list=List_Unicom
 add address=2001:250:5002::/47 list=List_Unicom
 add address=2001:250:5004::/46 list=List_Unicom
 add address=2001:250:5008::/45 list=List_Unicom
