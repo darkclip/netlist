@@ -639,6 +639,7 @@ add address=2404:7600:2000::/35 list=List_Telecom
 add address=2404:7600:4000::/34 list=List_Telecom
 add address=2404:7600:8000::/33 list=List_Telecom
 add address=2404:e8c0::/32 list=List_Telecom
+add address=2404:eb80::/48 list=List_Telecom
 add address=2405:1480:1000::/48 list=List_Telecom
 add address=2405:1480:2000::/48 list=List_Telecom
 add address=2405:1480:3000::/48 list=List_Telecom
@@ -655,7 +656,7 @@ add address=2406:8880::/48 list=List_Telecom
 add address=2406:cf00::/48 list=List_Telecom
 add address=2406:cf00:1000::/43 list=List_Telecom
 add address=2406:d440:100::/44 list=List_Telecom
-add address=2406:d440:200::/43 list=List_Telecom
+add address=2406:d440:210::/44 list=List_Telecom
 add address=2406:d440:ff00::/48 list=List_Telecom
 add address=2406:e3c0::/36 list=List_Telecom
 add address=2406:e3c0:1000::/37 list=List_Telecom
