@@ -1072,6 +1072,7 @@ add address=2402:4e00:d000::/36 list=List_ChinaE3
 add address=2402:4e00:e000::/35 list=List_ChinaE3
 add address=2402:6f40::/48 list=List_ChinaE3
 add address=2402:6f40:2::/48 list=List_ChinaE3
+add address=2402:6fc0::/48 list=List_ChinaE3
 add address=2402:93c0:20::/48 list=List_ChinaE3
 add address=2402:93c0:100::/48 list=List_ChinaE3
 add address=2402:b8c0:6::/48 list=List_ChinaE3

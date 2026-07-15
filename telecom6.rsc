@@ -559,7 +559,6 @@ add address=2402:4e00:c020::/44 list=List_Telecom
 add address=2402:5e40::/32 list=List_Telecom
 add address=2402:5ec0::/32 list=List_Telecom
 add address=2402:6f40:3::/48 list=List_Telecom
-add address=2402:6fc0::/48 list=List_Telecom
 add address=2402:7040::/32 list=List_Telecom
 add address=2402:7d80::/48 list=List_Telecom
 add address=2402:7d80:8888::/48 list=List_Telecom
