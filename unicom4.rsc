@@ -3006,7 +3006,6 @@ add address=218.107.0.0/18 list=List_Unicom
 add address=218.107.128.0/17 list=List_Unicom
 add address=218.108.224.0/19 list=List_Unicom
 add address=218.109.32.0/19 list=List_Unicom
-add address=218.109.192.0/19 list=List_Unicom
 add address=218.192.0.0/20 list=List_Unicom
 add address=218.192.32.0/20 list=List_Unicom
 add address=218.192.64.0/19 list=List_Unicom
