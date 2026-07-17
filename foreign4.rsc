@@ -8836,7 +8836,8 @@ add address=203.95.192.0/18 list=List_Foreign
 add address=203.96.0.0/15 list=List_Foreign
 add address=203.98.0.0/16 list=List_Foreign
 add address=203.99.0.0/20 list=List_Foreign
-add address=203.99.16.0/22 list=List_Foreign
+add address=203.99.16.0/23 list=List_Foreign
+add address=203.99.19.0/24 list=List_Foreign
 add address=203.99.32.0/19 list=List_Foreign
 add address=203.99.64.0/18 list=List_Foreign
 add address=203.99.128.0/17 list=List_Foreign
