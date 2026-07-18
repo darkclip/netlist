@@ -302,7 +302,6 @@ add address=103.118.173.0/24 list=List_Mobile
 add address=103.120.88.0/22 list=List_Mobile
 add address=103.120.196.0/22 list=List_Mobile
 add address=103.130.160.0/23 list=List_Mobile
-add address=103.142.82.0/23 list=List_Mobile
 add address=103.143.228.0/23 list=List_Mobile
 add address=103.152.29.0/24 list=List_Mobile
 add address=103.154.30.0/23 list=List_Mobile
