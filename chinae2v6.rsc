@@ -641,6 +641,7 @@ add address=2001:da8:9800::/37 list=List_ChinaE2
 add address=2001:da8:a000::/48 list=List_ChinaE2
 add address=2001:da8:a003::/48 list=List_ChinaE2
 add address=2001:da8:a004::/48 list=List_ChinaE2
+add address=2001:da8:a012::/48 list=List_ChinaE2
 add address=2001:da8:a01d::/48 list=List_ChinaE2
 add address=2001:da8:a022::/48 list=List_ChinaE2
 add address=2001:da8:a026::/48 list=List_ChinaE2

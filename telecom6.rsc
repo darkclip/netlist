@@ -311,7 +311,9 @@ add address=2001:da8:a002::/48 list=List_Telecom
 add address=2001:da8:a005::/48 list=List_Telecom
 add address=2001:da8:a006::/47 list=List_Telecom
 add address=2001:da8:a008::/45 list=List_Telecom
-add address=2001:da8:a010::/45 list=List_Telecom
+add address=2001:da8:a010::/47 list=List_Telecom
+add address=2001:da8:a013::/48 list=List_Telecom
+add address=2001:da8:a014::/46 list=List_Telecom
 add address=2001:da8:a018::/46 list=List_Telecom
 add address=2001:da8:a01c::/48 list=List_Telecom
 add address=2001:da8:a01e::/47 list=List_Telecom
