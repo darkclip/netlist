@@ -28,6 +28,7 @@ add address=2001:250:24f::/48 list=List_Unicom
 add address=2001:250:251::/48 list=List_Unicom
 add address=2001:250:803::/48 list=List_Unicom
 add address=2001:250:101f::/48 list=List_Unicom
+add address=2001:250:2059::/48 list=List_Unicom
 add address=2001:250:3000::/44 list=List_Unicom
 add address=2001:250:3010::/48 list=List_Unicom
 add address=2001:250:3012::/47 list=List_Unicom
@@ -235,8 +236,7 @@ add address=2001:250:703e::/48 list=List_Unicom
 add address=2001:250:7040::/48 list=List_Unicom
 add address=2001:250:7401::/48 list=List_Unicom
 add address=2001:250:7402::/47 list=List_Unicom
-add address=2001:250:7404::/48 list=List_Unicom
-add address=2001:250:7406::/47 list=List_Unicom
+add address=2001:250:7404::/46 list=List_Unicom
 add address=2001:250:7408::/46 list=List_Unicom
 add address=2001:250:740c::/47 list=List_Unicom
 add address=2001:250:740e::/48 list=List_Unicom
@@ -414,8 +414,7 @@ add address=2001:da8:9012::/48 list=List_Unicom
 add address=2001:da8:9014::/46 list=List_Unicom
 add address=2001:da8:9018::/46 list=List_Unicom
 add address=2001:da8:901e::/48 list=List_Unicom
-add address=2001:da8:a800::/47 list=List_Unicom
-add address=2001:da8:a802::/48 list=List_Unicom
+add address=2001:da8:a800::/46 list=List_Unicom
 add address=2001:da8:a805::/48 list=List_Unicom
 add address=2001:da8:a806::/47 list=List_Unicom
 add address=2001:da8:a808::/48 list=List_Unicom

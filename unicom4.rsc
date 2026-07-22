@@ -731,6 +731,7 @@ add address=64.188.40.0/22 list=List_Unicom
 add address=64.188.44.0/24 list=List_Unicom
 add address=69.235.184.0/21 list=List_Unicom
 add address=74.114.51.0/24 list=List_Unicom
+add address=82.38.46.0/23 list=List_Unicom
 add address=101.4.128.0/24 list=List_Unicom
 add address=101.16.0.0/12 list=List_Unicom
 add address=101.52.204.0/22 list=List_Unicom
@@ -1711,6 +1712,7 @@ add address=123.4.0.0/14 list=List_Unicom
 add address=123.8.0.0/13 list=List_Unicom
 add address=123.49.192.0/23 list=List_Unicom
 add address=123.49.194.0/24 list=List_Unicom
+add address=123.49.245.0/24 list=List_Unicom
 add address=123.58.32.0/23 list=List_Unicom
 add address=123.58.34.0/24 list=List_Unicom
 add address=123.58.36.0/24 list=List_Unicom
@@ -1995,6 +1997,7 @@ add address=154.89.32.0/21 list=List_Unicom
 add address=154.89.40.0/22 list=List_Unicom
 add address=154.89.45.0/24 list=List_Unicom
 add address=154.89.46.0/24 list=List_Unicom
+add address=154.203.244.0/23 list=List_Unicom
 add address=155.126.176.0/23 list=List_Unicom
 add address=157.0.0.0/16 list=List_Unicom
 add address=157.10.35.0/24 list=List_Unicom
