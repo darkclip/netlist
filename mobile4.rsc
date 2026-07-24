@@ -659,7 +659,12 @@ add address=120.133.48.0/23 list=List_Mobile
 add address=120.133.50.0/24 list=List_Mobile
 add address=120.133.52.0/22 list=List_Mobile
 add address=120.133.56.0/21 list=List_Mobile
-add address=120.133.64.0/18 list=List_Mobile
+add address=120.133.64.0/22 list=List_Mobile
+add address=120.133.68.0/23 list=List_Mobile
+add address=120.133.71.0/24 list=List_Mobile
+add address=120.133.72.0/21 list=List_Mobile
+add address=120.133.80.0/20 list=List_Mobile
+add address=120.133.96.0/19 list=List_Mobile
 add address=120.133.128.0/20 list=List_Mobile
 add address=120.133.148.0/22 list=List_Mobile
 add address=120.133.152.0/21 list=List_Mobile
