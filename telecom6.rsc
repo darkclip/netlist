@@ -568,6 +568,7 @@ add address=2402:7d80::/48 list=List_Telecom
 add address=2402:7d80:8888::/48 list=List_Telecom
 add address=2402:92c0::/48 list=List_Telecom
 add address=2402:93c0::/48 list=List_Telecom
+add address=2402:93c0:20::/48 list=List_Telecom
 add address=2402:db40:5100::/48 list=List_Telecom
 add address=2402:db40:5f00::/46 list=List_Telecom
 add address=2402:e7c0:400::/42 list=List_Telecom
