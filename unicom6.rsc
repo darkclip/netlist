@@ -389,7 +389,7 @@ add address=2001:da8:8008::/48 list=List_Unicom
 add address=2001:da8:800a::/48 list=List_Unicom
 add address=2001:da8:800c::/46 list=List_Unicom
 add address=2001:da8:8010::/46 list=List_Unicom
-add address=2001:da8:8014::/47 list=List_Unicom
+add address=2001:da8:8014::/48 list=List_Unicom
 add address=2001:da8:8016::/48 list=List_Unicom
 add address=2001:da8:8019::/48 list=List_Unicom
 add address=2001:da8:801a::/47 list=List_Unicom
