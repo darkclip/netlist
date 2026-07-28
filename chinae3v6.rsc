@@ -147,6 +147,7 @@ add address=2001:250:3600::/39 list=List_ChinaE3
 add address=2001:250:3804::/47 list=List_ChinaE3
 add address=2001:250:3807::/48 list=List_ChinaE3
 add address=2001:250:3812::/48 list=List_ChinaE3
+add address=2001:250:3815::/48 list=List_ChinaE3
 add address=2001:250:3819::/48 list=List_ChinaE3
 add address=2001:250:381a::/47 list=List_ChinaE3
 add address=2001:250:381c::/46 list=List_ChinaE3

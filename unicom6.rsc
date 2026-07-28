@@ -67,7 +67,8 @@ add address=2001:250:3806::/48 list=List_Unicom
 add address=2001:250:3808::/45 list=List_Unicom
 add address=2001:250:3810::/47 list=List_Unicom
 add address=2001:250:3813::/48 list=List_Unicom
-add address=2001:250:3814::/46 list=List_Unicom
+add address=2001:250:3814::/48 list=List_Unicom
+add address=2001:250:3816::/47 list=List_Unicom
 add address=2001:250:3818::/48 list=List_Unicom
 add address=2001:250:3c00::/44 list=List_Unicom
 add address=2001:250:3c11::/48 list=List_Unicom
