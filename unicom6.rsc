@@ -1138,6 +1138,7 @@ add address=2408:8818::/31 list=List_Unicom
 add address=2408:882c::/32 list=List_Unicom
 add address=2408:883a::/32 list=List_Unicom
 add address=2408:8844::/43 list=List_Unicom
+add address=2408:8844:40::/43 list=List_Unicom
 add address=2408:8856::/31 list=List_Unicom
 add address=2408:8858::/30 list=List_Unicom
 add address=2408:8862::/31 list=List_Unicom

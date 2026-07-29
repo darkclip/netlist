@@ -213,6 +213,7 @@ add address=43.247.244.0/22 list=List_Telecom
 add address=43.248.76.0/22 list=List_Telecom
 add address=43.248.98.0/24 list=List_Telecom
 add address=43.248.101.0/24 list=List_Telecom
+add address=43.248.116.0/24 list=List_Telecom
 add address=43.248.134.0/23 list=List_Telecom
 add address=43.248.136.0/24 list=List_Telecom
 add address=43.249.144.0/22 list=List_Telecom
@@ -1103,6 +1104,7 @@ add address=106.12.252.0/23 list=List_Telecom
 add address=106.12.254.0/24 list=List_Telecom
 add address=106.13.244.0/22 list=List_Telecom
 add address=106.13.248.0/22 list=List_Telecom
+add address=106.13.254.0/23 list=List_Telecom
 add address=106.16.0.0/14 list=List_Telecom
 add address=106.32.0.0/12 list=List_Telecom
 add address=106.52.0.0/15 list=List_Telecom
@@ -1136,7 +1138,6 @@ add address=110.40.13.0/24 list=List_Telecom
 add address=110.40.14.0/23 list=List_Telecom
 add address=110.40.16.0/24 list=List_Telecom
 add address=110.42.15.0/24 list=List_Telecom
-add address=110.42.17.0/24 list=List_Telecom
 add address=110.42.18.0/23 list=List_Telecom
 add address=110.42.20.0/22 list=List_Telecom
 add address=110.42.24.0/21 list=List_Telecom
@@ -1458,8 +1459,7 @@ add address=116.198.144.0/20 list=List_Telecom
 add address=116.198.160.0/20 list=List_Telecom
 add address=116.198.176.0/21 list=List_Telecom
 add address=116.198.192.0/18 list=List_Telecom
-add address=116.199.24.0/23 list=List_Telecom
-add address=116.199.62.0/23 list=List_Telecom
+add address=116.199.0.0/18 list=List_Telecom
 add address=116.199.66.0/23 list=List_Telecom
 add address=116.199.110.0/23 list=List_Telecom
 add address=116.207.0.0/16 list=List_Telecom
@@ -3212,7 +3212,6 @@ add address=210.78.128.0/24 list=List_Telecom
 add address=210.78.134.0/23 list=List_Telecom
 add address=210.78.139.0/24 list=List_Telecom
 add address=210.87.189.0/24 list=List_Telecom
-add address=210.192.104.0/21 list=List_Telecom
 add address=210.192.116.0/22 list=List_Telecom
 add address=211.64.128.0/18 list=List_Telecom
 add address=211.64.192.0/19 list=List_Telecom
