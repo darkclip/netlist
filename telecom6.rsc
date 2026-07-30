@@ -26,6 +26,7 @@ add address=2001:250:23c::/47 list=List_Telecom
 add address=2001:250:248::/48 list=List_Telecom
 add address=2001:250:24f::/48 list=List_Telecom
 add address=2001:250:251::/48 list=List_Telecom
+add address=2001:250:252::/48 list=List_Telecom
 add address=2001:250:401::/48 list=List_Telecom
 add address=2001:250:402::/47 list=List_Telecom
 add address=2001:250:404::/46 list=List_Telecom

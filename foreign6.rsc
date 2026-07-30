@@ -6023,7 +6023,7 @@ add address=2408:883b::/32 list=List_Foreign
 add address=2408:883c::/30 list=List_Foreign
 add address=2408:8840::/30 list=List_Foreign
 add address=2408:8844:20::/43 list=List_Foreign
-add address=2408:8844:40::/42 list=List_Foreign
+add address=2408:8844:60::/43 list=List_Foreign
 add address=2408:8844:80::/41 list=List_Foreign
 add address=2408:8844:100::/40 list=List_Foreign
 add address=2408:8844:200::/39 list=List_Foreign
@@ -7960,7 +7960,8 @@ add address=2a0e:aa07:e1c0::/42 list=List_Foreign
 add address=2a0e:aa07:e200::/41 list=List_Foreign
 add address=2a0e:aa07:e282::/47 list=List_Foreign
 add address=2a0e:aa07:e28a::/48 list=List_Foreign
-add address=2a0e:aa07:e28c::/46 list=List_Foreign
+add address=2a0e:aa07:e28c::/48 list=List_Foreign
+add address=2a0e:aa07:e28e::/47 list=List_Foreign
 add address=2a0e:aa07:e290::/44 list=List_Foreign
 add address=2a0e:aa07:e2a0::/43 list=List_Foreign
 add address=2a0e:aa07:e2c0::/42 list=List_Foreign

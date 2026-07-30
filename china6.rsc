@@ -1059,6 +1059,7 @@ add address=2408:8818::/31 list=List_China
 add address=2408:882c::/32 list=List_China
 add address=2408:883a::/32 list=List_China
 add address=2408:8844::/43 list=List_China
+add address=2408:8844:40::/43 list=List_China
 add address=2408:8856::/31 list=List_China
 add address=2408:8858::/30 list=List_China
 add address=2408:8862::/31 list=List_China
@@ -1423,6 +1424,7 @@ add address=2a0e:aa07:e280::/47 list=List_China
 add address=2a0e:aa07:e284::/46 list=List_China
 add address=2a0e:aa07:e288::/47 list=List_China
 add address=2a0e:aa07:e28b::/48 list=List_China
+add address=2a0e:aa07:e28d::/48 list=List_China
 add address=2a0e:aa07:f0d0::/46 list=List_China
 add address=2a0e:aa07:f0d4::/47 list=List_China
 add address=2a0e:aa07:f0d8::/48 list=List_China
