@@ -1330,9 +1330,11 @@ add address=240e:4b:c000::/37 list=List_Unicom
 add address=240e:4c::/36 list=List_Unicom
 add address=240e:b1:8800::/37 list=List_Unicom
 add address=240e:b1:9800::/37 list=List_Unicom
+add address=240e:e5:8000::/48 list=List_Unicom
 add address=240e:108:10f3::/48 list=List_Unicom
 add address=240e:108:10f4::/48 list=List_Unicom
 add address=240e:23d::/34 list=List_Unicom
+add address=240e:688:ed02::/48 list=List_Unicom
 add address=240e:93c:1000::/36 list=List_Unicom
 add address=240e:93d::/36 list=List_Unicom
 add address=240e:93d:1000::/48 list=List_Unicom
