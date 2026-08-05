@@ -8,6 +8,7 @@ add address=2001:250:208::/46 list=List_Unicom
 add address=2001:250:20c::/48 list=List_Unicom
 add address=2001:250:20f::/48 list=List_Unicom
 add address=2001:250:210::/48 list=List_Unicom
+add address=2001:250:212::/48 list=List_Unicom
 add address=2001:250:214::/47 list=List_Unicom
 add address=2001:250:218::/47 list=List_Unicom
 add address=2001:250:21b::/48 list=List_Unicom
@@ -298,9 +299,7 @@ add address=2001:da8:222::/48 list=List_Unicom
 add address=2001:da8:224::/48 list=List_Unicom
 add address=2001:da8:22b::/48 list=List_Unicom
 add address=2001:da8:22d::/48 list=List_Unicom
-add address=2001:da8:230::/46 list=List_Unicom
-add address=2001:da8:234::/47 list=List_Unicom
-add address=2001:da8:237::/48 list=List_Unicom
+add address=2001:da8:230::/45 list=List_Unicom
 add address=2001:da8:238::/48 list=List_Unicom
 add address=2001:da8:23a::/47 list=List_Unicom
 add address=2001:da8:23d::/48 list=List_Unicom
@@ -556,6 +555,7 @@ add address=2401:ec00::/32 list=List_Unicom
 add address=2402:18a0::/32 list=List_Unicom
 add address=2402:2000::/32 list=List_Unicom
 add address=2402:34e0::/32 list=List_Unicom
+add address=2402:5920::/48 list=List_Unicom
 add address=2402:5ec0:1000::/39 list=List_Unicom
 add address=2402:7040::/32 list=List_Unicom
 add address=2402:7d80:240::/48 list=List_Unicom
@@ -1268,6 +1268,7 @@ add address=240b:e008::/29 list=List_Unicom
 add address=240b:e010::/32 list=List_Unicom
 add address=240c:409f:4::/46 list=List_Unicom
 add address=240c:c001::/32 list=List_Unicom
+add address=240c:c017::/32 list=List_Unicom
 add address=240c:c018::/31 list=List_Unicom
 add address=240c:c02f::/32 list=List_Unicom
 add address=240c:c0a0::/31 list=List_Unicom
@@ -1330,11 +1331,9 @@ add address=240e:4b:c000::/37 list=List_Unicom
 add address=240e:4c::/36 list=List_Unicom
 add address=240e:b1:8800::/37 list=List_Unicom
 add address=240e:b1:9800::/37 list=List_Unicom
-add address=240e:e5:8000::/48 list=List_Unicom
 add address=240e:108:10f3::/48 list=List_Unicom
 add address=240e:108:10f4::/48 list=List_Unicom
 add address=240e:23d::/34 list=List_Unicom
-add address=240e:688:ed02::/48 list=List_Unicom
 add address=240e:93c:1000::/36 list=List_Unicom
 add address=240e:93d::/36 list=List_Unicom
 add address=240e:93d:1000::/48 list=List_Unicom
