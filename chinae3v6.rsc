@@ -105,9 +105,7 @@ add address=2001:250:e40::/42 list=List_ChinaE3
 add address=2001:250:e80::/41 list=List_ChinaE3
 add address=2001:250:f00::/40 list=List_ChinaE3
 add address=2001:250:1000::/44 list=List_ChinaE3
-add address=2001:250:1010::/46 list=List_ChinaE3
-add address=2001:250:1014::/47 list=List_ChinaE3
-add address=2001:250:1017::/48 list=List_ChinaE3
+add address=2001:250:1010::/45 list=List_ChinaE3
 add address=2001:250:1018::/46 list=List_ChinaE3
 add address=2001:250:101c::/47 list=List_ChinaE3
 add address=2001:250:101e::/48 list=List_ChinaE3
