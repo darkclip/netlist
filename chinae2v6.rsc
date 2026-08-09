@@ -1120,7 +1120,13 @@ add address=2403:a200:a1f0::/45 list=List_ChinaE2
 add address=2403:a200:a1f8::/46 list=List_ChinaE2
 add address=2403:a200:a1fc::/47 list=List_ChinaE2
 add address=2403:a200:a1fe::/48 list=List_ChinaE2
-add address=2403:a200:a200::/41 list=List_ChinaE2
+add address=2403:a200:a201::/48 list=List_ChinaE2
+add address=2403:a200:a202::/47 list=List_ChinaE2
+add address=2403:a200:a204::/46 list=List_ChinaE2
+add address=2403:a200:a208::/45 list=List_ChinaE2
+add address=2403:a200:a210::/44 list=List_ChinaE2
+add address=2403:a200:a220::/43 list=List_ChinaE2
+add address=2403:a200:a240::/42 list=List_ChinaE2
 add address=2403:a200:a280::/42 list=List_ChinaE2
 add address=2403:a200:a2c0::/43 list=List_ChinaE2
 add address=2403:a200:a2e0::/44 list=List_ChinaE2

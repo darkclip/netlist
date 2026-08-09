@@ -842,7 +842,6 @@ add address=140.143.88.0/21 list=List_Mobile
 add address=140.143.96.0/22 list=List_Mobile
 add address=140.143.100.0/23 list=List_Mobile
 add address=140.179.224.0/19 list=List_Mobile
-add address=140.205.1.0/24 list=List_Mobile
 add address=140.210.0.0/24 list=List_Mobile
 add address=140.210.16.0/21 list=List_Mobile
 add address=140.210.24.0/22 list=List_Mobile
