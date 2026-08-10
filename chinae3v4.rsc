@@ -1254,6 +1254,8 @@ add address=117.48.193.0/24 list=List_ChinaE3
 add address=117.48.194.0/24 list=List_ChinaE3
 add address=117.48.219.0/24 list=List_ChinaE3
 add address=117.48.235.0/24 list=List_ChinaE3
+add address=117.51.128.0/24 list=List_ChinaE3
+add address=117.51.132.0/23 list=List_ChinaE3
 add address=117.73.16.0/23 list=List_ChinaE3
 add address=117.78.0.0/18 list=List_ChinaE3
 add address=117.128.0.0/15 list=List_ChinaE3

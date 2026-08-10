@@ -1543,6 +1543,8 @@ add address=117.48.194.0/24 list=List_ChinaE2
 add address=117.48.219.0/24 list=List_ChinaE2
 add address=117.48.235.0/24 list=List_ChinaE2
 add address=117.50.0.0/17 list=List_ChinaE2
+add address=117.51.128.0/24 list=List_ChinaE2
+add address=117.51.132.0/23 list=List_ChinaE2
 add address=117.72.248.0/22 list=List_ChinaE2
 add address=117.73.16.0/23 list=List_ChinaE2
 add address=117.74.68.0/22 list=List_ChinaE2
