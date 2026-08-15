@@ -28,7 +28,6 @@ add address=2001:250:22f::/48 list=List_ChinaE3
 add address=2001:250:232::/47 list=List_ChinaE3
 add address=2001:250:235::/48 list=List_ChinaE3
 add address=2001:250:239::/48 list=List_ChinaE3
-add address=2001:250:23d::/48 list=List_ChinaE3
 add address=2001:250:23e::/48 list=List_ChinaE3
 add address=2001:250:240::/45 list=List_ChinaE3
 add address=2001:250:249::/48 list=List_ChinaE3
