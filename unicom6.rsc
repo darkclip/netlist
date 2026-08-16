@@ -1222,7 +1222,7 @@ add address=240a:a020::/30 list=List_Unicom
 add address=240a:a024::/31 list=List_Unicom
 add address=240a:a026::/32 list=List_Unicom
 add address=240a:a027::/48 list=List_Unicom
-add address=240a:a027:2::/47 list=List_Unicom
+add address=240a:a027:3::/48 list=List_Unicom
 add address=240a:a027:4::/46 list=List_Unicom
 add address=240a:a027:8::/45 list=List_Unicom
 add address=240a:a027:10::/44 list=List_Unicom
