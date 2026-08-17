@@ -411,7 +411,7 @@ add address=2001:da8:9008::/46 list=List_Unicom
 add address=2001:da8:900c::/48 list=List_Unicom
 add address=2001:da8:900e::/47 list=List_Unicom
 add address=2001:da8:9010::/48 list=List_Unicom
-add address=2001:da8:9012::/47 list=List_Unicom
+add address=2001:da8:9012::/48 list=List_Unicom
 add address=2001:da8:9014::/46 list=List_Unicom
 add address=2001:da8:9018::/46 list=List_Unicom
 add address=2001:da8:901e::/48 list=List_Unicom
@@ -1222,7 +1222,7 @@ add address=240a:a020::/30 list=List_Unicom
 add address=240a:a024::/31 list=List_Unicom
 add address=240a:a026::/32 list=List_Unicom
 add address=240a:a027::/48 list=List_Unicom
-add address=240a:a027:3::/48 list=List_Unicom
+add address=240a:a027:2::/47 list=List_Unicom
 add address=240a:a027:4::/46 list=List_Unicom
 add address=240a:a027:8::/45 list=List_Unicom
 add address=240a:a027:10::/44 list=List_Unicom

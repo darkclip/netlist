@@ -1430,7 +1430,8 @@ add address=116.85.248.0/23 list=List_Telecom
 add address=116.85.251.0/24 list=List_Telecom
 add address=116.85.252.0/24 list=List_Telecom
 add address=116.85.254.0/23 list=List_Telecom
-add address=116.90.80.0/20 list=List_Telecom
+add address=116.90.80.0/22 list=List_Telecom
+add address=116.90.88.0/21 list=List_Telecom
 add address=116.192.0.0/16 list=List_Telecom
 add address=116.196.0.0/21 list=List_Telecom
 add address=116.196.8.0/22 list=List_Telecom
