@@ -36,7 +36,6 @@ add address=2402:6e80::/32 list=List_Mobile
 add address=2402:8bc0::/32 list=List_Mobile
 add address=2402:9a80::/32 list=List_Mobile
 add address=2402:e880::/48 list=List_Mobile
-add address=2403:7580::/32 list=List_Mobile
 add address=2403:b400::/32 list=List_Mobile
 add address=2403:c980::/32 list=List_Mobile
 add address=2404:7240:6000::/48 list=List_Mobile
