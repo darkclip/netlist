@@ -3033,7 +3033,7 @@ add address=203.196.2.0/23 list=List_Telecom
 add address=203.196.7.0/24 list=List_Telecom
 add address=203.202.236.0/23 list=List_Telecom
 add address=203.205.88.0/22 list=List_Telecom
-add address=203.205.92.0/24 list=List_Telecom
+add address=203.205.92.0/23 list=List_Telecom
 add address=203.205.95.0/24 list=List_Telecom
 add address=203.207.200.0/22 list=List_Telecom
 add address=203.208.39.0/24 list=List_Telecom
