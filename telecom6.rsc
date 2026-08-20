@@ -646,11 +646,7 @@ add address=2406:cf00:1000::/43 list=List_Telecom
 add address=2406:d440:100::/44 list=List_Telecom
 add address=2406:d440:210::/44 list=List_Telecom
 add address=2406:d440:ff00::/48 list=List_Telecom
-add address=2406:e3c0::/36 list=List_Telecom
-add address=2406:e3c0:1000::/37 list=List_Telecom
-add address=2406:e3c0:2000::/35 list=List_Telecom
-add address=2406:e3c0:4000::/34 list=List_Telecom
-add address=2406:e3c0:8000::/33 list=List_Telecom
+add address=2406:e3c0::/32 list=List_Telecom
 add address=2407:4980::/32 list=List_Telecom
 add address=2407:5380::/32 list=List_Telecom
 add address=2407:6c40:1100::/48 list=List_Telecom
