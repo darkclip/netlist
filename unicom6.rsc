@@ -644,7 +644,11 @@ add address=2406:cac0::/40 list=List_Unicom
 add address=2406:cac0:200::/40 list=List_Unicom
 add address=2406:cf00::/48 list=List_Unicom
 add address=2406:d440:ffff::/48 list=List_Unicom
-add address=2406:e3c0::/32 list=List_Unicom
+add address=2406:e3c0::/36 list=List_Unicom
+add address=2406:e3c0:1000::/37 list=List_Unicom
+add address=2406:e3c0:2000::/35 list=List_Unicom
+add address=2406:e3c0:4000::/34 list=List_Unicom
+add address=2406:e3c0:8000::/33 list=List_Unicom
 add address=2407:6c40:1500::/48 list=List_Unicom
 add address=2407:6c40:1600::/40 list=List_Unicom
 add address=2407:8f40:2::/48 list=List_Unicom

@@ -282,7 +282,8 @@ add address=2403:4c80::/48 list=List_China
 add address=2403:5c80::/48 list=List_China
 add address=2403:6740::/48 list=List_China
 add address=2403:6a00::/32 list=List_China
-add address=2403:7580::/32 list=List_China
+add address=2403:7580::/44 list=List_China
+add address=2403:7580:10::/46 list=List_China
 add address=2403:8080:101::/48 list=List_China
 add address=2403:8c00::/32 list=List_China
 add address=2403:9b00:2000::/48 list=List_China

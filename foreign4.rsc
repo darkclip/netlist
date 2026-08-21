@@ -2542,7 +2542,7 @@ add address=103.81.56.0/21 list=List_Foreign
 add address=103.81.64.0/19 list=List_Foreign
 add address=103.81.96.0/20 list=List_Foreign
 add address=103.81.112.0/21 list=List_Foreign
-add address=103.81.120.0/23 list=List_Foreign
+add address=103.81.121.0/24 list=List_Foreign
 add address=103.81.122.0/24 list=List_Foreign
 add address=103.81.124.0/22 list=List_Foreign
 add address=103.81.128.0/18 list=List_Foreign
@@ -4028,6 +4028,7 @@ add address=103.250.208.0/21 list=List_Foreign
 add address=103.250.220.0/22 list=List_Foreign
 add address=103.250.224.0/20 list=List_Foreign
 add address=103.250.240.0/21 list=List_Foreign
+add address=103.250.252.0/22 list=List_Foreign
 add address=103.251.0.0/19 list=List_Foreign
 add address=103.251.36.0/22 list=List_Foreign
 add address=103.251.40.0/21 list=List_Foreign
@@ -4900,6 +4901,7 @@ add address=117.127.0.0/16 list=List_Foreign
 add address=117.134.192.0/21 list=List_Foreign
 add address=117.134.200.0/22 list=List_Foreign
 add address=117.134.204.0/24 list=List_Foreign
+add address=117.134.222.0/23 list=List_Foreign
 add address=117.192.0.0/10 list=List_Foreign
 add address=118.0.0.0/12 list=List_Foreign
 add address=118.16.0.0/13 list=List_Foreign
@@ -6399,8 +6401,7 @@ add address=154.32.0.0/11 list=List_Foreign
 add address=154.64.0.0/13 list=List_Foreign
 add address=154.72.0.0/19 list=List_Foreign
 add address=154.72.32.0/21 list=List_Foreign
-add address=154.72.40.0/23 list=List_Foreign
-add address=154.72.43.0/24 list=List_Foreign
+add address=154.72.40.0/22 list=List_Foreign
 add address=154.72.45.0/24 list=List_Foreign
 add address=154.72.46.0/24 list=List_Foreign
 add address=154.72.48.0/20 list=List_Foreign
@@ -8601,7 +8602,6 @@ add address=203.204.0.0/16 list=List_Foreign
 add address=203.205.0.0/18 list=List_Foreign
 add address=203.205.64.0/20 list=List_Foreign
 add address=203.205.80.0/21 list=List_Foreign
-add address=203.205.92.0/23 list=List_Foreign
 add address=203.205.94.0/24 list=List_Foreign
 add address=203.205.96.0/19 list=List_Foreign
 add address=203.205.128.0/17 list=List_Foreign
