@@ -3537,7 +3537,6 @@ add address=218.241.112.0/24 list=List_Telecom
 add address=218.242.0.0/16 list=List_Telecom
 add address=218.244.0.0/19 list=List_Telecom
 add address=218.244.160.0/19 list=List_Telecom
-add address=218.245.1.0/24 list=List_Telecom
 add address=218.245.2.0/23 list=List_Telecom
 add address=218.245.4.0/22 list=List_Telecom
 add address=218.245.8.0/21 list=List_Telecom
