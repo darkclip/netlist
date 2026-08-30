@@ -1047,9 +1047,7 @@ add address=218.240.183.0/24 list=List_Mobile
 add address=218.241.16.0/22 list=List_Mobile
 add address=218.241.24.0/22 list=List_Mobile
 add address=218.241.152.0/21 list=List_Mobile
-add address=218.245.0.0/24 list=List_Mobile
-add address=218.245.2.0/23 list=List_Mobile
-add address=218.245.4.0/22 list=List_Mobile
+add address=218.245.0.0/21 list=List_Mobile
 add address=218.245.18.0/23 list=List_Mobile
 add address=218.246.127.0/24 list=List_Mobile
 add address=219.72.152.0/21 list=List_Mobile

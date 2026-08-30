@@ -153,7 +153,7 @@ add address=2001:250:600f::/48 list=List_Unicom
 add address=2001:250:6010::/44 list=List_Unicom
 add address=2001:250:6020::/45 list=List_Unicom
 add address=2001:250:6028::/46 list=List_Unicom
-add address=2001:250:602c::/47 list=List_Unicom
+add address=2001:250:602d::/48 list=List_Unicom
 add address=2001:250:602e::/48 list=List_Unicom
 add address=2001:250:6030::/48 list=List_Unicom
 add address=2001:250:6032::/48 list=List_Unicom
