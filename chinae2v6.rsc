@@ -246,7 +246,6 @@ add address=2001:250:6008::/48 list=List_ChinaE2
 add address=2001:250:600a::/48 list=List_ChinaE2
 add address=2001:250:600c::/47 list=List_ChinaE2
 add address=2001:250:600e::/48 list=List_ChinaE2
-add address=2001:250:602c::/48 list=List_ChinaE2
 add address=2001:250:602f::/48 list=List_ChinaE2
 add address=2001:250:6031::/48 list=List_ChinaE2
 add address=2001:250:6033::/48 list=List_ChinaE2
