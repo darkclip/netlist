@@ -660,7 +660,6 @@ add address=2407:9f00::/32 list=List_Telecom
 add address=2407:b380:8000::/48 list=List_Telecom
 add address=2407:c080:1730::/44 list=List_Telecom
 add address=2407:c080:1800::/37 list=List_Telecom
-add address=2407:d9c0::/32 list=List_Telecom
 add address=2409:27fa::/48 list=List_Telecom
 add address=2409:27fa:f000::/48 list=List_Telecom
 add address=2409:27fb::/48 list=List_Telecom

@@ -5215,6 +5215,7 @@ add address=2407:d7c0::/32 list=List_ChinaE2
 add address=2407:d880::/32 list=List_ChinaE2
 add address=2407:d8c0::/32 list=List_ChinaE2
 add address=2407:d980::/32 list=List_ChinaE2
+add address=2407:d9c0::/32 list=List_ChinaE2
 add address=2407:da80::/32 list=List_ChinaE2
 add address=2407:db80::/32 list=List_ChinaE2
 add address=2407:dc80::/32 list=List_ChinaE2
