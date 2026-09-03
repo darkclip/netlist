@@ -1982,6 +1982,7 @@ add address=2401:f860:1000::/36 list=List_ChinaE3
 add address=2401:f860:2000::/35 list=List_ChinaE3
 add address=2401:f860:4000::/34 list=List_ChinaE3
 add address=2401:f860:8000::/33 list=List_ChinaE3
+add address=2401:fa00:40::/48 list=List_ChinaE3
 add address=2401:fa80::/32 list=List_ChinaE3
 add address=2401:fb80::/32 list=List_ChinaE3
 add address=2401:fc60::/32 list=List_ChinaE3
