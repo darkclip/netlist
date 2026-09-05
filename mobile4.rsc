@@ -64,6 +64,7 @@ add address=43.140.130.0/24 list=List_Mobile
 add address=43.193.65.0/24 list=List_Mobile
 add address=43.224.56.0/23 list=List_Mobile
 add address=43.225.120.0/22 list=List_Mobile
+add address=43.226.56.0/21 list=List_Mobile
 add address=43.226.72.0/22 list=List_Mobile
 add address=43.226.112.0/22 list=List_Mobile
 add address=43.226.128.0/23 list=List_Mobile
@@ -251,7 +252,6 @@ add address=103.38.78.0/23 list=List_Mobile
 add address=103.39.64.0/22 list=List_Mobile
 add address=103.40.12.0/22 list=List_Mobile
 add address=103.40.192.0/23 list=List_Mobile
-add address=103.41.165.0/24 list=List_Mobile
 add address=103.44.80.0/22 list=List_Mobile
 add address=103.45.128.0/24 list=List_Mobile
 add address=103.45.130.0/23 list=List_Mobile
@@ -521,7 +521,9 @@ add address=117.134.0.0/17 list=List_Mobile
 add address=117.134.128.0/18 list=List_Mobile
 add address=117.134.205.0/24 list=List_Mobile
 add address=117.134.207.0/24 list=List_Mobile
-add address=117.134.208.0/20 list=List_Mobile
+add address=117.134.208.0/23 list=List_Mobile
+add address=117.134.212.0/23 list=List_Mobile
+add address=117.134.216.0/21 list=List_Mobile
 add address=117.134.232.0/21 list=List_Mobile
 add address=117.134.240.0/20 list=List_Mobile
 add address=117.135.0.0/16 list=List_Mobile
