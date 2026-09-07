@@ -1195,7 +1195,6 @@ add address=2400:a6a0:8000::/33 list=List_ChinaE3
 add address=2400:a780::/32 list=List_ChinaE3
 add address=2400:a860::/48 list=List_ChinaE3
 add address=2400:a860:3::/48 list=List_ChinaE3
-add address=2400:a860:7::/48 list=List_ChinaE3
 add address=2400:a860:8::/45 list=List_ChinaE3
 add address=2400:a860:10::/44 list=List_ChinaE3
 add address=2400:a860:20::/43 list=List_ChinaE3
