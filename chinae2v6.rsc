@@ -7290,3 +7290,5 @@ add address=2a13:1802:e000::/35 list=List_ChinaE2
 add address=2a13:1803::/32 list=List_ChinaE2
 add address=2a13:1804::/30 list=List_ChinaE2
 add address=2a13:8b40::/29 list=List_ChinaE2
+add address=2c0f:f7a8:9020::/48 list=List_ChinaE2
+add address=2c0f:f7a8:9220::/48 list=List_ChinaE2
