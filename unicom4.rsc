@@ -1944,6 +1944,7 @@ add address=140.210.156.0/24 list=List_Unicom
 add address=140.210.158.0/23 list=List_Unicom
 add address=140.210.192.0/19 list=List_Unicom
 add address=140.210.224.0/20 list=List_Unicom
+add address=143.20.70.0/23 list=List_Unicom
 add address=144.36.147.0/24 list=List_Unicom
 add address=144.48.64.0/22 list=List_Unicom
 add address=146.196.68.0/22 list=List_Unicom
