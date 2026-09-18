@@ -7,6 +7,7 @@ add address=2400:95e0::/48 list=List_Mobile
 add address=2400:a860:1::/48 list=List_Mobile
 add address=2400:a860:2::/47 list=List_Mobile
 add address=2400:a860:4::/46 list=List_Mobile
+add address=2400:a860:8::/48 list=List_Mobile
 add address=2400:ae00:1981::/48 list=List_Mobile
 add address=2400:ee00:ffec::/46 list=List_Mobile
 add address=2400:ee00:fff0::/44 list=List_Mobile

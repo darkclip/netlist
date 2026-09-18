@@ -1070,6 +1070,7 @@ add address=139.226.0.0/15 list=List_Unicom
 add address=140.179.224.0/19 list=List_Unicom
 add address=140.206.0.0/15 list=List_Unicom
 add address=140.210.32.0/22 list=List_Unicom
+add address=140.210.40.0/23 list=List_Unicom
 add address=140.210.65.0/24 list=List_Unicom
 add address=140.210.67.0/24 list=List_Unicom
 add address=140.210.69.0/24 list=List_Unicom
