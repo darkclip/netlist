@@ -1110,7 +1110,6 @@ add address=153.34.0.0/15 list=List_Unicom
 add address=153.36.0.0/15 list=List_Unicom
 add address=153.99.0.0/16 list=List_Unicom
 add address=153.101.0.0/16 list=List_Unicom
-add address=154.84.180.0/24 list=List_Unicom
 add address=154.89.32.0/21 list=List_Unicom
 add address=154.89.40.0/22 list=List_Unicom
 add address=154.89.45.0/24 list=List_Unicom
