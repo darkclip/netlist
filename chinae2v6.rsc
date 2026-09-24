@@ -5842,7 +5842,6 @@ add address=240a:2001::/40 list=List_ChinaE2
 add address=240a:2001:200::/39 list=List_ChinaE2
 add address=240a:2001:400::/38 list=List_ChinaE2
 add address=240a:2001:800::/37 list=List_ChinaE2
-add address=240a:2001:1111::/48 list=List_ChinaE2
 add address=240a:2001:2000::/35 list=List_ChinaE2
 add address=240a:2001:4000::/34 list=List_ChinaE2
 add address=240a:2001:8000::/33 list=List_ChinaE2

@@ -440,7 +440,6 @@ add address=43.227.0.0/21 list=List_ChinaE3
 add address=43.227.8.0/22 list=List_ChinaE3
 add address=43.227.32.0/20 list=List_ChinaE3
 add address=43.227.48.0/21 list=List_ChinaE3
-add address=43.227.71.0/24 list=List_ChinaE3
 add address=43.227.72.0/21 list=List_ChinaE3
 add address=43.227.96.0/21 list=List_ChinaE3
 add address=43.227.136.0/22 list=List_ChinaE3
@@ -1037,8 +1036,6 @@ add address=59.107.226.0/24 list=List_ChinaE3
 add address=59.107.255.0/24 list=List_ChinaE3
 add address=59.109.0.0/16 list=List_ChinaE3
 add address=59.110.0.0/15 list=List_ChinaE3
-add address=59.151.0.0/19 list=List_ChinaE3
-add address=59.151.64.0/18 list=List_ChinaE3
 add address=59.152.16.0/20 list=List_ChinaE3
 add address=59.152.32.0/22 list=List_ChinaE3
 add address=59.152.37.0/24 list=List_ChinaE3
@@ -1592,8 +1589,6 @@ add address=103.45.0.0/18 list=List_ChinaE3
 add address=103.45.80.0/20 list=List_ChinaE3
 add address=103.45.96.0/19 list=List_ChinaE3
 add address=103.45.144.0/24 list=List_ChinaE3
-add address=103.45.161.0/24 list=List_ChinaE3
-add address=103.45.162.0/23 list=List_ChinaE3
 add address=103.45.164.0/22 list=List_ChinaE3
 add address=103.45.170.0/24 list=List_ChinaE3
 add address=103.45.192.0/19 list=List_ChinaE3
@@ -4308,7 +4303,6 @@ add address=123.49.230.0/24 list=List_ChinaE3
 add address=123.49.233.0/24 list=List_ChinaE3
 add address=123.49.234.0/23 list=List_ChinaE3
 add address=123.49.236.0/24 list=List_ChinaE3
-add address=123.49.245.0/24 list=List_ChinaE3
 add address=123.49.248.0/21 list=List_ChinaE3
 add address=123.50.160.0/19 list=List_ChinaE3
 add address=123.56.0.0/15 list=List_ChinaE3
@@ -4361,6 +4355,7 @@ add address=123.103.31.0/24 list=List_ChinaE3
 add address=123.103.32.0/21 list=List_ChinaE3
 add address=123.103.64.0/21 list=List_ChinaE3
 add address=123.103.96.0/20 list=List_ChinaE3
+add address=123.108.89.0/24 list=List_ChinaE3
 add address=123.108.130.0/23 list=List_ChinaE3
 add address=123.108.132.0/22 list=List_ChinaE3
 add address=123.108.136.0/21 list=List_ChinaE3

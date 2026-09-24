@@ -48,7 +48,6 @@ add address=14.134.0.0/15 list=List_Telecom
 add address=14.144.0.0/12 list=List_Telecom
 add address=14.208.0.0/12 list=List_Telecom
 add address=14.255.249.0/24 list=List_Telecom
-add address=17.33.144.0/24 list=List_Telecom
 add address=17.188.211.0/24 list=List_Telecom
 add address=27.0.204.0/22 list=List_Telecom
 add address=27.0.208.0/21 list=List_Telecom
@@ -223,6 +222,9 @@ add address=43.248.100.0/24 list=List_Telecom
 add address=43.248.102.0/24 list=List_Telecom
 add address=43.248.129.0/24 list=List_Telecom
 add address=43.248.133.0/24 list=List_Telecom
+add address=43.248.139.0/24 list=List_Telecom
+add address=43.248.140.0/23 list=List_Telecom
+add address=43.248.142.0/24 list=List_Telecom
 add address=43.249.144.0/22 list=List_Telecom
 add address=43.250.32.0/22 list=List_Telecom
 add address=43.254.25.0/24 list=List_Telecom
@@ -242,6 +244,7 @@ add address=43.255.192.0/22 list=List_Telecom
 add address=43.255.212.0/22 list=List_Telecom
 add address=45.112.232.0/22 list=List_Telecom
 add address=45.113.24.0/22 list=List_Telecom
+add address=45.113.202.0/23 list=List_Telecom
 add address=45.115.44.0/22 list=List_Telecom
 add address=45.115.144.0/22 list=List_Telecom
 add address=45.115.200.0/22 list=List_Telecom
@@ -718,6 +721,7 @@ add address=103.139.172.0/23 list=List_Telecom
 add address=103.139.212.0/23 list=List_Telecom
 add address=103.143.16.0/22 list=List_Telecom
 add address=103.144.158.0/24 list=List_Telecom
+add address=103.145.104.0/24 list=List_Telecom
 add address=103.147.124.0/24 list=List_Telecom
 add address=103.149.242.0/24 list=List_Telecom
 add address=103.149.244.0/22 list=List_Telecom
@@ -1590,6 +1594,7 @@ add address=123.49.192.0/23 list=List_Telecom
 add address=123.49.232.0/24 list=List_Telecom
 add address=123.49.240.0/24 list=List_Telecom
 add address=123.49.242.0/23 list=List_Telecom
+add address=123.49.245.0/24 list=List_Telecom
 add address=123.52.0.0/14 list=List_Telecom
 add address=123.58.16.0/23 list=List_Telecom
 add address=123.58.19.0/24 list=List_Telecom
