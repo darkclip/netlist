@@ -1,17 +1,7 @@
 /ip firewall address-list
 remove [find list=List_Telecom]
 
-add address=1.12.14.0/23 list=List_Telecom
-add address=1.12.16.0/20 list=List_Telecom
-add address=1.12.32.0/23 list=List_Telecom
-add address=1.12.36.0/22 list=List_Telecom
-add address=1.12.40.0/21 list=List_Telecom
-add address=1.12.48.0/20 list=List_Telecom
-add address=1.12.64.0/18 list=List_Telecom
-add address=1.12.128.0/17 list=List_Telecom
-add address=1.13.0.0/16 list=List_Telecom
-add address=1.14.128.0/17 list=List_Telecom
-add address=1.15.0.0/16 list=List_Telecom
+add address=1.12.0.0/14 list=List_Telecom
 add address=1.48.0.0/15 list=List_Telecom
 add address=1.50.0.0/16 list=List_Telecom
 add address=1.68.0.0/14 list=List_Telecom
@@ -141,12 +131,7 @@ add address=43.137.128.0/17 list=List_Telecom
 add address=43.138.128.0/17 list=List_Telecom
 add address=43.139.0.0/16 list=List_Telecom
 add address=43.140.0.0/18 list=List_Telecom
-add address=43.140.128.0/23 list=List_Telecom
-add address=43.140.131.0/24 list=List_Telecom
-add address=43.140.132.0/22 list=List_Telecom
-add address=43.140.136.0/21 list=List_Telecom
-add address=43.140.144.0/20 list=List_Telecom
-add address=43.140.160.0/19 list=List_Telecom
+add address=43.140.128.0/18 list=List_Telecom
 add address=43.141.0.0/18 list=List_Telecom
 add address=43.141.64.0/19 list=List_Telecom
 add address=43.141.128.0/18 list=List_Telecom
@@ -228,6 +213,7 @@ add address=43.247.244.0/22 list=List_Telecom
 add address=43.248.76.0/22 list=List_Telecom
 add address=43.248.116.0/24 list=List_Telecom
 add address=43.248.140.0/24 list=List_Telecom
+add address=43.248.142.0/24 list=List_Telecom
 add address=43.249.144.0/22 list=List_Telecom
 add address=43.250.32.0/22 list=List_Telecom
 add address=43.254.25.0/24 list=List_Telecom
@@ -1794,7 +1780,6 @@ add address=139.9.240.0/21 list=List_Telecom
 add address=139.9.248.0/22 list=List_Telecom
 add address=139.159.0.0/19 list=List_Telecom
 add address=139.159.32.0/22 list=List_Telecom
-add address=139.159.107.0/24 list=List_Telecom
 add address=139.159.108.0/22 list=List_Telecom
 add address=139.159.112.0/22 list=List_Telecom
 add address=139.159.164.0/22 list=List_Telecom
@@ -2179,7 +2164,7 @@ add address=202.127.48.0/23 list=List_Telecom
 add address=202.127.192.0/24 list=List_Telecom
 add address=202.136.48.0/20 list=List_Telecom
 add address=202.136.72.0/23 list=List_Telecom
-add address=202.136.211.0/24 list=List_Telecom
+add address=202.136.210.0/23 list=List_Telecom
 add address=202.136.213.0/24 list=List_Telecom
 add address=202.136.215.0/24 list=List_Telecom
 add address=202.136.216.0/23 list=List_Telecom

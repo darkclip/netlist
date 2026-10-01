@@ -6698,7 +6698,8 @@ add address=123.49.196.0/24 list=List_Foreign
 add address=123.49.237.0/24 list=List_Foreign
 add address=123.49.238.0/23 list=List_Foreign
 add address=123.49.241.0/24 list=List_Foreign
-add address=123.49.244.0/22 list=List_Foreign
+add address=123.49.244.0/24 list=List_Foreign
+add address=123.49.246.0/23 list=List_Foreign
 add address=123.50.0.0/17 list=List_Foreign
 add address=123.50.128.0/19 list=List_Foreign
 add address=123.50.192.0/18 list=List_Foreign
@@ -8027,7 +8028,12 @@ add address=163.52.96.0/21 list=List_Foreign
 add address=163.52.104.0/22 list=List_Foreign
 add address=163.52.110.0/23 list=List_Foreign
 add address=163.52.112.0/20 list=List_Foreign
-add address=163.52.128.0/17 list=List_Foreign
+add address=163.52.128.0/18 list=List_Foreign
+add address=163.52.192.0/19 list=List_Foreign
+add address=163.52.224.0/20 list=List_Foreign
+add address=163.52.240.0/22 list=List_Foreign
+add address=163.52.244.0/23 list=List_Foreign
+add address=163.52.248.0/21 list=List_Foreign
 add address=163.53.16.0/20 list=List_Foreign
 add address=163.53.32.0/22 list=List_Foreign
 add address=163.53.68.0/22 list=List_Foreign
