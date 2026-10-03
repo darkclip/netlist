@@ -435,7 +435,6 @@ add address=117.128.0.0/14 list=List_Mobile
 add address=117.132.0.0/15 list=List_Mobile
 add address=117.134.0.0/17 list=List_Mobile
 add address=117.134.128.0/18 list=List_Mobile
-add address=117.134.207.0/24 list=List_Mobile
 add address=117.134.208.0/23 list=List_Mobile
 add address=117.134.212.0/23 list=List_Mobile
 add address=117.134.216.0/22 list=List_Mobile
