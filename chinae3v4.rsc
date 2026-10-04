@@ -2973,7 +2973,7 @@ add address=110.172.208.0/20 list=List_ChinaE3
 add address=110.172.224.0/19 list=List_ChinaE3
 add address=110.173.0.0/21 list=List_ChinaE3
 add address=110.173.64.0/18 list=List_ChinaE3
-add address=110.173.192.0/19 list=List_ChinaE3
+add address=110.173.196.0/24 list=List_ChinaE3
 add address=110.192.0.0/14 list=List_ChinaE3
 add address=110.196.0.0/15 list=List_ChinaE3
 add address=110.198.0.0/16 list=List_ChinaE3

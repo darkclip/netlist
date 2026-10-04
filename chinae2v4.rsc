@@ -3099,7 +3099,7 @@ add address=110.165.32.0/19 list=List_ChinaE2
 add address=110.172.192.0/18 list=List_ChinaE2
 add address=110.173.0.0/21 list=List_ChinaE2
 add address=110.173.64.0/18 list=List_ChinaE2
-add address=110.173.192.0/19 list=List_ChinaE2
+add address=110.173.196.0/24 list=List_ChinaE2
 add address=110.192.0.0/11 list=List_ChinaE2
 add address=110.232.32.0/19 list=List_ChinaE2
 add address=110.236.0.0/15 list=List_ChinaE2
