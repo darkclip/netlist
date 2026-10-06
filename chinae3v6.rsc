@@ -73,10 +73,7 @@ add address=2001:dc7:ffe8::/47 list=List_ChinaE3
 add address=2001:dc7:ffea::/48 list=List_ChinaE3
 add address=2001:dc7:ffed::/48 list=List_ChinaE3
 add address=2001:dc7:ffee::/47 list=List_ChinaE3
-add address=2001:dc7:fff0::/45 list=List_ChinaE3
-add address=2001:dc7:fff8::/47 list=List_ChinaE3
-add address=2001:dc7:fffa::/48 list=List_ChinaE3
-add address=2001:dc7:fffc::/46 list=List_ChinaE3
+add address=2001:dc7:fff0::/44 list=List_ChinaE3
 add address=2001:dd9::/48 list=List_ChinaE3
 add address=2001:df5:7800::/48 list=List_ChinaE3
 add address=2400:1040::/32 list=List_ChinaE3

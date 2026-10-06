@@ -2717,6 +2717,7 @@ add address=103.230.0.0/22 list=List_ChinaE3
 add address=103.230.28.0/22 list=List_ChinaE3
 add address=103.230.44.0/22 list=List_ChinaE3
 add address=103.230.96.0/22 list=List_ChinaE3
+add address=103.230.110.0/23 list=List_ChinaE3
 add address=103.230.196.0/22 list=List_ChinaE3
 add address=103.230.204.0/22 list=List_ChinaE3
 add address=103.231.17.0/24 list=List_ChinaE3
