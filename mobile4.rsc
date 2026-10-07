@@ -49,6 +49,9 @@ add address=43.193.65.0/24 list=List_Mobile
 add address=43.196.232.0/22 list=List_Mobile
 add address=43.224.56.0/23 list=List_Mobile
 add address=43.225.120.0/22 list=List_Mobile
+add address=43.226.56.0/22 list=List_Mobile
+add address=43.226.60.0/23 list=List_Mobile
+add address=43.226.63.0/24 list=List_Mobile
 add address=43.226.72.0/22 list=List_Mobile
 add address=43.226.112.0/22 list=List_Mobile
 add address=43.226.236.0/24 list=List_Mobile
@@ -580,7 +583,6 @@ add address=121.79.131.0/24 list=List_Mobile
 add address=121.79.132.0/24 list=List_Mobile
 add address=121.79.134.0/23 list=List_Mobile
 add address=121.255.0.0/16 list=List_Mobile
-add address=122.0.64.0/18 list=List_Mobile
 add address=122.14.192.0/18 list=List_Mobile
 add address=122.64.0.0/16 list=List_Mobile
 add address=122.70.0.0/15 list=List_Mobile
@@ -724,10 +726,7 @@ add address=140.143.96.0/22 list=List_Mobile
 add address=140.143.100.0/23 list=List_Mobile
 add address=140.179.224.0/19 list=List_Mobile
 add address=140.210.0.0/24 list=List_Mobile
-add address=140.210.16.0/21 list=List_Mobile
-add address=140.210.24.0/22 list=List_Mobile
-add address=140.210.28.0/23 list=List_Mobile
-add address=140.210.30.0/24 list=List_Mobile
+add address=140.210.16.0/20 list=List_Mobile
 add address=140.210.64.0/19 list=List_Mobile
 add address=140.210.157.0/24 list=List_Mobile
 add address=150.129.192.0/22 list=List_Mobile
@@ -786,7 +785,6 @@ add address=182.82.0.0/15 list=List_Mobile
 add address=182.157.0.0/16 list=List_Mobile
 add address=182.175.224.0/24 list=List_Mobile
 add address=182.175.244.0/22 list=List_Mobile
-add address=182.254.85.0/24 list=List_Mobile
 add address=183.84.2.0/23 list=List_Mobile
 add address=183.84.4.0/22 list=List_Mobile
 add address=183.91.144.0/20 list=List_Mobile
@@ -967,7 +965,6 @@ add address=222.49.128.0/17 list=List_Mobile
 add address=222.50.0.0/16 list=List_Mobile
 add address=222.59.128.0/17 list=List_Mobile
 add address=222.126.178.0/24 list=List_Mobile
-add address=222.126.189.0/24 list=List_Mobile
 add address=222.126.242.0/24 list=List_Mobile
 add address=222.126.244.0/24 list=List_Mobile
 add address=223.64.0.0/11 list=List_Mobile
