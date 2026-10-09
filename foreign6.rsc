@@ -11432,7 +11432,7 @@ add address=2406:840:981c::/46 list=List_Foreign
 add address=2406:840:9840::/44 list=List_Foreign
 add address=2406:840:9862::/47 list=List_Foreign
 add address=2406:840:9864::/48 list=List_Foreign
-add address=2406:840:9962::/48 list=List_Foreign
+add address=2406:840:9962::/47 list=List_Foreign
 add address=2406:840:9964::/48 list=List_Foreign
 add address=2406:840:9966::/47 list=List_Foreign
 add address=2406:840:996c::/48 list=List_Foreign
@@ -14712,7 +14712,7 @@ add address=2407:fdc0::/26 list=List_Foreign
 add address=2407:fe00::/23 list=List_Foreign
 add address=2408::/18 list=List_Foreign
 add address=2408:4000:102::/48 list=List_Foreign
-add address=2408:4016::/47 list=List_Foreign
+add address=2408:4016::/48 list=List_Foreign
 add address=2408:4400::/22 list=List_Foreign
 add address=2408:4800::/21 list=List_Foreign
 add address=2408:5000::/20 list=List_Foreign
@@ -15233,6 +15233,7 @@ add address=2a0a:d681:fc00::/39 list=List_Foreign
 add address=2a0a:d681:ff00::/40 list=List_Foreign
 add address=2a0a:d682:d000::/36 list=List_Foreign
 add address=2a0a:d682:e000::/35 list=List_Foreign
+add address=2a0a:d685:1d0::/48 list=List_Foreign
 add address=2a0a:d685:1e0::/47 list=List_Foreign
 add address=2a0a:d685:1fb::/48 list=List_Foreign
 add address=2a0a:d685:1fc::/46 list=List_Foreign
