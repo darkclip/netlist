@@ -3783,7 +3783,11 @@ add address=119.75.208.0/20 list=List_ChinaE3
 add address=119.78.0.0/15 list=List_ChinaE3
 add address=119.80.12.0/22 list=List_ChinaE3
 add address=119.80.16.0/20 list=List_ChinaE3
-add address=119.80.32.0/19 list=List_ChinaE3
+add address=119.80.32.0/20 list=List_ChinaE3
+add address=119.80.48.0/21 list=List_ChinaE3
+add address=119.80.57.0/24 list=List_ChinaE3
+add address=119.80.58.0/23 list=List_ChinaE3
+add address=119.80.60.0/22 list=List_ChinaE3
 add address=119.80.64.0/18 list=List_ChinaE3
 add address=119.80.128.0/19 list=List_ChinaE3
 add address=119.80.163.0/24 list=List_ChinaE3
