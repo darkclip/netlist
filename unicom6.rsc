@@ -74,7 +74,6 @@ add address=2401:ce00:b000::/37 list=List_Unicom
 add address=2401:ce00:bc00::/38 list=List_Unicom
 add address=2401:ce00:d000::/38 list=List_Unicom
 add address=2401:ce00:e000::/35 list=List_Unicom
-add address=2402:18a0::/32 list=List_Unicom
 add address=2402:34e0::/32 list=List_Unicom
 add address=2402:5920::/48 list=List_Unicom
 add address=2402:5ec0:1000::/39 list=List_Unicom

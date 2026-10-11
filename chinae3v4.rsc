@@ -6809,7 +6809,6 @@ add address=220.114.248.0/23 list=List_ChinaE3
 add address=220.114.252.0/22 list=List_ChinaE3
 add address=220.115.0.0/16 list=List_ChinaE3
 add address=220.152.128.0/17 list=List_ChinaE3
-add address=220.154.20.0/22 list=List_ChinaE3
 add address=220.154.24.0/21 list=List_ChinaE3
 add address=220.154.32.0/19 list=List_ChinaE3
 add address=220.154.84.0/22 list=List_ChinaE3

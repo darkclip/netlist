@@ -1230,6 +1230,7 @@ add address=2402:1520::/32 list=List_ChinaE2
 add address=2402:1600::/32 list=List_ChinaE2
 add address=2402:16e0::/32 list=List_ChinaE2
 add address=2402:1740::/32 list=List_ChinaE2
+add address=2402:18a0::/32 list=List_ChinaE2
 add address=2402:19c0::/32 list=List_ChinaE2
 add address=2402:1be0::/32 list=List_ChinaE2
 add address=2402:1c20::/32 list=List_ChinaE2
