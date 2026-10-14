@@ -783,7 +783,6 @@ add address=211.99.120.0/23 list=List_Mobile
 add address=211.99.160.0/22 list=List_Mobile
 add address=211.99.188.0/22 list=List_Mobile
 add address=211.99.216.0/24 list=List_Mobile
-add address=211.101.199.0/24 list=List_Mobile
 add address=211.102.208.0/20 list=List_Mobile
 add address=211.103.0.0/17 list=List_Mobile
 add address=211.136.0.0/13 list=List_Mobile

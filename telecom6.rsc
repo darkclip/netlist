@@ -153,7 +153,6 @@ add address=2401:1d40:3100::/40 list=List_Telecom
 add address=2401:1d40:3200::/39 list=List_Telecom
 add address=2401:1d40:3400::/38 list=List_Telecom
 add address=2401:1d40:3800::/37 list=List_Telecom
-add address=2401:2780::/32 list=List_Telecom
 add address=2401:3480::/36 list=List_Telecom
 add address=2401:3480:2000::/48 list=List_Telecom
 add address=2401:3480:3000::/36 list=List_Telecom
