@@ -73,6 +73,7 @@ add address=2401:ce00:a800::/37 list=List_Unicom
 add address=2401:ce00:b000::/37 list=List_Unicom
 add address=2401:ce00:bc00::/38 list=List_Unicom
 add address=2401:ce00:e000::/35 list=List_Unicom
+add address=2402:2e60::/39 list=List_Unicom
 add address=2402:34e0::/32 list=List_Unicom
 add address=2402:5920::/48 list=List_Unicom
 add address=2402:5ec0:1000::/39 list=List_Unicom

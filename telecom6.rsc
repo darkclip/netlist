@@ -176,9 +176,7 @@ add address=2401:4a80::/32 list=List_Telecom
 add address=2401:5c20:10::/48 list=List_Telecom
 add address=2401:71c0::/48 list=List_Telecom
 add address=2401:7d40::/32 list=List_Telecom
-add address=2401:7e00:fff8::/46 list=List_Telecom
-add address=2401:7e00:fffc::/47 list=List_Telecom
-add address=2401:7e00:fffe::/48 list=List_Telecom
+add address=2401:7e00:fff8::/45 list=List_Telecom
 add address=2401:a140:1::/48 list=List_Telecom
 add address=2401:a540::/32 list=List_Telecom
 add address=2401:b680::/32 list=List_Telecom
