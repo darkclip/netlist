@@ -17,9 +17,6 @@ add address=2401:2a00:f000::/43 list=List_Mobile
 add address=2401:8be0::/48 list=List_Mobile
 add address=2401:9a00::/44 list=List_Mobile
 add address=2401:9a00:10::/46 list=List_Mobile
-add address=2401:c020:6::/48 list=List_Mobile
-add address=2401:c020:8::/47 list=List_Mobile
-add address=2401:c020:14::/48 list=List_Mobile
 add address=2402:1440:30::/48 list=List_Mobile
 add address=2402:1440:200::/39 list=List_Mobile
 add address=2402:1440:400::/38 list=List_Mobile

@@ -1388,7 +1388,11 @@ add address=60.200.2.0/23 list=List_ChinaE3
 add address=60.200.4.0/22 list=List_ChinaE3
 add address=60.200.8.0/21 list=List_ChinaE3
 add address=60.200.16.0/20 list=List_ChinaE3
-add address=60.200.32.0/19 list=List_ChinaE3
+add address=60.200.32.0/23 list=List_ChinaE3
+add address=60.200.34.0/24 list=List_ChinaE3
+add address=60.200.36.0/22 list=List_ChinaE3
+add address=60.200.40.0/21 list=List_ChinaE3
+add address=60.200.48.0/20 list=List_ChinaE3
 add address=60.200.64.0/18 list=List_ChinaE3
 add address=60.200.128.0/17 list=List_ChinaE3
 add address=60.201.0.0/16 list=List_ChinaE3
