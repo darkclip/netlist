@@ -2253,7 +2253,8 @@ add address=2406:840:9400::/39 list=List_China
 add address=2406:840:9610::/44 list=List_China
 add address=2406:840:9630::/44 list=List_China
 add address=2406:840:9640::/43 list=List_China
-add address=2406:840:9660::/46 list=List_China
+add address=2406:840:9660::/48 list=List_China
+add address=2406:840:9662::/47 list=List_China
 add address=2406:840:9664::/47 list=List_China
 add address=2406:840:9667::/48 list=List_China
 add address=2406:840:9668::/45 list=List_China

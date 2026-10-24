@@ -11458,6 +11458,7 @@ add address=2406:840:9178::/48 list=List_Foreign
 add address=2406:840:9200::/40 list=List_Foreign
 add address=2406:840:9600::/44 list=List_Foreign
 add address=2406:840:9620::/44 list=List_Foreign
+add address=2406:840:9661::/48 list=List_Foreign
 add address=2406:840:9666::/48 list=List_Foreign
 add address=2406:840:9680::/44 list=List_Foreign
 add address=2406:840:9700::/40 list=List_Foreign
