@@ -144,11 +144,7 @@ add address=59.151.0.0/20 list=List_Mobile
 add address=59.151.16.0/23 list=List_Mobile
 add address=59.151.20.0/22 list=List_Mobile
 add address=59.151.24.0/21 list=List_Mobile
-add address=59.151.32.0/20 list=List_Mobile
-add address=59.151.48.0/23 list=List_Mobile
-add address=59.151.50.0/24 list=List_Mobile
-add address=59.151.52.0/22 list=List_Mobile
-add address=59.151.56.0/21 list=List_Mobile
+add address=59.151.32.0/19 list=List_Mobile
 add address=59.151.64.0/18 list=List_Mobile
 add address=59.191.0.0/17 list=List_Mobile
 add address=60.204.0.0/24 list=List_Mobile
