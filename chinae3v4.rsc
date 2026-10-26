@@ -5037,6 +5037,7 @@ add address=163.128.236.0/23 list=List_ChinaE3
 add address=163.128.254.0/23 list=List_ChinaE3
 add address=163.223.28.0/23 list=List_ChinaE3
 add address=163.223.32.0/23 list=List_ChinaE3
+add address=163.223.72.0/23 list=List_ChinaE3
 add address=163.223.124.0/23 list=List_ChinaE3
 add address=163.223.222.0/23 list=List_ChinaE3
 add address=163.227.34.0/23 list=List_ChinaE3
