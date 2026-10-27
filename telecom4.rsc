@@ -556,7 +556,8 @@ add address=103.40.240.0/20 list=List_Telecom
 add address=103.41.0.0/24 list=List_Telecom
 add address=103.41.2.0/24 list=List_Telecom
 add address=103.41.116.0/22 list=List_Telecom
-add address=103.41.164.0/22 list=List_Telecom
+add address=103.41.164.0/24 list=List_Telecom
+add address=103.41.166.0/23 list=List_Telecom
 add address=103.41.232.0/23 list=List_Telecom
 add address=103.42.8.0/22 list=List_Telecom
 add address=103.43.132.0/24 list=List_Telecom
