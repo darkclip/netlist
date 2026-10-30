@@ -57,7 +57,6 @@ add address=2401:71c0::/48 list=List_Unicom
 add address=2401:7660::/48 list=List_Unicom
 add address=2401:7700::/32 list=List_Unicom
 add address=2401:a140:1::/48 list=List_Unicom
-add address=2401:b180:5::/48 list=List_Unicom
 add address=2401:b180:3003::/48 list=List_Unicom
 add address=2401:b180:8002::/48 list=List_Unicom
 add address=2401:b400::/45 list=List_Unicom
