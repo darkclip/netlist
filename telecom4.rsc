@@ -842,7 +842,6 @@ add address=103.252.37.0/24 list=List_Telecom
 add address=103.252.38.0/23 list=List_Telecom
 add address=103.253.204.0/22 list=List_Telecom
 add address=103.254.68.0/22 list=List_Telecom
-add address=103.254.76.0/24 list=List_Telecom
 add address=103.254.79.0/24 list=List_Telecom
 add address=103.254.188.0/22 list=List_Telecom
 add address=106.0.4.0/22 list=List_Telecom
