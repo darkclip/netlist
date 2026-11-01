@@ -1400,7 +1400,7 @@ add address=203.207.224.0/19 list=List_Unicom
 add address=203.212.0.0/21 list=List_Unicom
 add address=203.212.8.0/22 list=List_Unicom
 add address=205.198.19.0/24 list=List_Unicom
-add address=206.109.70.0/23 list=List_Unicom
+add address=206.109.71.0/24 list=List_Unicom
 add address=207.254.180.0/24 list=List_Unicom
 add address=210.2.1.0/24 list=List_Unicom
 add address=210.5.128.0/20 list=List_Unicom

@@ -6728,6 +6728,7 @@ add address=240c:f:1000::/36 list=List_ChinaE3
 add address=240c:f:2000::/35 list=List_ChinaE3
 add address=240c:f:4000::/34 list=List_ChinaE3
 add address=240c:f:8000::/33 list=List_ChinaE3
+add address=240c:409f:1000::/47 list=List_ChinaE3
 add address=240c:8000::/21 list=List_ChinaE3
 add address=240c:c000::/20 list=List_ChinaE3
 add address=240d:4000::/21 list=List_ChinaE3
