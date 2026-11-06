@@ -15,6 +15,8 @@ add address=1.188.0.0/14 list=List_Unicom
 add address=8.132.106.0/24 list=List_Unicom
 add address=8.137.133.0/24 list=List_Unicom
 add address=8.138.70.0/24 list=List_Unicom
+add address=8.141.192.0/22 list=List_Unicom
+add address=8.141.200.0/21 list=List_Unicom
 add address=8.152.180.0/24 list=List_Unicom
 add address=8.155.198.0/24 list=List_Unicom
 add address=14.204.0.0/15 list=List_Unicom
