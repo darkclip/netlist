@@ -10,7 +10,6 @@ add address=8.132.107.0/24 list=List_Mobile
 add address=8.137.134.0/24 list=List_Mobile
 add address=8.138.71.0/24 list=List_Mobile
 add address=8.152.181.0/24 list=List_Mobile
-add address=8.155.199.0/24 list=List_Mobile
 add address=16.2.142.0/23 list=List_Mobile
 add address=27.0.160.0/21 list=List_Mobile
 add address=36.128.0.0/10 list=List_Mobile
