@@ -736,7 +736,8 @@ add address=116.66.50.0/24 list=List_Unicom
 add address=116.66.53.0/24 list=List_Unicom
 add address=116.76.0.0/15 list=List_Unicom
 add address=116.78.0.0/16 list=List_Unicom
-add address=116.90.80.0/22 list=List_Unicom
+add address=116.90.80.0/24 list=List_Unicom
+add address=116.90.82.0/23 list=List_Unicom
 add address=116.95.0.0/16 list=List_Unicom
 add address=116.112.0.0/14 list=List_Unicom
 add address=116.116.0.0/15 list=List_Unicom
