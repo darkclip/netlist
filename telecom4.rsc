@@ -2208,6 +2208,7 @@ add address=210.72.247.0/24 list=List_Telecom
 add address=210.73.96.0/20 list=List_Telecom
 add address=210.73.128.0/19 list=List_Telecom
 add address=210.73.192.0/22 list=List_Telecom
+add address=210.73.204.0/24 list=List_Telecom
 add address=210.74.4.0/22 list=List_Telecom
 add address=210.74.8.0/21 list=List_Telecom
 add address=210.74.35.0/24 list=List_Telecom

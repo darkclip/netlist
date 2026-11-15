@@ -6539,7 +6539,9 @@ add address=210.73.0.0/18 list=List_ChinaE2
 add address=210.73.64.0/19 list=List_ChinaE2
 add address=210.73.160.0/19 list=List_ChinaE2
 add address=210.73.196.0/22 list=List_ChinaE2
-add address=210.73.200.0/21 list=List_ChinaE2
+add address=210.73.200.0/22 list=List_ChinaE2
+add address=210.73.205.0/24 list=List_ChinaE2
+add address=210.73.206.0/23 list=List_ChinaE2
 add address=210.74.0.0/22 list=List_ChinaE2
 add address=210.74.16.0/20 list=List_ChinaE2
 add address=210.74.32.0/23 list=List_ChinaE2
