@@ -2,8 +2,6 @@
 remove [find list=List_Telecom]
 
 add address=2001:c68::/32 list=List_Telecom
-add address=2001:dc7:cd00::/46 list=List_Telecom
-add address=2001:dc7:cd1a::/48 list=List_Telecom
 add address=2001:dd8:1::/48 list=List_Telecom
 add address=2001:4510:400::/40 list=List_Telecom
 add address=2400:5280:f803::/48 list=List_Telecom
