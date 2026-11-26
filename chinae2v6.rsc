@@ -192,7 +192,6 @@ add address=2400:6040::/32 list=List_ChinaE2
 add address=2400:60c0::/32 list=List_ChinaE2
 add address=2400:61c0::/32 list=List_ChinaE2
 add address=2400:6200::/32 list=List_ChinaE2
-add address=2400:6600::/48 list=List_ChinaE2
 add address=2400:6640::/32 list=List_ChinaE2
 add address=2400:66a0::/32 list=List_ChinaE2
 add address=2400:66c0::/32 list=List_ChinaE2
@@ -348,6 +347,8 @@ add address=2400:9020:f200::/39 list=List_ChinaE2
 add address=2400:9020:f400::/38 list=List_ChinaE2
 add address=2400:9020:f800::/37 list=List_ChinaE2
 add address=2400:9040::/32 list=List_ChinaE2
+add address=2400:9380:9080::/48 list=List_ChinaE2
+add address=2400:9380:9280::/48 list=List_ChinaE2
 add address=2400:93e0::/32 list=List_ChinaE2
 add address=2400:9520::/32 list=List_ChinaE2
 add address=2400:9580::/32 list=List_ChinaE2
